@@ -1,0 +1,7 @@
+Branch C from Master Site A, 2026-10-24
+
+2026-11-03 (zip 142): OxyStorm removed from the site. Serving 16,422 mg (nominal), claims bar 3.69 g, 19 named actives. Landkind wording corrected. Blood pressure, potassium and vitamin A cautions added. Matches MBR V8.9.39.
+
+2026-11-04 (zip 143): S7 renamed to vitAlign across the site (same product, FutureCeuticals). Image files keep their s7 filenames and are used for vitAlign. Copy not yet checked against the vitAlign page: seven plant list, 60 mg dose (page states 50 mg clinical), 230 percent claim.
+
+2026-11-04 (zip 144): seven plant list kept under vitAlign. Added supplier-page claims (standardised to 60 percent polyphenols, 30 percent catechins, 3 percent curcuminoids; supplier studies at 50 mg report lower mitochondrial free radicals, improved mitochondrial oxygen consumption, balanced immune response) to the NO card, hero caption, BOM row and Ask Honi. Seven plant list, 230 percent claim and PMID 38612462 still unconfirmed against FutureCeuticals pages. Dose stays 60 mg.
