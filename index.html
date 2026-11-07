@@ -3310,7 +3310,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
 .hero-swap.on{opacity:1;transform:none}
 .hero-swap-m{display:none}
 @media (max-width:1000px){.hero-swap{display:none}
-  .hero-swap-m{display:block;margin:calc(6px + 4 * 1.45em) auto 14px;max-width:34ch;text-align:center;text-transform:uppercase;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-weight:300;letter-spacing:.05em;line-height:1.45;font-size:clamp(13px,3.6vw,16px);color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.35)}}
+  .hero-swap-m{display:block;margin:calc(6px + 4 * 1.45em - 30px) auto 14px;max-width:34ch;text-align:center;text-transform:uppercase;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-weight:300;letter-spacing:.05em;line-height:1.45;font-size:clamp(13px,3.6vw,16px);color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.35)}}
 @media (prefers-reduced-motion: reduce){.hero-swap{transition:none}}
 /* v44: Protocol table "Honey Progression": each phase a step deeper, Day One to Year Round */
 .proto{background:rgba(160,120,40,.35) !important;border-color:rgba(160,120,40,.35) !important}
@@ -3531,7 +3531,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
   </div>
 
   <div class="hero-lower">
-    <p class="hero-swap" id="heroSwap">Swap out the tedious and messy powders and pills for our deliciously simple and naturally potent morning protocol.</p>
+    <p class="hero-swap" id="heroSwap">Swap out the messy powder scoops and tedious pills for our deliciously simple, naturally potent morning protocol.</p>
     <div class="hero-reo" id="heroReo" role="note" aria-label="HoniOra comes from te reo M&#257;ori. Honi means honey, Ora means life, health, and vitality."><span class="reo-t" aria-hidden="true">Honi<i>Ora</i> comes from te reo M&#257;ori.<br>Honi means honey,<br>Ora means life, health, and vitality.</span></div>
     <div class="hero-img-col">
 
@@ -3554,7 +3554,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
       <div class="hero-precede hero-solution-desktop"><span class="precede-solution" id="precedeSolutionDesktop">Honi<i>Ora</i>'s morning solution:</span><br><span class="precede-body precede-fit" id="precedeFitDesktop">1 effervescent stick pack &amp; 1 BIG glass of water &amp; Ready in 60 seconds.</span></div>
       <img class="hero-tube-shot" src="sp-single-cutout.png" alt="HONIORA gold stick pack" width="1117" height="490" loading="lazy">
       <!-- v40 phone copy of the swap line sits under the pack (desktop copy is #heroSwap) -->
-      <p class="hero-swap-m rv">Swap out the tedious and messy powders and pills for our deliciously simple and naturally potent morning protocol.</p>
+      <p class="hero-swap-m rv">Swap out the messy powder scoops and tedious pills for our deliciously simple, naturally potent morning protocol.</p>
     </div>
     <div class="wrap hero-grid">
     <div>
@@ -8616,7 +8616,7 @@ s();['loadedmetadata','loadeddata','play','playing','ratechange'].forEach(functi
         var swapFs = Math.max(15, Math.min(26, fs0 * 0.95));
         swap.style.fontSize = swapFs.toFixed(1) + 'px';
         /* v43: dropped 4 lines (of its own line height) lower */
-        swap.style.top = Math.round(o.y + tr.height * 0.97 + 4 * 1.45 * swapFs) + 'px';
+        swap.style.top = Math.round(o.y + tr.height * 0.97 + 4 * 1.45 * swapFs - 30) + 'px'; /* v50: 30px closer to the pack */
       }
       return true;
     }
