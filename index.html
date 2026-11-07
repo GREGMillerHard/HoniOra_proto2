@@ -3170,7 +3170,7 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:70px 0 4
 </style>
 <style>
 /* hero titles type-on (v9) */
-html.ht-wait :is(#precedeLeadMobile,#precedeLead,#heroWordmark,.hero .hero-tag,.hero-solution-desktop,.hero-precede.rv .precede-solution-wrap,.hsr-lead,.hsr-body,#aliveZoom){visibility:hidden}
+html.ht-wait :is(#precedeLeadMobile,#precedeLead,#heroWordmark,.hero .hero-tag,.hero-solution-desktop,.hero-precede.rv .precede-solution-wrap,.hsr-lead,.hsr-body,.hsr-nourish,#aliveZoom){visibility:hidden}
 .ht-w{white-space:nowrap}
 .ht-c{position:relative;opacity:0}
 .ht-c.on{opacity:1}
@@ -3183,7 +3183,7 @@ html.ht-wait :is(#precedeLeadMobile,#precedeLead,#heroWordmark,.hero .hero-tag,.
 .hero-reo .reo-t{white-space:nowrap;display:inline-block}
 /* v10: screen 1 copy in one dark brown gold, light white wash over the video instead of the dark scrim */
 /* v11: punchier video, lighter wash so the colour comes through */
-.hero .hero-bg{filter:none} /* v13: orange grade baked into hero-honey-bg.* (green pulled toward red on warm tones, whites kept white) */
+.hero .hero-bg{filter:none} /* v19: original tablet video (ritual-bg.*) restored, no grade. v28: first 3.85 s cut off (no longer moved to the end), so it opens on the blue frame */
 .hero .hero-bg-scrim{background:linear-gradient(180deg,rgba(255,244,228,.28) 0%,rgba(255,240,220,.16) 45%,rgba(255,244,228,.28) 100%)}
 .hero .hero-copy-shift .hero-logo,.hero .hero-copy-shift .hero-logo span,
 .hero .hero-precede .precede-lead,.hero .hero-precede .precede-lead-gold,
@@ -3235,6 +3235,108 @@ html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
   .vib-copy{max-width:none;padding:0 20px}
 }
 @media(max-width:560px){#vib .vib-stats{grid-template-columns:1fr}}
+/* v20: screen 1 copy all white in a fine sans (Inter 300); HONIORA wordmark in the nav logo's fonts (HONI upright Playfair, ORA italic) in white; soft dark tint so white reads on the video */
+.hero .hero-bg-scrim{background:linear-gradient(180deg,rgba(10,8,4,.30) 0%,rgba(10,8,4,.18) 45%,rgba(10,8,4,.30) 100%) !important}
+html body .hero .hero-precede .precede-lead,html body .hero .hero-precede .precede-lead-gold,
+html body .hero .hero-copy-shift .hero-tag,
+html body .hero .hero-precede .precede-solution,html body .hero .hero-precede .precede-solution i,html body .hero .hero-precede .precede-body,
+html body .hero .hero-solution-right,html body .hero .hero-solution-right span,html body .hero .hero-solution-right i{
+  color:#fff !important;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif !important;font-weight:300 !important;
+  text-shadow:0 1px 14px rgba(0,0,0,.38),0 0 2px rgba(0,0,0,.18) !important}
+html body .hero #heroWordmark,html body .hero #heroWordmark .wm-ora{color:#fff !important;text-shadow:0 2px 18px rgba(0,0,0,.35) !important}
+html body .hero #heroWordmark{font-family:'Playfair Display',Georgia,'Times New Roman',serif !important;font-style:normal !important;font-weight:700 !important}
+html body .hero #heroWordmark .wm-ora{font-style:italic !important;font-weight:700 !important}
+html body .hero #heroWordmark .ht-w,html body .hero #heroWordmark .ht-c{font-style:inherit !important;font-weight:inherit !important}
+html body .hero #heroWordmark,html body .hero #heroWordmark *{text-shadow:none !important;filter:none !important}
+/* v41: HONIORA larger, sized off the screen width instead of being fitted to the copy column */
+html body .hero #heroWordmark{font-size:clamp(66px,10.5vw,220px) !important;white-space:nowrap;width:max-content;max-width:none;position:relative;left:50%;transform:translateX(-50%);margin-left:0;margin-right:0;line-height:1}
+@media(max-width:1000px){html body .hero #heroWordmark{font-size:min(19vw,120px) !important}}
+.hero .hrail .hmsg,.hero .hrail .hmsg i{color:#fff !important;font-weight:300 !important;text-shadow:0 1px 10px rgba(0,0,0,.35) !important}
+.hero .hrail{border-color:rgba(255,255,255,.3) !important}
+.hero .hero-seal-ring text{fill:#fff !important}
+.hero .hero-seal-ring{filter:drop-shadow(0 1px 3px rgba(0,0,0,.55)) !important}
+/* v25: first scroller text at double size */
+.hero .hrail .hmsg{font-size:clamp(30px,3.1vw,50px) !important}
+.hero .hrail .hmsg.hcaps{font-size:clamp(26px,2.6vw,42px) !important}
+@media(max-width:1000px){.hero .hrail .hmsg{font-size:clamp(28px,5.2vw,38px) !important}.hero .hrail .hmsg.hcaps{font-size:clamp(24px,4.6vw,34px) !important}}
+/* v26: VIB screen on dark forest green, type 20% bigger. The bee photo's black backdrop is blended into the green (lighten) so no black box shows. */
+#vib{background:#0F2A1D !important}
+/* bee photo pre-blended onto #0F2A1D (vib_bee_green*.jpg), so its black backdrop matches the green */
+.vib-copy{max-width:740px}
+#vib .eyebrow{font-size:13.2px}
+#vib .vib-head h2{font-size:clamp(35.5px,6.48vw,81.6px)}
+#vib .vib-head .lede{font-size:clamp(19.8px,2.22vw,25.2px)}
+#vib .vib-stat b{font-size:clamp(45.6px,5.04vw,69.6px)}
+#vib .vib-stat h4{font-size:14.4px}
+#vib .vib-stat p{font-size:16.2px}
+#vib .cite{font-size:13.2px}
+#vib .cite span{font-size:12px}
+#vib .vib-stat .cite{font-size:12.6px}
+#vib .prob-list li{font-size:20.4px}
+#vib .prob-list .x{font-size:14.4px}
+#vib .vib-pledge h3{font-size:clamp(28.8px,3.12vw,40.8px)}
+#vib .vib-pledge p{font-size:18px}
+#vib .small{font-size:15.6px}
+@media(max-width:1000px){#vib .prob-list li{font-size:19.2px}}
+/* v29: "Introducing" above HONIORA; NOURISH / UPGRADE moved below "60 seconds." */
+html body .hero .hsr-nourish{display:block;text-align:center;text-transform:uppercase;color:#fff !important;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif !important;font-weight:300 !important;line-height:1.12;letter-spacing:.01em;margin:clamp(18px,2.4vw,30px) 0 0;font-size:min(3.4vw,46px);text-shadow:0 1px 14px rgba(0,0,0,.38),0 0 2px rgba(0,0,0,.18) !important;white-space:nowrap}
+@media(min-width:1001px){html body .hero .hsr-nourish{position:relative;left:50%;transform:translateX(-50%);width:max-content}}
+@media(max-width:1000px){html body .hero .hsr-nourish{font-size:clamp(19px,5.8vw,30px);margin-top:16px;white-space:normal}}
+html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.8vw,38px) !important;letter-spacing:.02em}
+@media(max-width:1000px){html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:clamp(22px,6.5vw,30px) !important}}
+/* v30: flat blue matching the video's first frame covers screen 1 while the first copy types; it fades out as the video starts on PROTOCOL */
+.hero .hero-bg-hold{position:absolute;left:0;top:0;width:100%;height:var(--herobg-h,100svh);min-height:640px;z-index:-2;pointer-events:none;background:#549CC7;opacity:1;transition:opacity 1.2s ease}
+.hero .hero-bg-hold.off{opacity:0}
+@media (prefers-reduced-motion: reduce){.hero .hero-bg-hold{display:none}}
+/* v35: a full screen-width gap after the last scroller message, so its tail and the opening words are never on screen together */
+.hero .hrail .hrail-gap{width:100vw}
+/* v36: screen 2 (stick pack + ingredient lines) in "B Amber Honey" */
+.tube-band{background:linear-gradient(180deg,#FAD789 0%,#F3BB66 60%,#E9A355 100%) !important}
+.hero-reo,.hero-reo .reo-c{color:#2A1400 !important}
+.hero-reo i{color:#6B3A00 !important}
+.hero-reo .reo-c.cur::after{background:#6B3A00 !important}
+.hero-lower.has-tube-band .keyact.flat.hero-actives li{color:#2A1400 !important}
+.hero-lower.has-tube-band .keyact.flat.hero-actives li::before{background:#5A3000 !important}
+.hero-lower.has-tube-band .hero-keylines path{stroke:#5A3000 !important;opacity:.85 !important}
+.hero-lower.has-tube-band .hero-meta{border-top-color:#5A3000 !important}
+.hero-lower.has-tube-band .hero-meta b,.hero-lower.has-tube-band .hero-meta span{color:#2A1400 !important}
+.hero-lower .hero-cta .btn{color:#2A1400 !important;border-color:#5A3000 !important;background:transparent !important}
+/* v38: gap inside the opening scroller message, after NECTAR */
+.hero .hrail .hmsg-spacer{display:inline-block;width:55vw}
+/* v40: "Swap out the tedious..." moved from the scroller to under the pack on screen 2; fades up once the te reo line has finished typing */
+.hero-swap{position:absolute;left:0;top:0;width:0;z-index:2;margin:0;pointer-events:none;text-align:center;text-transform:uppercase;
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-weight:300;letter-spacing:.06em;line-height:1.45;color:#2A1400;
+  opacity:0;transform:translateY(10px);transition:opacity 1.1s ease,transform 1.1s ease;text-wrap:balance}
+.hero-swap.on{opacity:1;transform:none}
+.hero-swap-m{display:none}
+@media (max-width:1000px){.hero-swap{display:none}
+  .hero-swap-m{display:block;margin:calc(6px + 4 * 1.45em) auto 14px;max-width:34ch;text-align:center;text-transform:uppercase;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-weight:300;letter-spacing:.05em;line-height:1.45;font-size:clamp(13px,3.6vw,16px);color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.35)}}
+@media (prefers-reduced-motion: reduce){.hero-swap{transition:none}}
+/* v44: Protocol table "Honey Progression": each phase a step deeper, Day One to Year Round */
+.proto{background:rgba(160,120,40,.35) !important;border-color:rgba(160,120,40,.35) !important}
+.proto .phase:nth-child(1){background:#FDF4DC !important}
+.proto .phase:nth-child(2){background:#FAE6B4 !important}
+.proto .phase:nth-child(3){background:#F6D78E !important}
+.proto .phase:nth-child(4){background:#F2C66C !important}
+.proto .phase{transition:filter .45s ease}
+.proto .phase:hover{filter:brightness(1.04)}
+/* v45: First Drop bee seal (same spinning ring as screen 1, transparent) under the 5-box stack on the Monthly Protocol card */
+#monthlyprotocol{position:relative}
+.plan-seal{position:absolute;z-index:2;bottom:clamp(26px,3vw,46px);width:clamp(130px,14vw,200px);height:clamp(130px,14vw,200px);
+  right:calc(clamp(22px,2vw,32px) + (clamp(200px,30vw,340px) - clamp(130px,14vw,200px)) / 2);pointer-events:auto}
+.plan-seal-inner{display:block;position:relative;width:100%;height:100%;transition:transform .35s ease}
+.plan-seal{cursor:pointer;text-decoration:none;border-radius:50%}
+.plan-seal:hover .plan-seal-inner,.plan-seal:focus-visible .plan-seal-inner{transform:scale(1.15)}
+.plan-seal:focus-visible{outline:2px solid #8A6410;outline-offset:4px}
+.plan-seal-ring{position:absolute;inset:0;width:100%;height:100%;overflow:visible;animation:heroSealSpin 34s linear infinite}
+.plan-seal-ring text{font-family:'Cinzel',Georgia,'Times New Roman',serif;font-weight:600;font-size:15px;letter-spacing:1.6px;fill:#8A6410}
+.plan-seal-img{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(16deg);width:64%;height:64%;border-radius:50%;display:block;filter:drop-shadow(0 6px 14px rgba(35,23,4,.28))}
+@media(prefers-reduced-motion:reduce){.plan-seal-ring{animation:none}}
+@media(max-width:700px){.plan-seal{position:relative;display:block;right:auto;bottom:auto;margin:22px auto 6px;width:150px;height:150px}}
+/* v48: ingredient scroller page in "Gold Spotlight": pale gold glow behind the focused ingredient, deeper gold at the edges, full screen width */
+.hero .ibandhost{isolation:isolate}
+.hero .ibandhost::before{content:"";position:absolute;top:0;bottom:0;left:0;width:100vw;z-index:-1;pointer-events:none;
+  background:radial-gradient(ellipse 55% 60% at 50% 42%,#FFFBEF 0%,#F8EBC8 55%,#EED79C 100%)}
 </style>
 </head>
 <body>
@@ -3388,7 +3490,9 @@ html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
 
 <!-- ================= HERO ================= -->
 <section class="hero" id="top">
-  <video class="hero-bg" autoplay muted loop playsinline preload="auto" poster="hero-honey-bg-poster.jpg" aria-hidden="true"><source media="(max-width:1000px)" src="hero-honey-bg-lite.webm" type="video/webm"><source media="(max-width:1000px)" src="hero-honey-bg-lite.mp4" type="video/mp4"><source src="hero-honey-bg.webm" type="video/webm"><source src="hero-honey-bg.mp4" type="video/mp4"></video>
+  <video class="hero-bg" autoplay muted loop playsinline preload="auto" poster="ritual-bg-poster.jpg" aria-hidden="true"><source media="(max-width:1000px)" src="ritual-bg-lite.webm" type="video/webm"><source media="(max-width:1000px)" src="ritual-bg-lite.mp4" type="video/mp4"><source src="ritual-bg.webm" type="video/webm"><source src="ritual-bg.mp4" type="video/mp4"></video>
+  <div class="hero-bg-hold" aria-hidden="true"></div>
+  <noscript><style>.hero .hero-bg-hold{display:none}</style></noscript>
   <div class="hero-bg-scrim" aria-hidden="true"></div>
   <div class="taste-silk" aria-hidden="true"><i class="s1"></i><i class="s2"></i><i class="s3"></i><i class="veil"></i></div>
   <div class="bubbles" id="bubbles"></div>
@@ -3403,8 +3507,7 @@ html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
       <div class="hrail-track" id="railTrack">
         <div class="hrail-set">
           <div class="hrail-gap" aria-hidden="true"></div>
-          <div class="hmsg hcaps">SWAP OUT THE TEDIOUS AND MESSY POWDERS AND PILLS FOR OUR DELICIOUSLY SIMPLE AND NATURALLY POTENT MORNING PROTOCOL,</div>
-          <div class="hmsg">INTRODUCING HONI<i>ORA</i>, A MORNING WELLNESS STACK OF ACTIVATED NECTAR creatine-driven cellular energy, maximised gut absorption, efficient vascular system delivery, and targeted micro-vascular brain support.</div>
+          <div class="hmsg"><span class="hmsg-head">A GOOD MORNING WELLNESS STACK OF ACTIVATED NECTAR</span><span class="hmsg-spacer" aria-hidden="true"></span>Creatine-driven cellular energy, GLP-1 support, Gut health boost, Nitric Oxide production, brain &amp; vascular support.</div>
         </div>
       </div>
     </div>
@@ -3428,6 +3531,7 @@ html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
   </div>
 
   <div class="hero-lower">
+    <p class="hero-swap" id="heroSwap">Swap out the tedious and messy powders and pills for our deliciously simple and naturally potent morning protocol.</p>
     <div class="hero-reo" id="heroReo" role="note" aria-label="HoniOra comes from te reo M&#257;ori. Honi means honey, Ora means life, health, and vitality."><span class="reo-t" aria-hidden="true">Honi<i>Ora</i> comes from te reo M&#257;ori.<br>Honi means honey,<br>Ora means life, health, and vitality.</span></div>
     <div class="hero-img-col">
 
@@ -3437,7 +3541,7 @@ html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
            text isn't shown twice. Desktop is untouched -- this stays display:none
            above 1000px and the original headline renders in its usual spot in the
            copy column. */ -->
-      <div class="hero-precede hero-precede-mobile"><span class="precede-lead" id="precedeLeadMobile">NOURISH <span class="precede-lead-gold">YOUR</span> BODY<br>UPGRADE <span class="precede-lead-gold">YOUR</span> WELLNESS</span></div>
+      <div class="hero-precede hero-precede-mobile"><span class="precede-lead" id="precedeLeadMobile">Introducing</span></div>
       <!-- desktop-only duplicate of "HoniOra's morning solution:" / "2 effervescent
            tablets & 1 glass of water & 60 sec.", moved here (between the video and
            the tube shot, centred under the video) at >=1001px only. The original
@@ -3449,14 +3553,16 @@ html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
            the original pair renders normally, visible, in its usual spot. -->
       <div class="hero-precede hero-solution-desktop"><span class="precede-solution" id="precedeSolutionDesktop">Honi<i>Ora</i>'s morning solution:</span><br><span class="precede-body precede-fit" id="precedeFitDesktop">1 effervescent stick pack &amp; 1 BIG glass of water &amp; Ready in 60 seconds.</span></div>
       <img class="hero-tube-shot" src="sp-single-cutout.png" alt="HONIORA gold stick pack" width="1117" height="490" loading="lazy">
+      <!-- v40 phone copy of the swap line sits under the pack (desktop copy is #heroSwap) -->
+      <p class="hero-swap-m rv">Swap out the tedious and messy powders and pills for our deliciously simple and naturally potent morning protocol.</p>
     </div>
     <div class="wrap hero-grid">
     <div>
       <div class="hero-copy-shift">
-      <div class="hero-precede rv"><table class="precede-table" role="presentation"><tbody><tr><td><span class="precede-rest"><span class="precede-lead-inline" id="precedeLeadInline"><span class="precede-lead" id="precedeLead">NOURISH <span class="precede-lead-gold">YOUR</span> BODY<br>UPGRADE <span class="precede-lead-gold">YOUR</span> WELLNESS</span> <br></span><span class="precede-solution-wrap"> <span class="precede-solution">Honi<i>Ora</i>'s morning solution:</span> <br> <span class="precede-body precede-fit" id="precedeFit">1 effervescent stick pack &amp; 1 BIG glass of water &amp; Ready in 60 seconds.</span></span></span></td></tr></tbody></table></div>
+      <div class="hero-precede rv"><table class="precede-table" role="presentation"><tbody><tr><td><span class="precede-rest"><span class="precede-lead-inline" id="precedeLeadInline"><span class="precede-lead" id="precedeLead">Introducing</span> <br></span><span class="precede-solution-wrap"> <span class="precede-solution">Honi<i>Ora</i>'s morning solution:</span> <br> <span class="precede-body precede-fit" id="precedeFit">1 effervescent stick pack &amp; 1 BIG glass of water &amp; Ready in 60 seconds.</span></span></span></td></tr></tbody></table></div>
       <h1 class="serif rv hero-logo" id="heroWordmark">HONI<span class="wm-ora">ORA</span></h1>
       <p class="hero-tag rv">M&#256;NUKA CREATINE PROTOCOL</p>
-      <div class="hero-solution-right"><span class="hsr-lead">Honi<i>Ora</i>'s morning solution:</span><span class="hsr-body">1 effervescent stick pack<br>&amp;<br>1 BIG glass of water<br>&amp;<br>Ready<br>in<br>60 seconds.</span><span class="hsr-alive"><span class="hsr-alive-in" id="aliveZoom">ACTIVE<br class="mb"> LIKE<br class="mb"> YOU!</span></span></div>
+      <div class="hero-solution-right"><span class="hsr-lead">Honi<i>Ora</i>'s morning solution:</span><span class="hsr-body">1 effervescent stick pack<br>&amp;<br>1 BIG glass of water<br>&amp;<br>Ready<br>in<br>60 seconds.</span><span class="hsr-nourish">NOURISH YOUR BODY<br>UPGRADE YOUR WELLNESS</span><span class="hsr-alive"><span class="hsr-alive-in" id="aliveZoom">CARPE<br class="mb"> DIEM</span></span></div>
       </div>
       <ul class="keyact flat hero-actives">
         <li>MGO 850+ M&#257;nuka Honey crystals</li>
@@ -3511,7 +3617,7 @@ html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="Taurine powder" loading="lazy"></picture><figcaption class="icap"><b>Taurine</b><s>1,020 mg</s><u class="ifn">CELLULAR HYDRATION</u><i>An organic osmolyte that holds cellular fluid balance and supports energy metabolism, alongside the magnesium and electrolyte load.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="Citicoline" loading="lazy"></picture><figcaption class="icap"><b>Citicoline</b><s>255 mg</s><u class="ifn">FOCUS &amp; ATTENTION</u><i>Supplies building blocks for brain cell membranes and neuronal signalling. A 28-day placebo-controlled trial of 250 mg a day in healthy women aged 40 to 60 found fewer attention errors than placebo.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="s7_leaf-lite.webp"><img width="820" height="820" src="s7_leaf.webp" alt="vitAlign plant-based blend" loading="lazy"></picture><figcaption class="icap"><b>vitAlign<sup class="rn">&reg;</sup> Plant Blend</b><s>60 mg</s><u class="ifn">NITRIC OXIDE SUPPORT</u><i>Green coffee bean, green tea, turmeric, tart cherry, blueberry, broccoli and kale extracts at a low 60 mg dose. Rather than supplying nitrates directly, vitAlign acts on the cell's own redox signalling to raise the nitric oxide you already make. The supplier's 90-day double-blind clinical study reported a 230% increase in circulating nitric oxide over baseline, sustained with once-daily use. Standardised to 60% polyphenols, 30% catechins and 3% curcuminoids. Supplier studies at 50 mg also report lower mitochondrial free radicals.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="careflow_mango-lite.webp"><img width="820" height="820" src="careflow_mango.webp" alt="Careflow organic mango fruit powder" loading="lazy"></picture><figcaption class="icap"><b>Careflow<sup class="rn">&reg;</sup> Mango Fruit</b><s>300 mg</s><u class="ifn">MICROCIRCULATION</u><i>Organic, standardised mango fruit powder. The supplier says it activates SIRT1 and eNOS. Skin blood flow rose in a small pilot study.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="careflow_mango-lite.webp"><img width="820" height="820" src="careflow_mango.webp" alt="Careflow organic mango fruit powder" loading="lazy"></picture><figcaption class="icap"><b>Careflow<sup class="rn">&reg;</sup> Mango Fruit</b><s>300 mg</s><u class="ifn">MICROCIRCULATION</u><i>Organic powder of whole Totapuri mango from India. In lab tests it switched on eNOS, the enzyme that makes nitric oxide, and SIRT1. At 300 mg a day for four weeks, adults showed lower HbA1c than at baseline and a trend to lower post-meal glucose. <a href="#careflow" style="color:inherit;text-decoration:underline">See the trials</a>.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="hytolive_bev_olive-lite.webp"><img width="820" height="820" src="hytolive_bev_olive.webp" alt="Hytolive Bev olive fruit extract" loading="lazy"></picture><figcaption class="icap"><b>Hytolive<sup class="rn">&reg;</sup> Bev Olive Extract</b><s>300 mg</s><u class="ifn">BLOOD LIPID PROTECTION</u><i>A water-soluble olive fruit extract from Alvinesa in Spain, standardised to 2% hydroxytyrosol. At this dose HONI<i>ORA</i> delivers 6&nbsp;mg of hydroxytyrosol per serving, above the 5&nbsp;mg/day threshold behind the EFSA claim that olive polyphenols help protect blood lipids from oxidative stress.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="lactospore-lite.webp"><img width="820" height="820" src="lactospore.webp" alt="LactoSpore Bacillus coagulans probiotic, colourised micrograph" loading="lazy"></picture><figcaption class="icap"><b>LactoSpore<sup class="rn">&reg;</sup> Bacillus coagulans</b><s>6 billion CFU</s><u class="ifn">GUT MICROBIOME</u><i>A spore-forming probiotic (strain MTCC 5856) built to come through the stick pack&#39;s effervescent dissolution, so live spores reach the gut. Dosed alongside the Livaux and M&#257;nuka prebiotic fibres.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="retinyl_palmitate-lite.webp"><img width="820" height="820" src="retinyl_palmitate.webp" alt="Vitamin A as cold-water-soluble retinyl palmitate" loading="lazy"></picture><figcaption class="icap"><b>Vitamin A Retinyl Palmitate</b><s>900 mcg RAE</s><u class="ifn">BARRIER &amp; IMMUNE SUPPORT</u><i>Cold-water-soluble vitamin A that disperses cleanly in the glass. Vitamin A supports the integrity of the body&#39;s epithelial barriers and mucosal immunity, including the gut lining.</i></figcaption></figure></div>
@@ -3805,13 +3911,13 @@ html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
   <div class="wrap">
     <div class="sec-head vib-head rv">
       <p class="eyebrow">The Honey Bee &middot; Our VIB</p>
-      <h2 class="serif">The <em>Very Important Bee.</em></h2>
-      <p class="lede">Every stick of HONI<i>ORA</i> starts with a bee. MGO 850+ M&#257;nuka honey only exists because honey bees work the M&#257;nuka bloom for a few short weeks each summer. Bees also pollinate much of the fruit on your plate. Right now they are under serious pressure.</p>
+      <h2 class="serif">Our <em>Very Important Bees.</em></h2>
+      <p class="lede">M&#257;nuka honi only exists because honey bees harvest the M&#257;nuka bloom for a few short weeks each NZ summer. Bees and other pollinators help produce most of the fruit and vegetables we all eat. Their survival is linked to humanity&rsquo;s. Pollination sustains our global food security, human nutrition, and our world&rsquo;s terrestrial ecosystems.</p>
     </div>
   </div>
 
   <div class="vib-grid">
-    <div class="vib-bee" aria-hidden="true"><picture><source media="(max-width:1000px)" srcset="vib_bee-lite.jpg"><img src="vib_bee.jpg" width="1800" height="1108" alt="" loading="lazy"></picture></div>
+    <div class="vib-bee" aria-hidden="true"><picture><source media="(max-width:1000px)" srcset="vib_bee_green-lite.jpg"><img src="vib_bee_green.jpg" width="1800" height="1108" alt="" loading="lazy"></picture></div>
     <div class="vib-copy">
     <div class="vib-stats rv">
       <div class="vib-stat"><b>39.9%</b><h4>US colonies lost in a year</h4><p>April 2025 to April 2026, down from 55.6% the year before and 55.1% the year before that. Winter losses alone were 30.3%, 10 points above what beekeepers consider acceptable.</p><a class="cite" href="https://wire.auburn.edu/content/agriculture/2026/06/honeybeecolony0626.php" target="_blank" rel="noopener noreferrer">Source <span>Auburn University, June 2026 &nearr;</span></a></div>
@@ -3881,7 +3987,7 @@ html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
         <p class="when">Within the hour</p>
         <ul>
           <li><b>Cr.01&trade; Creatine</b>Loading begins: creatine starts saturating the muscle phosphocreatine pool from the first serving.</li>
-          <li><b>Careflow<sup class="rn">&reg;</sup> mango fruit</b>Arterial microcirculation improves within hours of the first dose.</li>
+          <li><b>Careflow<sup class="rn">&reg;</sup> mango fruit</b>At 300 mg a day for four weeks, HbA1c fell against baseline and post-meal glucose trended lower. The blood-flow gain in the same trial was clearest at 100 mg.</li>
           <li><b>vitAlign<sup class="rn">&reg;</sup> plant blend</b>Redox signalling raises the nitric oxide you already make.</li>
           <li><b>The effervescent engine</b>Everything arrives already in solution, so nothing sits in the gut drawing water.</li>
           <li><b>Dissolved electrolyte matrix</b>Sodium, potassium and magnesium arrive dissolved and buffered in every glass.</li>
@@ -3963,6 +4069,10 @@ html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
           <li>Priority access to every new drop or offer.</li>
           <li>Free USA shipping, always</li>
         </ul>
+<a href="#waitlist" class="plan-seal" data-plan="Monthly Protocol subscription &middot; USD 196" aria-label="Reserve the protocol"><span class="plan-seal-inner" aria-hidden="true">
+<svg class="plan-seal-ring" viewBox="0 0 300 300"><defs><path id="planSealPath" d="M150,22 a128,128 0 1,1 0,256 a128,128 0 1,1 0,-256"/></defs><text text-anchor="start" xml:space="preserve"><textPath href="#planSealPath" startOffset="0" textLength="786" lengthAdjust="spacingAndGlyphs">LIMITED EDITION FIRST DROP Q2 2027  RESERVE YOUR HONI<tspan font-style="italic">ORA</tspan> SUB &amp; GIFTS </textPath></text></svg>
+<picture><source media="(max-width:1000px)" srcset="bee-seal-badge-lite.png"><img class="plan-seal-img" src="bee-seal-badge.png" alt="" width="760" height="760" loading="lazy"></picture>
+</span></a>
       </div>
 
       <div class="plan" id="singlepack">
@@ -4173,7 +4283,7 @@ html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
         <span class="no-route sig">Enzyme route</span>
         <h4>Careflow<sup class="rn">&reg;</sup> Mango Fruit</h4>
         <b class="no-dose">300 mg</b>
-        <p>Organic, standardised mango fruit powder. The supplier says it activates SIRT1 and eNOS. Skin blood flow rose in a small pilot study.</p>
+        <p>Organic mango fruit powder that switched on eNOS and SIRT1 in lab tests. At 300 mg a day for four weeks, HbA1c fell against baseline.</p>
         <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/28187466/" target="_blank" rel="noopener noreferrer">Buchwald-Werner 2017 <span>Planta Med &middot; RCT &nearr;</span></a>
       </div>
       <div class="no-card">
@@ -4451,7 +4561,7 @@ html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
         <div class="name">Careflow<sup class="rn">&reg;</sup> Mango Fruit<i>Fytexia / Standardized Microcirculation</i></div>
         <div><span class="fn">Micro-vascular<small>Flow support</small></span></div>
         <div class="dose">300 mg</div>
-        <div class="mech">Organic, standardised mango fruit powder. The supplier says it activates SIRT1 and eNOS, which supports microcirculation. In a small pilot study of the supplier&rsquo;s mango powder at 100 mg, skin blood flow rose in healthy women.<br><a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/28187466/" target="_blank" rel="noopener noreferrer">Buchwald-Werner 2017 <span>Planta Med &middot; RCT &nearr;</span></a><a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/26584454/" target="_blank" rel="noopener noreferrer">Gerstgrasser 2015 <span>Planta Med &middot; RCT &nearr;</span></a><a class="cite sup" href="https://www.biotexia.com/en/dietary-supplements/metabolic-health/careflow-microcirculation/" target="_blank" rel="noopener noreferrer">Ingredient science <span>Biotexia &nearr;</span></a></div>
+        <div class="mech">Organic, standardised powder of whole Totapuri mango. In lab tests, digested Careflow raised active eNOS by 23% to 60% as the dose went up, and activated SIRT1. In a 4-week placebo-controlled trial of 75 adults, 300 mg a day lowered HbA1c against baseline (p=0.0028) and post-meal glucose by trend against placebo (p=0.0535). The blood-flow gain was clearest at 100 mg.<br><a class="cite" href="https://doi.org/10.1055/s-0043-103017" target="_blank" rel="noopener noreferrer">Buchwald-Werner 2017 <span>Planta Med &middot; RCT &nearr;</span></a><a class="cite" href="https://doi.org/10.1055/s-0035-1558219" target="_blank" rel="noopener noreferrer">Gerstgrasser 2015 <span>Planta Med &middot; RCT &nearr;</span></a><a class="cite sup" href="https://www.biotexia.com/en/dietary-supplements/metabolic-health/careflow-microcirculation/" target="_blank" rel="noopener noreferrer">Ingredient science <span>Biotexia &nearr;</span></a></div>
       </div>
 
       <div class="row mgrid compact">
@@ -4732,15 +4842,17 @@ html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
     <div class="livaux-box rv">
       <p class="eyebrow dim">Careflow<sup class="rn">&reg;</sup> &middot; Microcirculation</p>
       <h2 class="serif">Careflow<sup class="rn">&reg;</sup>: <em>Organic mango fruit for your smallest vessels.</em></h2>
-      <p class="lede">HONI<i>ORA</i> carries 300 mg of Careflow<sup class="rn">&reg;</sup> per serving, the daily dose its maker, Biotexia, recommends for its Care300 grade. In a 4-week placebo-controlled study of 75 healthy adults, the 300 mg arm showed a trend to lower post-meal glucose and lower HbA1c than at baseline, while the 100 mg arm showed the larger microcirculation gain. Careflow is a patented, organic and standardised mango fruit powder from Fytexia, part of the Biotexia group in France.<br><a class="cite" href="https://www.ingredientsnetwork.com/careflow-microcirculation-prod1293841.html" target="_blank" rel="noopener noreferrer">Ingredient listing <span>Ingredients Network &nearr;</span></a><a class="cite sup" href="https://www.biotexia.com/en/dietary-supplements/metabolic-health/careflow-microcirculation/" target="_blank" rel="noopener noreferrer">Ingredient science <span>Biotexia &nearr;</span></a></p>
+      <p class="lede">HONI<i>ORA</i> carries 300 mg of Careflow<sup class="rn">&reg;</sup> per serving, the daily dose Biotexia sets for its Organic Care300<sup class="rn">&reg;</sup> grade. Careflow is a patented, organic powder of whole Totapuri mango, grown in India and processed in Germany. It is made by Fytexia, part of the Biotexia group in France.<br><a class="cite" href="https://www.biotexia.com/en/dietary-supplements/metabolic-health/careflow-microcirculation/" target="_blank" rel="noopener noreferrer">Ingredient science <span>Biotexia &nearr;</span></a></p>
+      <p class="lede">Microcirculation is the network of your smallest blood vessels. It carries oxygen and nutrients into your tissues and clears waste out.</p>
 
       <ul class="prob-list">
-        <li><span class="x">01</span><div><strong>Aimed at microcirculation.</strong> <span class="d">The supplier states that Careflow activates the key metabolic enzymes SIRT1 and eNOS, to improve microcirculation and vascular function. eNOS is the enzyme that makes nitric oxide.</span></div></li>
-        <li><span class="x">02</span><div><strong>One acute and one chronic trial.</strong> <span class="d">The supplier lists one acute and one chronic published clinical trial. The trials cited here are <a href="https://pubmed.ncbi.nlm.nih.gov/28187466/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline">Buchwald-Werner 2017</a> and <a href="https://pubmed.ncbi.nlm.nih.gov/26584454/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline">Gerstgrasser 2015</a>, both in Planta Medica.</span></div></li>
-        <li><span class="x">03</span><div><strong>Part of the vascular stack.</strong> <span class="d">Careflow works with VasoDrive-AP<sup class="rn">&reg;</sup> on the enzyme route and vitAlign<sup class="rn">&reg;</sup> on cell redox signalling.</span></div></li>
+        <li><span class="x">01</span><div><strong>It switches on the enzymes that relax vessels.</strong> <span class="d">In lab tests on human blood-vessel cells, digested Careflow raised active eNOS, the enzyme that makes nitric oxide, by 23%, 42% and 60% as the dose went up. Separate lab work showed it activates SIRT1 and AMPK. Biotexia also reports it blocks COX-1 and COX-2, enzymes that make vessels tighten. These are lab results, not human trials.</span> <a class="cite" href="https://doi.org/10.1055/s-0035-1558219" target="_blank" rel="noopener noreferrer">Supporting research <span>Gerstgrasser et al. 2015 &nearr;</span></a></div></li>
+        <li><span class="x">02</span><div><strong>Four weeks at 300 mg.</strong> <span class="d">In a placebo-controlled trial of 75 healthy adults, 300 mg a day for four weeks lowered HbA1c against baseline (p=0.0028) and post-meal glucose by trend against placebo (p=0.0535). In 11 people whose vessels responded poorly after a high-sugar drink, 300 mg improved that response (p=0.0408).</span> <a class="cite" href="https://doi.org/10.1055/s-0043-103017" target="_blank" rel="noopener noreferrer">Supporting research <span>Buchwald-Werner et al. 2017 &nearr;</span></a></div></li>
+        <li><span class="x">03</span><div><strong>Blood flow, clearest at 100 mg.</strong> <span class="d">In the same trial, blood flow after a short cuff test rose significantly at 100 mg (p=0.025) and only slightly at 300 mg. In an earlier single-dose study of 10 women, 100 mg raised skin blood flow by 54% within hours (p=0.0157). 300 mg raised it by 35%, which was not significant.</span></div></li>
+        <li><span class="x">04</span><div><strong>Part of the vascular stack.</strong> <span class="d">Careflow works with VasoDrive-AP<sup class="rn">&reg;</sup> on the enzyme route and vitAlign<sup class="rn">&reg;</sup> on cell redox signalling.</span></div></li>
       </ul>
 
-      <p class="small" style="margin-top:30px;max-width:78ch">Ingredient-level information, see the <a href="#evidence-note" style="color:inherit;text-decoration:underline">evidence note</a>. The mechanism, the organic status and the trial count are supplier statements from the Ingredients Network listing, to be confirmed on a certificate of analysis. The listing gives no mangiferin content or mango species. The cited studies tested a related mango fruit powder from the same supplier group (sold as Careless), and confirmation that it is the same material as Careflow is pending. No cited trial is of the finished HONI<i>ORA</i> formula. Careflow is a trade mark of its owner.</p>
+      <p class="small" style="margin-top:30px;max-width:78ch">Ingredient-level evidence, see the <a href="#evidence-note" style="color:inherit;text-decoration:underline">evidence note</a>. Both trials were small and involved researchers from Vital Solutions, which sold the powder at the time under the name Careless&trade;. Biotexia now cites both as Careflow trials. HbA1c usually takes about three months to shift, so a four-week drop against baseline is an early signal, not proof. The 300 mg blood-flow results did not reach significance. The lab work on SIRT1 and AMPK is R&ouml;chter et al., <em style="font-style:italic">Agro Food Industry Hi-Tech</em> 2015. None of these is a trial of the finished HONI<i>ORA</i> formula. Careflow and Care300 are trade marks of Fytexia.</p>
     </div>
   </div>
 </section>
@@ -6111,6 +6223,23 @@ html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
           var npad = parseFloat(getComputedStyle(el).paddingTop) || 0;
           return Math.max(0, el.getBoundingClientRect().top + window.scrollY + npad - (hdr.getBoundingClientRect().bottom + 12));
         }
+        /* v47 #store (RESERVE PROTOCOL hex and other store links): land with the PRE-LAUNCH eyebrow ~120px under the nav bar on desktop, 24px on phones (per the user's screengrab) */
+        if (hash === '#store'){
+          var seb = el.querySelector('.eyebrow');
+          var spad = parseFloat(getComputedStyle(el).paddingTop) || 0;
+          var sgap = window.innerWidth > 1000 ? 120 : 24;
+          var sEbOff = seb ? (seb.getBoundingClientRect().top - el.getBoundingClientRect().top) : spad;
+          return Math.max(0, el.getBoundingClientRect().top + window.scrollY + sEbOff - (hdr.getBoundingClientRect().bottom + sgap));
+        }
+        /* v42 #lactospore: land with the white LactoSpore box centred in the space under the nav bar (per the user's screengrab) */
+        if (hash === '#lactospore'){
+          var lpad = parseFloat(getComputedStyle(el).paddingTop) || 0;
+          var lbox = el.querySelector('.livaux-box');
+          var lh = lbox ? lbox.offsetHeight : 0;
+          var navB = hdr.getBoundingClientRect().bottom;
+          var lgap = Math.max(16, (window.innerHeight - navB - lh) / 2);
+          return Math.max(0, el.getBoundingClientRect().top + window.scrollY + lpad - (navB + lgap));
+        }
         if (hash === '#mitoq' || hash === '#livaux' || hash === '#cgp' || hash === '#feiolix' || hash === '#vasodrive' || hash === '#careflow' || hash === '#pomma'){
           var mpad = parseFloat(getComputedStyle(el).paddingTop) || 0;
           return Math.max(0, el.getBoundingClientRect().top + window.scrollY + mpad - (hdr.getBoundingClientRect().bottom + 1));
@@ -6279,8 +6408,8 @@ html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
        map:"https://www.google.com/maps/search/?api=1&query=Tatua+Co-operative+Dairy+Company%2C+Morrinsville%2C+New+Zealand",
        papers:[{t:"PMID 23566677",u:"https://pubmed.ncbi.nlm.nih.gov/23566677/"}]},
       {k:["careflow","mango","mangiferin"],
-       a:"Careflow is an organic, standardised mango fruit powder from Fytexia, part of the Biotexia group in France. The supplier says it activates SIRT1 and eNOS, which supports microcirculation. In a small pilot study of the supplier's mango powder at 100 mg, skin blood flow rose in healthy women. Mango itself (Mangifera indica) is native to South Asia, especially Myanmar and eastern India, cultivated there for thousands of years before spreading through the tropical world. It's a member of the cashew family, and mangiferin is one of the polyphenols the fruit and its peel are naturally rich in. Careflow Mango Fruit is dosed at 300 mg, the daily dose Biotexia recommends for its Care300 grade.",
-       src:"Manufacturer: Fytexia, headquartered in Béziers, in the south of France, now part of the Biotexia group alongside ABbiotek Health and Anzchem. They don't publish an exact mango growing region, so I won't guess at one.",
+       a:"Careflow is a patented, organic powder of whole Totapuri mango grown in India, made by Fytexia, part of the Biotexia group in France. HONI<i>ORA</i> carries 300 mg per serving, the daily dose Biotexia sets for its Care300 grade. In lab tests it switched on eNOS, the enzyme that makes nitric oxide, and SIRT1. In a 4-week trial of 75 adults, 300 mg a day lowered HbA1c against baseline and post-meal glucose by trend against placebo. The clearest blood-flow gains in the trials came at 100 mg. Mango itself (Mangifera indica) is native to South Asia and has been grown there for thousands of years. It is a member of the cashew family, and mangiferin is one of its natural polyphenols.",
+       src:"Manufacturer: Fytexia, trading as Biotexia, Vendres, France. Totapuri mango from India, processed in Germany. Studies: Gerstgrasser et al., Planta Med 2015; Buchwald-Werner et al., Planta Med 2017.",
        map:"https://www.google.com/maps/search/?api=1&query=B%C3%A9ziers%2C+France",
        papers:[{t:"Buchwald-Werner 2017, Planta Med",u:"https://pubmed.ncbi.nlm.nih.gov/28187466/"},{t:"Gerstgrasser 2015, Planta Med",u:"https://pubmed.ncbi.nlm.nih.gov/26584454/"}]},
       {k:["vitalign","s7","nitric oxide","no matrix","seven plant","seven plants"],
@@ -6785,7 +6914,7 @@ html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
   track.appendChild(clone);
 
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var BASE_SPEED = 0.065;      /* px/ms forward drift = a slightly slower 65px/s reading speed */
+  var BASE_SPEED = 0.085; /* v39: was 0.065 (65px/s), now 85px/s */ var _bs_note = 0;      /* px/ms forward drift = a slightly slower 65px/s reading speed */
   var MAX_FLING  = 3.2;        /* px/ms cap on drag-release momentum, so a hard flick can't run away */
   var FRICTION   = 0.0025;     /* momentum decay factor applied per second */
 
@@ -6818,9 +6947,7 @@ html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
   var finishIntro = function(){
     clearIntroTimers();
     track.style.transition = 'none';
-    track.style.transform = '';
-    introDone = true;
-    traveled = 0;
+    introDone = true; /* v33: keep the held position, drift continues from it */
   };
   var introHandoff = function(e){
     if (e.propertyName && e.propertyName !== 'transform') return;
@@ -6851,22 +6978,22 @@ html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
            correct even if this runs again after any transform is already
            applied, since a translateX shifts both rects by the same amount. */
         var leadIn = fr.left - track.getBoundingClientRect().left;
-        var offset = (window.innerWidth - fw) / 2 - leadIn;
+        /* v25: a message wider than the screen starts 24px in from the left instead of centring, so its opening words are on screen */
+        /* v33: the opening words start just left of the centred nav logo, so "A GOOD MORNING" sits under HONIORA (per the user's screengrab) */
+        /* v38: centre "A GOOD MORNING ... ACTIVATED NECTAR" on screen; the spacer after it keeps "creatine-driven" off screen until the scroll starts */
+        var head = first.querySelector('.hmsg-head');
+        var hw = head ? head.getBoundingClientRect().width : fw;
+        var startX = Math.max(16, (window.innerWidth - hw) / 2);
+        /* v33: hold inside the loop itself, so the end of the previous message shows to the left, as in the screengrab; drift then carries on from here with no glide */
+        measure();
+        traveled = leadIn - startX;
         track.style.transition = 'none';
-        track.style.transform = 'translateX(' + offset + 'px)';
+        render();
       };
       centerFirst();
       if (document.fonts && document.fonts.ready) document.fonts.ready.then(centerFirst);
 
-      introTimerA = setTimeout(function(){
-        requestAnimationFrame(function(){
-          track.style.transition = 'transform 1.1s cubic-bezier(.65,0,.35,1)';
-          track.style.transform = 'translateX(0)';
-        });
-        track.addEventListener('transitionend', introHandoff);
-        /* belt and braces: if transitionend never fires for any reason, start anyway */
-        introTimerB = setTimeout(function(){ if (!introDone) finishIntro(); }, 1400);
-      }, 8000);
+      introTimerA = setTimeout(function(){ if (!introDone) finishIntro(); }, 8000);
     } else {
       introDone = true;
     }
@@ -8377,7 +8504,7 @@ html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
 })();
 </script>
 <script>
-(function(){var v=document.querySelector('.hero .hero-bg');if(!v)return;var R=1; /* slow motion (4x, interpolated) and the fade-to-start loop are baked into hero-honey-bg.* */
+(function(){var v=document.querySelector('.hero .hero-bg');if(!v)return;var R=0.35; /* v20: tablet video slowed further, from 0.5 to 0.35 */
 function s(){try{v.defaultPlaybackRate=R;v.playbackRate=R;}catch(e){}}
 s();['loadedmetadata','loadeddata','play','playing','ratechange'].forEach(function(e){v.addEventListener(e,function(){if(v.playbackRate!==R)s();});});
 })();
@@ -8435,6 +8562,7 @@ s();['loadedmetadata','loadeddata','play','playing','ratechange'].forEach(functi
     var tube = cont && cont.querySelector('.hero-tube-shot');
     var actives = cont && cont.querySelector('.hero-actives');
     var root = box && box.querySelector('.reo-t');
+    var swap = document.getElementById('heroSwap');
     if (!box || !cont || !tube || !root) return;
     var mqLite = window.matchMedia('(max-width:1000px)');
     var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -8481,6 +8609,15 @@ s();['loadedmetadata','loadeddata','play','playing','ratechange'].forEach(functi
       var top = oldTopEdge + 50 + box.offsetHeight / 2;
       box.style.top = Math.round(top) + 'px';
       box.classList.add('placed');
+      /* v40: the swap line sits under the pack, same width band as the te reo line */
+      if (swap){
+        swap.style.left = Math.round(left) + 'px';
+        swap.style.width = Math.round(bw) + 'px';
+        var swapFs = Math.max(15, Math.min(26, fs0 * 0.95));
+        swap.style.fontSize = swapFs.toFixed(1) + 'px';
+        /* v43: dropped 4 lines (of its own line height) lower */
+        swap.style.top = Math.round(o.y + tr.height * 0.97 + 4 * 1.45 * swapFs) + 'px';
+      }
       return true;
     }
     function show(k){
@@ -8491,6 +8628,7 @@ s();['loadedmetadata','loadeddata','play','playing','ratechange'].forEach(functi
       var prev = box.querySelector('.reo-c.cur'); if (prev) prev.classList.remove('cur');
       if (k > 0 && k < N && !reduced) chars[k - 1].classList.add('cur');
       shown = k;
+      if (swap && k >= N && !swap.classList.contains('on')) setTimeout(function(){ swap.classList.add('on'); }, reduced ? 0 : 450);
     }
     function tick(){
       if (!place()) return;
@@ -8516,7 +8654,13 @@ s();['loadedmetadata','loadeddata','play','playing','ratechange'].forEach(functi
   var d=document.documentElement;
   try{
     if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.remove('ht-wait');return;}
-    var els=Array.prototype.slice.call(document.querySelectorAll('#precedeLeadMobile,#precedeLead,#heroWordmark,.hero .hero-tag,.hero-solution-desktop,.hero-precede.rv .precede-solution-wrap,.hsr-lead,.hsr-body,#aliveZoom'));
+    /* v22: hold the video on its first (blue) frame until "HoniOra's morning solution" starts typing */
+    var vid=document.querySelector('.hero .hero-bg'),held=!!vid;
+    var hold=function(){if(!held)return;try{vid.pause();if(vid.currentTime>0.01)vid.currentTime=0;}catch(e){}};
+    var release=function(){if(!held)return;held=false;var hb=document.querySelector('.hero .hero-bg-hold');if(hb)hb.classList.add('off');if(!vid)return;vid.removeEventListener('play',hold);vid.removeEventListener('playing',hold);try{var pr=vid.play();if(pr&&pr.catch)pr.catch(function(){});}catch(e){}};
+    window.__heroVideoRelease=release;
+    if(vid){vid.addEventListener('play',hold);vid.addEventListener('playing',hold);hold();setTimeout(release,45000);}
+    var els=Array.prototype.slice.call(document.querySelectorAll('#precedeLeadMobile,#precedeLead,#heroWordmark,.hero .hero-tag,.hero-solution-desktop,.hero-precede.rv .precede-solution-wrap,.hsr-lead,.hsr-body,.hsr-nourish,#aliveZoom'));
     function split(node){
       Array.prototype.slice.call(node.childNodes).forEach(function(c){
         if(c.nodeType===3){
@@ -8535,7 +8679,7 @@ s();['loadedmetadata','loadeddata','play','playing','ratechange'].forEach(functi
     els.forEach(split);
     d.classList.remove('ht-wait');
     function vis(el){var r=el.getBoundingClientRect();if(!r.width&&!r.height)return false;var cs=getComputedStyle(el);return cs.visibility!=='hidden'&&cs.display!=='none';}
-    var CH=70,GAP=450;
+    var CH=115,GAP=750,LONG=2200; /* v21: 2.2 s pause after MANUKA CREATINE PROTOCOL and after 60 SECONDS. */ /* v20: slower type-on (was 70 ms per letter, 450 ms between lines) */
     function run(){
       var q=[];
       els.forEach(function(el){
@@ -8544,22 +8688,23 @@ s();['loadedmetadata','loadeddata','play','playing','ratechange'].forEach(functi
           if(vis(el)&&c.getClientRects().length&&getComputedStyle(c).visibility==='visible')live.push(c);
           else c.classList.add('on');
         });
-        if(live.length)q.push(live);
+        if(live.length){live.solution=el.matches('.hsr-lead,.hero-solution-desktop,.precede-solution-wrap');live.relEnd=el.classList.contains('hero-tag');live.gap=(el.classList.contains('hero-tag')||el.classList.contains('hsr-body'))?LONG:GAP;q.push(live);}
       });
       var b=0,i=0,cur=null;
       function step(){
         if(cur)cur.classList.remove('cur');
-        if(b>=q.length)return;
+        if(b>=q.length){release();return;}
         var cs=q[b];
-        if(i>=cs.length){b++;i=0;cur=null;setTimeout(step,GAP);return;}
-        cur=cs[i++];cur.classList.add('on','cur');
+        if(i===0&&cs.solution)release();
+        if(i>=cs.length){var g=cs.gap||GAP;b++;i=0;cur=null;setTimeout(step,g);return;}
+        cur=cs[i++];cur.classList.add('on','cur');if(cs.relEnd&&i>=cs.length)release(); /* v27: video starts as the word PROTOCOL completes */
         setTimeout(step,CH);
       }
       step();
     }
     function go(){setTimeout(run,3000);}
     if(document.readyState==='complete')go();else window.addEventListener('load',go,{once:true});
-  }catch(e){d.classList.remove('ht-wait');document.querySelectorAll('.ht-c').forEach(function(c){c.classList.add('on');});console.warn('[hero type-on] skipped',e);}
+  }catch(e){d.classList.remove('ht-wait');document.querySelectorAll('.ht-c').forEach(function(c){c.classList.add('on');});if(window.__heroVideoRelease)window.__heroVideoRelease();console.warn('[hero type-on] skipped',e);}
 })();
 </script>
 </body>
