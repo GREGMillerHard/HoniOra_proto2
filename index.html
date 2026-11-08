@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>/* v52: keep screen 2 (stick pack, te reo line, ingredient lines) hidden until the page layout has settled, so nothing flashes onto screen 1 while loading */
+(function(){var d=document.documentElement;d.classList.add('hl-settle');var done=false;function off(){if(done)return;done=true;d.classList.remove('hl-settle');}
+setTimeout(off,5000);window.addEventListener('load',function(){var f=(document.fonts&&document.fonts.ready)?document.fonts.ready:Promise.resolve();f.then(function(){requestAnimationFrame(function(){requestAnimationFrame(function(){setTimeout(off,250);});});});});})();</script>
 <script>/* hero titles type-on: hide them before first paint, failsafe reveal at 9 s */
 (function(){try{if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var d=document.documentElement;d.classList.add('ht-wait');setTimeout(function(){d.classList.remove('ht-wait');},9000);}catch(e){}})();</script>
 <meta charset="utf-8">
@@ -3337,6 +3340,28 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
 .hero .ibandhost{isolation:isolate}
 .hero .ibandhost::before{content:"";position:absolute;top:0;bottom:0;left:0;width:100vw;z-index:-1;pointer-events:none;
   background:radial-gradient(ellipse 55% 60% at 50% 42%,#FFFBEF 0%,#F8EBC8 55%,#EED79C 100%)}
+/* v52: screen 2 pieces stay invisible (layout kept) until html.hl-settle is removed */
+@media(min-width:1001px){html.hl-settle :is(.hero-tube-shot,#heroReo,#heroSwap,.hero-actives,.hero-keylines,.hero-meta,.hero-cta,.tube-band){visibility:hidden !important}}
+/* v53: Nitric Oxide screen in "Deep Claret": dark wine page, claret boxes, cream and gold type */
+#nitric-oxide{background:linear-gradient(#3A0C17,#260810) !important}
+#nitric-oxide .no-why{background:rgba(232,160,174,.3) !important;border-color:rgba(232,160,174,.3) !important}
+#nitric-oxide .no-why-item{background:#4A1421 !important}
+#nitric-oxide h2,#nitric-oxide h3:not(.no-card h3),#nitric-oxide .no-why-item h3{color:#F6EEDC !important}
+#nitric-oxide .lede,#nitric-oxide .no-why-item p,#nitric-oxide p:not(.no-card p),#nitric-oxide .small{color:rgba(246,238,220,.78) !important}
+#nitric-oxide .eyebrow,#nitric-oxide .no-n{color:#E2B24A !important}
+#nitric-oxide > .wrap > .cite,#nitric-oxide .cite:not(.no-card .cite){color:#E2B24A !important;border-color:rgba(226,178,74,.5) !important}
+#nitric-oxide b:not(.no-card b),#nitric-oxide strong:not(.no-card strong){color:#E2B24A}
+/* v55: Nitric Oxide wave lines are now an inline SVG: they slowly "breathe" (open out and settle every 6 s, like a vessel widening) while soft pink highlights flow along each line */
+#nitric-oxide{position:relative;isolation:isolate}
+#nitric-oxide > .wrap{position:relative;z-index:1}
+#nitric-oxide .no-waves{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;overflow:visible}
+#nitric-oxide .no-waves path{fill:none;vector-effect:non-scaling-stroke}
+#nitric-oxide .no-waves-base path{stroke:#E8A0AE;stroke-opacity:.16;stroke-width:1.6}
+#nitric-oxide .no-waves-glow path{stroke:#F3B8C3;stroke-opacity:.6;stroke-width:2.2;stroke-linecap:round;stroke-dasharray:55 945;stroke-dashoffset:1000;animation:noFlow 8s linear infinite}
+#nitric-oxide .no-waves-breathe{transform-box:view-box;transform-origin:50% 50%;animation:noBreathe 6s ease-in-out infinite}
+@keyframes noFlow{from{stroke-dashoffset:1000}to{stroke-dashoffset:0}}
+@keyframes noBreathe{0%,100%{transform:scaleY(.9)}50%{transform:scaleY(1.08)}}
+@media(prefers-reduced-motion:reduce){#nitric-oxide .no-waves-breathe,#nitric-oxide .no-waves-glow path{animation:none}#nitric-oxide .no-waves-glow{display:none}}
 </style>
 </head>
 <body>
@@ -3551,7 +3576,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
            rather than letting the tag/stats/CTA lines below it shift up to fill it.
            Mobile/lite (<=1000px) is untouched: this stays display:none there and
            the original pair renders normally, visible, in its usual spot. -->
-      <div class="hero-precede hero-solution-desktop"><span class="precede-solution" id="precedeSolutionDesktop">Honi<i>Ora</i>'s morning solution:</span><br><span class="precede-body precede-fit" id="precedeFitDesktop">1 effervescent stick pack &amp; 1 BIG glass of water &amp; Ready in 60 seconds.</span></div>
+      <div class="hero-precede hero-solution-desktop"><span class="precede-solution" id="precedeSolutionDesktop">Honi<i>Ora</i>'s morning solution:</span><br><span class="precede-body precede-fit" id="precedeFitDesktop">1 effervescent stick pack &amp; 1 BIG glass of water = Ready in 60 seconds.</span></div>
       <img class="hero-tube-shot" src="sp-single-cutout.png" alt="HONIORA gold stick pack" width="1117" height="490" loading="lazy">
       <!-- v40 phone copy of the swap line sits under the pack (desktop copy is #heroSwap) -->
       <p class="hero-swap-m rv">Swap out the messy powder scoops and tedious pills for our deliciously simple, naturally potent morning protocol.</p>
@@ -3559,10 +3584,10 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
     <div class="wrap hero-grid">
     <div>
       <div class="hero-copy-shift">
-      <div class="hero-precede rv"><table class="precede-table" role="presentation"><tbody><tr><td><span class="precede-rest"><span class="precede-lead-inline" id="precedeLeadInline"><span class="precede-lead" id="precedeLead">Introducing</span> <br></span><span class="precede-solution-wrap"> <span class="precede-solution">Honi<i>Ora</i>'s morning solution:</span> <br> <span class="precede-body precede-fit" id="precedeFit">1 effervescent stick pack &amp; 1 BIG glass of water &amp; Ready in 60 seconds.</span></span></span></td></tr></tbody></table></div>
+      <div class="hero-precede rv"><table class="precede-table" role="presentation"><tbody><tr><td><span class="precede-rest"><span class="precede-lead-inline" id="precedeLeadInline"><span class="precede-lead" id="precedeLead">Introducing</span> <br></span><span class="precede-solution-wrap"> <span class="precede-solution">Honi<i>Ora</i>'s morning solution:</span> <br> <span class="precede-body precede-fit" id="precedeFit">1 effervescent stick pack &amp; 1 BIG glass of water = Ready in 60 seconds.</span></span></span></td></tr></tbody></table></div>
       <h1 class="serif rv hero-logo" id="heroWordmark">HONI<span class="wm-ora">ORA</span></h1>
       <p class="hero-tag rv">M&#256;NUKA CREATINE PROTOCOL</p>
-      <div class="hero-solution-right"><span class="hsr-lead">Honi<i>Ora</i>'s morning solution:</span><span class="hsr-body">1 effervescent stick pack<br>&amp;<br>1 BIG glass of water<br>&amp;<br>Ready<br>in<br>60 seconds.</span><span class="hsr-nourish">NOURISH YOUR BODY<br>UPGRADE YOUR WELLNESS</span><span class="hsr-alive"><span class="hsr-alive-in" id="aliveZoom">CARPE<br class="mb"> DIEM</span></span></div>
+      <div class="hero-solution-right"><span class="hsr-lead">Honi<i>Ora</i>'s morning solution:</span><span class="hsr-body">1 effervescent stick pack<br>&amp;<br>1 BIG glass of water<br>=<br>Ready<br>in<br>60 seconds.</span><span class="hsr-nourish">NOURISH YOUR BODY<br>UPGRADE YOUR WELLNESS</span><span class="hsr-alive"><span class="hsr-alive-in" id="aliveZoom">CARPE<br class="mb"> DIEM</span></span></div>
       </div>
       <ul class="keyact flat hero-actives">
         <li>MGO 850+ M&#257;nuka Honey crystals</li>
@@ -4239,6 +4264,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
 </section>
 
 <section class="sec" id="nitric-oxide">
+  <svg class="no-waves" viewBox="0 0 1440 700" preserveAspectRatio="none" aria-hidden="true"><g class="no-waves-breathe"><g class="no-waves-base"><path d="M0 120C260 40 420 220 720 130S1180 40 1440 140"/><path d="M0 200C260 120 420 300 720 210S1180 120 1440 220"/><path d="M0 280C260 200 420 380 720 290S1180 200 1440 300"/><path d="M0 360C260 280 420 460 720 370S1180 280 1440 380"/><path d="M0 440C260 360 420 540 720 450S1180 360 1440 460"/><path d="M0 520C260 440 420 620 720 530S1180 440 1440 540"/></g><g class="no-waves-glow"><path pathLength="1000" style="animation-delay:-0.0s" d="M0 120C260 40 420 220 720 130S1180 40 1440 140"/><path pathLength="1000" style="animation-delay:-1.3s" d="M0 200C260 120 420 300 720 210S1180 120 1440 220"/><path pathLength="1000" style="animation-delay:-2.6s" d="M0 280C260 200 420 380 720 290S1180 200 1440 300"/><path pathLength="1000" style="animation-delay:-3.9s" d="M0 360C260 280 420 460 720 370S1180 280 1440 380"/><path pathLength="1000" style="animation-delay:-5.2s" d="M0 440C260 360 420 540 720 450S1180 360 1440 460"/><path pathLength="1000" style="animation-delay:-6.5s" d="M0 520C260 440 420 620 720 530S1180 440 1440 540"/></g></g></svg>
   <div class="wrap">
     <div class="sec-head rv">
       <p class="eyebrow dim">Nitric Oxide &middot; The Vessel Signal</p>
@@ -6914,7 +6940,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
   track.appendChild(clone);
 
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var BASE_SPEED = 0.085; /* v39: was 0.065 (65px/s), now 85px/s */ var _bs_note = 0;      /* px/ms forward drift = a slightly slower 65px/s reading speed */
+  var BASE_SPEED = 0.12; /* v56: 120px/s (v39 was 85, original 65) */ var _bs_note = 0;      /* px/ms forward drift = a slightly slower 65px/s reading speed */
   var MAX_FLING  = 3.2;        /* px/ms cap on drag-release momentum, so a hard flick can't run away */
   var FRICTION   = 0.0025;     /* momentum decay factor applied per second */
 
@@ -8702,7 +8728,7 @@ s();['loadedmetadata','loadeddata','play','playing','ratechange'].forEach(functi
       }
       step();
     }
-    function go(){setTimeout(run,3000);}
+    function go(){setTimeout(run,800);} /* v51: typing starts 0.8 s after load (was 3 s) */
     if(document.readyState==='complete')go();else window.addEventListener('load',go,{once:true});
   }catch(e){d.classList.remove('ht-wait');document.querySelectorAll('.ht-c').forEach(function(c){c.classList.add('on');});if(window.__heroVideoRelease)window.__heroVideoRelease();console.warn('[hero type-on] skipped',e);}
 })();
