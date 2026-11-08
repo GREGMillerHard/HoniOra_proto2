@@ -1304,13 +1304,17 @@ footer .brand{font-size:15px;letter-spacing:.42em}
 #vasodrive{min-height:min(calc(100vw / 1.16),1400px);display:flex;align-items:center}
 #vasodrive .wrap{width:100%}
 /* the splash is pale, so this box is lighter and unblurred than the others, otherwise it hides the image */
-#vasodrive .livaux-box{background:rgba(255,255,255,.5);backdrop-filter:none;-webkit-backdrop-filter:none}
+#vasodrive .livaux-box{background:rgba(255,255,255,.5);backdrop-filter:none;-webkit-backdrop-filter:none;border-left:0}
 .vaso-lactose{margin-top:26px;padding:18px 22px;border-left:2px solid var(--gold);background:rgba(0,0,0,.04);border-radius:4px;font-size:15px;line-height:1.65}
 .vaso-lactose b{display:block;margin-bottom:4px;letter-spacing:.08em;text-transform:uppercase;font-size:11px}
 .vaso-allergy{display:block;margin-top:10px;font-size:13.5px;line-height:1.6;opacity:.85}
 @media(max-width:1000px){
   #vasodrive{background-image:url("vasodrive_bg-lite.jpg")}
 }
+/* (user request v65) VasoDrive bg: Gold Spotlight multiplied under the milk splash, panel tinted to match */
+#vasodrive{background-image:url("vasodrive_bg.jpg"),radial-gradient(ellipse 60% 70% at 50% 45%,#FFFBEF 0%,#F8EBC8 50%,#EED79C 100%);background-size:contain,cover;background-position:center,center;background-repeat:no-repeat,no-repeat;background-blend-mode:multiply}
+#vasodrive .livaux-box{background:rgba(255,251,239,.42)}
+@media(max-width:1000px){#vasodrive{background-image:url("vasodrive_bg-lite.jpg"),radial-gradient(ellipse 60% 70% at 50% 45%,#FFFBEF 0%,#F8EBC8 50%,#EED79C 100%)}}
 /* (user request) Careflow section: full-bleed mango backdrop, same treatment as #pomma. */
 #careflow{background-image:url("careflow_bg.jpg");background-size:cover;background-position:center}
 #oxxynea{background-image:url("oxxynea_bg.jpg");background-size:cover;background-position:center}
@@ -4807,8 +4811,8 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
 
         <ul class="prob-list">
           <li><span class="x">01</span><div><strong>Works on the enzyme route.</strong> <span class="d">VasoDrive-AP supports arterial elasticity by inhibiting an enzyme (ACE) that leads to the constriction of blood vessels.*</span></div></li>
-          <li><span class="x">02</span><div><strong>Absorbed intact.</strong> <span class="d">The supplier reports that the precise configuration of these peptides protects them from breakdown in the human digestive system, so they are absorbed intact.*</span></div></li>
-          <li><span class="x">03</span><div><strong>30 or more published studies.</strong> <span class="d">That includes over a dozen double-blind, placebo-controlled human trials. The supplier reports an effect within 3 to 4 weeks in multiple human studies.*</span></div></li>
+          <li><span class="x">02</span><div><strong>Absorbed intact.</strong> <span class="d">The precise configuration of these peptides helps them resist breakdown in the human digestive system, so they reach the bloodstream intact.*</span></div></li>
+          <li><span class="x">03</span><div><strong>30 or more published studies.</strong> <span class="d">That includes over a dozen double-blind, placebo-controlled human trials. Multiple human studies saw an effect within 3 to 4 weeks.*</span></div></li>
         </ul>
 
         <p class="vaso-lactose"><b>Lactose</b>While it is made from milk protein, the lactose levels in VasoDrive-AP (AmealPeptide) are undetectable (under .05%), so it is considered safe for those with lactose intolerance.*<span class="vaso-allergy">Lactose intolerance and milk allergy are different conditions. Lactose is a milk sugar. An allergy is a reaction to milk protein, and VasoDrive-AP is made from casein, a milk protein. It is not suitable for anyone with a milk or dairy allergy.</span></p>
