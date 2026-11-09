@@ -3417,6 +3417,18 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
 @media(max-width:1000px){#hytolive{background-image:url("hytolive_bg-lite.jpg")}}
 #glp1 .glp-also{max-width:78ch;margin:34px auto 0;text-align:center;font-size:15px;line-height:1.65}
 #glp1 .glp-also b{font-weight:600}
+/* (user request v122) VIB intro: wider column so each of its three parts sits on one line on desktop */
+@media (min-width:1001px){#vib .lede{max-width:none !important;width:min(1440px,96vw);position:relative;left:50%;translate:-50% 0;font-size:min(25.2px,1.66vw) !important}}
+/* (user request v124) protocol: 4 rows instead of 4 columns. Desktop: phase label left, actives right in two columns */
+.proto{grid-template-columns:1fr !important}
+@media (min-width:1001px){
+  .proto .phase{display:grid;grid-template-columns:minmax(200px,250px) 1fr;grid-template-rows:auto auto 1fr;column-gap:clamp(28px,4vw,64px);align-items:start}
+  .proto .phase .ph{grid-column:1;grid-row:1}
+  .proto .phase h3{grid-column:1;grid-row:2;white-space:normal}
+  .proto .phase .when{grid-column:1;grid-row:3;margin-bottom:0}
+  .proto .phase ul{grid-column:2;grid-row:1 / span 3;display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(24px,3vw,44px);border-top:0}
+  .proto .phase li:nth-child(1),.proto .phase li:nth-child(2){border-top:1px solid var(--line)}
+}
 </style>
 </head>
 <body>
@@ -3517,12 +3529,12 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
     <div class="burger-drop burger-drop-right" id="burgerDropRight">
       <a href="#matrix">Honi<i>Ora</i> Stack</a>
       <a href="#triad">Four Systems</a>
-      <a href="#ritual">Protocol</a>
+      <a href="#ritual">Ritual</a>
+      <a href="#protocol">Protocol</a>
       <a href="#glp1">Natural GLP-1</a>
       <a href="#nitric-oxide">Nitric Oxide</a>
       <a href="#vib">The VIB bee</a>
       <a href="#taste">Taste</a>
-      <a href="#pack">Format</a>
       <a href="#rita">Rita Rocks</a>
       <a href="#lemon">Lemonwater?</a>
       <a href="#honiblogtop">HoniBlog</a>
@@ -3697,7 +3709,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
 <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="eriomin_lemon-lite.webp"><img width="820" height="820" src="eriomin_lemon.webp" alt="Eriomin lemon flavonoid extract" loading="lazy"></picture><figcaption class="icap"><b>Eriomin<sup class="rn">&reg;</sup> Lemon Flavonoid</b><s>200 mg</s><u class="ifn">GLP-1 SUPPORT</u><i>A standardised eriocitrin extract with its own pathway to your own GLP-1, <a href="#glp1" style="color:inherit;text-decoration:underline">see how</a>.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="cGP-Pro_blackcurrant-lite.webp"><img width="820" height="820" src="cGP-Pro_blackcurrant.webp" alt="Braincurrant New Zealand blackcurrant" loading="lazy"></picture><figcaption class="icap"><b>Braincurrant<sup class="rn">&reg;</sup></b><s>300 mg NZ</s><u class="ifn">FOCUS &amp; MOOD</u><i>A freeze-dried whole New Zealand blackcurrant powder from Anagenix, naturally rich in anthocyanins. Natural support for focus, memory and mood balance.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="careflow_mango-lite.webp"><img width="820" height="820" src="careflow_mango.webp" alt="Careflow organic mango fruit powder" loading="lazy"></picture><figcaption class="icap"><b>Careflow<sup class="rn">&reg;</sup> Mango Fruit</b><s>100 mg</s><u class="ifn">MICROCIRCULATION</u><i>Organic powder of whole Totapuri mango from India. In lab tests it switched on eNOS, the enzyme that makes nitric oxide, and SIRT1. At 100 mg a day, blood flow in the smallest vessels rose within hours and again after four weeks of daily use. <a href="#careflow" style="color:inherit;text-decoration:underline">See the trials</a>.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="hytolive_bev_olive-lite.webp"><img width="820" height="820" src="hytolive_bev_olive.webp" alt="Hytolive Bev olive fruit extract" loading="lazy"></picture><figcaption class="icap"><b>Hytolive<sup class="rn">&reg;</sup> Bev Olive Extract</b><s>300 mg</s><u class="ifn">BLOOD LIPID PROTECTION</u><i>An olive fruit extract built for drinks, from Alvinesa in Spain, standardised to 2% hydroxytyrosol. At this dose HONI<i>ORA</i> delivers 6&nbsp;mg of hydroxytyrosol per serving, above the 5&nbsp;mg/day threshold behind the EFSA claim that olive polyphenols help protect blood lipids from oxidative stress.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="hytolive_bev_olive-lite.webp"><img width="820" height="820" src="hytolive_bev_olive.webp" alt="Hytolive Bev olive fruit extract" loading="lazy"></picture><figcaption class="icap"><b>Hytolive<sup class="rn">&reg;</sup> Bev Olive Extract</b><s>300 mg</s><u class="ifn">BLOOD LIPID PROTECTION</u><i>An olive fruit extract built for drinks, from Alvinesa in Spain, standardised to 2% hydroxytyrosol. At this dose HONI<i>ORA</i> delivers 6&nbsp;mg of hydroxytyrosol per serving, the olive polyphenol behind EFSA&rsquo;s blood lipid claim for olive oil.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="Kaneka Ubiquinol" loading="lazy"></picture><figcaption class="icap"><b>Kaneka Ubiquinol<sup class="rn">&reg;</sup></b><s>100 mg</s><u class="ifn">MITOCHONDRIAL SUPPORT</u><i>Ubiquinol is the reduced form of coenzyme Q10, a compound found in the mitochondrial membrane where cells make energy. Supplied by Kaneka as a 30% ubiquinol powder, microencapsulated for air stability.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="NMN powder" loading="lazy"></picture><figcaption class="icap"><b>NMN</b><s>400 mg</s><u class="ifn">NAD+ PRECURSOR</u><i>NMN is a direct building block of NAD+, the coenzyme every cell uses to turn food into energy and to run its repair enzymes. NAD+ levels fall with age. In small human trials of 250 to 900 mg a day, NMN raised blood NAD+ and was well tolerated, with early signs of better muscle insulin sensitivity and walking endurance.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="L-Theanine powder" loading="lazy"></picture><figcaption class="icap"><b>AlphaWave<sup class="rn">&reg;</sup> L-Theanine</b><s>450 mg</s><u class="ifn">CALM FOCUS</u><i>Upregulates alpha-wave neural activity and stimulates GABA, so the result reads as calm focus rather than agitation. A 28-day placebo-controlled trial of AlphaWave L-Theanine found lower perceived stress and improved sleep quality and attention.</i></figcaption></figure></div>
@@ -3996,7 +4008,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
     <div class="sec-head vib-head rv">
       <p class="eyebrow">The Honey Bee &middot; Our VIB</p>
       <h2 class="serif">Our <em>Very Important Bees.</em></h2>
-      <p class="lede">M&#257;nuka honi only exists because honey bees harvest the M&#257;nuka bloom for a few short weeks each NZ summer. Bees and other pollinators help produce most of the fruit and vegetables we all eat. Their survival is linked to humanity&rsquo;s. Pollination sustains our global food security, human nutrition, and our world&rsquo;s terrestrial ecosystems.</p>
+      <p class="lede">M&#257;nuka honi only exists because honey bees harvest the M&#257;nuka bloom for a few short weeks each NZ summer.<br>Bees and other pollinators help produce most of the fruit and vegetables we all eat. Their survival is linked to humanity&rsquo;s.<br>Pollination sustains our global food security, human nutrition, and our world&rsquo;s terrestrial ecosystems.</p>
     </div>
   </div>
 
@@ -4070,11 +4082,11 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
         <h3>Arrival</h3>
         <p class="when">Within the hour</p>
         <ul>
-          <li><b>Cr.01&trade; Creatine</b>Loading begins: creatine starts saturating the muscle phosphocreatine pool from the first serving.</li>
-          <li><b>Careflow<sup class="rn">&reg;</sup> mango fruit</b>At 100 mg, skin blood flow rose 54% within hours of a single dose in a small pilot study.</li>
-          <li><b>vitAlign<sup class="rn">&reg;</sup> plant blend</b>Redox signalling raises the nitric oxide you already make.</li>
-          <li><b>The effervescent engine</b>Everything arrives already in solution, so nothing sits in the gut drawing water.</li>
           <li><b>Dissolved electrolyte matrix</b>Sodium, potassium and magnesium arrive dissolved and buffered in every glass.</li>
+          <li><b>Cr.01&trade; Creatine</b>starts saturating the muscle phosphocreatine pool.</li>
+          <li><b>Careflow<sup class="rn">&reg;</sup> mango fruit</b>At 100 mg, skin blood flow rose 54% within hours in a pilot study.</li>
+          <li><b>vitAlign<sup class="rn">&reg;</sup> plant blend</b>Redox signalling raises the nitric oxide you already make.</li>
+          <li><b>The effervescent engine</b>The actives arrive dispersed and dissolved, so nothing sits in the gut drawing water.</li>
         </ul>
       </div>
 
@@ -4084,6 +4096,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
         <p class="when">Days 1 to 28</p>
         <ul>
           <li><b>Livaux<sup class="rn">&reg;</sup> gold kiwifruit</b>At 600 mg a day, <em>F. prausnitzii</em> roughly doubled in 70% of trial participants within 28 days, lifting butyrate for the colonic lining.</li>
+          <li><b>Actazin<sup class="rn">&reg;</sup> green kiwifruit</b>At 600 mg a day for 28 days, adults with occasional constipation gained about 1.4 more complete bowel movements a week.</li>
           <li><b>Feiolix<sup class="rn">&reg;</sup> feijoa</b>Your own GLP-1 released at every serving, not a synthetic analogue.</li>
           <li><b>MGO 850+ M&#257;nuka &amp; Fiberest<sup class="rn">&reg;</sup> HF</b>Prebiotic fibre and methylglyoxal support a settled, well-fed gut lining.</li>
           <li><b>LactoSpore<sup class="rn">&reg;</sup> Bacillus coagulans</b>6 billion CFU of spore probiotic arrive in every glass, alongside the prebiotic fibres they are dosed with.</li>
@@ -4106,13 +4119,14 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
         <h3>The long arc</h3>
         <p class="when">Ongoing</p>
         <ul>
-          <li><b>Magnesium Malate &amp; Zinc Bisglycinate<sup class="rn">&reg;</sup></b>Mineral cofactors doing quiet, ongoing work behind hundreds of enzymatic reactions.</li>
-          <li><b>Mānuka and Fiberest<sup class="rn">&reg;</sup> HF</b>The gut barrier held, day after day, rather than rebuilt from scratch.</li>
-          <li><b>Hytolive<sup class="rn">&reg;</sup> Bev Olive Extract</b>6 mg hydroxytyrosol a serving, above the 5 mg EFSA threshold for protecting blood lipids from oxidative stress.</li>
-          <li><b>Pomma+<sup class="rn">&reg;</sup> Whole-Fruit Pomegranate</b>Whole-fruit polyphenols added to the daily antioxidant load.</li>
-          <li><b>Vitamin A Retinyl Palmitate</b>900 mcg RAE a serving for epithelial barriers and mucosal immunity.</li>
-          <li><b>Kaneka Ubiquinol<sup class="rn">&reg;</sup></b>100 mg a serving of reduced coenzyme Q10, beside the daily creatine.</li>
+          <li><b>Mānuka and Fiberest<sup class="rn">&reg;</sup> HF</b>Your gut barrier reinforced, day after day, rather than rebuilt from scratch.</li>
+          <li><b>Kaneka Ubiquinol<sup class="rn">&reg;</sup></b>100 mg reduced coenzyme Q10, which carries electrons in your mitochondria to make cellular energy and protects cell membranes as an antioxidant, beside the daily creatine.</li>
           <li><b>NMN</b>400 mg a serving, a direct NAD+ precursor for cellular energy.</li>
+          <li><b>Hytolive<sup class="rn">&reg;</sup> Bev Olive Extract</b>6 mg hydroxytyrosol a serving, the olive polyphenol behind EFSA&rsquo;s blood lipid claim for olive oil.</li>
+          <li><b>Pomma+<sup class="rn">&reg;</sup> Whole-Fruit Pomegranate</b>Whole-fruit polyphenols added to the daily antioxidant load.</li>
+          <li><b>Oxxynea<sup class="rn">&reg;</sup> Polyphenol Blend</b>450 mg a serving, the polyphenols of about five servings of fruit and vegetables, from five polyphenol families.</li>
+          <li><b>Vitamin A Retinyl Palmitate</b>900 mcg RAE a serving for epithelial barriers and mucosal immunity.</li>
+          <li><b>Magnesium Malate &amp; Zinc Bisglycinate<sup class="rn">&reg;</sup></b>Mineral cofactors doing quiet, ongoing work behind hundreds of enzymatic reactions.</li>
         </ul>
       </div>
     </div>
@@ -4264,7 +4278,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
           <li><i>Kaneka Ubiquinol<sup class="rn">&reg;</sup></i><b>100 mg</b></li>
           <li><i>NMN</i><b>400 mg</b></li>
         </ul>
-        <p>Cr.01&trade; Creatine is stored in muscle as phosphocreatine, which rapidly donates a phosphate group to rebuild ATP, your cells&rsquo; basic energy currency, during short, intense effort. This is the mechanism behind creatine&rsquo;s strength and power research base, and grounds its place in healthy aging.<br><br>Ubiquinol is the reduced form of coenzyme Q10. Coenzyme Q10 sits in the inner mitochondrial membrane and carries electrons along the respiratory chain. As ubiquinol, it also acts as a fat-soluble antioxidant inside cell membranes. HONI<i>ORA</i> carries 100&nbsp;mg of Kaneka Ubiquinol<sup class="rn">&reg;</sup> per serving.<br><br>Together: creatine rebuilds ATP quickly, and ubiquinol carries electrons through the chain.</p>
+        <p>Cr.01&trade; Creatine is stored in muscle as phosphocreatine, which rapidly donates a phosphate group to rebuild ATP, your cells&rsquo; basic energy currency, during short, intense effort. This is the mechanism behind creatine&rsquo;s strength and power research base, and grounds its place in healthy aging.<br><br>Ubiquinol is the reduced form of coenzyme Q10. Coenzyme Q10 sits in the inner mitochondrial membrane and carries electrons along the respiratory chain. As ubiquinol, it also acts as a fat-soluble antioxidant inside cell membranes. HONI<i>ORA</i> carries 100&nbsp;mg of Kaneka Ubiquinol<sup class="rn">&reg;</sup> per serving.<br><br>NMN (nicotinamide mononucleotide) is converted in cells to NAD+, the coenzyme that carries electrons from food into the respiratory chain and powers the enzymes that repair and maintain cells. NAD+ levels fall with age. HONI<i>ORA</i> carries 400&nbsp;mg of NMN per serving.<br><br>Together: creatine rebuilds ATP quickly, NMN keeps NAD+ supplied, and ubiquinol carries electrons through the chain.</p>
       </div>
 
       <div class="tri" data-pillar="gut">
@@ -4670,7 +4684,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
         <div class="name">Hytolive<sup class="rn">&reg;</sup> Bev Olive Extract<i>Alvinesa (Spain) / Beverage grade, 2% Hydroxytyrosol</i></div>
         <div><span class="fn">Antioxidant<small>Olive polyphenol</small></span></div>
         <div class="dose">300 mg<small>6 mg hydroxytyrosol</small></div>
-        <div class="mech">A water-soluble olive fruit extract standardised to 2% natural hydroxytyrosol, made by Alvinesa from an olive-oil production by-product. At this dose HONI<i>ORA</i> delivers 6 mg of hydroxytyrosol per serving, above the 5 mg/day figure tied to the EFSA claim that olive polyphenols help protect blood lipids from oxidative stress.<br><a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/40690822/" target="_blank" rel="noopener noreferrer">Supporting research <span>PMID 40690822 &middot; Moratilla-Rivera 2025 &nearr;</span></a><a class="cite sup" href="https://www.alvinesa.com/en/hytolive-olive-extract/" target="_blank" rel="noopener noreferrer">Ingredient science <span>Alvinesa &nearr;</span></a></div>
+        <div class="mech">A water-soluble olive fruit extract standardised to 2% natural hydroxytyrosol, made by Alvinesa from an olive-oil production by-product. At this dose HONI<i>ORA</i> delivers 6 mg of hydroxytyrosol per serving, the olive polyphenol behind EFSA&rsquo;s blood lipid claim for olive oil.<br><a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/40690822/" target="_blank" rel="noopener noreferrer">Supporting research <span>PMID 40690822 &middot; Moratilla-Rivera 2025 &nearr;</span></a><a class="cite sup" href="https://www.alvinesa.com/en/hytolive-olive-extract/" target="_blank" rel="noopener noreferrer">Ingredient science <span>Alvinesa &nearr;</span></a></div>
       </div>
 
       <div class="row mgrid compact">
@@ -5178,223 +5192,6 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
   </div>
 </section>
 
-<!-- ================= PACK ================= -->
-<section class="sec" id="pack">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <p class="eyebrow dim">13 / Format</p>
-      <h2 class="serif oneline">One box = Four <em>weeks.</em></h2>
-      <p class="lede">28 single-serve stick packs in a gold box. Each stick pack is one sealed 20 g serving: tear, pour into 500 ml of water, and it is ready in 60 seconds. The 7 Day Pack covers one week.</p>
-    </div>
-  </div>
-
-  <div class="pconv-track" id="packConvergeTrack">
-    <div class="pconv-sticky">
-      <div class="pconv-stage" id="packConvergeStage">
-        <div class="pconv-item" data-img="0">
-          <img class="pconv-photo" src="pconv-00-manuka-fiberest.webp" alt="MGO 850+ Mānuka / Fiberest® HF Crystals" loading="lazy">
-          <div class="pconv-badge">
-            <img class="pconv-badge-photo" src="nav-hex-tray.png" alt="" loading="lazy">
-            <div class="pconv-text">
-              <div class="pconv-title">MGO 850+ Mānuka / Fiberest® HF Crystals</div>
-              <div class="pconv-desc">Bioactive honey · Prebiotic fibre</div><div class="pconv-dose">1,500 mg</div>
-            </div>
-          </div>
-        </div>
-        <div class="pconv-item" data-img="1">
-          <img class="pconv-photo" src="pconv-01-cr01-creatine.webp" alt="Cr.01&trade; Creatine" loading="lazy">
-          <div class="pconv-badge">
-            <img class="pconv-badge-photo" src="nav-hex-tray.png" alt="" loading="lazy">
-            <div class="pconv-text">
-              <div class="pconv-title">Cr.01&trade; Creatine Monohydrate</div>
-              <div class="pconv-desc">ATP energy · Strength &amp; power</div><div class="pconv-dose">5,000 mg</div>
-            </div>
-          </div>
-        </div>
-        <div class="pconv-item" data-img="2">
-          <img class="pconv-photo" src="pconv-14-nmn.webp" alt="Kaneka Ubiquinol" loading="lazy">
-          <div class="pconv-badge">
-            <img class="pconv-badge-photo" src="nav-hex-tray.png" alt="" loading="lazy">
-            <div class="pconv-text">
-              <div class="pconv-title">Kaneka Ubiquinol®</div>
-              <div class="pconv-desc">Mitochondrial antioxidant</div><div class="pconv-dose">100 mg</div>
-            </div>
-          </div>
-        </div>
-        <div class="pconv-item" data-img="3">
-          <img class="pconv-photo" src="pconv-14-nmn.webp" alt="NMN" loading="lazy">
-          <div class="pconv-badge">
-            <img class="pconv-badge-photo" src="nav-hex-tray.png" alt="" loading="lazy">
-            <div class="pconv-text">
-              <div class="pconv-title">NMN</div>
-              <div class="pconv-desc">NAD+ precursor &middot; Cellular energy</div><div class="pconv-dose">400 mg</div>
-            </div>
-          </div>
-        </div>
-        <div class="pconv-item" data-img="4">
-          <img class="pconv-photo" src="pconv-02-livaux-kiwifruit.webp" alt="Livaux® Gold Kiwifruit" loading="lazy">
-          <div class="pconv-badge">
-            <img class="pconv-badge-photo" src="nav-hex-tray.png" alt="" loading="lazy">
-            <div class="pconv-text">
-              <div class="pconv-title">Livaux® Gold Kiwifruit</div>
-              <div class="pconv-desc">Prebiotic · Gut health matrix</div><div class="pconv-dose">1,000 mg</div>
-            </div>
-          </div>
-        </div>
-        <div class="pconv-item" data-img="5">
-          <img class="pconv-photo" src="pconv-06-cgp-pro-blackcurrant.webp" alt="cGP-Pro® Blackcurrant" loading="lazy">
-          <div class="pconv-badge">
-            <img class="pconv-badge-photo" src="nav-hex-tray.png" alt="" loading="lazy">
-            <div class="pconv-text">
-              <div class="pconv-title">cGP-Pro® Blackcurrant</div>
-              <div class="pconv-desc">Micro-vascular · Brain flow</div><div class="pconv-dose">100 mg</div>
-            </div>
-          </div>
-        </div>
-        <div class="pconv-item" data-img="7">
-          <img class="pconv-photo" src="pconv-03-feiolix-feijoa.webp" alt="Feiolix® Feijoa" loading="lazy">
-          <div class="pconv-badge">
-            <img class="pconv-badge-photo" src="nav-hex-tray.png" alt="" loading="lazy">
-            <div class="pconv-text">
-              <div class="pconv-title">Feiolix® Feijoa</div>
-              <div class="pconv-desc">Metabolic · GLP-1 support</div><div class="pconv-dose">1,000 mg</div>
-            </div>
-          </div>
-        </div>
-        <div class="pconv-item" data-img="8">
-          <img class="pconv-photo" src="pconv-04-eriomin-lemon.webp" alt="Eriomin® Lemon Flavonoid" loading="lazy">
-          <div class="pconv-badge">
-            <img class="pconv-badge-photo" src="nav-hex-tray.png" alt="" loading="lazy">
-            <div class="pconv-text">
-              <div class="pconv-title">Eriomin® Lemon Flavonoid</div>
-              <div class="pconv-desc">Metabolic · GLP-1 &amp; glycemic support</div><div class="pconv-dose">200 mg</div>
-            </div>
-          </div>
-        </div>
-        <div class="pconv-item" data-img="9">
-          <img class="pconv-photo" src="pconv-05-braincurrant.webp" alt="Braincurrant®" loading="lazy">
-          <div class="pconv-badge">
-            <img class="pconv-badge-photo" src="nav-hex-tray.png" alt="" loading="lazy">
-            <div class="pconv-text">
-              <div class="pconv-title">Braincurrant®</div>
-              <div class="pconv-desc">Cognitive · Mood &amp; focus</div><div class="pconv-dose">300 mg</div>
-            </div>
-          </div>
-        </div>
-        <div class="pconv-item" data-img="11">
-          <img class="pconv-photo" src="pconv-07-s7-plant-blend.webp" alt="vitAlign® Plant Blend" loading="lazy">
-          <div class="pconv-badge">
-            <img class="pconv-badge-photo" src="nav-hex-tray.png" alt="" loading="lazy">
-            <div class="pconv-text">
-              <div class="pconv-title">vitAlign® Plant Blend</div>
-              <div class="pconv-desc">Endogenous nitric oxide</div><div class="pconv-dose">60 mg</div>
-            </div>
-          </div>
-        </div>
-        <div class="pconv-item" data-img="12">
-          <img class="pconv-photo" src="pconv-08-careflow-mango.webp" alt="Careflow® Mango Fruit" loading="lazy">
-          <div class="pconv-badge">
-            <img class="pconv-badge-photo" src="nav-hex-tray.png" alt="" loading="lazy">
-            <div class="pconv-text">
-              <div class="pconv-title">Careflow® Mango Fruit</div>
-              <div class="pconv-desc">Micro-vascular flow</div><div class="pconv-dose">100 mg</div>
-            </div>
-          </div>
-        </div>
-        <div class="pconv-item" data-img="13">
-          <img class="pconv-photo" src="pconv-09-hytolive-olive.webp" alt="Hytolive® Bev Olive Extract" loading="lazy">
-          <div class="pconv-badge">
-            <img class="pconv-badge-photo" src="nav-hex-tray.png" alt="" loading="lazy">
-            <div class="pconv-text">
-              <div class="pconv-title">Hytolive® Bev Olive Extract</div>
-              <div class="pconv-desc">Antioxidant · Blood lipid protection</div><div class="pconv-dose">300 mg</div>
-            </div>
-          </div>
-        </div>
-        <div class="pconv-item" data-img="14">
-          <img class="pconv-photo" src="pconv-10-lactospore.webp" alt="LactoSpore Bacillus coagulans" loading="lazy">
-          <div class="pconv-badge">
-            <img class="pconv-badge-photo" src="nav-hex-tray.png" alt="" loading="lazy">
-            <div class="pconv-text">
-              <div class="pconv-title">LactoSpore® Bacillus coagulans</div>
-              <div class="pconv-desc">Spore probiotic · Gut microbiome</div><div class="pconv-dose">6 billion CFU</div>
-            </div>
-          </div>
-        </div>
-        <div class="pconv-item" data-img="15">
-          <img class="pconv-photo" src="pconv-11-landkind-salidroside.webp" alt="Landkind® Pure Salidroside" loading="lazy">
-          <div class="pconv-badge">
-            <img class="pconv-badge-photo" src="nav-hex-tray.png" alt="" loading="lazy">
-            <div class="pconv-text">
-              <div class="pconv-title">Landkind® Pure Salidroside</div>
-              <div class="pconv-desc">Adaptogen · Stress response</div><div class="pconv-dose">60 mg</div>
-            </div>
-          </div>
-        </div>
-        <div class="pconv-item" data-img="16">
-          <img class="pconv-photo" src="pconv-13-retinyl-palmitate.webp" alt="Vitamin A retinyl palmitate" loading="lazy">
-          <div class="pconv-badge">
-            <img class="pconv-badge-photo" src="nav-hex-tray.png" alt="" loading="lazy">
-            <div class="pconv-text">
-              <div class="pconv-title">Vitamin A Retinyl Palmitate</div>
-              <div class="pconv-desc">Mucosal barrier · Immune support</div><div class="pconv-dose">900 mcg RAE</div>
-            </div>
-          </div>
-        </div>
-        <div class="pconv-item" data-img="10">
-          <img class="pconv-photo" src="pconv-citicoline.webp" alt="Citicoline" loading="lazy">
-          <div class="pconv-badge">
-            <img class="pconv-badge-photo" src="nav-hex-tray.png" alt="" loading="lazy">
-            <div class="pconv-text">
-              <div class="pconv-title">Citicoline</div>
-              <div class="pconv-desc">Brain cell signalling · Attention</div><div class="pconv-dose">255 mg</div>
-            </div>
-          </div>
-        </div>
-        <div class="pconv-item" data-img="17">
-          <img class="pconv-photo" src="pconv-14-nmn.webp" alt="Taurine" loading="lazy">
-          <div class="pconv-badge">
-            <img class="pconv-badge-photo" src="nav-hex-tray.png" alt="" loading="lazy">
-            <div class="pconv-text">
-              <div class="pconv-title">Taurine</div>
-              <div class="pconv-desc">Cellular hydration · Osmolyte</div><div class="pconv-dose">1,020 mg</div>
-            </div>
-          </div>
-        </div>
-        <div class="pconv-item" data-img="18">
-          <img class="pconv-photo" src="pconv-14-nmn.webp" alt="AlphaWave L-Theanine" loading="lazy">
-          <div class="pconv-badge">
-            <img class="pconv-badge-photo" src="nav-hex-tray.png" alt="" loading="lazy">
-            <div class="pconv-text">
-              <div class="pconv-title">AlphaWave® L-Theanine</div>
-              <div class="pconv-desc">Alpha-wave · Calm focus</div><div class="pconv-dose">450 mg</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pconv-tube-wrap" id="packConvergeTube">
-        <!-- (user request) swapped for the real product photo. Left-end
-             contact shadow (the extra dark blob bulging past the tube's own
-             left edge, separate from the thin shadow line that runs the
-             length of the tube) painted out first; the shadow under the
-             tube itself is untouched. Then (user request) the white around
-             it was keyed out to real alpha transparency -- not just painted
-             white -- since this image sits inside the scroll-driven convergence
-             animation and overlaps the ingredient badges/photos behind it; a
-             flat white background showed up as an opaque box over them mid-
-             animation. Cutout logic: colorful (gold) pixels stay fully
-             opaque; grayscale pixels (background, the soft shadow, the black
-             "Honi" text) get alpha = 255 - brightness, so white -> fully
-             transparent and the shadow fades in smoothly as it darkens,
-             with no hard edge. -->
-        <img class="pconv-tube-photo" src="sp-single-cutout.png" alt="HONIORA stick pack, one serving" loading="lazy">
-      </div>
-    </div>
-  </div>
-
-  <div class="pconv-ease" aria-hidden="true"></div>
-</section>
-
 <!-- ================= WAITLIST ================= -->
 <section class="sec formsec" id="waitlist">
   <div class="wrap">
@@ -5783,7 +5580,6 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
         <a href="#triad">Gut, heart, brain</a>
         <a href="#matrix">The science</a>
         <a href="#matrix">The formula</a>
-        <a href="#pack">Format</a>
         <a href="morning-stack.html">Morning stack guide</a>
       </div>
       <div>
@@ -6372,7 +6168,14 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
         /* #protocol: land with the tablet pair right under the nav bar (the section's own
            top edge sits above it), measured on the tablet-roll box, which carries no transform. */
         /* #rita: the full-bleed photo starts flush under the nav bar. */
-        if (hash === '#rita' || hash === '#ritual') return Math.max(0, el.getBoundingClientRect().top + window.scrollY - hdr.getBoundingClientRect().bottom);
+        /* v127 #ritual: land with the 02 / THE RITUAL eyebrow ~18px under the nav bar */
+        if (hash === '#ritual'){
+          var reb = el.querySelector('.eyebrow') || el;
+          var rty = 0;
+          try { var rp = reb.closest('.rv'); var rtf = rp ? getComputedStyle(rp).transform : 'none'; rty = (rtf && rtf !== 'none') ? new DOMMatrix(rtf).m42 : 0; } catch(_){ rty = 0; }
+          return Math.max(0, reb.getBoundingClientRect().top - rty + window.scrollY - (hdr.getBoundingClientRect().bottom + 18));
+        }
+        if (hash === '#rita') return Math.max(0, el.getBoundingClientRect().top + window.scrollY - hdr.getBoundingClientRect().bottom);
         /* #honiblogtop: eyebrow sits ~27px under the nav bar. */
         if (hash === '#honiblogtop'){
           /* measure on the section (the eyebrow sits in a .rv block that carries a transient reveal transform) */
@@ -6469,7 +6272,8 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
         }
         if (hash === '#protocol'){
           var roll = el.querySelector('.tablet-roll');
-          if (roll) return Math.max(0, roll.getBoundingClientRect().top + window.scrollY - (hdr.getBoundingClientRect().bottom + 1));
+          /* v127: the cutout PNG has transparent space above the pack (120 of 490 px); land with the visible pack top 17px under the nav */
+          if (roll){ var rr = roll.getBoundingClientRect(); return Math.max(0, rr.top + rr.height * (120/490) + window.scrollY - (hdr.getBoundingClientRect().bottom + 17)); }
         }
         return Math.max(0, el.getBoundingClientRect().top + window.scrollY - targetOffset());
       }
@@ -6660,7 +6464,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
        map:"https://www.google.com/maps/search/?api=1&query=Canterbury%2C+New+Zealand",
        papers:[{t:"PMID 24742818 · Endothelial function",u:"https://pubmed.ncbi.nlm.nih.gov/24742818/"},{t:"PMID 34445035 · Exercise recovery",u:"https://pubmed.ncbi.nlm.nih.gov/34445035/"},{t:"Frontiers Nutr 2019 · Neutrophil function",u:"https://doi.org/10.3389/fnut.2019.00073"},{t:"PMID 32648022 · Insulin sensitivity",u:"https://pubmed.ncbi.nlm.nih.gov/32648022/"},{t:"PMID 11134978 · Dark adaptation",u:"https://pubmed.ncbi.nlm.nih.gov/11134978/"}]},
       {k:["hytolive","olive","hydroxytyrosol","olive extract","olive polyphenol"],
-       a:"Hytolive Bev is a water-soluble olive fruit extract standardised to 2% natural hydroxytyrosol, made from an olive-oil production by-product. It's dosed at 300 mg per serving, delivering 6 mg of hydroxytyrosol, above the 5 mg/day EFSA claim that olive polyphenols help protect blood lipids from oxidative stress.",
+       a:"Hytolive Bev is a water-soluble olive fruit extract standardised to 2% natural hydroxytyrosol, made from an olive-oil production by-product. It's dosed at 300 mg per serving, delivering 6 mg of hydroxytyrosol, the olive polyphenol behind EFSA's blood lipid claim for olive oil. That claim was assessed for olive oil, not for this extract.",
        src:"Manufacturer: Alvinesa Natural Ingredients, based in Daimiel, in the Ciudad Real province of Spain, which makes Hytolive from a by-product of its own olive oil production.",
        map:"https://www.google.com/maps/search/?api=1&query=Daimiel%2C+Ciudad+Real%2C+Spain",
        papers:[{t:"Moratilla-Rivera 2025, Clinical Nutrition · PMID 40690822",u:"https://pubmed.ncbi.nlm.nih.gov/40690822/"}]},
