@@ -3389,6 +3389,10 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
 #oxxynea{background-color:#fff;background-size:contain;background-repeat:no-repeat;background-position:center}
 #oxxynea .livaux-box{background:rgba(255,255,255,.8);backdrop-filter:none;-webkit-backdrop-filter:none}
 @media(max-width:1000px){#oxxynea{background-size:92vw auto;background-position:center 28px;padding-top:calc(92vw / 1.915 + 56px)}}
+/* (v81) 13 / Format heading paints above the lifted converge pane */
+#pack .sec-head{position:relative;z-index:8}
+/* (user pick v82, option 3) 13 / Format: Gold Spotlight behind the stick pack, easing into the next screen */
+#pack.sec{background:#FFFBEF}#pack .pconv-sticky::before{background:radial-gradient(ellipse 60% 55% at 50% 50%,#FFFBEF 0%,#F8EBC8 50%,#EED79C 100%)}#pack .pconv-ease{background:linear-gradient(180deg,#EED79C,var(--paper-2))}
 </style>
 </head>
 <body>
@@ -3456,8 +3460,8 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
     </a>
     <button class="burger burger-left" id="burgerLeft" aria-label="Open the Protocol menu" aria-haspopup="true" aria-expanded="false" aria-controls="burgerDropLeft"><span></span><span></span></button>
     <div class="burger-drop burger-drop-left" id="burgerDropLeft">
+      <a href="#matrix">Honi<i>Ora</i> Stack</a>
       <a href="#honeytop">M&#257;nuka Honi</a>
-      <a href="#triad">Four Systems</a>
       <a href="#problem">Cr.01 Creatine</a>
       <a href="#livaux">Livaux</a>
       <a href="#actazin">Actazin</a>
@@ -3486,7 +3490,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
     </div>
     <button class="burger burger-right" id="burgerRight" aria-label="Open the Founding menu" aria-haspopup="true" aria-expanded="false" aria-controls="burgerDropRight"><span></span><span></span></button>
     <div class="burger-drop burger-drop-right" id="burgerDropRight">
-      <a href="#matrix">Honi<i>Ora</i> Stack</a>
+      <a href="#triad">Four Systems</a>
       <a href="#ritual">Protocol</a>
       <a href="#glp1">Natural GLP-1</a>
       <a href="#nitric-oxide">Nitric Oxide</a>
@@ -3669,8 +3673,8 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="hytolive_bev_olive-lite.webp"><img width="820" height="820" src="hytolive_bev_olive.webp" alt="Hytolive Bev olive fruit extract" loading="lazy"></picture><figcaption class="icap"><b>Hytolive<sup class="rn">&reg;</sup> Bev Olive Extract</b><s>300 mg</s><u class="ifn">BLOOD LIPID PROTECTION</u><i>A water-soluble olive fruit extract from Alvinesa in Spain, standardised to 2% hydroxytyrosol. At this dose HONI<i>ORA</i> delivers 6&nbsp;mg of hydroxytyrosol per serving, above the 5&nbsp;mg/day threshold behind the EFSA claim that olive polyphenols help protect blood lipids from oxidative stress.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="Kaneka Ubiquinol" loading="lazy"></picture><figcaption class="icap"><b>Kaneka Ubiquinol<sup class="rn">&reg;</sup></b><s>100 mg</s><u class="ifn">MITOCHONDRIAL SUPPORT</u><i>Ubiquinol is the reduced form of coenzyme Q10, a compound found in the mitochondrial membrane where cells make energy. Supplied by Kaneka as a 30% ubiquinol powder, microencapsulated for air stability.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="L-Theanine powder" loading="lazy"></picture><figcaption class="icap"><b>AlphaWave<sup class="rn">&reg;</sup> L-Theanine</b><s>450 mg</s><u class="ifn">CALM FOCUS</u><i>Upregulates alpha-wave neural activity and stimulates GABA, so the result reads as calm focus rather than agitation. A 28-day placebo-controlled trial of AlphaWave L-Theanine found lower perceived stress and improved sleep quality and attention.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="Taurine powder" loading="lazy"></picture><figcaption class="icap"><b>Taurine</b><s>1,020 mg</s><u class="ifn">CELLULAR HYDRATION</u><i>An organic osmolyte that holds cellular fluid balance and supports energy metabolism, alongside the magnesium and electrolyte load.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="Citicoline" loading="lazy"></picture><figcaption class="icap"><b>Citicoline</b><s>255 mg</s><u class="ifn">FOCUS &amp; ATTENTION</u><i>Supplies building blocks for brain cell membranes and neuronal signalling. A 28-day placebo-controlled trial of 250 mg a day in healthy women aged 40 to 60 found fewer attention errors than placebo.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="Taurine powder" loading="lazy"></picture><figcaption class="icap"><b>Taurine</b><s>1,020 mg</s><u class="ifn">CELLULAR HYDRATION</u><i>A conditionally essential amino acid: your body makes some, but not always enough. It is concentrated in heart, muscle, brain and eyes. As an organic osmolyte it holds cellular fluid balance, working with the magnesium and electrolyte load. It also helps muscle cells handle calcium during contraction and supports mitochondrial function. Blood taurine falls with age. In a 2023 <em>Science</em> study, taurine supplementation extended healthy lifespan in mice and improved health markers in middle-aged monkeys. Human evidence is still emerging.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="Citicoline" loading="lazy"></picture><figcaption class="icap"><b>Citicoline</b><s>255 mg</s><u class="ifn">FOCUS &amp; ATTENTION</u><i>Citicoline delivers choline plus cytidine, which your body converts largely to uridine. Together they feed the Kennedy pathway that builds phosphatidylcholine, the main fat in brain cell membranes. Plain choline supplies only the building block. Lab research links the pair to synaptic density and neurotransmitter release, including dopamine. A 28-day placebo-controlled trial of 250 mg a day in healthy women aged 40 to 60 found fewer attention errors than placebo.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="lactospore-lite.webp"><img width="820" height="820" src="lactospore.webp" alt="LactoSpore Bacillus coagulans probiotic, colourised micrograph" loading="lazy"></picture><figcaption class="icap"><b>LactoSpore<sup class="rn">&reg;</sup> Bacillus coagulans</b><s>6 billion CFU</s><u class="ifn">GUT MICROBIOME</u><i>A spore-forming probiotic (strain MTCC 5856) built to come through the stick pack&#39;s effervescent dissolution, so live spores reach the gut. Dosed alongside the Livaux and M&#257;nuka prebiotic fibres.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="retinyl_palmitate-lite.webp"><img width="820" height="820" src="retinyl_palmitate.webp" alt="Vitamin A as cold-water-soluble retinyl palmitate" loading="lazy"></picture><figcaption class="icap"><b>Vitamin A Retinyl Palmitate</b><s>900 mcg RAE</s><u class="ifn">BARRIER &amp; IMMUNE SUPPORT</u><i>Cold-water-soluble vitamin A that disperses cleanly in the glass. Vitamin A supports the integrity of the body&#39;s epithelial barriers and mucosal immunity, including the gut lining.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="landkind_pure_salidroside-lite.webp"><img width="820" height="820" src="landkind_pure_salidroside.webp" alt="Landkind Pure Salidroside, 98 percent pure" loading="lazy"></picture><figcaption class="icap"><b>Landkind<sup class="rn">&reg;</sup> Pure Salidroside</b><s>60 mg</s><u class="ifn">STRESS RESPONSE</u><i>Salidroside made by precision fermentation, specified by the supplier at 98% or higher purity. Not a Rhodiola root extract.</i></figcaption></figure></div>
@@ -4583,7 +4587,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
         <div class="name">Taurine<i>USP Crystalline / Granular DC</i></div>
         <div><span class="fn">Cellular energy<small>Osmoregulation</small></span></div>
         <div class="dose">1,020 mg</div>
-        <div class="mech">An organic osmolyte that holds cellular fluid balance while supporting energy metabolism, working alongside the magnesium and potassium load rather than competing with it.<br><span class="cite sup" style="cursor:default">Ingredient science citation to be added &middot; verify before launch</span></div>
+        <div class="mech">A conditionally essential amino acid, concentrated in heart, muscle, brain and eyes. As an organic osmolyte it holds cellular fluid balance, working alongside the magnesium and potassium load rather than competing with it. It also supports calcium handling in muscle and mitochondrial function. Blood levels fall with age, and supplementation extended healthy lifespan in mice and improved health markers in middle-aged monkeys. Human evidence is still emerging.<br><a class="cite sup" href="https://doi.org/10.1126/science.abn9257" target="_blank" rel="noopener noreferrer">Singh et al. 2023 <span>Science &nearr;</span></a></div>
       </div>
 
       <div class="row mgrid">
@@ -4597,7 +4601,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
         <div class="name">Citicoline<i>Supplier and grade to be confirmed</i></div>
         <div><span class="fn">Cognitive<small>Brain cell signalling</small></span></div>
         <div class="dose">255 mg</div>
-        <div class="mech">Citicoline supplies choline and cytidine, building blocks used in brain cell membranes and neuronal signalling.<br><a class="cite sup" href="https://www.nutraceuticalsworld.com/issues/2011-06/view_supplier-research/cognizin-improves-attention-at-250-mg-dose/" target="_blank" rel="noopener noreferrer">Trial report <span>Nutraceuticals World &nearr;</span></a></div>
+        <div class="mech">Citicoline is a brain-targeted way to deliver choline. It also supplies cytidine, which converts largely to uridine in humans. Choline and uridine work together in the Kennedy pathway to build phosphatidylcholine for neuronal membranes. In lab research the pair supports synaptic density and plasticity and raises neurotransmitter release beyond acetylcholine, including dopamine. Plain choline supplies the building block only.<br><a class="cite sup" href="https://www.nutraceuticalsworld.com/issues/2011-06/view_supplier-research/cognizin-improves-attention-at-250-mg-dose/" target="_blank" rel="noopener noreferrer">Trial report <span>Nutraceuticals World &nearr;</span></a></div>
       </div>
 
       <!-- ---- vascular & mineral cofactors ---- -->
@@ -6284,6 +6288,27 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
           var sEbOff = seb ? (seb.getBoundingClientRect().top - el.getBoundingClientRect().top) : spad;
           return Math.max(0, el.getBoundingClientRect().top + window.scrollY + sEbOff - (hdr.getBoundingClientRect().bottom + sgap));
         }
+        /* v83 #pack (Format): land with the 13 / FORMAT eyebrow ~13px under the nav bar, pack mid-screen (per the user's screengrab) */
+        if (hash === '#pack'){
+          var feb = el.querySelector('.eyebrow') || el;
+          var fty = 0;
+          try { var fp = feb.closest('.rv'); var ftf = fp ? getComputedStyle(fp).transform : 'none'; fty = (ftf && ftf !== 'none') ? new DOMMatrix(ftf).m42 : 0; } catch(_){ fty = 0; }
+          return Math.max(0, feb.getBoundingClientRect().top - fty + window.scrollY - (hdr.getBoundingClientRect().bottom + 13));
+        }
+        /* v80 #vib: land with the THE HONEY BEE eyebrow ~24px under the nav bar (per the user's screengrab) */
+        if (hash === '#vib'){
+          var veb = el.querySelector('.eyebrow') || el;
+          var vty = 0;
+          try { var vp = veb.closest('.rv'); var vtf = vp ? getComputedStyle(vp).transform : 'none'; vty = (vtf && vtf !== 'none') ? new DOMMatrix(vtf).m42 : 0; } catch(_){ vty = 0; }
+          return Math.max(0, veb.getBoundingClientRect().top - vty + window.scrollY - (hdr.getBoundingClientRect().bottom + 24));
+        }
+        /* v79 #actazin: land with the top of the Actazin text box ~18px under the nav bar (per the user's screengrab) */
+        if (hash === '#actazin'){
+          var abox = el.querySelector('.livaux-box') || el;
+          var aty = 0;
+          try { var atf = getComputedStyle(abox).transform; aty = (atf && atf !== 'none') ? new DOMMatrix(atf).m42 : 0; } catch(_){ aty = 0; }
+          return Math.max(0, abox.getBoundingClientRect().top - aty + window.scrollY - (hdr.getBoundingClientRect().bottom + 18));
+        }
         /* v77 #oxxynea: land with the top of the Oxxynea text box ~25px under the nav bar (per the user's screengrab) */
         if (hash === '#oxxynea'){
           var obox = el.querySelector('.livaux-box') || el;
@@ -6341,7 +6366,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
           var cur = window.scrollY;
           if (cur === last){
             stable++;
-            if (stable >= 3){ cb(); return; }
+            if (stable >= 8){ cb(); return; }
           } else {
             stable = 0;
             last = cur;
@@ -6352,12 +6377,20 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
       }
       var fontsReady = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
       fontsReady.then(function(){
-        whenScrollSettled(function(){
-          var top = place();
-          if (Math.abs(window.scrollY - top) > 3){
-            window.scrollTo({ top: top, behavior: 'smooth' });
-          }
-        });
+        /* v83: long jumps (e.g. Format, past the pinned stages) could strand partway when lazy
+           content resized the page mid-scroll. Re-measure and correct up to 4 times; the last
+           pass is instant so the link always lands. */
+        var tries = 0;
+        (function correct(){
+          whenScrollSettled(function(){
+            var top = place();
+            if (Math.abs(window.scrollY - top) > 3 && tries < 4){
+              tries++;
+              window.scrollTo({ top: top, behavior: tries >= 3 ? 'instant' : 'smooth' });
+              correct();
+            }
+          });
+        })();
       });
     }
     document.addEventListener('click', function(e){
@@ -6511,7 +6544,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
        map:"https://www.google.com/maps/search/?api=1&query=Daimiel%2C+Ciudad+Real%2C+Spain",
        papers:[{t:"Moratilla-Rivera 2025, Clinical Nutrition · PMID 40690822",u:"https://pubmed.ncbi.nlm.nih.gov/40690822/"}]},
       {k:["citicoline","cdp-choline","cognizin"],
-       a:"Citicoline supplies choline and cytidine, building blocks used in brain cell membranes and neuronal signalling. HONI<i>ORA</i> carries 255 mg per serving. In a 28-day double-blind, placebo-controlled trial of 250 mg a day, 60 healthy women aged 40 to 60 made fewer attention errors than placebo. The trial was small and reported in trade press, so treat it as ingredient-level evidence."},
+       a:"Citicoline delivers choline plus cytidine. In humans, cytidine converts largely to uridine, which works with choline in the Kennedy pathway to build phosphatidylcholine, the main fat in brain cell membranes. That makes citicoline a brain-targeted way to deliver choline, where plain choline is only the basic building block. In lab research the choline and uridine pair supports synaptic density and plasticity, and raises neurotransmitter release beyond acetylcholine, including dopamine. HONI<i>ORA</i> carries 255 mg per serving. In a 28-day double-blind, placebo-controlled trial of 250 mg a day, 60 healthy women aged 40 to 60 made fewer attention errors than placebo. The trial was small and reported in trade press, so treat it as ingredient-level evidence."},
       {k:["urolithin","urolithin a","mitophagy"],
        a:"HONI<i>ORA</i> does not carry Urolithin A itself. It carries Pomma+ pomegranate extract, whose ellagitannins your gut bacteria convert into urolithins, Urolithin A among them. How much converts varies from person to person. No trial has tested that conversion with Pomma+ or with the finished HONI<i>ORA</i> formula."},
       {k:["pomma","pomegranate","punicalagin","ellagitannin","pomma+"],
@@ -6565,7 +6598,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
        a:"A few real ones. European honeybees didn't even exist here until missionary Mary Bumby brought two hives ashore at the Mangungu Mission Station, Hokianga, in March 1839, and every Mānuka harvest since traces back to bees descended from that one delivery. Mānuka itself only blooms for two to six weeks each summer, peaking in mid-December, so beekeepers have to get hives into position before the window opens or it's a full year's wait for the next one. The science is newer than the honey: University of Waikato biochemist Peter Molan began investigating Mānuka honey's antiseptic properties in 1981, identifying the non-peroxide antibacterial activity that MGO and UMF grading still measure today. And centuries before any of that, Māori were already boiling Mānuka leaves and bark as a fever treatment and applying it to burns and scalds, well over 800 years of use before the honey itself became the focus.<br><br>A few more amazing ones, beyond Mānuka. Foragers dance to tell the rest of the hive where to fly: the direction of the waggle run encodes the food source's angle relative to the sun, and how long each run lasts encodes the distance, a spatial communication system with no real match elsewhere in the insect world. A colony holds its brood nest at a near-constant 93&deg;F no matter what it's doing outside, workers fan their wings to cool it or cluster together and shiver to warm it. A single hive can run 20,000 to 60,000 bees strong at its summer peak, with the queen laying up to 1,500 eggs a day during spring build-up. And honey barely ages at all: pots found in ancient Egyptian tombs, roughly 3,000 years old, have been opened still perfectly edible, since honey's low water content and trace natural hydrogen peroxide make it inhospitable to the bacteria that spoil almost everything else.",
        src:"Waggle dance: NC State Extension, \"The Honey Bee Dance Language.\" Colony size, queen egg-laying rate and brood temperature: Purdue Agriculture Extension, \"The Complex Life of the Honey Bee\" (PPP-116-POL-91). Ancient honey preservation: corroborated across multiple historical sources, though none name the specific tomb, so I haven't invented one."},
       {k:["taurine"],
-       a:"Taurine is an organic osmolyte that holds cellular fluid balance and supports energy metabolism alongside the magnesium and electrolyte load. It's dosed at 1,020 mg per serving."},
+       a:"Taurine is a conditionally essential amino acid: your body makes some, but not always enough. It is concentrated in heart, muscle, brain and eyes. As an organic osmolyte it holds cellular fluid balance alongside the magnesium and electrolyte load, and it helps muscle handle calcium and supports mitochondrial function. Blood taurine falls with age. In a 2023 Science study (Singh et al.), supplementation extended healthy lifespan in mice and improved health markers in middle-aged monkeys, but human evidence is still emerging. It's dosed at 1,020 mg per serving."},
       {k:["magnesium"],
        a:"Magnesium Malate runs underneath the other actives as an enzymatic cofactor for cellular processes. It's dosed at 500 mg.",
        src:"Manufacturer: Albion Minerals (a Balchem brand), headquartered in Clearfield, Utah, USA, the company that pioneered mineral amino acid chelate technology back in 1956.",
@@ -8359,6 +8392,23 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
       { side:  1, y0:  '4vh', edgeX: 40, startScale: 3.0, midDy:  0.3 },
       { side: -1, y0: '-5vh', edgeX: 44, startScale: 3.2, midDy: -0.3 }
     ];
+
+    /* v81 (user request) lift the converge pane up behind the 13 / Format heading so the stick
+       pack sits in the middle of the screen on arrival, not low under the heading. The track's
+       top is pulled up to 40px above the eyebrow; the heading paints above the pane (z-index). */
+    function liftPane(){
+      var head = track.parentElement.querySelector('.sec-head');
+      if (!head) return;
+      track.style.marginTop = '0px';
+      var hty = 0;
+      try { var htf = getComputedStyle(head).transform; hty = (htf && htf !== 'none') ? new DOMMatrix(htf).m42 : 0; } catch(_){ hty = 0; }
+      var headTop = head.getBoundingClientRect().top - hty;
+      var d = track.getBoundingClientRect().top - (headTop - 40);
+      track.style.marginTop = (-Math.max(0, d)) + 'px';
+    }
+    liftPane();
+    window.addEventListener('resize', liftPane);
+    ScrollTrigger.addEventListener('refreshInit', liftPane);
 
     var tl = gsap.timeline({
       defaults: { ease: 'none' },
