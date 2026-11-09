@@ -1,10 +1,482 @@
+v8 (hero video): screen-1 background replaced with hero-honey-bg.* (webm/mp4, -lite for <=1000px, poster jpg). Source: first 15 s of IMG_8581 2.mov, 4x motion-interpolated slow motion, 4 s crossfade from end back to start baked in. Loop length 55.9 s. Playback rate set to 1 in script. ritual-bg.* files removed.
+
 # HONIORA site — deployment notes
+
+## v130 (2026-11-10)
+- morning-stack.html links now absolute to the live site: https://gregmillerhard.github.io/HoniOra_proto2/ (logo, back link, footer logo area) and .../#waitlist (both founding list buttons).
+
+## v129 (2026-11-10)
+- morning-stack.html links now relative (index.html, index.html#waitlist) so they work when opened from a local folder and on the hosted site.
+
+## v128 (2026-11-10)
+- morning-stack.html restyled to match the main site: gold-sheen sticky nav with honiora-logo.png, Gold Spotlight hero with the stick pack, gold eyebrows (01 Four jobs, 02 The full formula, 03 Questions), Arial light headings with gold italic accent, paper #F8F5EC, framed cream box, honey-toned dose table (stacked cards on phones), CTA styled like the site's founding-list button, logo in the footer. All copy, schema and FAQ unchanged apart from removing "The maker states" in the Oxxynea row.
+
+## v127 (2026-11-10)
+- Right nav: new "Ritual" link (#ritual, lands with the 02 / THE RITUAL eyebrow 18px under the nav) above "Protocol", which now goes to #protocol (stick pack 17px under the nav, per the user's screengrabs).
+
+## v126 (2026-11-10)
+- 13 / Format section removed entirely (heading, stick-pack converge animation, ease strip). Format links removed from the nav and the footer. The converge script exits early when its track is missing.
+
+## v125 (2026-11-10)
+- Protocol "Tune your gut" (Days 1 to 28): Actazin added after Livaux ("At 600 mg a day for 28 days, adults with occasional constipation gained about 1.4 more complete bowel movements a week.").
+
+## v124 (2026-11-10)
+- Protocol phases now 4 stacked rows instead of 4 columns. Desktop: phase number, title and timing on the left, actives in two columns on the right. Honey Progression colours kept per row. Phones unchanged (already stacked).
+
+## v123 (2026-11-10)
+- Long arc list: Oxxynea added after Pomma+ ("450 mg a serving, the polyphenols of about five servings of fruit and vegetables, from five polyphenol families.").
+
+## v122 (2026-11-10)
+- VIB intro column widened on desktop (min(1440px,96vw), centred) with font min(25.2px,1.66vw), so the three parts sit on exactly three lines from 1001px up. Phones unchanged.
+
+## v121 (2026-11-10)
+- VIB intro split into 3 lines with line breaks after "NZ summer." and "humanity's."
+
+## v120 (2026-11-10)
+- Arrival list: Careflow "rose 54% within hours in a pilot study"; effervescent engine "The actives arrive dispersed and dissolved, so nothing sits in the gut drawing water."
+
+## v119 (2026-11-10)
+- Protocol "Arrival" list: electrolyte matrix moved to the top, creatine line shortened ("starts saturating the muscle phosphocreatine pool."), Careflow line now "At 100 mg, skin blood flow rises 54% within hours." (user wording; pilot-study qualifier removed).
+
+## v118 (2026-11-10)
+- Long arc Ubiquinol line: function added ("carries electrons in your mitochondria to make cellular energy and protects cell membranes as an antioxidant").
+
+## v117 (2026-11-10)
+- Strength system creatine/ubiquinol panel: NMN paragraph added (converted to NAD+, carries electrons from food into the respiratory chain, powers repair enzymes, falls with age, 400 mg) and the "Together" line now includes NMN.
+
+## v116 (2026-11-10)
+- Hytolive EFSA wording softened in the long arc list, scroller card, HoniOra Stack row and Ask Honi: "the olive polyphenol behind EFSA's blood lipid claim for olive oil" (was "above the 5 mg EFSA threshold for protecting blood lipids").
+
+## v115 (2026-11-10)
+- Protocol "The long arc" list reordered (Manuka/Fiberest, Ubiquinol, NMN, Hytolive, Pomma+, Vitamin A, Magnesium & Zinc) and Fiberest line now "Your gut barrier reinforced, day after day, rather than rebuilt from scratch."
+
+## v114 (2026-11-10)
+- GLP-1 section: "Also in the mix: Hytolive olive hydroxytyrosol" line under the three pillars (16-week prediabetes study, GLP-1 moved significantly vs placebo, HoniOra 6 mg vs trial 15 mg), linked to #hytolive. Direction of the GLP-1 change kept neutral until confirmed in writing.
+
+## v113 (2026-11-10)
+- LactoSpore: "Its maker says this helps..." rewritten as "The spore coat helps it survive stomach acid and bile...".
+- Hytolive section updated from Alvinesa's sell sheet: solvent-free chromatographic process from olive oil production by-product; point 02 now the 16-week ICTAN-CSIC prediabetes study (49 adults 40 to 70, 15 mg HT/day as 150 mg Hytolive 10%, oxLDL -5.11 vs +29.69 pg/mL, p=0.045, seven markers incl. IL-6 and GLP-1); footnote flags the dose gap (trial 15 mg vs HoniOra 6 mg) and the missing journal reference.
+
+## v112 (2026-11-10)
+- New Hytolive section (#hytolive) after LactoSpore, olive harvest backdrop (hytolive_bg.jpg 2400w, -lite 1200w). Copy from alvinesa.com: 300 mg Bev grade, 2% hydroxytyrosol = 6 mg, olive fruit not leaf, physical/mechanical, no solvents; EFSA olive oil polyphenol claim shown as context only; glucose study in progress; one of three polyphenol sources. Left nav link "Hytolive" at the bottom, lands with the box 18px under the nav.
+- "Water-soluble" dropped from the Hytolive card and Stack row (Alvinesa lists Bev as a powder for drinks; its Syrup grade is the one described as water-soluble).
+
+## v111 (2026-11-10)
+- cGP-Pro scroller card aligned with the section intro: frees IGF-1, NZ blackcurrant plus bovine collagen, world's first natural ingredient delivering a daily dose of cGP, Parkinson cGP/IGF-1 ratio finding.
+
+## v110 (2026-11-10)
+- cGP-Pro section intro: "cGP-Pro is made from NZ blackcurrants combined with bovine collagen. It is the world's first natural ingredient that delivers a daily dose of cGP for human health applications." (replaces "Its maker describes it as the only standardised cGP ingredient").
+
+## v109 (2026-11-10)
+- cGP-Pro card corrected after checking Dr Guan's publication list: capillary support framed as animal research, memory line replaced with the human finding that exists (Fan 2020, Parkinson disease, cGP/IGF-1 ratio and cognitive status). The list has no human trial of cGP-Pro supplementation, no human blood pressure or neuropathy study, and no study of memory in healthy older adults.
+
+## v108 (2026-11-10)
+- cGP-Pro scroller card rewritten from cgp-health.com/cgp-pro: cGP from IGF-1 breakdown keeps IGF-1 active, NZ blackcurrant plus collagen, standardised to at least 40 mcg cGP per 100 mg, capillary growth link, memory and cognition in older adults with higher cGP. BDNF line removed from the card (the product page does not mention BDNF; it was cell and mouse data only).
+
+## v107 (2026-11-10)
+- Cellular Energy panel: NMN added ("paired with ubiquinol, NMN and magnesium malate. Together they support ATP production, your cells' NAD+ supply and steady energy all day.").
+
+## v106 (2026-11-10)
+- Nav: HoniOra Stack moved from the top of the left stack to the top of the right stack (above Four Systems).
+
+## v105 (2026-11-10)
+- Screen 1 desktop (>1000px): MANUKA CREATINE PROTOCOL scaled (JS matchTagToWordmark, last step of fitHeroAll) to the exact rendered width of the HONIORA wordmark. Measured equal at 1100, 1440, 1600 and 2200 wide. Phones unchanged (tag wraps to two lines there).
+
+## v104 (2026-11-10)
+- Last two "21" active counts updated to 22: the "Full dose wellness actives" stat and the counting "Named actives" stat.
+
+## v103 (2026-11-10)
+- New NMN section (#nmn) after Ubiquinol: big NMN structure at the top (nmn-molecule.svg, vector-traced from the user's image and rotated about 18 degrees so the molecule lies flat, atom labels kept upright, dark brown #3A2408), Gold Spotlight background, 4 points, 2 supporting-research links (PubMed searches: Yoshino 2021 Science, Yi 2023 GeroScience), footnote. Left nav link "NMN" under Ubiquinol, lands with the molecule 24px under the nav bar.
+
+## v102 (2026-11-10)
+- NMN 400 mg added (420 mg as made in MBR SP20-1.5, the 420 mg freed by Actazin; gross holds 20.000 g, effervescent base unchanged). New scroller card beside Kaneka Ubiquinol (white powder graphic nmn.webp), hero actives list, protocol list and table, HoniOra Stack row (PubMed search link, supplier TBC), stick-pack conversion carousel (new item after Ubiquinol, items renumbered, 19th motion config added), Ask Honi NMN answer, creatine point 04, Strength system list, morning-stack.html row and cellular energy line.
+- Active count 21 to 22 (plan cards, Ask Honi, morning-stack.html). Actives total line back to 15.2 g.
+- MBR SP20-1.5 Google Doc: 12f9_Fm1OeG8SgSugUTznXZuW-V_kNIqFBTUmFjseoMc (v1.4 kept).
+
+## v101 (2026-11-10)
+- Actazin reduced from 1,000 mg to 600 mg site-wide: scroller card, protocol table, HoniOra Stack row, Actazin section, footnote ("matches the dose in the 28-day trial"), Ask Honi, morning-stack.html. Actives total line 15.2 g to 14.8 g. MBR not yet updated (400 mg label / 420 mg as-made to reallocate).
+
+## v100 (2026-11-10)
+- First scroller ends with a centred dot instead of a full stop.
+
+## v99 (2026-11-10)
+- First scroller: commas replaced with middle dots ("CREATINE-DRIVEN CELL ENERGY · GLP-1 SUPPORT · GUT HEALTH · NITRIC OXIDE PRODUCTION · BRAIN + VASCULAR SYSTEM SUPPORT.").
+
+## v98 (2026-11-10)
+- Oxxynea text box less see-through (white .80 to .88) so the copy reads more easily over the fruit.
+
+## v97 (2026-11-10)
+- Morning solution: "Readiness in 60 seconds." on one line (nowrap), NOURISH / UPGRADE / CARPE DIEM move up with it.
+
+## v96 (2026-11-10)
+- Morning solution phone size trimmed to clamp(13px,3.75vw,15px) so every line stays on one line on 360 to 430px phones.
+- Desktop screen 1: whole copy block (Introducing down to CARPE DIEM) up 25px via translate on .hero-copy-shift.
+
+## v95 (2026-11-10)
+- CARPE DIEM moved up a further 50px on desktop. Phones only 20px, since 50px overlapped UPGRADE YOUR WELLNESS.
+- Morning solution: "&" changed to "+", and the block enlarged about 27% (min(2.3vw,28px) desktop, clamp(14px,4vw,17px) phones).
+
+## v94 (2026-11-10)
+- Screen 1 morning solution: "our effervescent stack pack & A BIG glass of water = Readiness in 60 seconds." (stacked desktop copy and both one-line variants).
+- CARPE DIEM 25% smaller (min(9vw,204px) desktop, clamp(54px,17.6vw,156px) mobile) and 20px higher.
+
+## v93 (2026-11-10)
+- Manuka coast photo on phones (<=1000px): square crop A, gnarled trunks from the left of the frame (manuka-coast-sq.jpg 1000x1000). Desktop unchanged. manuka-coast-lite.jpg no longer referenced.
+
+## v92 (2026-11-10)
+- Screen 1 CARPE DIEM enlarged to the largest size that fits: min(12vw,272px) desktop (192px at 1600 wide, about 91% of the screen), clamp(72px,23.5vw,208px) mobile (about 92px on a 390 phone). A true double (272px / 168px) would run off both sides of the screen.
+
+## v91 (2026-11-10)
+- Manuka coast photo caption: "MANUKA BUSH · AOTEAROA · NEW ZEALAND", centred at the bottom of the photo (alt text updated to match).
+
+## v90 (2026-11-10)
+- Screen 1 CARPE DIEM: up 20px (margin calc base 16 to -4 desktop, 12 to -8 mobile) and font size doubled (min(10.4vw,136px) desktop, clamp(72px,21.6vw,104px) mobile).
+
+## v89 (2026-11-10)
+- Screen 1: one line removed between UPGRADE YOUR WELLNESS and CARPE DIEM (hsr-alive margin multiplier 3.75 to 2.75 desktop, 4.2 to 3.2 mobile).
+
+## v88 (2026-11-10)
+- First scroller body: "CREATINE-DRIVEN CELL ENERGY, GLP-1 SUPPORT, GUT HEALTH, NITRIC OXIDE PRODUCTION, BRAIN + VASCULAR SYSTEM SUPPORT."
+
+## v87 (2026-11-10)
+- First scroller body now all caps: "CREATINE-DRIVEN CELLULAR ENERGY, GLP-1 SUPPORT, GUT HEALTH, NITRIC OXIDE PRODUCTION, BRAIN & VASCULAR SYSTEM SUPPORT."
+
+## v86 (2026-11-09)
+- Taurine copy expanded (scroller card, HoniOra Stack row, Ask Honi, morning-stack.html): conditionally essential, tissue concentration, osmolyte, calcium handling, mitochondrial function, age decline and Singh et al. 2023 Science (mice lifespan, monkey health markers, human evidence emerging). Stack row placeholder citation replaced with doi.org/10.1126/science.abn9257 (verify).
+
+## v85 (2026-11-09)
+- Nav: HoniOra Stack (#matrix) and Four Systems (#triad) swapped. HoniOra Stack now tops the left stack, Four Systems tops the right.
+- morning-stack.html Citicoline row updated to the v84 copy (cytidine to uridine, Kennedy pathway). The HoniOra Stack row on index.html already carried it from v84.
+
+## v84 (2026-11-09)
+- Citicoline copy upgraded (ingredient scroller card, formula row, Ask Honi answer): choline plus cytidine, cytidine to uridine in humans, Kennedy pathway to phosphatidylcholine, brain-targeted choline vs plain choline. Synaptic density / plasticity / dopamine release framed as lab research. Attention trial line kept.
+
+## v83 (2026-11-09)
+- Format nav link: lands with the 13 / FORMAT eyebrow 13px under the nav bar, stick pack mid-screen.
+- Nav scroll fix: long jumps (Format was stranding ~3,000px short, already broken in v80) now re-measure and correct up to 4 times after the scroll settles (8 still frames), last pass instant. Oxxynea, VIB and Actazin links re-tested, unchanged.
+
+## v82 (2026-11-09)
+- 13 / Format background: Gold Spotlight (radial #FFFBEF to #EED79C behind the pack), section top #FFFBEF, ease strip #EED79C to paper-2.
+
+## v81 (2026-11-09)
+- 13 / Format: converge pane lifted up behind the heading (JS liftPane sets a negative margin on #packConvergeTrack so its top sits 40px above the eyebrow, recalculated on resize and ScrollTrigger refresh). The stick pack now sits mid-screen on arrival. Heading has z-index 8 so it paints above the pane.
+
+## v80 (2026-11-09)
+- The VIB bee nav link: lands with the THE HONEY BEE / OUR VIB eyebrow 24px under the nav bar.
+
+## v79 (2026-11-09)
+- Actazin nav link: lands with the top of the Actazin text box 18px under the nav bar.
+
+## v78 (2026-11-09)
+- Left nav stack: Four Systems moved to the top, above Manuka Honi.
+
+## v77 (2026-11-09)
+- Oxxynea nav link: lands with the top of the Oxxynea text box 25px under the nav bar.
+
+## v76 (2026-11-09)
+- Oxxynea points 01 and 04 rewritten without supplier attribution, each now asterisked to the footnote (which still discloses the figures as Fytexia data).
+
+## v75 (2026-11-09)
+- Oxxynea section background replaced with the fruit and vege rainbow (oxxynea_bg.jpg 2600w, -lite 1200w, from the 7000px original). Shown whole with background-size:contain on white, never cropped. Text box blur removed (white .8) so the rainbow reads through.
+- Mobile (<=1000px): rainbow sits whole above the text box (92vw wide, padding-top reserves its height).
+
+## v74 (2026-11-09)
+- Creatine "What it does" list reordered and rewritten: 01 is now the 5,000 mg dose line, then vitality, ATP, vascular and gut pairing, electrolytes ("are crucial", "Cr.01 Creatine 5,000 mg dose"), and "Plus Citicoline". In 04, NMN replaced with Kaneka Ubiquinol (NMN is not in the SKU1 formula).
+
+## v73 (2026-11-09)
+- Creatine section big stat corrected from 3,000 MG to 5,000 MG (the last stale creatine dose on the site).
+
+## v72 (2026-11-09)
+- Ingredient scroller: Kaneka Ubiquinol moved to directly after Hytolive.
+
+## v71 (2026-11-09)
+- 1% for the bees box: "1 percent" changed to "1%".
+
+## v70 (2026-11-09)
+- Ingredient scroller: Careflow and Hytolive moved to directly after Braincurrant.
+
+## v69 (2026-11-09)
+- 1% for the bees box copy: "HoniCo pledges 1 percent of profits to NZ bee welfare.<br>Every HONIORA you buy gives back to the hive."
+
+## v68 (2026-11-09)
+- Ingredient scroller: vitAlign and Kaneka Ubiquinol cards swapped. vitAlign is now 8th (after Feiolix), Kaneka Ubiquinol 16th (after Citicoline).
+
+## v67 (2026-11-09)
+- Screen 1 desktop: HONIORA block lift increased from 30px to 70px, closing the gap under "Introducing" by a further 40px.
+
+## v66 (2026-11-09)
+- Screen 1: white keyline under the first scroller removed (.hero .hrail border-bottom transparent).
+- Screen 1 desktop (>1000px): HONIORA wordmark, MANUKA CREATINE PROTOCOL and the morning solution / NOURISH block moved up 30px with translate. "Introducing" unchanged. Mobile unchanged.
+
+## v65 (2026-11-09)
+- VasoDrive-AP section: gold left keyline on the text box removed. Background now Gold Spotlight radial multiplied under the milk splash (desktop and -lite). Text panel tinted cream to match.
+- VasoDrive points 02 and 03 rewritten without supplier attribution: "...helps them resist breakdown in the human digestive system, so they reach the bloodstream intact.*" and "Multiple human studies saw an effect within 3 to 4 weeks.*"
+
+## v64 (2026-11-09)
+- Vitamin A card: white background circle removed from retinyl_palmitate (.webp 820, -lite.webp 360, .jpg on cream). Drop cut out on transparent with a clean edge and scaled up 18% around the same centre.
+
+## v63 (2026-11-09)
+- Stick-pack conversion olive (pconv-09-hytolive-olive .webp 640 / .jpg 900): swapped to the clean re-cut olive on the Gold Glow circle, same disc size and position as before.
+
+## v62 (2026-11-09)
+- Hytolive Bev Olive card: olive re-cut with a clean edge (dark halo and old baked shadow removed, stem pocket cleared), new soft shadow, circle changed to Gold Glow (radial cream to gold). Files: hytolive_bev_olive(.webp/.jpg) and -lite.
+- Caption fix: nested <i>ORA</i> inside .icap i was inheriting display:block, so HONI and ORA split onto two lines. Added .icap i i{display:inline}.
+
+## v61 (2026-11-09)
+
+- Screen 2 recoloured to "Gold Spotlight": radial #FFFBEF behind the pack > #F8EBC8 > #EED79C edges; Ora #8A6410; ingredient lines, rule and button outlines #6B4A10. Text stays #2A1400.
+
+## v60 (2026-11-09)
+
+- Removed the full-screen-on-load script (requestFullscreen on load and on first click/tap/key). The site now stays in the normal browser window.
+
+## v59 (2026-11-09)
+
+- Careflow cut from 300 mg to 100 mg (batch record SP20-1.4). Copy moved from the 300 mg glucose/HbA1c results to the 100 mg microcirculation results everywhere: ingredient scroller, Protocol table, Stack list, NO circle, formula row, Careflow section (new points 02 and 03), Ingredient image badge, Ask Honi, Stack Guide. Glucose results now only mentioned in the footnote as not claimed.
+- NO total "868 mg" now "668 mg".
+- 210 mg freed went to the effervescent base: citric 1,968 mg, malic 233 mg, sodium bicarbonate 957 mg (about 262 mg Na), potassium bicarbonate 1,143 mg (about 446 mg K) on the formula rows and Taste section.
+- Scroller: "15.4 grams of full dose potent actives" now "15.2 grams" (label total 15,163 mg).
+
+## v58 (2026-11-08)
+
+- GLP-1 intro: line break added after "four support mechanisms".
+- Store cards: "The whole 22-active matrix" changed to "21-active" on all three plan cards.
+- Clinical Thresholds section background set to "Gold Spotlight" (radial #FFFBEF > #F8EBC8 > #EED79C).
+- "21 Named actives" hexagon: "HONIORA SKU2 formula" now "HONIORA formula"; "SKU2 batch record" now "HONIORA batch record".
+
+## v57 (2026-11-08)
+
+- GLP-1 section in "Forest Cards + Photos": forest green gradient (#0F2A1D > #0B2016), silk layer off, three separate gold-outlined cards, round ingredient photos (manuka_crystal, feijoa, eriomin_lemon, -lite on phones) in gold rings above i / ii / iii, cream text with gold eyebrow, numerals, names and links.
+
+## v56 (2026-11-08)
+
+- First scroller drift speed raised from 85 to 135 px per second (BASE_SPEED 0.135), about 60% faster once the opening hold ends.
+
+## v55 (2026-11-08)
+
+- Nitric Oxide wave lines animated (options 2 + 3): moved from the CSS background into an inline SVG (.no-waves) behind the content. Lines breathe (scaleY 0.9 to 1.08, 6 s) and soft pink highlights travel along each line (8 s loop, staggered 1.3 s). Reduced-motion: static lines, no highlights.
+
+## v54 (2026-11-08)
+
+- Screen 1 morning solution: "&" between "1 BIG glass of water" and "Ready" changed to "=" (all three copies).
+
+## v53 (2026-11-08)
+
+- Nitric Oxide section in "Deep Claret": background #3A0C17 > #260810 with soft pink wave lines, the three boxes #4A1421 with pink dividers, headings cream #F6EEDC, body cream 78%, eyebrow, numbers and links gold #E2B24A. Red ingredient circles unchanged.
+
+## v52 (2026-11-08)
+
+- Fixed screen 2 (stick pack, te reo line, swap line, ingredient lines) flashing in the bottom-left of screen 1 during load on tall desktop windows. While loading, screen 1 is ~330px shorter than its final height, so screen 2 briefly sat inside the first screen. Those pieces are now visibility:hidden (layout kept) via html.hl-settle until load + fonts ready + 2 frames + 250 ms (5 s failsafe). Desktop only; phones unchanged.
+
+## v51 (2026-11-08)
+
+- Screen 1 type-on now starts 0.8 s after the page load event (was 3 s), so "Introducing" and HONIORA appear about 2.2 s sooner. Everything after follows the same timings, so the video still starts as PROTOCOL completes (now about 7 s after load).
+
+## v50 (2026-11-08)
+
+- Swap line under the pack now reads "Swap out the messy powder scoops and tedious pills for our deliciously simple, naturally potent morning protocol." and sits 30px closer to the pack (desktop and phone).
+
+## v49 (2026-11-08)
+
+- Monthly Protocol bee seal is now a link with the same behaviour as the black "Reserve the protocol" button: goes to #waitlist and pre-fills "Monthly Protocol subscription · USD 196". Keyboard focus ring added.
+
+## v48 (2026-11-08)
+
+- Ingredient scroller page (.ibandhost) background set to "Gold Spotlight": full-width radial gradient #FFFBEF centre > #F8EBC8 > #EED79C edges, behind the focused ingredient. Text colours unchanged.
+
+## v47 (2026-11-08)
+
+- Scroller ending now "...cellular energy, GLP-1 support, Gut health boost, Nitric Oxide production, brain & vascular support."
+- RESERVE PROTOCOL hex (and every #store link) now lands with the "PRE-LAUNCH · RESERVE NOW" eyebrow about 120px under the nav bar on desktop (24px on phones), so the HONI FOUNDERS LIMITED OFFER heading, intro and the top of the Monthly Protocol card are in view, per the user's screengrab.
+
+## v46 (2026-11-08)
+
+- Monthly Protocol seal ring now reads "LIMITED EDITION FIRST DROP Q2 2027  RESERVE YOUR HONIORA SUB & GIFTS" (15px, fitted to the full circle). The screen 1 seal is unchanged.
+
+## v45 (2026-11-08)
+
+- Monthly Protocol card: First Drop bee seal (bee wax seal + the same 34 s spinning "FIRST DROP Q2 2027 RESERVE YOUR HONIORA UPGRADE" ring as screen 1, no backdrop) sits under the 5-box stack, centred on it, beside the bullet list. Ring text in dark gold #8A6410 so it reads on the light card. Grows slightly on hover. On narrow phones it drops below the list, centred. Decorative only (not a link).
+
+## v44 (2026-11-08)
+
+- Protocol table (03 / The Protocol) in "Honey Progression": Day One #FDF4DC, First Month #FAE6B4, Twelve Weeks #F6D78E, Year Round #F2C66C; dividers in translucent honey brown; hover now brightens the column slightly instead of turning it white. Phones stack the columns in the same order and colours.
+
+## v43 (2026-11-08)
+
+- Swap line under the stick pack moved down 4 lines (4 x its own line height) on desktop and phone.
+
+## v42 (2026-11-08)
+
+- LactoSpore nav link now lands with the white LactoSpore box centred in the space under the nav bar (16px minimum gap when the box is taller than the screen), matching the user's screengrab.
+
+## v41 (2026-11-08)
+
+- Screen 1 HONIORA wordmark enlarged (clamp(66px,10.5vw,220px) desktop, 19vw phone, about 1.7x on a 1440 screen) and centred on the screen; glow/shadow removed.
+
+## v40 (2026-11-08)
+
+- Scroller text now "A GOOD MORNING WELLNESS STACK OF ACTIVATED NECTAR Creatine-driven cellular energy, boost gut absorption, brain support and vascular system."
+- "Swap out the tedious and messy powders and pills..." removed from the first scroller (it now loops the single "A GOOD MORNING..." message).
+- Same line placed under the stick pack on screen 2 (#heroSwap, desktop), positioned off the pack like the te reo line. It fades up 0.45 s after the te reo line finishes typing. Phones show it under the pack image (.hero-swap-m, white with shadow over the video). Trailing comma replaced with a full stop.
+
+## v39 (2026-11-08)
+
+- First scroller drift speed raised from 65 to 85 px per second (BASE_SPEED 0.085), about 30% faster once the opening hold ends.
+
+## v38 (2026-11-08)
+
+- First scroller: on load, "A GOOD MORNING WELLNESS STACK OF ACTIVATED NECTAR" is centred on screen (per the user's screengrab). A 55vw spacer after NECTAR keeps "creatine-driven..." off screen until the scroll starts after the 8 s hold.
+
+## v37 (2026-11-08)
+
+- Stick pack cutout (sp-single-cutout.png / -lite): light keyline around the pack edge removed (edge pulled in 1 px, edge colours taken from inside the pack). Golden shadow rebuilt from the old one, about 15% wider, same colour and depth. Same canvas size, so layout is unchanged. Previous files kept in scratchpad look/ as *_v35.png.
+
+## v36 (2026-11-08)
+
+- Screen 2 (stick pack, te reo line, ingredient lines) recoloured to "B Amber Honey": background gradient #FAD789 > #F3BB66 > #E9A355, text #2A1400, Ora #6B3A00, lines and rules #5A3000, CTA buttons outlined in #5A3000.
+
+## v35 (2026-11-08)
+
+- Screen 1 sign-off back to "CARPE DIEM" (exclamation mark removed).
+- First scroller: gap after the last message (.hrail-gap) widened to a full screen width (100vw), so the end of "...MORNING PROTOCOL," and the start of "A GOOD MORNING..." never show at the same time. The opening hold now shows blank space to the left of the first words.
+
+## v34 (2026-11-08)
+
+- VIB section heading now "Our Very Important Bees." and intro rewritten per user ("Mānuka honi only exists because ... terrestrial ecosystems.").
+
+## v33 (2026-11-08)
+
+- First scroller: during the opening 8 s hold, "A GOOD MORNING WELLNESS STACK..." starts just left of the centred nav logo (logo left edge minus 56.5% of the logo width), matching the user's screengrab. The hold now sits inside the loop, so the tail of the previous message shows to the left, and after 8 s the drift carries on from that spot (no glide back).
+
+## v32 (2026-11-08)
+
+- Screen 1 sign-off "ACTIVE LIKE YOU!" changed to "CARPE DIEM!" (stacks on two lines on phones). Same type-on, zoom-out on scroll and position.
+- First scroller now opens "A GOOD MORNING WELLNESS STACK OF ACTIVATED NECTAR creatine-driven..." ("INTRODUCING HONIORA," removed).
+
+## v31 (2026-11-08)
+
+- Careflow rewritten everywhere (ingredient scroller, stack list, Four Systems card, matrix row, Careflow section, Ask Honi, Stack Guide) from the Biotexia/Fytexia pack and the two Planta Medica papers. Phrase "The supplier says it" removed site-wide and must not be used again.
+- Facts used: Organic Care300 300 mg/day (technical pack); Totapuri mango, India origin, processed in Germany; in vitro eNOS +23/42/60% (Gerstgrasser 2015, DOI 10.1055/s-0035-1558219); SIRT1/AMPK in vitro (Röchter 2015); 2017 RCT n=75, 300 mg: HbA1c vs baseline p=0.0028, post-meal glucose trend vs placebo p=0.0535, endothelial subgroup n=11 p=0.0408; RH-flow significant at 100 mg only (p=0.025), 300 mg p=0.313 (Buchwald-Werner 2017, DOI 10.1055/s-0043-103017); 2015 acute: 100 mg +54% p=0.0157, 300 mg +35% p=0.209. Studies used the product under its earlier name Careless.
+- Matrix citations switched from PubMed IDs to the DOIs printed on the papers.
+
+## v30 (2026-11-08)
+
+- Screen 1: a flat blue layer (#549CC7, the median colour of the video's first frame) covers the video while Introducing / HONIORA / MANUKA CREATINE PROTOCOL type on. When PROTOCOL completes (about 9 s after load now that "Introducing" is shorter), the blue fades out over 1.2 s as the video starts at 0.35x. Hidden for reduced-motion and no-JS visitors.
+
+## v29 (2026-11-08)
+
+- Screen 1: new headline "Introducing" above HONIORA (replaces NOURISH / UPGRADE in that spot, desktop and phone copies). NOURISH YOUR BODY / UPGRADE YOUR WELLNESS moved below "60 seconds." (.hsr-nourish), above ACTIVE LIKE YOU!, and types on in that order. Video still holds on the blue frame until PROTOCOL completes.
+
+## v28 (2026-11-08)
+
+- Tablet video: start moved 0.2 s earlier (first 3.85 s cut off, was 4.05 s). Loop about 38.5 s. Still holds on the blue first frame until PROTOCOL finishes typing, then plays at 0.35x.
+
+## v27 (2026-11-08)
+
+- Tablet video: first 4.05 s cut off (0.3 s more than v24). Loop about 38.3 s.
+- Video now holds on its first frame until the word PROTOCOL (end of MANUKA CREATINE PROTOCOL) finishes typing, then starts at 0.35x (about 11.7 s after load). Previously it waited for "HoniOra's morning solution:".
+
+## v26 (2026-11-08)
+
+- VIB bee section: background dark forest green #0F2A1D. Bee photo pre-blended onto the same green (vib_bee_green.jpg / -lite) so its black backdrop disappears; old vib_bee*.jpg removed. All type in the section 20% bigger; copy column widened to 740px to suit.
+
+## v25 (2026-11-08)
+
+- First scroller: "INTRODUCING HONIORA..." now leads, "SWAP OUT..." follows. Scroller text doubled in size. The opening message now starts 24px from the left during its 8 s hold (instead of centring), since it is wider than the screen.
+
+## v24 (2026-11-07)
+
+- Tablet video: first 3.75 s cut off (0.15 s more than v21/v23). Loop about 38.6 s. Hold-on-first-frame behaviour unchanged.
+
+## v23 (2026-11-07)
+
+- v23's extra 0.3 s trim undone at the user's request. Tablet video back to the v22 files (first 3.6 s cut, 38.8 s loop). Hold-on-first-frame behaviour unchanged.
+
+## v22 (2026-11-07)
+
+- Screen 1 video holds on its first (blue) frame while NOURISH / UPGRADE, HONIORA and MANUKA CREATINE PROTOCOL type on, then starts playing (0.35x) the moment "HoniOra's morning solution:" begins typing (about 14 s after load). Failsafe starts it at 45 s; reduced-motion users get the video playing straight away.
+
+## v21 (2026-11-07)
+
+- Tablet video: first 3.6 s now cut off outright (no longer moved to the end of the loop). Loop is 38.8 s and opens on the blue frame; the restart from the last frame back to blue is now a straight cut.
+- Screen 1 type-on: 2.2 s pause after MANUKA CREATINE PROTOCOL and after 60 SECONDS. (other lines keep the 0.75 s pause).
+
+## v20 (2026-11-07)
+
+- Screen 1 type-on slowed: 115 ms per letter (was 70), 0.75 s between lines (was 0.45 s). Full reveal about 22 s after the 3 s start delay.
+- Tablet video playback slowed from 0.5x to 0.35x (R=0.35).
+- Tablet video (ritual-bg.*): first 3.3 s (2.5 s, then 0.5 s, then 0.3 s more) (the orange-to-blue fade) moved to the end of the file, so it opens on the blue frame and still loops seamlessly. Same 42.4 s length. Poster is the blue frame.
+- Screen 1 copy all white in Inter 300 (fine sans), soft white-on-dark shadow; light wash replaced with a soft dark tint. Ticker and seal ring text white.
+- HONIORA wordmark in the nav logo fonts in white: HONI upright Playfair Display 700, ORA italic. Fixed .hero-logo span italic leaking onto the typed letters.
+
+## v19 (2026-11-07)
+
+- Screen 1 background reverted to the original tablet video (ritual-bg.webm/.mp4, -lite, poster) at half-speed playback (R=0.5), as it was up to v7. hero-honey-bg.* removed from the site folder. Brown-gold hero type and light wash kept.
+
+## v18 (2026-11-07)
+
+- VIB bee section redesigned: black background, macro honey bee photo (vib_bee.jpg / -lite.jpg, cropped from the supplied image) on the left, sticky on desktop so it stays in view while the stats, list and 1% pledge scroll on the right. Heading and intro sit above on black. Phones stack heading, bee, then copy. Honeycomb background and cream wash removed for this section. Copy unchanged.
+- VIB intro reworded per user ("starts with bees ... each NZ summer ... Bees and other pollinators help produce most of the fruit and vegetables you eat. Their survival is under serious pressure from converging environmental, biological, and agricultural stressors.").
+
+## v17 (2026-11-07)
+
+- Ticker message 2: "WELLNESS PROTOCOL OF ACTIVATED NECTAR of creatine-driven" changed to "WELLNESS STACK OF ACTIVATED NECTAR creatine-driven".
+- First scroller (hero ticker) now ends at "...targeted micro-vascular brain support." The 21 ingredient items after it were removed; the two messages loop on their own.
+- Ingredient scroller Pomma+ caption: added the ellagitannin to Urolithin A conversion (individually variable) and a link to #pomma.
+- Nav: "Four Systems" and "The VIB bee" swapped (Four Systems now in the left menu, VIB bee in the right).
+- Monthly Protocol card: added bullet "Unlock the long term health benefits of subscription." after "The whole 22-active matrix, full dose".
+
+## v16 (2026-11-07)
+
+- New #lactospore section after #careflow, on lactospore_bg.jpg / -lite.jpg. Evidence: Majeed et al. 2023 Medicine (DOI 10.1097/MD.0000000000033109, gas and bloating, n=70, 2B spores/day, 4 wk) and Majeed et al. 2016 Nutrition Journal (DOI 10.1186/s12937-016-0140-6, IBS-D pilot, n=36, 2B/day, 90 d). Footnote flags 3x trial dose, maker-authored trials, maker stability claims.
+- Left nav: HoniOra Stack moved to the top of the right nav; LactoSpore added at the bottom of the left nav.
+- Ask Honi LactoSpore answer updated (Sabinsa, 100B/g grade, trials).
+
+## v15 (2026-11-07)
+
+- New #actazin section (09a) after #livaux, on actazin_bg.jpg / actazin_bg-lite.jpg (green kiwi slices). Copy from actazin.com/science-story: 28-day 600 mg trial (n=43, publication pending per maker), Ansell 2015 crossover (n=19, 600 and 2,400 mg), fibre water-holding (Sims and Monro 2013), actinidin (lab work), fermentation claim flagged as maker's.
+- Left nav (Protocol menu): Actazin link added below Livaux.
+- Ingredient scroller Actazin caption extended with the trial result and a link to #actazin. "Freeze-dried" changed to "cold-pressed" to match the maker's description.
+- Ask Honi: Actazin answer added.
+
+## v14 (2026-11-07)
+
+- Screen 1 video now starts on the clip's true opening (white screen). Loop rebuilt: slow-mo runs 0 to 55.9 s, then the last 4 s fade back to the first (white) frame, so the restart is seamless and every page load opens on white. 59.9 s loop, same orange grade. Poster is the white first frame.
+
+## v13 (2026-11-07)
+
+- Screen 1 video regraded more orange and baked into hero-honey-bg.* (ffmpeg colorchannelmixer gr=-0.25 gb=0.25, eq saturation 1.45 contrast 1.15). Warm tones shift to orange, whites stay white. CSS filter on .hero-bg removed.
+
+## v12 (2026-11-07)
+
+- Ticker bar: white fade edges on left and right removed.
+- Screen 1 video warmer: filter sepia(.4) saturate(1.7) hue-rotate(-18deg) contrast(1.2); wash tinted warm cream.
+- ACTIVE LIKE YOU! moved down 3 lines of the copy above it. The video now extends below the fold on desktop too when needed, so the line never sits on plain white.
+
+## v11 (2026-11-07)
+
+- Screen 1 video: CSS filter saturate(1.45) contrast(1.22) on .hero .hero-bg; white wash lightened (.34/.22/.34) so the colour shows.
+- Hero HONIORA wordmark coloured to match the nav logo: HONI #15170F, ORA #AA8336 (ORA span now class wm-ora).
+
+## v10 (2026-11-07)
+
+- Screen 1: dark scrim replaced with a light white wash over the video, so the opening frames read white/cream, not grey.
+- All screen 1 copy (Nourish/Upgrade, HONIORA, Manuka Creatine Protocol, morning solution lines, Active like you!) in one dark brown gold #5A3D0C with a soft light glow. Gold accent colour on YOUR and ORA removed so it is all one colour.
+- Ticker bar and seal ring text switched to the same brown gold so they stay readable on the lighter background.
+
+## v9 (2026-11-07)
+
+- Hero background re-rendered from IMG_8581.mov: first 15 s, 4x interpolated slow motion, 4 s fade back to start, 55.9 s loop (hero-honey-bg.*).
+- Hero titles type on letter by letter (70 ms per letter, 0.45 s between lines), starting 3 s after the page load event. Hidden before first paint via html.ht-wait (failsafe reveal at 9 s). Reduced-motion users see the text at once. Only visible copies type; hidden desktop/mobile duplicates are revealed silently.
+- Screen 2 te reo line: 2x the old size (shrinks only if the longest line would reach the actives threads), Inter 300 with single-storey a (cv11), Ora in Playfair italic gold, top edge 50px lower. Copy now reads "Honi means honey, Ora means life, health, and vitality."
 
 ## HoniOra SP20 SKU1 Stick Pack site v8 (2026-11-06)
 
 - "Single Pack" renamed "7 Day Pack" everywhere it shows: card title and button, nav hex (RESERVE 7 DAY PACK) and dropdowns, store intro, Monthly Pack and Monthly Protocol savings lines, Format section, terms ("7 Day Pack credit"), Ask Honi pricing answer, reserve data-plan. The #singlepack anchor id is unchanged.
 - Store heading, eyebrow and intro text centred over the cards. The gift-pack link in the intro is now an inline span (role=button, keyboard enabled) so the closing full stop no longer drops onto its own line on phones.
 - The three store pack images (5-pack stack, 7 Day Pack, Monthly Pack box) grow 70% (anchored near the top so they clear the reserve button) with a golden drop shadow on mouse rollover and ease back when the pointer leaves. Off on touch-only screens and under reduced-motion settings.
+- Mānuka vista banner (MANUKA_PAN.jpg / _lite) swapped for the new sunrise beekeepers photo (2752 x 1536); banner height ratio updated to match.
+- New "The Very Important Bee" section (#vib) after the Manuka honeycomb section: honey bee colony-loss facts (Auburn 2025-26, Project Apis m. 2024-25, USDA virus/amitraz findings, NZ Colony Loss Survey 2025, FAO 2018), 1% for the bees pledge, sourced links. Added to the left burger menu.
 - New Oxxynea section (#oxxynea) after Pomma+, full-bleed rainbow backdrop (oxxynea_bg.jpg / -lite), same frosted panel as Careflow. Copy from the Fytexia technical pack, botanical annex and spec sheet (Jan 2025) and Romain et al., Nutrients 2022 (NCT03432104); unpublished MDA and blood pressure data left out; nav burger link and an Ask Honi answer added.
 - Founders gift lightbox: new photo (founders-gift-pack-sp.jpg / -sp-lite.jpg, bottle plus a 7 Day Pack; old tube photo files removed), caption now ends "500ML Bottle PLUS 1 FREE 7 DAY PACK", title "Founders Subscription" up from 16px to 30px, caption 15px, panel widened from 400px to up to 640px (sized to fit the screen height).
 
