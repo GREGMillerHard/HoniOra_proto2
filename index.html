@@ -3385,6 +3385,10 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
 .hero .hrail{border-bottom-color:transparent!important}
 /* (user request v66) desktop screen 1: HONIORA wordmark and everything below it up 30px, "Introducing" stays put */
 @media(min-width:1001px){#heroWordmark,.hero-tag,.hero-solution-right{translate:0 -70px}}
+/* (user request v75) Oxxynea bg: fruit and vege rainbow on white, shown whole (contain, never cropped) */
+#oxxynea{background-color:#fff;background-size:contain;background-repeat:no-repeat;background-position:center}
+#oxxynea .livaux-box{background:rgba(255,255,255,.8);backdrop-filter:none;-webkit-backdrop-filter:none}
+@media(max-width:1000px){#oxxynea{background-size:92vw auto;background-position:center 28px;padding-top:calc(92vw / 1.915 + 56px)}}
 </style>
 </head>
 <body>
@@ -4850,10 +4854,10 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
       <p class="lede">HONI<i>ORA</i> carries 450 mg of Oxxynea<sup class="rn">&reg;</sup> per serving, the daily dose its maker, Fytexia (Biotexia), recommends and sets to match the polyphenols in five servings of fruit and vegetables. It blends green olive leaf, grape seed and skin, pomegranate, green tea, grapefruit, bilberry and orange extracts, standardised to at least 51% total polyphenols and carrying over 100 identified compounds from five families: flavan-3-ols, flavanones, ellagitannins, secoiridoids and anthocyanins.<br><a class="cite" href="https://doi.org/10.3390/nu14224913" target="_blank" rel="noopener noreferrer">Supporting research <span>Romain et al. 2022, Nutrients &nearr;</span></a><a class="cite sup" href="https://www.biotexia.com" target="_blank" rel="noopener noreferrer">Ingredient science <span>Biotexia &nearr;</span></a></p>
 
       <ul class="prob-list">
-        <li><span class="x">01</span><div><strong>Five a day, measured.</strong> <span class="d">The supplier measures 230 mg of polyphenols (gallic acid equivalents) in a 450 mg dose, against 228 mg in five average servings of fruit and vegetables.</span></div></li>
+        <li><span class="x">01</span><div><strong>Five a day, measured.</strong> <span class="d">A 450 mg dose measures 230 mg of polyphenols (gallic acid equivalents), against 228 mg in five average servings of fruit and vegetables.*</span></div></li>
         <li><span class="x">02</span><div><strong>Released across the whole day.</strong> <span class="d">In a randomised, double-blind, placebo-controlled crossover trial of 10 healthy adults, one 450 mg dose gave three peaks of polyphenol metabolites in the blood, at about 2, 4.5 and 9.5 hours, with metabolites still excreted 14 to 24 hours later. Estimated bioavailability was 27%.</span></div></li>
         <li><span class="x">03</span><div><strong>Steadier than a single polyphenol.</strong> <span class="d">Because the blend spans five polyphenol families, total metabolite levels varied less between people than any single family did, so exposure is more consistent from person to person.</span></div></li>
-        <li><span class="x">04</span><div><strong>Gentle on caffeine.</strong> <span class="d">The green tea extract brings about 30 mg of EGCG and less than 0.5 mg of caffeine per daily dose, per the supplier.</span></div></li>
+        <li><span class="x">04</span><div><strong>Gentle on caffeine.</strong> <span class="d">The green tea extract brings about 30 mg of EGCG and less than 0.5 mg of caffeine per daily dose.*</span></div></li>
       </ul>
 
       <p class="small" style="margin-top:30px;max-width:78ch">Ingredient-level evidence, see the <a href="#evidence-note" style="color:inherit;text-decoration:underline">evidence note</a>. The trial (Romain et al., <em style="font-style:italic">Nutrients</em> 2022; 14:4913, NCT03432104) was small, single-dose, in healthy adults, and funded by Fytexia, which employs three of its authors. The five-servings comparison and the caffeine and EGCG figures are supplier data. Fytexia also reports lower post-meal malondialdehyde and lower 24-hour mean arterial pressure against placebo in this study; those results are not in the published paper, so they are not claimed here. Oxxynea<sup class="rn">&reg;</sup> complements a varied diet, it does not replace one. No cited study is of the finished HONI<i>ORA</i> formula. Oxxynea is a trade mark of Fytexia.</p>
@@ -6279,6 +6283,13 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
           var sgap = window.innerWidth > 1000 ? 120 : 24;
           var sEbOff = seb ? (seb.getBoundingClientRect().top - el.getBoundingClientRect().top) : spad;
           return Math.max(0, el.getBoundingClientRect().top + window.scrollY + sEbOff - (hdr.getBoundingClientRect().bottom + sgap));
+        }
+        /* v77 #oxxynea: land with the top of the Oxxynea text box ~25px under the nav bar (per the user's screengrab) */
+        if (hash === '#oxxynea'){
+          var obox = el.querySelector('.livaux-box') || el;
+          var oty = 0;
+          try { var otf = getComputedStyle(obox).transform; oty = (otf && otf !== 'none') ? new DOMMatrix(otf).m42 : 0; } catch(_){ oty = 0; }
+          return Math.max(0, obox.getBoundingClientRect().top - oty + window.scrollY - (hdr.getBoundingClientRect().bottom + 25));
         }
         /* v42 #lactospore: land with the white LactoSpore box centred in the space under the nav bar (per the user's screengrab) */
         if (hash === '#lactospore'){
