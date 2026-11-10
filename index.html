@@ -3430,6 +3430,13 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
   .proto .phase li:nth-child(1),.proto .phase li:nth-child(2){border-top:1px solid var(--line)}
 }
 /* (user request v131) desktop screen 1: shrink the Introducing to CARPE DIEM block on shorter screens (MacBook) so it fits the window like on the iMac */
+/* (user request v139) first strip: dissolve between two groups instead of scrolling */
+.hero .hrail .hfade{cursor:default;overflow:visible}
+.hfade-slot{display:grid;justify-items:center;align-items:center;padding:clamp(9px,1.2vh,14px) clamp(16px,3vw,40px)}
+.hfade-g{grid-area:1/1;opacity:0;transition:opacity 1.4s ease;text-align:center;white-space:nowrap;max-width:100%}
+.hfade-g.is-on{opacity:1}
+@media(max-width:1000px){.hfade-g{white-space:normal;text-wrap:balance;line-height:1.2}html body .hero .hrail .hfade-g{font-size:clamp(20px,5.6vw,26px) !important}html body .hero .hrail .hfade-g+.hfade-g{font-size:clamp(15px,4.2vw,19px) !important}}
+@media(prefers-reduced-motion:reduce){.hfade-g{transition:opacity .3s linear}}
 </style>
 </head>
 <body>
@@ -3598,12 +3605,11 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
        branch's own lite nav (burgers + popups, in the header above this section)
        is untouched; only the hero's internal layout below the nav changes. */ -->
   <div class="hrail">
-    <div class="hrail-vp">
-      <div class="hrail-track" id="railTrack">
-        <div class="hrail-set">
-          <div class="hrail-gap" aria-hidden="true"></div>
-          <div class="hmsg"><span class="hmsg-head">A GOOD MORNING WELLNESS STACK OF ACTIVATED NECTAR</span><span class="hmsg-spacer" aria-hidden="true"></span>CREATINE-DRIVEN CELL ENERGY &middot; GLP-1 SUPPORT &middot; GUT HEALTH &middot; NITRIC OXIDE PRODUCTION &middot; BRAIN + VASCULAR SYSTEM SUPPORT &middot;</div>
-        </div>
+    <!-- (user request v139) the strip no longer scrolls: two groups dissolve in, hold, dissolve to blank, and loop -->
+    <div class="hrail-vp hfade">
+      <div class="hfade-slot">
+        <div class="hmsg hfade-g is-on">A GOOD MORNING WELLNESS STACK OF ACTIVATED NECTAR</div>
+        <div class="hmsg hfade-g">&middot;&nbsp;CREATINE-DRIVEN CELL ENERGY&nbsp;&middot; GLP-1 SUPPORT&nbsp;&middot; GUT HEALTH&nbsp;&middot; NITRIC OXIDE PRODUCTION&nbsp;&middot; BRAIN&nbsp;+&nbsp;VASCULAR SYSTEM SUPPORT&nbsp;&middot;</div>
       </div>
     </div>
 
@@ -8736,6 +8742,35 @@ s();['loadedmetadata','loadeddata','play','playing','ratechange'].forEach(functi
   addEventListener('resize',q);addEventListener('load',q);
   if(document.fonts&&document.fonts.ready)document.fonts.ready.then(q);
   q();
+})();
+</script>
+<script>
+/* (user request v139) first strip: two groups crossfade in a loop.
+   On desktop each group is sized to fit on one line so all of group 2 is on screen at once. */
+(function(){
+  var g=document.querySelectorAll('.hfade-g');if(g.length<2)return;
+  var slot=g[0].parentNode;
+  function fit(){
+    for(var k=0;k<g.length;k++){
+      var el=g[k];el.style.removeProperty('font-size');
+      if(innerWidth<1001)continue;
+      var avail=slot.clientWidth-parseFloat(getComputedStyle(slot).paddingLeft)*2;
+      var fs=parseFloat(getComputedStyle(el).fontSize),w=el.scrollWidth;
+      if(w>avail)el.style.setProperty('font-size',(fs*avail/w*0.98).toFixed(2)+'px','important');
+    }
+  }
+  /* (user request v141) group 1 is on at load, holds 4 s, crossfades to group 2, holds 5 s, crossfades back, loops */
+  var FADE=1400,HOLD=[4000,5000],i=0;
+  function next(){
+    var j=(i+1)%g.length;
+    g[i].classList.remove('is-on');g[j].classList.add('is-on');i=j;
+    setTimeout(next,FADE+HOLD[i]);
+  }
+  for(var k=1;k<g.length;k++)g[k].classList.remove('is-on');
+  g[0].classList.add('is-on');
+  fit();addEventListener('resize',fit);
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
+  setTimeout(next,HOLD[0]);
 })();
 </script>
 </body>
