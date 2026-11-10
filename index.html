@@ -3429,6 +3429,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
   .proto .phase ul{grid-column:2;grid-row:1 / span 3;display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(24px,3vw,44px);border-top:0}
   .proto .phase li:nth-child(1),.proto .phase li:nth-child(2){border-top:1px solid var(--line)}
 }
+/* (user request v131) desktop screen 1: shrink the Introducing to CARPE DIEM block on shorter screens (MacBook) so it fits the window like on the iMac */
 </style>
 </head>
 <body>
@@ -5918,7 +5919,8 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
     T.style.fontSize = (fs * lw / tw) + 'px';
     tw = textW(T); fs = parseFloat(getComputedStyle(T).fontSize);
     if(Math.abs(tw - lw) > 1) T.style.fontSize = (fs * lw / tw) + 'px';
-    var cw = T.clientWidth;
+    var cw = T.clientWidth, zb = T.closest('.hero-copy-shift'), z = (zb && parseFloat(zb.style.zoom)) || 1;
+    lw = lw / z; /* v131: Range widths are zoomed, clientWidth and margins are not */
     if(lw > cw){ var m = ((cw - lw) / 2) + 'px'; T.style.marginLeft = m; T.style.marginRight = m; }
   };
   var fitHeroAll = function(){ fitHeroLines(); matchHeroTagWidth(); matchLinesToTagWidth(); capPrecedeSolution(); fitManukaCaption(); matchTagToWordmark(); };
@@ -8502,7 +8504,8 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
     el.style.transform='none';
     var r=el.getBoundingClientRect();
     var d=(document.documentElement.clientWidth/2)-(r.left+r.width/2);
-    el.style.transform='translateX('+Math.round(d)+'px)';
+    var z=parseFloat(el.style.zoom)||1; /* v131: translate is in zoomed units */
+    el.style.transform='translateX('+Math.round(d/z)+'px)';
   }
   window.addEventListener('load',function(){centre();setTimeout(centre,400);setTimeout(centre,1500);});
   window.addEventListener('resize',centre,{passive:true});
@@ -8712,6 +8715,24 @@ s();['loadedmetadata','loadeddata','play','playing','ratechange'].forEach(functi
     function go(){setTimeout(run,800);} /* v51: typing starts 0.8 s after load (was 3 s) */
     if(document.readyState==='complete')go();else window.addEventListener('load',go,{once:true});
   }catch(e){d.classList.remove('ht-wait');document.querySelectorAll('.ht-c').forEach(function(c){c.classList.add('on');});if(window.__heroVideoRelease)window.__heroVideoRelease();console.warn('[hero type-on] skipped',e);}
+})();
+</script>
+<script>
+/* (user request v131) fit screen-1 copy block to window height on desktop */
+(function(){
+  var box=document.querySelector('.hero .hero-copy-shift'),end=document.querySelector('.hero .hsr-alive');
+  if(!box||!end)return;
+  function fit(){
+    box.style.zoom='';
+    if(innerWidth<1001)return;
+    var t=box.getBoundingClientRect().top,b=end.getBoundingClientRect().bottom;
+    var room=innerHeight*0.94-t,need=b-t;
+    if(need>room*1.01&&need>0){box.style.zoom=Math.max(0.6,room/need).toFixed(4);dispatchEvent(new Event('resize'))}
+  }
+  var tm,busy=0;function q(){if(busy)return;clearTimeout(tm);tm=setTimeout(function(){busy=1;fit();setTimeout(function(){busy=0},300)},150)}
+  addEventListener('resize',q);addEventListener('load',q);
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(q);
+  q();
 })();
 </script>
 </body>
