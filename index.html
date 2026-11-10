@@ -3435,7 +3435,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
 .hfade-slot{display:grid;justify-items:center;align-items:center;padding:clamp(9px,1.2vh,14px) clamp(16px,3vw,40px)}
 .hfade-g{grid-area:1/1;opacity:0;transition:opacity 1.4s ease;text-align:center;white-space:nowrap;max-width:100%}
 .hfade-g.is-on{opacity:1}
-@media(max-width:1000px){.hfade-g{white-space:normal;text-wrap:balance;line-height:1.2}html body .hero .hrail .hfade-g{font-size:clamp(20px,5.6vw,26px) !important}html body .hero .hrail .hfade-g+.hfade-g{font-size:clamp(15px,4.2vw,19px) !important}}
+/* (user request v142) both groups share one size, set by JS so group 2 fits one line on every screen */
 @media(prefers-reduced-motion:reduce){.hfade-g{transition:opacity .3s linear}}
 </style>
 </head>
@@ -3464,9 +3464,6 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
     </a>
     <a href="#ritual" class="hexnav-item">PROTOCOL
       <span class="hexdrop"><span class="hexdrop-card"><b>The Protocol</b>One stick pack a day, dissolved in water. The dose compounds over time, built on a natural active Antipodean matrix.</span></span>
-    </a>
-    <a href="#rita" class="hexnav-item">RITA<br>ROCKS
-      <span class="hexdrop"><span class="hexdrop-card"><b>Rita Rocks</b>Rita Ora talks longevity and her own wellness routine, in Women's Health.</span></span>
     </a>
     <a href="#singlepack" class="hexnav-item">7 DAY<br>PACK
       <span class="hexdrop"><span class="hexdrop-card"><b>7 Day Pack</b>Seven stick packs = one week, seven servings at $8.50 per day. Purchase price fully credited if you subscribe afterward.</span></span>
@@ -3543,7 +3540,6 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
       <a href="#nitric-oxide">Nitric Oxide</a>
       <a href="#vib">The VIB bee</a>
       <a href="#taste">Taste</a>
-      <a href="#rita">Rita Rocks</a>
       <a href="#lemon">Lemonwater?</a>
       <a href="#honiblogtop">HoniBlog</a>
       <a href="javascript:void(0)" id="askHoniBtnBurgerDrop">Ask Honi</a>
@@ -3609,7 +3605,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
     <div class="hrail-vp hfade">
       <div class="hfade-slot">
         <div class="hmsg hfade-g is-on">A GOOD MORNING WELLNESS STACK OF ACTIVATED NECTAR</div>
-        <div class="hmsg hfade-g">&middot;&nbsp;CREATINE-DRIVEN CELL ENERGY&nbsp;&middot; GLP-1 SUPPORT&nbsp;&middot; GUT HEALTH&nbsp;&middot; NITRIC OXIDE PRODUCTION&nbsp;&middot; BRAIN&nbsp;+&nbsp;VASCULAR SYSTEM SUPPORT&nbsp;&middot;</div>
+        <div class="hmsg hfade-g">&middot; CREATINE-DRIVEN CELL ENERGY &middot; HYDRATION &middot; GLP-1 SUPPORT &middot; GUT HEALTH &middot; NITRIC OXIDE BOOST &middot; BRAIN + VASCULAR SYSTEM SUPPORT &middot;</div>
       </div>
     </div>
 
@@ -4229,21 +4225,6 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
       <p><b>First Drop, Q2 2027.</b> Nothing is charged today. Reserve your tier now and we bill when the first batch ships.</p>
       <p><b>Founding list only.</b> These prices apply to the founding list and hold for as long as your subscription runs.</p>
       <p><b>*Limited edition.</b> Limited to the 1st 500 subscriptions.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ================= RITA ROCKS ================= -->
-<section id="rita">
-  <div class="rita-feature">
-    <picture>
-      <source media="(max-width:1000px)" srcset="rita-ora-feature-lite.jpg">
-      <img width="2722" height="1536" src="rita-ora-feature.jpg" alt="HONIORA feature: Super Star Rita Ora" loading="lazy">
-    </picture>
-    <div class="rita-copy">
-      <p class="rita-quote">&ldquo;This whole <a href="https://www.womenshealthmag.com/uk/health/a63630566/how-to-age-well-biohacking-longevity-tips/" target="_blank" rel="noopener noreferrer">longevity</a> thing, is it a trend now or something?&rdquo; Rita Ora asks me. Her deadpan delivery leaves in its wake a few seconds where I wonder if I should confirm that, yes, the multi-trillion dollar industry that sits under the longevity umbrella is, indeed, a big deal. But if I&rsquo;m in the dark about the degree to which the singer, songwriter and actor is a card-carrying member of wellness, along with its favourite pastime, life extension, she doesn&rsquo;t leave me there for long. Several minutes later, Rita&rsquo;s health habits committed to both memory and Dictaphone, I suspect that this whole longevity thing has a new poster woman.</p>
-      <p class="rita-byline">By <a href="https://www.womenshealthmag.com/uk/author/700057/lauren-clark/" target="_blank" rel="noopener noreferrer">Lauren Clark</a> &middot; Women&rsquo;s Health &middot; Published 10 March 2026</p>
-      <a class="rita-source" href="https://www.womenshealthmag.com/uk/health/a70584904/rita-ora-womens-health/" target="_blank" rel="noopener noreferrer">Read the full feature &rarr;</a>
     </div>
   </div>
 </section>
@@ -8751,13 +8732,12 @@ s();['loadedmetadata','loadeddata','play','playing','ratechange'].forEach(functi
   var g=document.querySelectorAll('.hfade-g');if(g.length<2)return;
   var slot=g[0].parentNode;
   function fit(){
-    for(var k=0;k<g.length;k++){
-      var el=g[k];el.style.removeProperty('font-size');
-      if(innerWidth<1001)continue;
-      var avail=slot.clientWidth-parseFloat(getComputedStyle(slot).paddingLeft)*2;
-      var fs=parseFloat(getComputedStyle(el).fontSize),w=el.scrollWidth;
-      if(w>avail)el.style.setProperty('font-size',(fs*avail/w*0.98).toFixed(2)+'px','important');
-    }
+    /* (user request v142) size group 2 to fill one line, then give group 1 the same size */
+    var el=g[1];el.style.removeProperty('font-size');g[0].style.removeProperty('font-size');
+    var avail=slot.clientWidth-parseFloat(getComputedStyle(slot).paddingLeft)*2;
+    var fs=parseFloat(getComputedStyle(el).fontSize),w=el.scrollWidth;
+    var f=(w>avail?fs*avail/w*0.98:fs).toFixed(2)+'px';
+    for(var k=0;k<g.length;k++)g[k].style.setProperty('font-size',f,'important');
   }
   /* (user request v141) group 1 is on at load, holds 4 s, crossfades to group 2, holds 5 s, crossfades back, loops */
   var FADE=1400,HOLD=[4000,5000],i=0;
