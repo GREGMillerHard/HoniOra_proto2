@@ -3433,7 +3433,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
 /* (user request v139) first strip: dissolve between two groups instead of scrolling */
 .hero .hrail .hfade{cursor:default;overflow:visible}
 .hfade-slot{display:grid;justify-items:center;align-items:center;padding:clamp(9px,1.2vh,14px) clamp(16px,3vw,40px)}
-.hfade-g{grid-area:1/1;opacity:0;transition:opacity 1.4s ease;text-align:center;white-space:nowrap;max-width:100%}
+.hfade-g{grid-area:1/1;opacity:0;transition:opacity 1s ease;text-align:center;white-space:nowrap;max-width:100%}
 .hfade-g.is-on{opacity:1}
 /* (user request v142) both groups share one size, set by JS so group 2 fits one line on every screen */
 @media(prefers-reduced-motion:reduce){.hfade-g{transition:opacity .3s linear}}
@@ -3603,7 +3603,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
     <!-- (user request v139) the strip no longer scrolls: two groups dissolve in, hold, dissolve to blank, and loop -->
     <div class="hrail-vp hfade">
       <div class="hfade-slot">
-        <div class="hmsg hfade-g is-on">A GOOD MORNING WELLNESS STACK OF ACTIVATED NECTAR</div>
+        <div class="hmsg hfade-g">A GOOD MORNING WELLNESS STACK OF ACTIVATED NECTAR</div>
         <div class="hmsg hfade-g">&middot; CREATINE-DRIVEN CELL ENERGY &middot; HYDRATION &middot; GLP-1 SUPPORT &middot; GUT HEALTH &middot; NITRIC OXIDE BOOST &middot; BRAIN + VASCULAR SYSTEM SUPPORT &middot;</div>
       </div>
     </div>
@@ -8738,18 +8738,20 @@ s();['loadedmetadata','loadeddata','play','playing','ratechange'].forEach(functi
     var f=(w>avail?fs*avail/w*0.98:fs).toFixed(2)+'px';
     for(var k=0;k<g.length;k++)g[k].style.setProperty('font-size',f,'important');
   }
-  /* (user request v141) group 1 is on at load, holds 4 s, crossfades to group 2, holds 5 s, crossfades back, loops */
-  var FADE=1400,HOLD=[4000,5000],i=0;
-  function next(){
-    var j=(i+1)%g.length;
-    g[i].classList.remove('is-on');g[j].classList.add('is-on');i=j;
-    setTimeout(next,FADE+HOLD[i]);
+  /* (user request v149) blank 2 s at load, then each group: fade in 1 s, hold (group 1: 4 s, group 2: 5 s),
+     fade out 1 s, blank 2 s, next group, looping */
+  var FADE=1000,HOLD=[4000,5000],GAP=2000,i=0;
+  function show(){
+    g[i].classList.add('is-on');
+    setTimeout(function(){
+      g[i].classList.remove('is-on');
+      setTimeout(function(){i=(i+1)%g.length;show();},FADE+GAP);
+    },FADE+HOLD[i]);
   }
-  for(var k=1;k<g.length;k++)g[k].classList.remove('is-on');
-  g[0].classList.add('is-on');
+  for(var k=0;k<g.length;k++)g[k].classList.remove('is-on');
   fit();addEventListener('resize',fit);
   if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
-  setTimeout(next,HOLD[0]);
+  setTimeout(show,GAP);
 })();
 </script>
 </body>
