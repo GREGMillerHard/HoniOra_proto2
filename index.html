@@ -3436,6 +3436,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
 .hfade-g{grid-area:1/1;opacity:0;transition:opacity 1s ease;text-align:center;white-space:nowrap;max-width:100%}
 .hfade-g.is-on{opacity:1}
 /* (user request v142) both groups share one size, set by JS so group 2 fits one line on every screen */
+.hfade-wrap .hfade-g{white-space:normal;text-wrap:balance;line-height:1.25}
 @media(prefers-reduced-motion:reduce){.hfade-g{transition:opacity .3s linear}}
 </style>
 </head>
@@ -3604,7 +3605,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
     <div class="hrail-vp hfade">
       <div class="hfade-slot">
         <div class="hmsg hfade-g">A GOOD MORNING WELLNESS STACK OF ACTIVATED NECTAR</div>
-        <div class="hmsg hfade-g">&middot; CREATINE-DRIVEN CELL ENERGY &middot; HYDRATION &middot; GLP-1 SUPPORT &middot; GUT HEALTH &middot; NITRIC OXIDE BOOST &middot; BRAIN + VASCULAR SYSTEM SUPPORT &middot;</div>
+        <div class="hmsg hfade-g">&middot;&nbsp;CREATINE-DRIVEN&nbsp;CELL&nbsp;ENERGY&nbsp;&middot; HYDRATION&nbsp;&middot; GLP-1&nbsp;SUPPORT&nbsp;&middot; GUT&nbsp;HEALTH&nbsp;&middot; NITRIC&nbsp;OXIDE&nbsp;BOOST&nbsp;&middot; BRAIN&nbsp;+&nbsp;VASCULAR&nbsp;SYSTEM&nbsp;SUPPORT&nbsp;&middot;</div>
       </div>
     </div>
 
@@ -8732,11 +8733,14 @@ s();['loadedmetadata','loadeddata','play','playing','ratechange'].forEach(functi
   var slot=g[0].parentNode;
   function fit(){
     /* (user request v142) size group 2 to fill one line, then give group 1 the same size */
-    var el=g[1];el.style.removeProperty('font-size');g[0].style.removeProperty('font-size');
+    var el=g[1];el.style.removeProperty('font-size');g[0].style.removeProperty('font-size');slot.classList.remove('hfade-wrap');
     var avail=slot.clientWidth-parseFloat(getComputedStyle(slot).paddingLeft)*2;
     var fs=parseFloat(getComputedStyle(el).fontSize),w=el.scrollWidth;
-    var f=(w>avail?fs*avail/w*0.98:fs).toFixed(2)+'px';
-    for(var k=0;k<g.length;k++)g[k].style.setProperty('font-size',f,'important');
+    var n=w>avail?fs*avail/w*0.98:fs;
+    /* (user request v151) if one line would drop below 15 px (phones, small tablets), wrap both groups at a readable size instead */
+    var wrap=n<15;slot.classList.toggle('hfade-wrap',wrap);
+    if(wrap)n=Math.min(19,Math.max(15,innerWidth*0.042));
+    for(var k=0;k<g.length;k++)g[k].style.setProperty('font-size',n.toFixed(2)+'px','important');
   }
   /* (user request v149) blank 2 s at load, then each group: fade in 1 s, hold (group 1: 4 s, group 2: 5 s),
      fade out 1 s, blank 2 s, next group, looping */
