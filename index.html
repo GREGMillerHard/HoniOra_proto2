@@ -3453,6 +3453,14 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
 #nitric-oxide .no-why-item h3{font-size:clamp(17px,1.5vw,21px);margin:6px 0 8px}
 #nitric-oxide .no-why-item p{font-size:clamp(12.5px,1.05vw,15px);line-height:1.45}
 @media(max-width:700px){#nitric-oxide .no-why-item{--d:min(300px,84vw)}}
+/* (user request v169) taller nav bar: 9px of space above and below the bar (6px on phones), hero pushed down to match */
+header{padding-top:9px;padding-bottom:9px}
+.hero{padding-top:85px !important}
+#ritual{scroll-margin-top:85px}
+@media(max-width:560px){header{padding-top:6px;padding-bottom:6px}.hero{padding-top:66px !important}}
+@media(orientation:landscape) and (max-height:500px){header{padding-top:0;padding-bottom:0}.hero{padding-top:43px !important}}
+.burger-drop{margin-top:18px}
+@media(max-width:560px){.burger-drop{margin-top:12px}}
 </style>
 </head>
 <body>
