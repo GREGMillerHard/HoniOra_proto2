@@ -329,7 +329,7 @@ v8 (hero video): screen-1 background replaced with hero-honey-bg.* (webm/mp4, -l
 
 ## v37 (2026-11-08)
 
-- Stick pack cutout (sp-single-cutout.png / -lite): light keyline around the pack edge removed (edge pulled in 1 px, edge colours taken from inside the pack). Golden shadow rebuilt from the old one, about 15% wider, same colour and depth. Same canvas size, so layout is unchanged. Previous files kept in scratchpad look/ as *_v35.png.
+- Stick pack cutout (sp-single-cutout.webp / -lite): light keyline around the pack edge removed (edge pulled in 1 px, edge colours taken from inside the pack). Golden shadow rebuilt from the old one, about 15% wider, same colour and depth. Same canvas size, so layout is unchanged. Previous files kept in scratchpad look/ as *_v35.png.
 
 ## v36 (2026-11-08)
 
@@ -482,7 +482,7 @@ v8 (hero video): screen-1 background replaced with hero-honey-bg.* (webm/mp4, -l
 
 ## HoniOra SP20 SKU1 Stick Pack site v7 (2026-11-06)
 
-- Stick pack image (sp-single-cutout.png, 1117 x 490, + -lite) recut without the photo's grey studio shadow and given a soft, light golden drop shadow, padded evenly top and bottom so the hero keylines still meet the pack's centre. Used in the hero, 02 / The Protocol and the converge section (its wrapper aspect ratio changed to 1117/490 to match).
+- Stick pack image (sp-single-cutout.webp, 1117 x 490, + -lite) recut without the photo's grey studio shadow and given a soft, light golden drop shadow, padded evenly top and bottom so the hero keylines still meet the pack's centre. Used in the hero, 02 / The Protocol and the converge section (its wrapper aspect ratio changed to 1117/490 to match).
 
 ## HoniOra SP20 SKU1 Stick Pack site v6 (2026-11-06)
 
@@ -521,7 +521,7 @@ What changed (v1, 2026-11-05):
 
 - Product format: 1 SP (20 g) in 500 ml of water replaces 3 tablets in 400 ml. Formula and doses follow HoniOra SP20 SKU1 (draft): creatine 5,000 mg, Livaux 2,000 mg, Careflow 2,000 mg, LactoSpore 6 billion CFU (60 mg of the 100 B/g grade), effervescent base 1,463 mg citric, 173 mg malic, 711 mg sodium bicarbonate, 850 mg potassium bicarbonate (about 195 mg Na, 332 mg K per serving, calculated). PEG 6000 and sodium stearyl fumarate removed (tableting aids only). Footer and bill-of-materials note now cite SP20 SKU1 (draft).
 - Packs and prices: Single Pack = 7 SP, $59.50, $8.50 a day, credited to a subscription. Monthly Protocol = one box of 28 SP, $196 a month, $7.00 a day, saves $42 against four Single Packs. The 4 + 1 free tube offer is gone.
-- Imagery: new cut-outs from the supplied SP and box photos: sp-single-cutout.png (+ -lite), sp-box-cutout.png (+ -lite), plan-sp-single.jpg. They replace the hero tube shot, the converge-section tube, the Single Pack card tube and the store box shot. The rolling three-tablet animation in 02 / The Protocol is now one SP that slides in (no roll). Unreferenced tube and tablet images were removed from the package.
+- Imagery: new cut-outs from the supplied SP and box photos: sp-single-cutout.webp (+ -lite), sp-box-cutout.png (+ -lite), plan-sp-single.jpg. They replace the hero tube shot, the converge-section tube, the Single Pack card tube and the store box shot. The rolling three-tablet animation in 02 / The Protocol is now one SP that slides in (no roll). Unreferenced tube and tablet images were removed from the package.
 - Copy: every visible tube/tablet/compression/Sanner line rewritten in index.html, the Ask Honi answers and morning-stack.html. Nav hex "TEST TUBE" is now "SINGLE PACK". Returns text now refers to boxes and sealed stick packs. Format section now reads "One box = Four weeks."
 
 Still showing tube or tablet imagery (no SP replacement supplied): founders-gift-pack.jpg (bottle plus a gold tube), matrix-stack-header.jpg (fizzing tablet), and any tablet footage in the hero glass and ritual videos.
