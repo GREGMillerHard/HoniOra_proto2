@@ -3461,6 +3461,88 @@ header{padding-top:9px;padding-bottom:9px}
 @media(orientation:landscape) and (max-height:500px){header{padding-top:0;padding-bottom:0}.hero{padding-top:43px !important}}
 .burger-drop{margin-top:18px}
 @media(max-width:560px){.burger-drop{margin-top:12px}}
+/* ---------- founders rewards (merch ladder) ---------- */
+.rewards{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center;max-width:1040px;margin:clamp(40px,6vw,72px) auto 0;padding:clamp(20px,3vw,36px);background:#fff;border:1px solid var(--line);border-radius:18px}
+.rewards-media{margin:0;border-radius:14px;overflow:hidden;background:#eceae6;aspect-ratio:720/1110}
+.rewards-media video{display:block;width:100%;height:100%;object-fit:cover}
+.rewards-copy .eyebrow{margin:0 0 10px}
+.rewards-copy h3{font-size:clamp(28px,3vw,40px);line-height:1.1;margin:0 0 12px;color:var(--ink)}
+.rewards-copy h3 em{color:var(--gold-deep)}
+.rewards-copy .rw-lede{font-size:16px;line-height:1.55;color:var(--ink-2);margin:0 0 20px}
+.rw-ladder{list-style:none;margin:0 0 18px;padding:0;border-top:1px solid var(--line)}
+.rw-ladder li{display:grid;grid-template-columns:96px 1fr;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.rw-ladder b{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep);font-weight:600}
+.rw-ladder span{font-size:15px;line-height:1.45;color:var(--ink)}
+.rw-ladder span i{display:block;font-style:normal;font-size:13px;color:var(--ink-2);margin-top:2px}
+.rw-ladder li.rw-hero span{font-weight:600}
+.rw-ladder li.rw-hero span i{font-weight:400}
+.rewards-copy .rw-fine{font-size:12px;line-height:1.5;color:var(--ink-2);margin:0}
+@media(max-width:760px){.rewards{grid-template-columns:1fr}.rewards-media{max-width:340px;margin:0 auto;width:100%}.rw-ladder li{grid-template-columns:84px 1fr}}
+/* ---------- merch ---------- */
+#merch .sec-head{text-align:center}
+#merch .sec-head h2,#merch .sec-head .lede{margin-left:auto;margin-right:auto}
+#merch .rewards{margin-top:0}
+.merch-sub{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:600;text-align:center;margin:clamp(56px,7vw,88px) 0 24px}
+.merch-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px;max-width:1180px;margin:0 auto}
+.mcard{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.mcard-media{position:relative;aspect-ratio:1/1;background:#F2F1ED;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.mcard-media img,.mcard-media video{width:100%;height:100%;object-fit:cover;display:block}
+.mcard-media img.contain{object-fit:contain;padding:4%;background:#F2F1ED}
+.mcard-media[style*="#fff"] img.contain{background:#fff}
+.mcard-media .mj-svg{width:72%;height:auto;max-height:92%}
+.mcard-tee{flex-direction:column;gap:14px;padding:12%}
+.mcard-tee img{width:72%;height:auto;object-fit:contain}
+.mcard-tee small{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:inherit;opacity:.8;text-align:center;line-height:1.6}
+.mcard-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.mcard-tag{font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--gold-deep)}
+.mcard h3{font-size:19px;margin:0;color:var(--ink);font-weight:400}
+.mcard p{font-size:14px;line-height:1.5;color:var(--ink-2);margin:0}
+.mcard-foot{margin-top:auto;padding-top:10px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.mcard-price{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.swatches{display:flex;gap:8px}
+.swatch{width:22px;height:22px;border-radius:50%;border:1px solid rgba(21,23,15,.25);cursor:pointer;padding:0;outline-offset:3px}
+.swatch[aria-pressed="true"]{box-shadow:0 0 0 2px #fff,0 0 0 3px var(--gold-deep)}
+.merch-fine{max-width:760px;margin:28px auto 0;text-align:center;font-size:12px;line-height:1.55;color:var(--ink-2)}
+/* ---------- HoniMerch hex flip tiles ---------- */
+.ft-lede{text-align:center;font-size:15px;color:var(--ink-2);margin:-10px 0 30px}
+.ftgrid{--hx:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);display:grid;grid-template-columns:repeat(7,minmax(0,1fr));column-gap:12px;max-width:1040px;margin:0 auto}
+.ftile{grid-column:span 2;aspect-ratio:.866/1;perspective:1400px}
+.ftile:nth-child(6n+1){grid-column:1/3}.ftile:nth-child(6n+2){grid-column:3/5}.ftile:nth-child(6n+3){grid-column:5/7}
+.ftile:nth-child(6n+4){grid-column:2/4}.ftile:nth-child(6n+5){grid-column:4/6}.ftile:nth-child(6n){grid-column:6/8}
+.ftile:nth-child(n+4){margin-top:-24%}
+.ftile-inner{position:relative;display:block;width:100%;height:100%;padding:0;border:0;background:none;cursor:pointer;transform-style:preserve-3d;transition:transform .75s cubic-bezier(.2,.7,.2,1);font:inherit;color:inherit;text-align:center;clip-path:none}
+.ftile:hover .ftile-inner,.ftile-inner:focus-visible,.ftile-inner[aria-pressed="true"]{transform:rotateY(180deg)}
+.ftile-inner:focus-visible{outline:none}
+.ftile-inner:focus-visible .ft-face{filter:drop-shadow(0 0 6px rgba(176,130,31,.8))}
+.ft-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;clip-path:var(--hx);background:linear-gradient(135deg,#E6C877,#B0821F 45%,#E9CF8C 70%,#9A701C);padding:2px}
+.ft-hex{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;height:100%;clip-path:var(--hx)}
+.ft-front .ft-hex{background:#fff;gap:8px;padding:17% 14% 19%}
+.ft-pic{flex:1;width:100%;min-height:0;display:flex;align-items:center;justify-content:center}
+.ft-img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block}
+.ft-img.logo{max-width:92%}
+.ft-name{font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-weight:700;font-size:clamp(12px,1.25vw,16px);color:var(--ink);line-height:1.2}
+.ft-hint{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep)}
+.ft-back{transform:rotateY(180deg)}
+.ft-back .ft-hex{background:#1E3528;background-image:radial-gradient(circle at 50% 30%,rgba(212,175,90,.14),rgba(212,175,90,0) 60%);padding:21% 13% 21%;justify-content:center;gap:4px;text-align:center}
+.ft-tag{font-size:clamp(8px,.72vw,9.5px);letter-spacing:.16em;text-transform:uppercase;color:#D4AF5A;font-weight:600}
+.ft-title{font-weight:700;font-size:clamp(13px,1.2vw,16px);color:#fff;margin-bottom:4px}
+.ft-rows{display:block;width:100%;border-top:1px solid rgba(212,175,90,.45)}
+.ft-row{display:block;padding:4px 0;border-bottom:1px solid rgba(212,175,90,.2);font-size:clamp(10.5px,.95vw,12.5px);line-height:1.3}
+.ft-row b{display:block;font-size:clamp(8px,.7vw,9px);letter-spacing:.14em;text-transform:uppercase;color:#D4AF5A;font-weight:600}
+.ft-row span{color:#fff}
+.ft-dot{display:inline-block;width:12px;height:12px;border-radius:50%;margin:2px 3px 0;border:1px solid rgba(255,255,255,.7);vertical-align:middle}
+@media(max-width:1000px){.ftgrid{grid-template-columns:repeat(5,minmax(0,1fr));max-width:700px}
+ .ftile:nth-child(n){grid-column:auto/span 2;margin-top:0}
+ .ftile:nth-child(4n+1){grid-column:1/3}.ftile:nth-child(4n+2){grid-column:3/5}.ftile:nth-child(4n+3){grid-column:2/4}.ftile:nth-child(4n){grid-column:4/6}
+ .ftile:nth-child(n+3){margin-top:-24%}}
+@media(max-width:560px){.ftgrid{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:8px;max-width:420px}
+ .ftile:nth-child(n){grid-column:auto/span 2;margin-top:0}
+ .ftile:nth-child(2n+1){grid-column:1/3}.ftile:nth-child(2n){grid-column:2/4}
+ .ftile:nth-child(n+2){margin-top:-24%}
+ .ft-row{font-size:12px}.ft-name{font-size:15px}.ft-title{font-size:15px}.ft-tag{font-size:9px}.ft-row b{font-size:8.5px}}
+@media(prefers-reduced-motion:reduce){.ftile-inner{transition:none}.ftile:hover .ftile-inner,.ftile-inner:focus-visible,.ftile-inner[aria-pressed="true"]{transform:none}.ft-back{transform:none;visibility:hidden}.ftile-inner[aria-pressed="true"] .ft-front,.ftile:hover .ft-front{visibility:hidden}.ftile-inner[aria-pressed="true"] .ft-back,.ftile:hover .ft-back{visibility:visible}}
+/* nav logo stretched 20% wider (user request) */
+.hexnav-logo img,.brand-mobile .brand-logo{aspect-ratio:3.55/1;object-fit:fill}
 </style>
 </head>
 <body>
@@ -3564,6 +3646,7 @@ header{padding-top:9px;padding-bottom:9px}
       <a href="#vib">The VIB bee</a>
       <a href="#taste">Taste</a>
       <a href="#lemon">Lemonwater?</a>
+      <a href="#merch">HoniMerch</a>
       <a href="#honiblogtop">HoniBlog</a>
       <a href="javascript:void(0)" id="askHoniBtnBurgerDrop">Ask Honi</a>
       <a href="morning-stack.html">Stack Guide</a>
@@ -4191,6 +4274,7 @@ header{padding-top:9px;padding-bottom:9px}
 <li>Unlock the long term health benefits of subscription.</li>
           <li>Founding price locked for life</li>
           <li>Skip, pause or cancel any time</li>
+          <li><a href="#founders-rewards" style="color:inherit">Founders Rewards: cap, tees and the bee glass set</a></li>
           <li>Priority access to every new drop or offer.</li>
           <li>Free USA shipping, always</li>
         </ul>
@@ -4249,6 +4333,113 @@ header{padding-top:9px;padding-bottom:9px}
       <p><b>Founding list only.</b> These prices apply to the founding list and hold for as long as your subscription runs.</p>
       <p><b>*Limited edition.</b> Limited to the 1st 500 subscriptions.</p>
     </div>
+  </div>
+</section>
+
+<!-- ================= MERCH ================= -->
+<section class="sec" id="merch">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow" id="merchtop">HoniMerch</p>
+      <h2 class="serif">The HONI<em>ORA</em> collection.</h2>
+      <p class="lede">Gift boxes, a matt gold drink cup, hoodies, caps and tees in forest green, bone and burgundy, the bee glass set and HoniCo M&#257;nuka in hexagonal jars. Subscribers collect them as monthly bonus gifts.</p>
+    </div>
+
+    <div class="rewards rv" id="founders-rewards">
+      <figure class="rewards-media">
+        <video src="merch-bee-tumbler.mp4" poster="merch-bee-tumbler-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Merch example: a tall glass tumbler etched with a Napoleonic bee, fizzing on a hexagonal wooden coaster"></video>
+      </figure>
+      <div class="rewards-copy">
+        <p class="eyebrow">Monthly subscriber bonus gift</p>
+        <h3 class="serif">Stay with us. <em>Collect the set.</em></h3>
+        <p class="rw-lede">Same sub per month. A great HONI<i style="display:inline;font-style:italic;font-size:inherit;color:inherit;margin:0">ORA</i> gift in your box every third month.<br>Share the love: get intro bonuses when your mate signs up.</p>
+        <ul class="rw-ladder">
+          <li><b>Month 1</b><span>The HONI<i style="display:inline;font-style:italic;font-size:inherit;color:inherit;margin:0">ORA</i> cap<i>Embroidered HONI<i style="display:inline;font-style:italic;font-size:inherit;color:inherit;margin:0">ORA</i> logo. Forest green, bone or burgundy.</i></span></li>
+          <li><b>Month 2</b><span>The classic tee<i>Heavyweight cotton. Small HONI<i style="display:inline;font-style:italic;font-size:inherit;color:inherit;margin:0">ORA</i> on the chest, big on the back.</i></span></li>
+          <li><b>Month 3</b><span>The Founders tee plus 500 g MGO500+ HONI<i style="display:inline;font-style:italic;font-size:inherit;color:inherit;margin:0">ORA</i> M&#257;nuka Honi<i>Limited edition and numbered, with the HoniOra NZ map printed in green and gold on the back.</i></span></li>
+          <li class="rw-hero"><b>Month 6</b><span>The bee glass set<i>Six custom HONI<i style="display:inline;font-style:italic;font-size:inherit;color:inherit;margin:0">ORA</i> glass tumblers etched with HONI<i style="display:inline;font-style:italic;font-size:inherit;color:inherit;margin:0">ORA</i> and the Napoleonic bee. Stay for six, get the set of six.</i></span></li>
+        </ul>
+        <p class="rw-fine">Rewards ship in your monthly box after each paid month. Choose sizes and colours in your account. Cancel any time and keep what has shipped. Merch shown is an example and may change before launch.</p>
+      </div>
+    </div>
+
+    <p class="merch-sub">Choose your HoniMerch</p>
+    <p class="ft-lede">Tap or hover a hex for sizes and details.</p>
+    <div class="ftgrid rv">
+      <div class="ftile">
+        <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Gift Box: show details">
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-gift-box-green-w.webp" alt="" loading="lazy"></span><span class="ft-name">Gift Box</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Shop at launch</span><span class="ft-title">Gift Box</span><span class="ft-rows"><span class="ft-row"><b>Contents</b><span>7 Day Pack + matt gold cup</span></span><span class="ft-row"><b>Box</b><span>Forest green, magnetic, gold RX logos</span></span><span class="ft-row"><b>Price</b><span>At launch</span></span></span></span></span>
+        </button>
+      </div>
+      <div class="ftile">
+        <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Matt Gold Cup: show details">
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-cup-matt-gold-w.webp" alt="" loading="lazy"></span><span class="ft-name">Matt Gold Cup</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Shop at launch</span><span class="ft-title">Matt Gold Cup</span><span class="ft-rows"><span class="ft-row"><b>Finish</b><span>Matt gold, clear lid, gold straw</span></span><span class="ft-row"><b>Capacity</b><span>Holds a full 500 ml serve</span></span><span class="ft-row"><b>Price</b><span>At launch</span></span></span></span></span>
+        </button>
+      </div>
+      <div class="ftile">
+        <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Hoodie: show details">
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-hoodie-forest-green-w.webp" alt="" loading="lazy"></span><span class="ft-name">Hoodie</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Shop at launch</span><span class="ft-title">Hoodie</span><span class="ft-rows"><span class="ft-row"><b>Sizes</b><span>XS to XXL</span></span><span class="ft-row"><b>Fabric</b><span>Heavyweight fleece, boxy fit</span></span><span class="ft-row"><b>Colours</b><span><span class="ft-dot" style="background:#223B2C" title="Forest green"></span><span class="ft-dot" style="background:#ECE4D4" title="Bone"></span><span class="ft-dot" style="background:#4A1824" title="Burgundy"></span></span></span></span></span></span>
+        </button>
+      </div>
+      <div class="ftile">
+        <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Crewneck: show details">
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-crew-forest-green.webp" alt="" loading="lazy"></span><span class="ft-name">Crewneck</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Shop at launch</span><span class="ft-title">Crewneck</span><span class="ft-rows"><span class="ft-row"><b>Sizes</b><span>XS to XXL</span></span><span class="ft-row"><b>Fabric</b><span>Heavyweight fleece, relaxed fit</span></span><span class="ft-row"><b>Colours</b><span><span class="ft-dot" style="background:#223B2C" title="Forest green"></span><span class="ft-dot" style="background:#ECE4D4" title="Bone"></span><span class="ft-dot" style="background:#4A1824" title="Burgundy"></span></span></span></span></span></span>
+        </button>
+      </div>
+      <div class="ftile">
+        <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Crop Zip and Jogger Set: show details">
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-set-forest-green.webp" alt="" loading="lazy"></span><span class="ft-name">Crop Zip &amp; Jogger Set</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Women&rsquo;s set &middot; Shop at launch</span><span class="ft-title">Crop Zip &amp; Jogger</span><span class="ft-rows"><span class="ft-row"><b>Set</b><span>Cropped zip hoodie + relaxed jogger</span></span><span class="ft-row"><b>Sizes</b><span>XS to XL</span></span><span class="ft-row"><b>Colours</b><span><span class="ft-dot" style="background:#223B2C" title="Forest green"></span><span class="ft-dot" style="background:#ECE4D4" title="Bone"></span><span class="ft-dot" style="background:#4A1824" title="Burgundy"></span></span></span></span></span></span>
+        </button>
+      </div>
+      <div class="ftile">
+        <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Dad Cap: show details">
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-cap-forest-green-w.webp" alt="" loading="lazy"></span><span class="ft-name">Dad Cap</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Month 1 gift &middot; Shop</span><span class="ft-title">Dad Cap</span><span class="ft-rows"><span class="ft-row"><b>Size</b><span>One size, adjustable</span></span><span class="ft-row"><b>Fabric</b><span>Cotton twill, embroidered</span></span><span class="ft-row"><b>Colours</b><span><span class="ft-dot" style="background:#223B2C" title="Forest green"></span><span class="ft-dot" style="background:#ECE4D4" title="Bone"></span><span class="ft-dot" style="background:#4A1824" title="Burgundy"></span></span></span></span></span></span>
+        </button>
+      </div>
+      <div class="ftile">
+        <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Classic Tee: show details">
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-vneck-forest-green.webp" alt="" loading="lazy"></span><span class="ft-name">Classic Tee</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Month 2 gift &middot; Shop</span><span class="ft-title">Classic Tee</span><span class="ft-rows"><span class="ft-row"><b>Sizes</b><span>XS to 2XL</span></span><span class="ft-row"><b>Print</b><span>Small on the chest, big on the back</span></span><span class="ft-row"><b>Colours</b><span><span class="ft-dot" style="background:#223B2C" title="Forest green"></span><span class="ft-dot" style="background:#ECE4D4" title="Bone"></span><span class="ft-dot" style="background:#4A1824" title="Burgundy"></span></span></span></span></span></span>
+        </button>
+      </div>
+      <div class="ftile">
+        <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Ribbed Scoop Neck Tee: show details">
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-scoop-bone.webp" alt="" loading="lazy"></span><span class="ft-name">Ribbed Scoop Tee</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Women&rsquo;s &middot; Shop at launch</span><span class="ft-title">Ribbed Scoop Tee</span><span class="ft-rows"><span class="ft-row"><b>Sizes</b><span>XS to 2XL</span></span><span class="ft-row"><b>Fabric</b><span>Fitted rib knit, half sleeve</span></span><span class="ft-row"><b>Colours</b><span><span class="ft-dot" style="background:#223B2C" title="Forest green"></span><span class="ft-dot" style="background:#ECE4D4" title="Bone"></span><span class="ft-dot" style="background:#4A1824" title="Burgundy"></span></span></span></span></span></span>
+        </button>
+      </div>
+      <div class="ftile">
+        <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Founders Tee: show details">
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-founders-back.webp" alt="" loading="lazy"></span><span class="ft-name">Founders Tee</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Month 3 &middot; Subscribers only</span><span class="ft-title">Founders Tee</span><span class="ft-rows"><span class="ft-row"><b>Edition</b><span>Numbered 001 to 500</span></span><span class="ft-row"><b>Plus</b><span>500 g MGO500+ M&#257;nuka Honi</span></span><span class="ft-row"><b>Back</b><span>HoniOra NZ map, green and gold</span></span></span></span></span>
+        </button>
+      </div>
+      <div class="ftile">
+        <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Bee Glass Set: show details">
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-bee-tumbler-poster-w.webp" alt="" loading="lazy"></span><span class="ft-name">Bee Glass Set</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Month 6 &middot; Subscribers only</span><span class="ft-title">Bee Glass Set</span><span class="ft-rows"><span class="ft-row"><b>Set</b><span>Six tall etched glasses</span></span><span class="ft-row"><b>Etch</b><span>HoniOra and the Napoleonic bee</span></span><span class="ft-row"><b>Capacity</b><span>Holds a full 500 ml serve</span></span></span></span></span>
+        </button>
+      </div>
+      <div class="ftile">
+        <button type="button" class="ftile-inner" aria-pressed="false" aria-label="MGO850+ Manuka Honi: show details">
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-honi-jar-850.webp" alt="" loading="lazy"></span><span class="ft-name">MGO850+ M&#257;nuka Honi</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">HoniCo Honi Jar &middot; Shop</span><span class="ft-title">MGO850+ M&#257;nuka Honi</span><span class="ft-rows"><span class="ft-row"><b>Net wt</b><span>250 g (8.8 oz)</span></span><span class="ft-row"><b>Grade</b><span>MGO850+, lab certified per batch</span></span><span class="ft-row"><b>Base</b><span>Barcode: provenance, batch, whitepaper</span></span></span></span></span>
+        </button>
+      </div>
+      <div class="ftile">
+        <button type="button" class="ftile-inner" aria-pressed="false" aria-label="MGO500+ Manuka Honi: show details">
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-honi-jar-500.webp" alt="" loading="lazy"></span><span class="ft-name">MGO500+ M&#257;nuka Honi</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">HoniCo Honi Jar &middot; Shop</span><span class="ft-title">MGO500+ M&#257;nuka Honi</span><span class="ft-rows"><span class="ft-row"><b>Net wt</b><span>500 g (17.6 oz)</span></span><span class="ft-row"><b>Grade</b><span>MGO500+, lab certified per batch</span></span><span class="ft-row"><b>Base</b><span>Barcode: provenance, batch, whitepaper</span></span></span></span></span>
+        </button>
+      </div>
+    </div>
+    <p class="merch-fine">Merch is shown as a design preview. Sizes and specs are planned and may change before launch. Shop prices are confirmed at launch. Subscriber gifts ship in your monthly box and are not sold separately.</p>
   </div>
 </section>
 
@@ -5157,16 +5348,16 @@ header{padding-top:9px;padding-bottom:9px}
       <div>
         <h3>Aromatics &amp; Visual Presentation</h3>
         <ul class="tastelist">
-          <li><b>Aroma</b><span>Immediate release of crisp cold-pressed yuzu citrus oil and vibrant tropical passionfruit top notes, backed by subtle honey aromatics and fresh feijoa esters.</span></li>
-          <li><b>In-glass appearance</b><span>A clean, glowing golden-amber effervescent tonic with a rapid, uniform micro-bubble rise. The standardised 80-mesh botanicals disperse smoothly without clumping or heavy sediment rings on the glassware.</span></li>
+          <span class="ft-row"><b>Aroma</b><span>Immediate release of crisp cold-pressed yuzu citrus oil and vibrant tropical passionfruit top notes, backed by subtle honey aromatics and fresh feijoa esters.</span></span>
+          <span class="ft-row"><b>In-glass appearance</b><span>A clean, glowing golden-amber effervescent tonic with a rapid, uniform micro-bubble rise. The standardised 80-mesh botanicals disperse smoothly without clumping or heavy sediment rings on the glassware.</span></span>
         </ul>
       </div>
       <div>
         <h3>Palate Evolution</h3>
         <ul class="tastelist">
-          <li><b>Front palate &middot; 0&ndash;5 seconds</b><span>Crisp, effervescent citrus sparkle. The dual-acid drive (citric, malic) delivers a rounded, smooth tartness that eliminates harsh acid bite.</span></li>
-          <li><b>Mid palate &middot; 5&ndash;15 seconds</b><span>Full-bodied tropical fruit texture powered by the soluble pectins of Livaux gold kiwifruit, feijoa, and MGO 850+ M&#257;nuka honey crystals. Natural fruit polysaccharides shield bitter taste receptors (TAS2R), neutralising the astringent notes of the blackcurrant- and mango-derived extracts.</span></li>
-          <li><b>Finish &middot; 15s+</b><span>Clean, refreshing citrus-honey finish with zero artificial sweetener linger, no chemical aftertaste, and no heavy electrolyte-saline tail.</span></li>
+          <span class="ft-row"><b>Front palate &middot; 0&ndash;5 seconds</b><span>Crisp, effervescent citrus sparkle. The dual-acid drive (citric, malic) delivers a rounded, smooth tartness that eliminates harsh acid bite.</span></span>
+          <span class="ft-row"><b>Mid palate &middot; 5&ndash;15 seconds</b><span>Full-bodied tropical fruit texture powered by the soluble pectins of Livaux gold kiwifruit, feijoa, and MGO 850+ M&#257;nuka honey crystals. Natural fruit polysaccharides shield bitter taste receptors (TAS2R), neutralising the astringent notes of the blackcurrant- and mango-derived extracts.</span></span>
+          <span class="ft-row"><b>Finish &middot; 15s+</b><span>Clean, refreshing citrus-honey finish with zero artificial sweetener linger, no chemical aftertaste, and no heavy electrolyte-saline tail.</span></span>
         </ul>
       </div>
     </div>
@@ -5540,7 +5731,7 @@ header{padding-top:9px;padding-bottom:9px}
         <summary>Terms and conditions<i></i></summary>
         <div class="lgbody">
           <p><b>Agreement.</b> These terms govern your use of this site and any purchase from HoniCo NZ Ltd (&ldquo;HoniCo&rdquo;, &ldquo;we&rdquo;). By ordering you accept them.</p>
-          <p><b>Eligibility.</b> You must be 18 or older. HONI<i>ORA</i> is not intended for anyone under 18, or for people who are pregnant or breastfeeding. Contains vitamin A as retinyl palmitate (900 mcg RAE per serving) and about 424 mg of potassium per serving from potassium bicarbonate. If you take blood pressure medicine (including ACE inhibitors), nitrate medicine or erectile dysfunction medicine, or you have kidney disease, speak with your doctor before use.</p>
+          <p><b>Eligibility.</b> You must be 18 or older. HONI<i>ORA</i> is not intended for anyone under 18, or for people who are pregnant or breastfeeding. Contains vitamin A as retinyl palmitate (900 mcg RAE per serving) and about 487 mg of potassium per serving from potassium bicarbonate. If you take blood pressure medicine (including ACE inhibitors), nitrate medicine or erectile dysfunction medicine, or you have kidney disease, speak with your doctor before use.</p>
           <p><b>Founding list.</b> Joining the list is not an order and creates no obligation on either side. Prices shown are indicative for the first commercial batch and may change before launch.</p>
           <p><b>Orders and pricing.</b> Prices are in US dollars and exclude any import duty your country charges. We may correct pricing or specification errors before dispatch and will contact you if we do. An order is accepted when we dispatch it, not when payment is taken.</p>
           <p><b>Subscription.</b> The Monthly Protocol renews automatically every [interval] at the price shown at signup until you cancel. You may cancel at any time before the next renewal from [cancellation route]. Cancellation stops future shipments and does not refund a shipment already sent. [US buyers: confirm this section satisfies federal and state automatic-renewal disclosure requirements before launch.]</p>
@@ -8801,6 +8992,22 @@ s();['loadedmetadata','loadeddata','play','playing','ratechange'].forEach(functi
   if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
   setTimeout(show,GAP);
 })();
+</script>
+<script>
+document.querySelectorAll('#merch .mcard').forEach(function(card){
+  var img=card.querySelector('.mcard-media img');
+  card.querySelectorAll('.swatch').forEach(function(b){
+    b.addEventListener('click',function(){
+      card.querySelectorAll('.swatch').forEach(function(x){x.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true'); if(img){img.src=b.dataset.src; img.alt=b.dataset.alt;}
+    });
+  });
+});
+</script>
+<script>
+document.querySelectorAll('#merch .ftile-inner').forEach(function(b){
+  b.addEventListener('click',function(){var on=b.getAttribute('aria-pressed')==='true';b.setAttribute('aria-pressed',on?'false':'true');b.setAttribute('aria-label',b.getAttribute('aria-label').replace(on?'hide':'show',on?'show':'hide'));});
+});
 </script>
 </body>
 </html>
