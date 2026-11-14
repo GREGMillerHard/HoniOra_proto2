@@ -3543,6 +3543,30 @@ header{padding-top:9px;padding-bottom:9px}
 @media(prefers-reduced-motion:reduce){.ftile-inner{transition:none}.ftile:hover .ftile-inner,.ftile-inner:focus-visible,.ftile-inner[aria-pressed="true"]{transform:none}.ft-back{transform:none;visibility:hidden}.ftile-inner[aria-pressed="true"] .ft-front,.ftile:hover .ft-front{visibility:hidden}.ftile-inner[aria-pressed="true"] .ft-back,.ftile:hover .ft-back{visibility:visible}}
 /* nav logo stretched 20% wider (user request) */
 .hexnav-logo img,.brand-mobile .brand-logo{aspect-ratio:3.55/1;object-fit:fill}
+/* ---------- plan order + comparison table ---------- */
+.plan-badge{display:inline-block;margin-left:10px;padding:3px 9px;border-radius:999px;background:var(--gold);color:#fff;font-size:10px;letter-spacing:.14em;vertical-align:2px}
+.plancompare{max-width:860px;margin:clamp(40px,5vw,64px) auto 0;text-align:center}
+.plancompare h3{font-size:clamp(24px,2.6vw,34px);margin:0 0 20px;font-weight:400}
+.pc-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.pc-table{width:100%;min-width:520px;border-collapse:separate;border-spacing:0;font-size:14px;text-align:center}
+.pc-table th,.pc-table td{padding:13px 10px;border-bottom:1px solid var(--line)}
+.pc-table thead th{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--ink-2);vertical-align:bottom;padding-top:16px}
+.pc-table tbody th{text-align:left;font-weight:400;color:var(--ink);width:38%}
+.pc-table td{color:var(--ink-2)}
+.pc-table .pc-feat{background:var(--gold-wash);border-left:1px solid var(--gold);border-right:1px solid var(--gold);color:var(--ink);font-weight:600}
+.pc-table thead .pc-feat{border-top:1px solid var(--gold);border-radius:8px 8px 0 0;color:var(--gold-deep);position:relative}
+.pc-table tbody tr:last-child .pc-feat{border-bottom:1px solid var(--gold)}
+.pc-pop{display:table;margin:0 auto 10px;white-space:nowrap;padding:4px 12px;border-radius:999px;background:var(--gold);color:#fff;font-size:9.5px;letter-spacing:.14em;line-height:1.4}
+.pc-y{color:var(--gold-deep);font-size:17px;font-weight:700}
+.pc-n{color:rgba(21,23,15,.3);font-size:17px}
+.pc-ctas{display:flex;justify-content:center;align-items:center;gap:22px;flex-wrap:wrap;margin-top:24px;font-size:14px}
+.pc-ctas a:not(.btn){color:var(--ink-2);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:560px){.pc-table{min-width:0;font-size:11.5px;table-layout:fixed}.pc-table th,.pc-table td{padding:10px 4px}.pc-table tbody th{width:34%;padding-left:2px}.pc-table thead th{font-size:8.5px;letter-spacing:.06em}.pc-pop{font-size:8px;padding:2px 7px}.pc-y,.pc-n{font-size:15px}}
+/* (user request v208/209) Synapsa bacopa section: full-bleed bacopa backdrop, same layout as #affron */
+#synapsa{background-image:url("synapsa_bg.jpg");background-size:cover;background-position:center;scroll-margin-top:calc(70px - clamp(80px,11vw,152px))}
+@media(max-width:1000px){#synapsa{background-image:url("synapsa_bg-lite.jpg")}}
+#synapsa .livaux-box{background:rgba(255,251,239,.9);backdrop-filter:none;-webkit-backdrop-filter:none}
+#synapsa h2 em{color:#2F6B2A}
 </style>
 </head>
 <body>
@@ -3616,6 +3640,7 @@ header{padding-top:9px;padding-bottom:9px}
       <a href="#affron">Affron Saffron</a>
       <a href="#vasodrive">VasoDrive-AP Amealpeptide</a>
       <a href="#pomma">Pomma+ Pomegranate</a>
+      <a href="#synapsa">Synapsa Bacopa</a>
       <a href="#oxxynea">Oxxynea Polyphenols</a>
       <a href="#eriomin">Eriomin Lemon</a>
       <a href="#mitoq">Kaneka Q30 Ubiquinol</a>
@@ -3782,6 +3807,7 @@ header{padding-top:9px;padding-bottom:9px}
         <li>Braincurrant<sup class="rn">&reg;</sup></li>
         <li>AlphaWave<sup class="rn">&reg;</sup> L-Theanine</li>
         <li>Affron<sup class="rn">&reg;</sup> saffron</li>
+        <li>Synapsa<sup class="rn">&reg;</sup> bacopa</li>
         <li>Taurine</li>
         <li>Citicoline</li>
 <li>Careflow<sup class="rn">&reg;</sup> mango</li>
@@ -3793,7 +3819,7 @@ header{padding-top:9px;padding-bottom:9px}
         <li>Vitamin A Retinyl Palmitate</li>
       </ul>
       <div class="hero-meta rv">
-        <div><b>22</b><span>Full dose wellness actives</span></div>
+        <div><b>23</b><span>Full dose wellness actives</span></div>
       </div>
       <div class="hero-cta rv">
         <a href="#matrix" class="btn ghost"><span class="btn-t">Explore Honi<i>Ora</i></span> <span class="ar">&rarr;</span></a>
@@ -3816,6 +3842,7 @@ header{padding-top:9px;padding-bottom:9px}
           <div class="ishot ishot-pomma"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="pomma_pomegranate-lite.webp"><img width="820" height="820" src="pomma_pomegranate.webp" alt="Pomma+ whole-fruit pomegranate extract" loading="lazy"></picture><figcaption class="icap"><b>Pomma+<sup class="rn">&reg;</sup> Whole-Fruit Pomegranate</b><s>300 mg</s><u class="ifn">ANTIOXIDANT SUPPORT</u><i>An upcycled, whole-fruit extract carrying pomegranate's punicalagins and ellagitannins, the polyphenols behind its antioxidant reputation. Your gut bacteria can convert ellagitannins into urolithins including Urolithin A. How much you make varies from person to person. <a href="#pomma" style="color:inherit;text-decoration:underline">See how</a>.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="oxxynea-lite.webp"><img width="820" height="820" src="oxxynea.webp" alt="A rainbow of fruit and vegetables, the polyphenol sources behind Oxxynea" loading="lazy"></picture><figcaption class="icap"><b>Oxxynea<sup class="rn">&reg;</sup> Polyphenol Blend</b><s>450 mg</s><u class="ifn">FRUIT &amp; VEG POLYPHENOLS</u><i>Olive leaf, grape, pomegranate, green tea, grapefruit, bilberry and orange extracts. At 450 mg, the polyphenols of five servings of fruit and vegetables, released across 24 hours.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="affron_saffron-lite.webp"><img width="820" height="820" src="affron_saffron.webp" alt="Saffron crocus flowers with red stigmas" loading="lazy"></picture><figcaption class="icap"><b>Affron<sup class="rn">&reg;</sup> Saffron</b><s>28 mg</s><u class="ifn">MOOD &amp; CALM</u><i>Affron<sup class="rn">&reg;</sup> Saffron supports a positive mood, helps relieve occasional stress, promotes relaxation, and enhances sleep quality. A saffron extract made in Spain by Pharmactive and standardised to 3.5% Lepticrosalides. In placebo-controlled trials, 28 mg a day helped adults keep a positive mood and ease occasional stress. <a href="#affron" style="color:inherit;text-decoration:underline">See the trials</a>.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="synapsa_bacopa-lite.webp"><img width="820" height="820" src="synapsa_bacopa.webp" alt="Bacopa monnieri plant with white flowers and green leaves" loading="lazy"></picture><figcaption class="icap"><b>Synapsa<sup class="rn">&reg;</sup> Bacopa</b><s>300 mg</s><u class="ifn">MEMORY &amp; LEARNING</u><i>A standardised extract of <em>Bacopa monnieri</em> from PLT Health Solutions, with at least 55% bacosides A and B. In placebo-controlled trials of 300 to 320 mg a day over 12 weeks and 90 days, healthy adults showed better delayed recall, working memory and attention. Benefits build over weeks of daily use. <a href="#synapsa" style="color:inherit;text-decoration:underline">See the trials</a>.</i></figcaption></figure></div>
 <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="eriomin_lemon-lite.webp"><img width="820" height="820" src="eriomin_lemon.webp" alt="Eriomin lemon flavonoid extract" loading="lazy"></picture><figcaption class="icap"><b>Eriomin<sup class="rn">&reg;</sup> Lemon Flavonoid</b><s>200 mg</s><u class="ifn">GLP-1 SUPPORT</u><i>A standardised eriocitrin extract with its own pathway to your own GLP-1, <a href="#glp1" style="color:inherit;text-decoration:underline">see how</a>.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="cGP-Pro_blackcurrant-lite.webp"><img width="820" height="820" src="cGP-Pro_blackcurrant.webp" alt="Braincurrant New Zealand blackcurrant" loading="lazy"></picture><figcaption class="icap"><b>Braincurrant<sup class="rn">&reg;</sup></b><s>300 mg NZ</s><u class="ifn">FOCUS &amp; MOOD</u><i>A freeze-dried whole New Zealand blackcurrant powder from Anagenix, naturally rich in anthocyanins. Natural support for focus, memory and mood balance.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="careflow_mango-lite.webp"><img width="820" height="820" src="careflow_mango.webp" alt="Careflow organic mango fruit powder" loading="lazy"></picture><figcaption class="icap"><b>Careflow<sup class="rn">&reg;</sup> Mango Fruit</b><s>100 mg</s><u class="ifn">MICROCIRCULATION</u><i>Organic powder of whole Totapuri mango from India. In lab tests it switched on eNOS, the enzyme that makes nitric oxide, and SIRT1. At 100 mg a day, blood flow in the smallest vessels rose within hours and again after four weeks of daily use. <a href="#careflow" style="color:inherit;text-decoration:underline">See the trials</a>.</i></figcaption></figure></div>
@@ -3878,7 +3905,6 @@ header{padding-top:9px;padding-bottom:9px}
           <p>Sodium, potassium and magnesium dissolved and buffered, through <span class="kw">stoichiometric effervescent mineral carbonates</span> paired with <span class="kw">bioavailable electrolytes</span>. Every dose dissolved to reduce gut reaction and increase absorption.</p>
         </div>
       </div>
-    </div>
   </div>
 </section>
 
@@ -4236,6 +4262,7 @@ header{padding-top:9px;padding-bottom:9px}
           <li><b>Vitamin A Retinyl Palmitate</b>900 mcg RAE a serving for epithelial barriers and mucosal immunity.</li>
           <li><b>Magnesium Malate &amp; Zinc Bisglycinate<sup class="rn">&reg;</sup></b>Mineral cofactors doing quiet, ongoing work behind hundreds of enzymatic reactions.</li>
           <li><b>Affron<sup class="rn">&reg;</sup> Saffron</b>28 mg every morning, the dose used in Pharmactive&rsquo;s mood trials. Supports a positive mood, helps relieve occasional stress and promotes relaxation, day after day.</li>
+          <li><b>Synapsa<sup class="rn">&reg;</sup> Bacopa</b>300 mg a day, the dose used in its memory trials. Memory and learning benefits build over 8 to 12 weeks of daily use.</li>
         </ul>
       </div>
     </div>
@@ -4257,33 +4284,6 @@ header{padding-top:9px;padding-bottom:9px}
 
     <div class="storegrid rv">
 
-      <div class="plan feature" id="monthlyprotocol">
-        <div class="plan-cta"><a href="#waitlist" class="btn" data-plan="Monthly Protocol subscription &middot; USD 196">Reserve the protocol <span class="ar">&rarr;</span></a></div>
-        <div class="plan-top">
-          <div class="plan-head">
-        <p class="plan-name">Monthly Protocol</p>
-        <div class="plan-price"><b>$196</b><i>USD per month</i></div>
-        <p class="plan-per">$5.60 per day. You save $101.50 every month.</p>
-        <p class="plan-what">35 daily servings every month - boost yourself or share the love.</p>
-        <button type="button" class="gift-trigger js-gift-trigger" id="giftTrigger" aria-haspopup="dialog" aria-controls="giftLightbox">PLUS your Free Founders gift pack <span class="ar">&rarr;</span></button>
-          </div>
-          <img class="plan-img plan-img-stack" src="plan-stack5.png" alt="HONIORA Monthly Protocol, five gold weekly packs of seven stack packs" width="760" height="688" loading="lazy">
-        </div>
-        <ul class="plan-list">
-          <li>The whole 22-active matrix, full dose</li>
-<li>Unlock the long term health benefits of subscription.</li>
-          <li>Founding price locked for life</li>
-          <li>Skip, pause or cancel any time</li>
-          <li><a href="#founders-rewards" style="color:inherit">Founders Rewards: cap, tees and the bee glass set</a></li>
-          <li>Priority access to every new drop or offer.</li>
-          <li>Free USA shipping, always</li>
-        </ul>
-<a href="#waitlist" class="plan-seal" data-plan="Monthly Protocol subscription &middot; USD 196" aria-label="Reserve the protocol"><span class="plan-seal-inner" aria-hidden="true">
-<svg class="plan-seal-ring" viewBox="0 0 300 300"><defs><path id="planSealPath" d="M150,22 a128,128 0 1,1 0,256 a128,128 0 1,1 0,-256"/></defs><text text-anchor="start" xml:space="preserve"><textPath href="#planSealPath" startOffset="0" textLength="786" lengthAdjust="spacingAndGlyphs">LIMITED EDITION FIRST DROP Q2 2027  RESERVE YOUR HONI<tspan font-style="italic">ORA</tspan> SUB &amp; GIFTS </textPath></text></svg>
-<picture><source media="(max-width:1000px)" srcset="bee-seal-badge-lite.png"><img class="plan-seal-img" src="bee-seal-badge.png" alt="" width="760" height="760" loading="lazy"></picture>
-</span></a>
-      </div>
-
       <div class="plan" id="singlepack">
         <div class="plan-cta"><a href="#waitlist" class="btn ghost" data-plan="7 Day Pack &middot; USD 59.50">Reserve a 7 day pack <span class="ar">&rarr;</span></a></div>
         <div class="plan-top">
@@ -4297,10 +4297,37 @@ header{padding-top:9px;padding-bottom:9px}
         </div>
         <ul class="plan-list">
           <li>7 stack packs &middot; 7 daily servings</li>
-          <li>The whole 22-active matrix, full dose</li>
+          <li>The whole 23-active matrix, full dose</li>
           <li>$59.50 credited to subscription</li>
           <li>Free USA shipping, always</li>
         </ul>
+      </div>
+
+      <div class="plan feature" id="monthlyprotocol">
+        <div class="plan-cta"><a href="#waitlist" class="btn" data-plan="Monthly Protocol subscription &middot; USD 196">Reserve the protocol <span class="ar">&rarr;</span></a></div>
+        <div class="plan-top">
+          <div class="plan-head">
+        <p class="plan-name">Monthly Protocol <span class="plan-badge">Best value</span></p>
+        <div class="plan-price"><b>$196</b><i>USD per month</i></div>
+        <p class="plan-per">$5.60 per day. You save $101.50 every month.</p>
+        <p class="plan-what">35 daily servings every month - boost yourself or share the love.</p>
+        <button type="button" class="gift-trigger js-gift-trigger" id="giftTrigger" aria-haspopup="dialog" aria-controls="giftLightbox">PLUS your Free Founders gift pack <span class="ar">&rarr;</span></button>
+          </div>
+          <img class="plan-img plan-img-stack" src="plan-stack5.png" alt="HONIORA Monthly Protocol, five gold weekly packs of seven stack packs" width="760" height="688" loading="lazy">
+        </div>
+        <ul class="plan-list">
+          <li>The whole 23-active matrix, full dose</li>
+<li>Unlock the long term health benefits of subscription.</li>
+          <li>Founding price locked for life</li>
+          <li>Skip, pause or cancel any time</li>
+          <li><a href="#founders-rewards" style="color:inherit">Founders Rewards: cap, tees and the bee glass set</a></li>
+          <li>Priority access to every new drop or offer.</li>
+          <li>Free USA shipping, always</li>
+        </ul>
+<a href="#waitlist" class="plan-seal" data-plan="Monthly Protocol subscription &middot; USD 196" aria-label="Reserve the protocol"><span class="plan-seal-inner" aria-hidden="true">
+<svg class="plan-seal-ring" viewBox="0 0 300 300"><defs><path id="planSealPath" d="M150,22 a128,128 0 1,1 0,256 a128,128 0 1,1 0,-256"/></defs><text text-anchor="start" xml:space="preserve"><textPath href="#planSealPath" startOffset="0" textLength="786" lengthAdjust="spacingAndGlyphs">LIMITED EDITION FIRST DROP Q2 2027  RESERVE YOUR HONI<tspan font-style="italic">ORA</tspan> SUB &amp; GIFTS </textPath></text></svg>
+<picture><source media="(max-width:1000px)" srcset="bee-seal-badge-lite.png"><img class="plan-seal-img" src="bee-seal-badge.png" alt="" width="760" height="760" loading="lazy"></picture>
+</span></a>
       </div>
 
       <div class="plan" id="monthlypack">
@@ -4317,7 +4344,7 @@ header{padding-top:9px;padding-bottom:9px}
         </div>
         <ul class="plan-list">
           <li>1 box &middot; 28 stack packs &middot; 28 daily servings</li>
-          <li>The whole 22-active matrix, full dose</li>
+          <li>The whole 23-active matrix, full dose</li>
           <li>No subscription, buy when you need it</li>
           <li>Free USA shipping, always</li>
         </ul>
@@ -4325,6 +4352,15 @@ header{padding-top:9px;padding-bottom:9px}
 
 
 
+    </div>
+
+    <div class="plancompare rv" id="plan-compare">
+      <h3 class="serif">Compare the plans</h3>
+      <div class="pc-wrap"><table class="pc-table">
+        <thead><tr><td></td><th scope="col">7 Day Pack</th><th scope="col" class="pc-feat"><span class="pc-pop">Best value</span>Monthly Protocol</th><th scope="col">Monthly Pack</th></tr></thead>
+        <tbody><tr><th scope="row">Stack packs</th><td>7</td><td class="pc-feat">35 a month</td><td>28</td></tr><tr><th scope="row">Price</th><td>$59.50 one-off</td><td class="pc-feat">$196 a month</td><td>$196 one-off</td></tr><tr><th scope="row">Per day</th><td>$8.50</td><td class="pc-feat">$5.60</td><td>$7.00</td></tr><tr><th scope="row">Full 23-active matrix</th><td><span class="pc-y" aria-label="Included">&#10003;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-y" aria-label="Included">&#10003;</span></td></tr><tr><th scope="row">Free USA shipping</th><td><span class="pc-y" aria-label="Included">&#10003;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-y" aria-label="Included">&#10003;</span></td></tr><tr><th scope="row">7 free stacks every month</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Founding price locked for life</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Free Founders gift pack*</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Subscriber bonus gifts (HoniMerch)</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Priority access to new drops</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Skip, pause or cancel any time</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">$59.50 credited if you subscribe</th><td><span class="pc-y" aria-label="Included">&#10003;</span></td><td class="pc-feat"><span class="pc-n" aria-label="Not included">&ndash;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr></tbody>
+      </table></div>
+      <div class="pc-ctas"><a href="#singlepack">7 Day Pack</a><a href="#monthlyprotocol" class="btn">Reserve the protocol <span class="ar">&rarr;</span></a><a href="#monthlypack">Monthly Pack</a></div>
     </div>
 
     <div class="storenote rv">
@@ -4524,6 +4560,7 @@ header{padding-top:9px;padding-bottom:9px}
           <li><i>cGP-Pro<sup class="rn">&reg;</sup> Blackcurrant</i><b>100 mg</b></li>
           <li><i>L-Theanine</i><b>450 mg</b></li>
           <li><i>Affron<sup class="rn">&reg;</sup> Saffron</i><b>28 mg</b></li>
+          <li><i>Synapsa<sup class="rn">&reg;</sup> Bacopa</i><b>300 mg</b></li>
           <li><i>Braincurrant<sup class="rn">&reg;</sup></i><b>300 mg</b></li>
           <li><i>Citicoline</i><b>255 mg</b></li>
         </ul>
@@ -4839,6 +4876,13 @@ header{padding-top:9px;padding-bottom:9px}
       </div>
 
       <div class="row mgrid">
+        <div class="name">Synapsa<sup class="rn">&reg;</sup> Bacopa<i>PLT Health Solutions / &ge;55% bacosides A and B</i></div>
+        <div><span class="fn">Memory<small>Learning and recall</small></span></div>
+        <div class="dose">300 mg<small>315 mg as made, 5% overage</small></div>
+        <div class="mech">A standardised extract of <em>Bacopa monnieri</em>, the Ayurvedic herb used for memory. Synapsa<sup class="rn">&reg;</sup> is standardised to at least 55% combined bacosides A and B. In placebo-controlled trials of 300 to 320 mg a day over 12 weeks and 90 days, healthy adults showed better delayed recall, working memory and attention. Its benefits build over weeks of daily use. It sits with citicoline, L-theanine, Affron<sup class="rn">&reg;</sup> and Braincurrant<sup class="rn">&reg;</sup> in the Brain system.<br><a class="cite sup" href="https://pubmed.ncbi.nlm.nih.gov/?term=Stough+2008+Bacopa+monnieri+Phytotherapy+Research" target="_blank" rel="noopener noreferrer">Supporting research <span>Stough 2008 &nearr;</span></a></div>
+      </div>
+
+      <div class="row mgrid">
         <div class="name">Taurine<i>USP Crystalline / Granular DC</i></div>
         <div><span class="fn">Cellular energy<small>Osmoregulation</small></span></div>
         <div class="dose">1,020 mg</div>
@@ -4909,28 +4953,28 @@ header{padding-top:9px;padding-bottom:9px}
       <div class="row mgrid compact">
         <div class="name">Citric Acid Anhydrous<i>Jungbunzlauer / USP Fine Granular</i></div>
         <div><span class="fn">Effervescent<small>Acid engine</small></span></div>
-        <div class="dose">2,147 mg</div>
+        <div class="dose">2,003 mg</div>
         <div class="mech">The acid half of the reaction. Granular rather than powdered, which slows the reaction just enough to give an even fizz instead of a violent one.<br><a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/40955524/" target="_blank" rel="noopener noreferrer">Supporting research <span>PMID 40955524 &nearr;</span></a></div>
       </div>
 
       <div class="row mgrid compact">
         <div class="name">Malic Acid Anhydrous<i>USP / Fine Granular</i></div>
         <div><span class="fn">Effervescent<small>Acid engine</small></span></div>
-        <div class="dose">254 mg</div>
+        <div class="dose">237 mg</div>
         <div class="mech">A second organic acid alongside citric acid, and a Krebs cycle intermediate in its own right. It rounds out the acid engine's profile and softens the tartness a single acid source would leave on the palate.</div>
       </div>
 
       <div class="row mgrid compact">
         <div class="name">Sodium Bicarbonate Low-Moist<i>Church &amp; Dwight / USP Coarse Granular</i></div>
         <div><span class="fn">Effervescent<small>Alkaline base</small></span></div>
-        <div class="dose">1,044 mg<small>&asymp;286 mg elemental Na</small></div>
+        <div class="dose">974 mg<small>&asymp;266 mg elemental Na</small></div>
         <div class="mech">The alkaline half. Low-moisture grade is non-negotiable, because residual water would start the reaction inside the stack pack.<br><a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/22864738/" target="_blank" rel="noopener noreferrer">Supporting research <span>PMID 22864738 &nearr;</span></a></div>
       </div>
 
       <div class="row mgrid compact">
         <div class="name">Potassium Bicarbonate<i>Armand Products / USP Grade</i></div>
         <div><span class="fn">Effervescent base<small>Potassium electrolyte</small></span></div>
-        <div class="dose">1,246 mg<small>&asymp;487 mg elemental K</small></div>
+        <div class="dose">1,163 mg<small>&asymp;454 mg elemental K</small></div>
         <div class="mech">A second alkaline base alongside sodium bicarbonate. It drives the same carbon dioxide reaction while delivering potassium rather than more sodium, which shifts the electrolyte balance of the finished drink.<br><a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/41243115/" target="_blank" rel="noopener noreferrer">Supporting research <span>PMID 41243115 &nearr;</span></a></div>
       </div>
 
@@ -5216,6 +5260,29 @@ header{padding-top:9px;padding-bottom:9px}
   </div>
 </section>
 
+
+<!-- ================= SYNAPSA BACOPA (user request v208) ================= -->
+<section class="sec" id="synapsa">
+  <div class="wrap">
+    <div class="livaux-box rv">
+      <p class="eyebrow dim">Synapsa<sup class="rn">&reg;</sup> &middot; Bacopa monnieri Extract</p>
+      <h2 class="serif">Synapsa<sup class="rn">&reg;</sup> <em>Bacopa</em></h2>
+      <p class="lede"><b>Synapsa<sup class="rn">&reg;</sup> Bacopa supports memory, learning and mental performance in healthy adults.</b></p>
+      <p class="lede">HONI<i>ORA</i> carries 300&nbsp;mg of Synapsa<sup class="rn">&reg;</sup> per serving, the dose used in its memory trials. It is a standardised extract of <em>Bacopa monnieri</em> from PLT Health Solutions, standardised to at least 55% combined bacosides A and B. Bacopa has been used for memory in Ayurvedic tradition for centuries.</p>
+
+      <ul class="prob-list">
+        <li><span class="x">01</span><div><strong>Memory and recall.</strong> <span class="d">In a 12-week, randomised, placebo-controlled trial, adults aged 40 to 65 taking Synapsa<sup class="rn">&reg;</sup> retained new information better on a delayed word-recall test (Roodenrys 2002).</span></div></li>
+        <li><span class="x">02</span><div><strong>Working memory and attention.</strong> <span class="d">In a 90-day placebo-controlled trial of 107 healthy adults, Synapsa<sup class="rn">&reg;</sup> improved working memory and accuracy on demanding tasks (Stough 2008).</span></div></li>
+        <li><span class="x">03</span><div><strong>Builds over weeks.</strong> <span class="d">Bacopa&rsquo;s memory benefits show with steady daily use over 8 to 12 weeks, which is why it sits in your long-arc morning stack.</span></div></li>
+        <li><span class="x">04</span><div><strong>Joins the Brain system.</strong> <span class="d">Synapsa<sup class="rn">&reg;</sup> sits beside citicoline, AlphaWave<sup class="rn">&reg;</sup> L-Theanine, Affron<sup class="rn">&reg;</sup> Saffron, Braincurrant<sup class="rn">&reg;</sup> and cGP-Pro<sup class="rn">&reg;</sup> Blackcurrant.</span></div></li>
+      </ul>
+
+      <p style="margin-top:22px"><a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/?term=Roodenrys+2002+Bacopa+monnieri+memory" target="_blank" rel="noopener noreferrer">Supporting research <span>Roodenrys 2002, Neuropsychopharmacology &nearr;</span></a> <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/?term=Stough+2008+Bacopa+monnieri+Phytotherapy+Research" target="_blank" rel="noopener noreferrer">Supporting research <span>Stough 2008, Phytotherapy Research &nearr;</span></a></p>
+      <p class="small" style="margin-top:22px;max-width:78ch">Ingredient-level evidence, see the <a href="#evidence-note" style="color:inherit;text-decoration:underline">evidence note</a>. These are trials of Synapsa<sup class="rn">&reg;</sup>, not of the finished HONI<i>ORA</i> formula. Synapsa<sup class="rn">&reg;</sup> is a trade mark of PLT Health Solutions.</p>
+    </div>
+  </div>
+</section>
+
 <!-- ================= HYTOLIVE (user request v112) ================= -->
 <section class="sec" id="hytolive">
   <div class="wrap">
@@ -5301,13 +5368,13 @@ header{padding-top:9px;padding-bottom:9px}
       <div class="lemonrow">
         <div><b>Organic acid drive and gastric priming</b></div>
         <div class="was">Natural citric and malic acid, in whatever quantity that lemon happened to hold.</div>
-        <div class="now"><em>Citric acid anhydrous 2,147 mg</em> and malic acid anhydrous 254 mg. Stimulates the cephalic-gastric reflex and gastrin secretion.</div>
+        <div class="now"><em>Citric acid anhydrous 2,003 mg</em> and malic acid anhydrous 237 mg. Stimulates the cephalic-gastric reflex and gastrin secretion.</div>
       </div>
 
       <div class="lemonrow">
         <div><b>Alkaline buffering</b></div>
         <div class="was">Free citric acid, with no buffer.</div>
-        <div class="now"><em>Sodium bicarbonate 1,044 mg</em> and potassium bicarbonate 1,246 mg neutralise the acids in the glass, leaving sodium and potassium citrate and malate.</div>
+        <div class="now"><em>Sodium bicarbonate 974 mg</em> and potassium bicarbonate 1,163 mg neutralise the acids in the glass, leaving sodium and potassium citrate and malate.</div>
       </div>
 
       <div class="lemonrow">
@@ -5731,7 +5798,7 @@ header{padding-top:9px;padding-bottom:9px}
         <summary>Terms and conditions<i></i></summary>
         <div class="lgbody">
           <p><b>Agreement.</b> These terms govern your use of this site and any purchase from HoniCo NZ Ltd (&ldquo;HoniCo&rdquo;, &ldquo;we&rdquo;). By ordering you accept them.</p>
-          <p><b>Eligibility.</b> You must be 18 or older. HONI<i>ORA</i> is not intended for anyone under 18, or for people who are pregnant or breastfeeding. Contains vitamin A as retinyl palmitate (900 mcg RAE per serving) and about 487 mg of potassium per serving from potassium bicarbonate. If you take blood pressure medicine (including ACE inhibitors), nitrate medicine or erectile dysfunction medicine, or you have kidney disease, speak with your doctor before use.</p>
+          <p><b>Eligibility.</b> You must be 18 or older. HONI<i>ORA</i> is not intended for anyone under 18, or for people who are pregnant or breastfeeding. Contains vitamin A as retinyl palmitate (900 mcg RAE per serving) and about 454 mg of potassium per serving from potassium bicarbonate. If you take blood pressure medicine (including ACE inhibitors), nitrate medicine or erectile dysfunction medicine, or you have kidney disease, speak with your doctor before use.</p>
           <p><b>Founding list.</b> Joining the list is not an order and creates no obligation on either side. Prices shown are indicative for the first commercial batch and may change before launch.</p>
           <p><b>Orders and pricing.</b> Prices are in US dollars and exclude any import duty your country charges. We may correct pricing or specification errors before dispatch and will contact you if we do. An order is accepted when we dispatch it, not when payment is taken.</p>
           <p><b>Subscription.</b> The Monthly Protocol renews automatically every [interval] at the price shown at signup until you cancel. You may cancel at any time before the next renewal from [cancellation route]. Cancellation stops future shipments and does not refund a shipment already sent. [US buyers: confirm this section satisfies federal and state automatic-renewal disclosure requirements before launch.]</p>
@@ -5761,7 +5828,7 @@ header{padding-top:9px;padding-bottom:9px}
           <p><b>This site.</b> &copy; 2026 HoniCo NZ Ltd. All text, photography, formulation descriptions, layout and code on this site are our property or used under licence. You may not copy, republish or use them commercially without written permission.</p>
           <p><b>Our marks.</b> HONI<i>ORA</i> and HoniCo are unregistered trade marks of HoniCo NZ Ltd, claimed and used in the course of trade. Applications are [not yet filed / pending, application number and date]. We rely on common-law rights, including passing off and the Fair Trading Act 1986 in New Zealand, and equivalent protection in other markets. Nothing on this site should be read as a claim of registration.</p>
           <p><b>The formulation.</b> The HONI<i>ORA</i> formulation, its ratios and the specification behind them are confidential and proprietary. Publishing a full bill of materials does not place it in the public domain or grant any licence to reproduce it.</p>
-          <p><b>Third-party marks.</b> Livaux, Actazin, Feiolix, Eriomin, Oxxynea, cGP-Pro, VasoDrive-AP, Careflow, vitAlign, Fiberest, Landkind, Braincurrant, Hytolive, Pomma+, LactoSpore, Affron, Lepticrosalides, Kaneka Ubiquinol, Kaneka Q30, Zinc Bisglycinate TRAACS and Thaumatin Pure Talin are trade marks of their respective owners and are used to identify the ingredients we buy from them. Their owners do not endorse HONI<i>ORA</i>.</p>
+          <p><b>Third-party marks.</b> Livaux, Actazin, Feiolix, Eriomin, Oxxynea, cGP-Pro, VasoDrive-AP, Careflow, vitAlign, Fiberest, Landkind, Braincurrant, Hytolive, Pomma+, LactoSpore, Affron, Lepticrosalides, Synapsa, Kaneka Ubiquinol, Kaneka Q30, Zinc Bisglycinate TRAACS and Thaumatin Pure Talin are trade marks of their respective owners and are used to identify the ingredients we buy from them. Their owners do not endorse HONI<i>ORA</i>.</p>
           <p><b>Cited research.</b> Papers linked from the provenance matrix belong to their authors and publishers. We link to public records and reproduce no full text.</p>
           <p><b>Infringement.</b> Email <a href="mailto:legal@honi.co.nz">legal@honi.co.nz</a> with details and we will respond within [period].</p>
         </div>
@@ -5820,7 +5887,7 @@ header{padding-top:9px;padding-bottom:9px}
     </div>
     <div class="legal">
       <p><strong>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease.</strong></p>
-      <p style="margin-top:12px">Clinical figures cited on this page derive from published trials of the individual branded ingredients at the doses stated, and not from a clinical trial of the finished HONI<i>ORA</i> product. <strong>Allergen declaration: contains milk derivative</strong> (VasoDrive-AP<sup class="rn">&reg;</sup> casein lactotripeptides). Other allergen details are to be confirmed against final supplier specifications before launch. Certified gluten-free below 5.0 ppm. Manufactured in the USA in an NSF / USP certified GMP facility. Not intended for use by anyone under 18, or by people who are pregnant or breastfeeding. If you take prescription medication, particularly for blood pressure, speak with your doctor before use. Livaux, Actazin, Feiolix, Eriomin, Oxxynea, cGP-Pro, VasoDrive-AP, Careflow, vitAlign, Fiberest, Landkind, Braincurrant, Hytolive, Pomma+, LactoSpore, Affron, Lepticrosalides, Kaneka Ubiquinol, Kaneka Q30, Zinc Bisglycinate TRAACS and Thaumatin Pure Talin are trademarks of their respective owners.</p>
+      <p style="margin-top:12px">Clinical figures cited on this page derive from published trials of the individual branded ingredients at the doses stated, and not from a clinical trial of the finished HONI<i>ORA</i> product. <strong>Allergen declaration: contains milk derivative</strong> (VasoDrive-AP<sup class="rn">&reg;</sup> casein lactotripeptides). Other allergen details are to be confirmed against final supplier specifications before launch. Certified gluten-free below 5.0 ppm. Manufactured in the USA in an NSF / USP certified GMP facility. Not intended for use by anyone under 18, or by people who are pregnant or breastfeeding. If you take prescription medication, particularly for blood pressure, speak with your doctor before use. Livaux, Actazin, Feiolix, Eriomin, Oxxynea, cGP-Pro, VasoDrive-AP, Careflow, vitAlign, Fiberest, Landkind, Braincurrant, Hytolive, Pomma+, LactoSpore, Affron, Lepticrosalides, Synapsa, Kaneka Ubiquinol, Kaneka Q30, Zinc Bisglycinate TRAACS and Thaumatin Pure Talin are trademarks of their respective owners.</p>
       <div class="footbottom">
         <span>&copy; 2026 HoniCo New Zealand. All rights reserved.</span>
         <span>SP20 SKU1 (draft)</span>
@@ -6421,7 +6488,7 @@ header{padding-top:9px;padding-bottom:9px}
           return Math.max(0, el.getBoundingClientRect().top + window.scrollY + sEbOff - (hdr.getBoundingClientRect().bottom + sgap));
         }
         /* v112 #hytolive: land with the top of the Hytolive text box ~18px under the nav bar */
-        if (hash === '#hytolive' || hash === '#affron'){
+        if (hash === '#hytolive' || hash === '#affron' || hash === '#synapsa'){
           var hbx = el.querySelector('.livaux-box') || el;
           var hbt = 0;
           try { var hbf = getComputedStyle(hbx).transform; hbt = (hbf && hbf !== 'none') ? new DOMMatrix(hbf).m42 : 0; } catch(_){ hbt = 0; }
@@ -6636,7 +6703,7 @@ header{padding-top:9px;padding-bottom:9px}
 
     var AH_KB = [
       {k:["what is honiora","whats in honiora","ingredients","actives","formula","in honiora"],
-       a:"HONI<i>ORA</i> packs 22 named wellness actives and a balanced electrolyte matrix into one effervescent stack pack, 20 g total. They run across four systems: <b>Strength</b> (creatine for power, Kaneka Ubiquinol), <b>Gut</b> (Livaux, Actazin, Fiberest / Mānuka, Feiolix, Eriomin, LactoSpore Bacillus coagulans, vitamin A retinyl palmitate), <b>Heart</b> (VasoDrive-AP, Careflow, vitAlign, Hytolive, Pomma+, Oxxynea, taurine, magnesium, zinc) and <b>Brain</b> (cGP-Pro, L-Theanine, Affron Saffron, Braincurrant, Citicoline). Ask me about any one by name, or about who makes it and where."},
+       a:"HONI<i>ORA</i> packs 23 named wellness actives and a balanced electrolyte matrix into one effervescent stack pack, 20 g total. They run across four systems: <b>Strength</b> (creatine for power, Kaneka Ubiquinol), <b>Gut</b> (Livaux, Actazin, Fiberest / Mānuka, Feiolix, Eriomin, LactoSpore Bacillus coagulans, vitamin A retinyl palmitate), <b>Heart</b> (VasoDrive-AP, Careflow, vitAlign, Hytolive, Pomma+, Oxxynea, taurine, magnesium, zinc) and <b>Brain</b> (cGP-Pro, L-Theanine, Affron Saffron, Braincurrant, Synapsa Bacopa, Citicoline). Ask me about any one by name, or about who makes it and where."},
       {k:["how do i take it","dosing","how to use","serving size","ritual","how many tablets","how many stack packs","stack pack","how often","directions"],
        a:"Pour 1 stack pack into 500 ml of water. Ready in 60 seconds, no stirring needed. Take it once a day: most of the benefit is cumulative, alongside diet and exercise."},
       {k:["creatine","cr-01","cr 01","power","strength","atp"],
@@ -6657,6 +6724,9 @@ header{padding-top:9px;padding-bottom:9px}
        src:"Manufacturer: FutureCeuticals, headquartered in Momence, Illinois, USA, part of the Van Drunen Family of companies, which specialises in whole fruit, vegetable and plant-based ingredients.",
        map:"https://www.google.com/maps/search/?api=1&query=Momence%2C+Illinois%2C+USA",
        papers:[{t:"PMID 38612462",u:"https://pubmed.ncbi.nlm.nih.gov/38612462/"}]},
+      {k:["synapsa","bacopa","bacosides","memory","recall","learning"],
+       a:"Synapsa is a Bacopa monnieri extract from PLT Health Solutions, standardised to at least 55% bacosides A and B. HONI<i>ORA</i> carries 300 mg per serving, the dose used in its memory trials. In placebo-controlled studies of 300 to 320 mg a day over 12 weeks and 90 days, healthy adults showed better delayed recall, working memory and attention. Benefits build over weeks of daily use.",
+       papers:[{t:"Stough 2008, Phytotherapy Research",u:"https://pubmed.ncbi.nlm.nih.gov/?term=Stough+2008+Bacopa+monnieri+Phytotherapy+Research"},{t:"Roodenrys 2002, Neuropsychopharmacology",u:"https://pubmed.ncbi.nlm.nih.gov/?term=Roodenrys+2002+Bacopa+monnieri+memory"}]},
       {k:["affron","saffron","crocus","mood","stress","sleep"],
        a:"affron is a saffron extract made in Spain by Pharmactive Biotech, standardised to at least 3.5% Lepticrosalides. HONI<i>ORA</i> carries 28 mg per serving, the dose used in Pharmactive&#39;s mood trials: in a placebo-controlled study (Kell 2017), 28 mg a day helped healthy adults keep a positive mood and ease occasional stress and tension. At 14 mg before bed it improved sleep quality (Lopresti 2020, 2021). These are trials of the ingredient, not the finished formula.",
        src:"Manufacturer: Pharmactive Biotech Products S.L., Spain. US distributor: Gencor.",
