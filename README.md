@@ -2538,6 +2538,66 @@ v213 changes:
 v211 changes:
 - On the lite (mobile) site, the two hex nav buttons flanking the logo (Reserve Protocol, Reserve Test Tube) now have the same info popouts the desktop hex buttons already show on hover. Since phones don't have real hover, each hex got a small "i" badge in its corner: tap it to open the info card (same wording as desktop — "Monthly Protocol" / "Single Pack"), tap it again, tap elsewhere, or hit Escape to close it. Tapping the hex image itself is unchanged, it still goes straight to Reserve (#store), the badge is a separate tap target so the info card never gets in the way of buying. Devices with real hover (trackpad on a tablet-width screen) also get it on hover, no tap needed. Checked at 360px, 390px, and 430px: both cards open fully on-screen with no overflow, and confirmed desktop's existing hover popouts are completely unchanged.
 
+v226 changes (hex branch):
+- No discounts: one price per stack pack, $9.51, and the subscription's extra week is a bonus. 7 Day Pack $66.57 (7 x $9.51). Monthly Pack $266.28 (28 x $9.51). Monthly Protocol $266.28 a month for 28 stacks plus a bonus 7 Day Pack free every month (35 in all), with the founders gift and 3rd-month gifts.
+- All "You save" / "saving" / "for the price of 4" copy removed and reworded as bonus: nav popups, store lede, plan cards, comparison table (Per day row now $9.51 / "$9.51 + 7 bonus stacks" / $9.51, "7 bonus stacks free every month"), terms credit line and Ask Honi pricing answer. The 7 Day Pack credit ($66.57 off the first subscription payment) is unchanged.
+
+v225 changes (hex branch):
+- 7 Day Pack $66.55 one-off (was $60.55), shown as $9.51/day ($66.55 / 7 = $9.507, rounded). $66.55 is what gets credited to a subscription. Savings recalculated: Monthly Protocol ($240.80) saves $91.95 a month against five 7 Day Packs ($332.75). Monthly Pack ($240.80) saves $25.40 against four 7 Day Packs ($266.20). "5 weekly packs for the price of 4": the protocol is now $25.40 under four 7 Day Packs.
+
+v224 changes (hex branch):
+- Monthly Protocol (35 stack packs) and Monthly Pack (28) both $240.80. Protocol $6.88/day, saves $61.95 a month against five 7 Day Packs ($302.75). Monthly Pack $8.60/day, saves $1.40 against four 7 Day Packs ($242.20). 7 Day Pack unchanged at $60.55 ($8.65/day). Updated in plan cards, data-plan values, comparison table, popups, store lede and Ask Honi.
+
+v223 changes (hex branch):
+- Monthly Protocol set to exactly the price of four 7 Day Packs: $242.20 a month (4 x $60.55), $6.92/day (35 stack packs, $6.92 is $242.20 / 35 rounded; 35 x $6.92 = $242.20). Saving against five 7 Day Packs ($302.75) is now $60.55 a month, i.e. one 7 Day Pack free. "5 weekly packs for the price of 4" is exact again. Monthly Pack ($209.44, $7.48/day) and 7 Day Pack ($60.55, $8.65/day) unchanged.
+
+v222 changes (hex branch):
+- Retail prices: Monthly Protocol $6.88/day = $240.80 a month (35 stack packs), saves $61.95 a month against five 7 Day Packs ($302.75). Monthly Pack $7.48/day = $209.44 one-off (28), saves $32.76 against four 7 Day Packs ($242.20). 7 Day Pack $8.65/day = $60.55 one-off (7), and $60.55 is what gets credited to a subscription. Updated everywhere: nav hex popups (both copies), store lede, all three plan cards, data-plan values on the reserve buttons and seal, comparison table, the terms 7 Day Pack credit line, and the Ask Honi pricing answer.
+- Not changed: the "5 weekly packs for the price of 4" wording. At the new prices four 7 Day Packs cost $242.20 and the protocol is $240.80, so it is now slightly less than the price of four.
+
+v221 changes (hex branch):
+- Rewards panel heading: "Stay with us. Feel the Love." (was "Collect the set."), italic gold accent unchanged.
+
+v220 changes (hex branch):
+- Subscriber rewards panel: gift ladder moved to every third month. Eyebrow "3rd Month subscriber bonus gift". Lede "Same sub per month plus a great HONIORA gift in your box every third month." Ladder now Month 3 cap, Month 6 classic tee, Month 9 Founders tee plus 500 g MGO500+ Manuka Honi, Month 12 "The HoniOra bee glass set" (six tumblers etched with HONIORA logo and the Napoleonic bee; "Stay for six, get the set of six" removed). Fine print "after each paid 3rd month".
+- HoniMerch flip cards' back tags renumbered to match: Cap Month 3, Classic Tee Month 6, Founders Tee Month 9, Bee Glass Set Month 12.
+
+v219 changes (hex branch):
+- Lite menus: every label now sits on one line (no wrapping). A small script measures the longest label in each popup and picks one font size, up to 16px, that fits both side by side with a 12px gap. Each popup gets the width its own longest label needs, so the left (ingredients, longest "VasoDrive-AP Amealpeptide") is wider than the right. Results: about 8.5px at 320, 11.4px at 390, 13px at 430, 16px at 768. Re-fits on resize, rotation and font load. Desktop unchanged.
+
+v218 changes (hex branch):
+- Lite (1000px and below): the two burger popups no longer overlap when both are open. Each is now half the screen less 10px (left one 4px from the left edge, right one 4px from the right), leaving a 12px gap in the middle. The tray rim is 10px instead of 15px. Labels are 11px to 16px (scaling with width), are allowed to wrap to two lines instead of being cut off, and the right popup's labels sit flush right. Checked at 320, 390, 430 and 768px. Desktop unchanged.
+
+v217 changes (hex branch):
+- morning-stack.html: the hero stack pack is now the hex sachet front (min(340px,70vw)). Hover flips it to the back. Tap, click or Enter toggles the flip. Checked at 1440 and 390px.
+- sp-single-cutout.webp is no longer used by either page (file left in the folder).
+
+v216 changes (hex branch):
+- Closing section ("Activated Nectar / Golden health awakes."): the gold hex "Join Our Founding List" button and its hover spin are gone. In their place: the hex sachet front (clamp 250 to 400px), flipping to the back on hover, tap, click or Enter. Below it, centred: a "JOIN HONIORA FOUNDER'S LIST" link (ORA italic, arrow, outlined, fills dark on hover) to #waitlist. Fits on one line down to 320px.
+
+v215 changes (hex branch):
+- 03 / The Protocol: the stick pack above "A Natural Active Antipodean Matrix" is now the hex sachet front (clamp 220 to 420px wide). It still slides in from the left on scroll (same GSAP timeline, now on a button wrapper). Hover flips it to the back. Tap, click or Enter toggles the flip for touch and keyboard. Same on lite.
+- #protocol nav landing offset updated for the hex art (7/918 clear space above, was 120/490 for the stick pack).
+- sp-single-cutout.webp is no longer used in index.html (morning-stack.html not checked or changed).
+
+v214 changes (hex branch):
+- The ingredient lists and gold threads now wait before they build. All three must be true: screen 2 is fully loaded (both hex images decoded and web fonts ready, 6 s fallback), at least 90% of the hex row is on screen (or 90% of the screen if the row is taller), and the te reo lines have typed out to the final "Ora means life, health, and vitality." The build starts 0.45 s after the last of these. The te reo script now flags data-typed on #heroReo and fires a honiora:reo-typed event. Checked at 1600x1000, 1366x768 and 1100x700: the build starts only once the typing has finished.
+
+v213 changes (hex branch):
+- Hex back copy matched to the site: "CR.01 Creatine Monohydrate" (was MonoHydrate), "MGO850+ Mānuka Honi Crystals" (was MGO850 Manuka), "Livaux Gold Kiwi + 20 Natural Actives" (was + 16; 3 named + 20 = the site's 23). Old lines painted out and reset in Inter Medium, sized and squeezed to the original line heights and widths, same brown and black. "20G" and "HoniOra.Health" untouched. Source saved as HEX_MASTER5 (session output). Image URLs now ?v=213.
+
+v212 changes (hex branch):
+- Hex art swapped for HEX_MASTER4: front and back now carry the RX wordmark (HONI black, ORA gold) in place of the old sans HoniOra. Same cut, size and side points as v211 (hex-front/back.webp 1000 x 918, -lite 560 x 514), so the thread fan and flip are unchanged. Image URLs carry ?v=212 to beat browser caches.
+
+v211 changes (branch: hex stage):
+- Desktop (1001px and up): the gold band section is rebuilt around the hex sachet. The horizontal stack pack is gone. The hex front sits centred, with the te reo line centred above it and the "Swap out..." line, the 23 actives stat and both buttons centred below it.
+- Hover the hex and it flips (3D, 0.8 s) to the back of the sachet. Click, tap or Enter/Space toggles the flip for touch and keyboard. aria-pressed and the label update with the side showing.
+- The 24 actives are split 12 / 12. MGO 850+ through Braincurrant on the left, AlphaWave through Vitamin A on the right. Gold threads fan out from the hex's own left and right points, same build as before: one curve per name, drawn on a 90 ms top-to-bottom stagger, each name fading in on its own thread's delay, both sides at once. Starts when 60% of the row is on screen, resets once the section has fully left view, so a scroll back replays it.
+- Stage top edge is seated live onto the foot of the first-screen backdrop so no page strip shows between them.
+- Lite (1000px and below): the tube shot is now the hex front (hex-front-lite.webp). Nothing else on lite changed.
+- New files: hex-front.webp, hex-back.webp (1000 x 918), hex-front-lite.webp, hex-back-lite.webp (560 x 514), cut from HEX_MASTER3 with the white background and floor shadow removed.
+- The old band pieces (stack pack, one-sided fan, right-hand list, stat, buttons) stay in the HTML for lite and are hidden on desktop. sp-single-cutout.webp is kept: the tablet-roll block further down still uses it.
+
 v210 changes:
 - On the lite site, the "HUGE pills and/or chalky, messy powders / Every morning?" line above the hero headline is gone. The headline now starts straight at "UPGRADE YOUR RITUAL." on phones and tablets, no gap left behind. Desktop is untouched, still shows the full headline exactly as before, since it's the same shared paragraph and this only hides that one line below the site's usual 1400px lite/desktop split. Checked 320px through 1600px.
 

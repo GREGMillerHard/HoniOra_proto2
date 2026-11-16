@@ -67,12 +67,23 @@ footer img{height:30px;width:auto;margin-bottom:16px}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "A morning stack to replace your pills and powders", "url": "https://honiora.life/morning-stack.html", "datePublished": "2026-11-02", "dateModified": "2026-11-02", "isPartOf": {"@type": "WebSite", "name": "HoniOra", "url": "https://honiora.life/"}, "publisher": {"@type": "Organization", "name": "HoniCo New Zealand", "url": "https://honiora.life/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a great morning stack to replace my current pill and powder stack?", "acceptedAnswer": {"@type": "Answer", "text": "A good replacement covers the same jobs as your separate products, in doses you can check. For most people that means cellular energy (creatine), gut support (prebiotic fibre and a probiotic), vascular support (peptides and plant extracts) and focus (theanine and citicoline). HoniOra is built around those four systems. It puts 23 full-dose wellness actives, plus magnesium and zinc, into one effervescent serving, so a creatine scoop, a gut powder, a nitric oxide capsule and a focus capsule become one drink. HoniOra has not launched yet. The first drop is Q2 2027 and the founding list is free to join."}}, {"@type": "Question", "name": "What is in HoniOra?", "acceptedAnswer": {"@type": "Answer", "text": "One stack pack makes one 20 g serving. The lead active is 5,000 mg of Cr.01 creatine monohydrate. The rest of the list is on this page with each dose. The HoniOra stack also contains a natural effervescent system: citric acid, malic acid, sodium bicarbonate and potassium bicarbonate, with thaumatin, glycyrrhizin plus a kiwi, yuzu and passionfruit flavour matrix."}}, {"@type": "Question", "name": "How do I take it?", "acceptedAnswer": {"@type": "Answer", "text": "Pour one stack pack into 500 ml of water. The stack pack is designed to be ready in about 60 seconds. That timing is a design target and has not yet been tested on the finished stack pack."}}, {"@type": "Question", "name": "When can I buy it?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet. The first drop is Q2 2027. Nothing is charged today. Joining the founding list is free and gives first access plus founding-member pricing for life."}}, {"@type": "Question", "name": "Has HoniOra been tested in a clinical trial?", "acceptedAnswer": {"@type": "Answer", "text": "No. The research cited on this site comes from published trials of the individual branded ingredients at the doses listed, from mechanism-level lab and animal research, or from the batch record. None comes from a trial of the finished HoniOra product. Individual response varies."}}, {"@type": "Question", "name": "Does HoniOra contain allergens?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It contains a milk derivative (VasoDrive-AP casein lactotripeptides)."}}, {"@type": "Question", "name": "How much sodium and potassium does one serving carry?", "acceptedAnswer": {"@type": "Answer", "text": "About 266 mg of elemental sodium and about 454 mg of elemental potassium per serving, calculated from the formula and not yet measured."}}, {"@type": "Question", "name": "Who should check with a doctor first?", "acceptedAnswer": {"@type": "Answer", "text": "Anyone who takes blood pressure medicine (including ACE inhibitors), nitrate medicine or erectile dysfunction medicine, anyone with kidney disease, anyone who is pregnant or breastfeeding, and anyone with a medical condition. HoniOra contains vascular active ingredients, vitamin A as retinyl palmitate (900 mcg RAE per serving), sodium, potassium, magnesium and zinc."}}, {"@type": "Question", "name": "Where is HoniOra made?", "acceptedAnswer": {"@type": "Answer", "text": "HoniOra is a HoniCo New Zealand product. The ingredients are built on New Zealand bioactives and the stack packs are made in the USA."}}]}</script>
+<style>
+/* v217: hero stack pack -> hex sachet, hover / tap flips to the back */
+.hero .pack.pk-hex{all:unset;box-sizing:border-box;display:block;cursor:pointer;width:min(340px,70vw);margin:0 auto 18px;perspective:1600px;-webkit-tap-highlight-color:transparent}
+.hero .pk-hex:focus-visible{outline:2px solid #6B4A10;outline-offset:8px;border-radius:6px}
+.pk-card{position:relative;display:block;width:100%;aspect-ratio:1000/918;transform-style:preserve-3d;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.pk-face{position:absolute;inset:0;width:100%;height:100%;display:block;backface-visibility:hidden;-webkit-backface-visibility:hidden;filter:drop-shadow(0 18px 22px rgba(90,60,10,.24))}
+.pk-back{transform:rotateY(180deg)}
+@media (hover:hover){.pk-hex:hover .pk-card{transform:rotateY(180deg)}}
+.pk-hex.flipped .pk-card,.pk-hex:focus-visible .pk-card{transform:rotateY(180deg)}
+@media (prefers-reduced-motion:reduce){.pk-card{transition:none}}
+</style>
 </head>
 <body>
 <header><div class="wrap"><a class="brand" href="https://gregmillerhard.github.io/HoniOra_proto2/"><img src="honiora-logo-rx.png" alt="HONIORA" width="1446" height="489"></a><a class="back" href="https://gregmillerhard.github.io/HoniOra_proto2/">Back to the main site</a></div></header>
 <main>
 <section class="hero"><div class="wrap">
-<img class="pack" src="sp-single-cutout.webp" alt="HONIORA gold stack pack" width="1117" height="490">
+<button type="button" class="pack pk-hex" aria-pressed="false" aria-label="HoniOra hex sachet, one 20 g serving, showing the front. Flip to see the back."><span class="pk-card"><img class="pk-face pk-front" src="hex-front.webp?v=213" alt="" width="1000" height="918"><img class="pk-face pk-back" src="hex-back.webp?v=213" alt="" width="1000" height="918"></span></button>
 <p class="eyebrow">HONIORA &middot; Morning Stack Guide</p>
 <h1><span class="l1">HoniOra upgrades</span><br><span class="l2">that redundant morning stack of <em>pills and powders,</em></span></h1>
 <p class="updated">Last updated 4 November 2026</p>
@@ -107,5 +118,14 @@ footer img{height:30px;width:auto;margin-bottom:16px}
 <p><strong>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease.</strong></p>
 <p>Allergen declaration: contains milk derivative (VasoDrive-AP). HoniCo New Zealand. hello@honi.co.nz.</p>
 </div></footer>
+<script>
+document.querySelectorAll('.pk-hex').forEach(function(b){
+  b.addEventListener('click', function(){
+    var on = b.classList.toggle('flipped');
+    b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    b.setAttribute('aria-label', 'HoniOra hex sachet, one 20 g serving, showing the ' + (on ? 'back' : 'front') + '. Flip to see the ' + (on ? 'front' : 'back') + '.');
+  });
+});
+</script>
 </body>
 </html>
