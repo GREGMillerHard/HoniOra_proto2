@@ -186,7 +186,7 @@ section[id],div[id="about"],#honiblog-rachael{scroll-margin-top:160px}
 @keyframes tsE3{0%,100%{transform:translate(-4%,0) rotate(2deg) scaleY(.9)}50%{transform:translate(5%,-6%) rotate(-4deg) scaleY(1.2)}}
 @media (max-width:1000px){.taste-silk i{filter:blur(22px)}}
 @media (prefers-reduced-motion:reduce){.taste-silk i{animation:none}}
-#livaux,#actazin,#cgp,#feiolix,#vasodrive,#careflow,#lactospore,#oxxynea,#hytolive{scroll-margin-top:calc(70px - clamp(80px,11vw,152px))}
+#livaux,#actazin,#cgp,#feiolix,#vasodrive,#careflow,#zynamite,#lactospore,#oxxynea,#hytolive{scroll-margin-top:calc(70px - clamp(80px,11vw,152px))}
 #pack{scroll-margin-top:calc(81px - clamp(80px,11vw,152px))} /* 13 / Format: same, 7px tighter */
 
 /* ---------- nav ---------- */
@@ -1317,6 +1317,9 @@ footer .brand{font-size:15px;letter-spacing:.42em}
 @media(max-width:1000px){#vasodrive{background-image:url("vasodrive_bg-lite.jpg"),radial-gradient(ellipse 60% 70% at 50% 45%,#FFFBEF 0%,#F8EBC8 50%,#EED79C 100%)}}
 /* (user request) Careflow section: full-bleed mango backdrop, same treatment as #pomma. */
 #careflow{background-image:url("careflow_bg.jpg");background-size:cover;background-position:center}
+/* (user request) Zynamite section: full-bleed mango-leaf backdrop, cropped in. */
+#zynamite{background-image:url("zynamite_bg.jpg");background-size:cover;background-position:center}
+@media(max-width:1000px){#zynamite{background-image:url("zynamite_bg-lite.jpg")}}
 #oxxynea{background-image:url("oxxynea_bg.jpg");background-size:cover;background-position:center}
 /* (user request) Actazin section: full-bleed green kiwifruit slices, same treatment as #oxxynea */
 #actazin{background-image:url("actazin_bg.jpg");background-size:cover;background-position:center}
@@ -2028,6 +2031,9 @@ textarea{resize:vertical;min-height:64px}
 
 .abox.teamwide{min-height:0}
 .team-photo{width:100%;height:auto;border-radius:2px;display:block}
+.team-stack{display:none}
+.team-stack img{width:100%;max-width:440px;height:auto;display:block;margin:0 auto;border-radius:2px}
+@media(max-width:1000px){.teamwide .team-combined{display:none}.team-stack{display:flex;flex-direction:column;gap:14px;align-items:center;margin-top:10px}}
 .abox.mapwide{min-height:0}
 .map-trigger{display:block;margin:4px auto 0;max-width:520px;width:100%;
   background:none;border:0;padding:0;cursor:pointer;position:relative;text-align:left}
@@ -3393,7 +3399,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
 #pack .sec-head{position:relative;z-index:8}
 /* (user pick v82, option 3) 13 / Format: Gold Spotlight behind the stick pack, easing into the next screen */
 #pack.sec{background:#FFFBEF}#pack .pconv-sticky::before{background:radial-gradient(ellipse 60% 55% at 50% 50%,#FFFBEF 0%,#F8EBC8 50%,#EED79C 100%)}#pack .pconv-ease{background:linear-gradient(180deg,#EED79C,var(--paper-2))}
-/* (user request v90) CARPE DIEM double size */
+/* (user request v90) KA PAI double size */
 @media (min-width:1001px){.hero .hsr-alive{font-size:min(9vw,204px) !important}}
 @media (max-width:1000px){.hero .hsr-alive{font-size:clamp(54px,17.6vw,156px) !important}}
 /* (user request v91) manuka coast photo caption centred at the bottom */
@@ -3403,7 +3409,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
 /* (user request v95) morning solution block larger */
 @media (min-width:1001px){html body .hero .hsr-lead,html body .hero .hsr-body{font-size:min(2.3vw,28px) !important}}
 @media (max-width:1000px){html body .hero .hsr-lead,html body .hero .hsr-body{font-size:clamp(13px,3.75vw,15px) !important}}
-/* (user request v96) desktop screen 1 copy block, Introducing to CARPE DIEM, up 25px */
+/* (user request v96) desktop screen 1 copy block, Introducing to KA PAI, up 25px */
 @media (min-width:1001px){.hero .hero-copy-shift{translate:0 -25px}}
 /* (user request v103) NMN section: Gold Spotlight, big molecule at the top */
 #nmn{background:radial-gradient(ellipse 70% 60% at 50% 30%,#FFFBEF 0%,#F8EBC8 55%,#EED79C 100%);scroll-margin-top:calc(70px - clamp(80px,11vw,152px))}
@@ -3429,7 +3435,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
   .proto .phase ul{grid-column:2;grid-row:1 / span 3;display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(24px,3vw,44px);border-top:0}
   .proto .phase li:nth-child(1),.proto .phase li:nth-child(2){border-top:1px solid var(--line)}
 }
-/* (user request v131) desktop screen 1: shrink the Introducing to CARPE DIEM block on shorter screens (MacBook) so it fits the window like on the iMac */
+/* (user request v131) desktop screen 1: shrink the Introducing to KA PAI block on shorter screens (MacBook) so it fits the window like on the iMac */
 /* (user request v139) first strip: dissolve between two groups instead of scrolling */
 .hero .hrail .hfade{cursor:default;overflow:visible}
 .hfade-slot{display:grid;justify-items:center;align-items:center;padding:clamp(9px,1.2vh,14px) clamp(16px,3vw,40px)}
@@ -3580,7 +3586,7 @@ header{padding-top:9px;padding-bottom:9px}
   .hexstage{--hexw:clamp(300px,27vw,470px);--reach:clamp(84px,8.4vw,190px);
     display:block;order:3;flex:0 0 auto;width:100vw;max-width:none;
     margin:calc(-1 * clamp(24px,calc(1.7vw + 18px),42px)) 0;
-    position:relative;box-sizing:border-box;padding:clamp(72px,9vh,130px) clamp(24px,3vw,56px) clamp(80px,10vh,140px);
+    position:relative;box-sizing:border-box;padding:clamp(28px,4.5vh,72px) clamp(24px,3vw,56px) clamp(80px,10vh,140px);
     background:radial-gradient(ellipse 62% 72% at 50% 46%,#FFFBEF 0%,#F8EBC8 50%,#EED79C 100%);text-align:center}
   html.hl-settle .hexstage{visibility:hidden}
 
@@ -3769,6 +3775,7 @@ header{padding-top:9px;padding-bottom:9px}
       <a href="#eriomin">Eriomin Lemon</a>
       <a href="#mitoq">Kaneka Q30 Ubiquinol</a>
       <a href="#careflow">Careflow Mango</a>
+     <a href="#zynamite">Zynamite S</a>
       <a href="#hytolive">Hytolive Olive</a>
     </div>
     <div class="hexbtn-m nav-hex-mobile-left">
@@ -3917,7 +3924,7 @@ header{padding-top:9px;padding-bottom:9px}
       <div class="hero-precede rv"><table class="precede-table" role="presentation"><tbody><tr><td><span class="precede-rest"><span class="precede-lead-inline" id="precedeLeadInline"><span class="precede-lead" id="precedeLead">Introducing</span> <br></span><span class="precede-solution-wrap"> <span class="precede-solution">Honi<i>Ora</i>'s morning solution:</span> <br> <span class="precede-body precede-fit" id="precedeFit">our effervescent stack pack + A BIG glass of water = Readiness in 60 seconds.</span></span></span></td></tr></tbody></table></div>
       <h1 class="serif rv hero-logo" id="heroWordmark"><img src="honiora-logo-rx-white.png" alt="HONIORA" class="hero-rx" width="1446" height="489"></h1>
       <p class="hero-tag rv">M&#256;NUKA CREATINE PROTOCOL</p>
-      <div class="hero-solution-right"><span class="hsr-lead">Honi<i>Ora</i>'s morning solution:</span><span class="hsr-body">our effervescent stack pack<br>+<br>A BIG glass of water<br>=<br><span style="white-space:nowrap">Readiness in 60 seconds.</span></span><span class="hsr-nourish">NOURISH YOUR BODY<br>UPGRADE YOUR WELLNESS</span><span class="hsr-alive"><span class="hsr-alive-in" id="aliveZoom">CARPE<br class="mb"> DIEM</span></span></div>
+      <div class="hero-solution-right"><span class="hsr-lead">Honi<i>Ora</i>'s morning solution:</span><span class="hsr-body">our effervescent stack pack<br>+<br>A BIG glass of water<br>=<br><span style="white-space:nowrap">Readiness in 60 seconds.</span></span><span class="hsr-nourish">NOURISH YOUR BODY<br>UPGRADE YOUR WELLNESS</span><span class="hsr-alive"><span class="hsr-alive-in" id="aliveZoom">KA<br class="mb"> PAI</span></span></div>
       </div>
       <ul class="keyact flat hero-actives">
         <li>MGO 850+ M&#257;nuka Honey crystals</li>
@@ -3938,6 +3945,7 @@ header{padding-top:9px;padding-bottom:9px}
         <li>Taurine</li>
         <li>Cognizin<sup class="rn">&reg;</sup> Citicoline</li>
 <li>Careflow<sup class="rn">&reg;</sup> mango</li>
+        <li>Zynamite<sup class="rn">&reg;</sup> S mango leaf</li>
         <li>Eriomin<sup class="rn">&reg;</sup> lemon</li>
         <li>LactoSpore<sup class="rn">&reg;</sup> Bacillus coagulans</li>
         <li>Landkind<sup class="rn">&reg;</sup> Pure Salidroside</li>
@@ -3946,7 +3954,7 @@ header{padding-top:9px;padding-bottom:9px}
         <li>Vitamin A Retinyl Palmitate</li>
       </ul>
       <div class="hero-meta rv">
-        <div><b>23</b><span>Full dose wellness actives</span></div>
+        <div><b>24</b><span>Full dose wellness actives</span></div>
       </div>
       <div class="hero-cta rv">
         <a href="#matrix" class="btn ghost"><span class="btn-t">Explore Honi<i>Ora</i></span> <span class="ar">&rarr;</span></a>
@@ -3961,7 +3969,7 @@ header{padding-top:9px;padding-bottom:9px}
          left and right points. Hover (or tap / Enter) flips the hex to its back.
          Lite (<=1000px) hides this block and keeps its own flow (tube shot now the hex front). -->
     <section class="hexstage" id="hexStage" aria-label="Inside every HoniOra hex">
-    <div class="hero-reo" id="heroReo" role="note" aria-label="HoniOra comes from te reo M&#257;ori. Honi means honey, Ora means life, health, and vitality."><span class="reo-t" aria-hidden="true">Honi<i>Ora</i> comes from te reo M&#257;ori.<br>Honi means honey,<br>Ora means life, health, and vitality.</span></div>
+    <div class="hero-reo" id="heroReo" role="note" aria-label="HoniOra comes from te reo M&#257;ori. Honi means honey, Ora means life, health, and vitality. Ka Pai means all good."><span class="reo-t" aria-hidden="true">Honi<i>Ora</i> comes from te reo M&#257;ori.<br>Honi means honey,<br>Ora means life, health, and vitality.<br>Ka Pai means all good.</span></div>
       <div class="hx-row">
       <ul class="hx-list hx-left" aria-label="Actives, part one">
         <li>MGO 850+ M&#257;nuka Honey crystals</li>
@@ -3990,6 +3998,7 @@ header{padding-top:9px;padding-bottom:9px}
         <li>Taurine</li>
         <li>Cognizin<sup class="rn">&reg;</sup> Citicoline</li>
         <li>Careflow<sup class="rn">&reg;</sup> mango</li>
+        <li>Zynamite<sup class="rn">&reg;</sup> S mango leaf</li>
         <li>Eriomin<sup class="rn">&reg;</sup> lemon</li>
         <li>LactoSpore<sup class="rn">&reg;</sup> Bacillus coagulans</li>
         <li>Landkind<sup class="rn">&reg;</sup> Pure Salidroside</li>
@@ -3999,7 +4008,7 @@ header{padding-top:9px;padding-bottom:9px}
       </ul>
       </div>
     <p class="hero-swap" id="heroSwap">Swap out the messy powder scoops and tedious pills for our deliciously simple, naturally potent morning protocol.</p>
-      <div class="hx-meta"><b>23</b><span>Full dose wellness actives</span></div>
+      <div class="hx-meta"><b>24</b><span>Full dose wellness actives</span></div>
       <div class="hx-cta">
         <a href="#matrix" class="btn ghost"><span class="btn-t">Explore Honi<i>Ora</i></span> <span class="ar">&rarr;</span></a>
         <a href="#triad" class="btn ghost">Gut, heart, brain, power</a>
@@ -4024,6 +4033,7 @@ header{padding-top:9px;padding-bottom:9px}
 <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="eriomin_lemon-lite.webp"><img width="820" height="820" src="eriomin_lemon.webp" alt="Eriomin lemon flavonoid extract" loading="lazy"></picture><figcaption class="icap"><b>Eriomin<sup class="rn">&reg;</sup> Lemon Flavonoid</b><s>200 mg</s><u class="ifn">GLP-1 SUPPORT</u><i>A standardised eriocitrin extract with its own pathway to your own GLP-1, <a href="#glp1" style="color:inherit;text-decoration:underline">see how</a>.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="cGP-Pro_blackcurrant-lite.webp"><img width="820" height="820" src="cGP-Pro_blackcurrant.webp" alt="Braincurrant New Zealand blackcurrant" loading="lazy"></picture><figcaption class="icap"><b>Braincurrant<sup class="rn">&reg;</sup></b><s>300 mg NZ</s><u class="ifn">FOCUS &amp; MOOD</u><i>A freeze-dried whole New Zealand blackcurrant powder from Anagenix, naturally rich in anthocyanins. Natural support for focus, memory and mood balance.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="careflow_mango-lite.webp"><img width="820" height="820" src="careflow_mango.webp" alt="Careflow organic mango fruit powder" loading="lazy"></picture><figcaption class="icap"><b>Careflow<sup class="rn">&reg;</sup> Mango Fruit</b><s>100 mg</s><u class="ifn">MICROCIRCULATION</u><i>Organic powder of whole Totapuri mango from India. In lab tests it switched on eNOS, the enzyme that makes nitric oxide, and SIRT1. At 100 mg a day, blood flow in the smallest vessels rose within hours and again after four weeks of daily use. <a href="#careflow" style="color:inherit;text-decoration:underline">See the trials</a>.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="zynamite_s-lite.webp"><img width="820" height="820" src="zynamite_s.webp" alt="Zynamite S water-soluble mango leaf extract" loading="lazy"></picture><figcaption class="icap"><b>Zynamite<sup class="rn">&reg;</sup> S Mango Leaf</b><s>100 mg</s><u class="ifn">MENTAL ENERGY</u><i>A water-soluble mango leaf extract from Nektium, standardised to 60% mangiferin. In a trial of 88 adults a single 100 mg dose lifted mood and processing speed from 30 minutes. Caffeine-free. <a href="#zynamite" style="color:inherit;text-decoration:underline">See the trial</a>.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="hytolive_bev_olive-lite.webp"><img width="820" height="820" src="hytolive_bev_olive.webp" alt="Hytolive Bev olive fruit extract" loading="lazy"></picture><figcaption class="icap"><b>Hytolive<sup class="rn">&reg;</sup> Bev Olive Extract</b><s>300 mg</s><u class="ifn">BLOOD LIPID PROTECTION</u><i>An olive fruit extract built for drinks, from Alvinesa in Spain, standardised to 2% hydroxytyrosol. At this dose HONI<i>ORA</i> delivers 6&nbsp;mg of hydroxytyrosol per serving, the olive polyphenol behind EFSA&rsquo;s blood lipid claim for olive oil.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="Kaneka Ubiquinol" loading="lazy"></picture><figcaption class="icap"><b>Kaneka Ubiquinol<sup class="rn">&reg;</sup></b><s>200 mg</s><u class="ifn">MITOCHONDRIAL SUPPORT</u><i>The active antioxidant form of coenzyme Q10, the same molecule your body makes. It carries electrons in the mitochondrial membrane where cells make ATP, with no conversion step. About 3x better absorbed than standard CoQ10. Delivered as Kaneka Q30&trade;, an air-stable powder made for stack packs. <a href="#mitoq" style="color:inherit;text-decoration:underline">See the studies</a>.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="L-Theanine powder" loading="lazy"></picture><figcaption class="icap"><b>AlphaWave<sup class="rn">&reg;</sup> L-Theanine</b><s>450 mg</s><u class="ifn">CALM FOCUS</u><i>Upregulates alpha-wave neural activity and stimulates GABA, so the result reads as calm focus rather than agitation. A 28-day placebo-controlled trial of AlphaWave L-Theanine found lower perceived stress and improved sleep quality and attention.</i></figcaption></figure></div>
@@ -4032,9 +4042,9 @@ header{padding-top:9px;padding-bottom:9px}
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="lactospore-lite.webp"><img width="820" height="820" src="lactospore.webp" alt="LactoSpore Bacillus coagulans probiotic, colourised micrograph" loading="lazy"></picture><figcaption class="icap"><b>LactoSpore<sup class="rn">&reg;</sup> Bacillus coagulans</b><s>6 billion CFU</s><u class="ifn">GUT MICROBIOME</u><i>A spore-forming probiotic (strain MTCC 5856) built to come through the stack pack&#39;s effervescent dissolution, so live spores reach the gut. Dosed alongside the Livaux and M&#257;nuka prebiotic fibres.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="retinyl_palmitate-lite.webp"><img width="820" height="820" src="retinyl_palmitate.webp" alt="Vitamin A as cold-water-soluble retinyl palmitate" loading="lazy"></picture><figcaption class="icap"><b>Vitamin A Retinyl Palmitate</b><s>900 mcg RAE</s><u class="ifn">BARRIER &amp; IMMUNE SUPPORT</u><i>Cold-water-soluble vitamin A that disperses cleanly in the glass. Vitamin A supports the integrity of the body&#39;s epithelial barriers and mucosal immunity, including the gut lining.</i></figcaption></figure></div>
           <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="landkind_pure_salidroside-lite.webp"><img width="820" height="820" src="landkind_pure_salidroside.webp" alt="Landkind Pure Salidroside, 98 percent pure" loading="lazy"></picture><figcaption class="icap"><b>Landkind<sup class="rn">&reg;</sup> Pure Salidroside</b><s>60 mg</s><u class="ifn">STRESS RESPONSE</u><i>Salidroside made by precision fermentation, specified by the supplier at 98% or higher purity. Not a Rhodiola root extract.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="yuzu-lite.webp"><img width="820" height="820" src="yuzu.webp" alt="Yuzu" loading="lazy"></picture><figcaption class="icap"><b>Natural Japanese Yuzu Flavor</b><s>Flavour system &middot; 13 mg</s><u class="ifn">CITRUS AROMA</u><i>An Asian citrus grown in Japan and prized for its rind. Sharper than lemon, floral like mandarin, and it holds that delicious top note through acid and cold.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="passionfruit-lite.webp"><img width="820" height="820" src="passionfruit.webp" alt="Passionfruit" loading="lazy"></picture><figcaption class="icap"><b>Natural Passionfruit Flavor</b><s>Flavour system &middot; 33 mg</s><u class="ifn">TROPICAL AROMA</u><i>A South American vine fruit, now grown across New Zealand and the subtropics. Musky, almost fermented sweetness with a tart edge that fills in underneath the yuzu and rounds the finish.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="thaumatin-lite.webp"><img width="820" height="786" src="thaumatin.webp" alt="Katemfe fruit, source of Pure Talin thaumatin" loading="lazy"></picture><figcaption class="icap"><b>Thaumatin<sup class="rn">&reg;</sup> Pure Talin</b><s>29 mg</s><u class="ifn">NATURAL SWEETNESS</u><i>It is protein, not a sugar, harvested from the African katemfe fruit, 2,000 to 3,000 times sweeter than sugar (hence the tiny amount).</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="yuzu-lite.webp"><img width="820" height="820" src="yuzu.webp" alt="Yuzu" loading="lazy"></picture><figcaption class="icap"><b>Natural Japanese Yuzu Flavor</b><s>Flavour system &middot; 17 mg</s><u class="ifn">CITRUS AROMA</u><i>An Asian citrus grown in Japan and prized for its rind. Sharper than lemon, floral like mandarin, and it holds that delicious top note through acid and cold.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="passionfruit-lite.webp"><img width="820" height="820" src="passionfruit.webp" alt="Passionfruit" loading="lazy"></picture><figcaption class="icap"><b>Natural Passionfruit Flavor</b><s>Flavour system &middot; 44 mg</s><u class="ifn">TROPICAL AROMA</u><i>A South American vine fruit, now grown across New Zealand and the subtropics. Musky, almost fermented sweetness with a tart edge that fills in underneath the yuzu and rounds the finish.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="thaumatin-lite.webp"><img width="820" height="786" src="thaumatin.webp" alt="Katemfe fruit, source of Pure Talin thaumatin" loading="lazy"></picture><figcaption class="icap"><b>Thaumatin<sup class="rn">&reg;</sup> Pure Talin</b><s>33 mg</s><u class="ifn">NATURAL SWEETNESS</u><i>It is protein, not a sugar, harvested from the African katemfe fruit, 2,000 to 3,000 times sweeter than sugar (hence the tiny amount).</i></figcaption></figure></div>
         </div>
       </div>
     </div>
@@ -4358,7 +4368,7 @@ header{padding-top:9px;padding-bottom:9px}
     <div class="sec-head rv">
       <p class="eyebrow dim">02 / The Ritual</p>
       <h2 class="serif oneline long">Ready in 60 seconds. <em>Then you own the day.</em></h2>
-      <p class="lede">HONI<i>ORA</i> turns sixty seconds into a daily pause. Tear one stack, pour it in, let it fizz, <br>and use the minute to set the day's first intention, before the phone, before the noise.<br>Carpe diem starts small: one minute, chosen on purpose, every day.</p>
+      <p class="lede">HONI<i>ORA</i> turns sixty seconds into a daily pause. Tear one stack, pour it in, let it fizz, <br>and use the minute to set the day's first intention, before the phone, before the noise.<br>Ka pai starts small: one minute, chosen on purpose, every day.</p>
     </div>
     <div class="ritual-grid">
       <div class="rv">
@@ -4392,7 +4402,7 @@ header{padding-top:9px;padding-bottom:9px}
     <div class="sec-head rv">
       <p class="eyebrow dim">03 / The Protocol</p>
       <h2 class="serif oneline long">1 stack. Every day. <em>It compounds.</em></h2>
-      <p class="lede">You feel something within the first glass. Mostly it is cumulative : a good habit, HONI<i>ORA</i>  supports and boosts your health with daily, continual use combined with diet and exercise.</p>
+      <p class="lede">You feel something within the first glass. Mostly it is cumulative : a good habit,<br>HONI<i>ORA</i> supports and boosts your health with daily, continual use combined with diet and exercise.</p>
     </div>
 
     <div class="proto rv">
@@ -4405,6 +4415,7 @@ header{padding-top:9px;padding-bottom:9px}
           <li><b>Cr.01&trade; Creatine</b>starts saturating the muscle phosphocreatine pool.</li>
           <li><b>Careflow<sup class="rn">&reg;</sup> mango fruit</b>At 100 mg, skin blood flow rose 54% within hours in a pilot study.</li>
           <li><b>vitAlign<sup class="rn">&reg;</sup> plant blend</b>Redox signalling raises the nitric oxide you already make.</li>
+          <li><b>Zynamite<sup class="rn">&reg;</sup> S mango leaf</b>A single 100 mg dose lifted mood and processing speed from 30 minutes in a trial of 88 adults.</li>
           <li><b>The effervescent engine</b>The actives arrive dispersed and dissolved, so nothing sits in the gut drawing water.</li>
         </ul>
       </div>
@@ -4481,7 +4492,7 @@ header{padding-top:9px;padding-bottom:9px}
         </div>
         <ul class="plan-list">
           <li>7 stack packs &middot; 7 daily servings</li>
-          <li>The whole 23-active matrix, full dose</li>
+          <li>The whole 24-active matrix, full dose</li>
           <li>$66.57 credited to subscription</li>
           <li>Free USA shipping, always</li>
         </ul>
@@ -4500,7 +4511,7 @@ header{padding-top:9px;padding-bottom:9px}
           <img class="plan-img plan-img-stack" src="plan-stack5.png" alt="HONIORA Monthly Protocol, five gold weekly packs of seven stack packs" width="760" height="688" loading="lazy">
         </div>
         <ul class="plan-list">
-          <li>The whole 23-active matrix, full dose</li>
+          <li>The whole 24-active matrix, full dose</li>
 <li>Unlock the long term health benefits of subscription.</li>
           <li>Founding price locked for life</li>
           <li>Skip, pause or cancel any time</li>
@@ -4528,7 +4539,7 @@ header{padding-top:9px;padding-bottom:9px}
         </div>
         <ul class="plan-list">
           <li>1 box &middot; 28 stack packs &middot; 28 daily servings</li>
-          <li>The whole 23-active matrix, full dose</li>
+          <li>The whole 24-active matrix, full dose</li>
           <li>No subscription, buy when you need it</li>
           <li>Free USA shipping, always</li>
         </ul>
@@ -4758,6 +4769,7 @@ header{padding-top:9px;padding-bottom:9px}
           <li><i>Synapsa<sup class="rn">&reg;</sup> Bacopa</i><b>300 mg</b></li>
           <li><i>Braincurrant<sup class="rn">&reg;</sup></i><b>300 mg</b></li>
           <li><i>Cognizin<sup class="rn">&reg;</sup> Citicoline</i><b>255 mg</b></li>
+          <li><i>Zynamite<sup class="rn">&reg;</sup> S Mango Leaf</i><b>100 mg</b></li>
         </ul>
         <p>cGP-Pro<sup class="rn">&reg;</sup> Blackcurrant. cGP-Pro<sup class="rn">&reg;</sup> helps replenish and maintain optimal cGP levels in the body and brain, supporting vitality, cognitive health and graceful ageing. cGP-Pro<sup class="rn">&reg;</sup> is the world&rsquo;s only standardised cGP ingredient. Derived from New Zealand blackcurrant cultivars and combined with collagen, it is produced in NZ using a proprietary process which delivers cGP in stable, standardised form. Backed by science and validated through rigorous independent testing.<br><br>L-Theanine works alongside it, upregulating alpha-wave neural activity so the result reads as calm focus rather than agitation, while Braincurrant<sup class="rn">&reg;</sup> contributes New Zealand blackcurrant anthocyanins for enhanced focus, memory and mood balance. Citicoline supplies building blocks for brain cell membranes and signalling, for attention.<br><br>Affron<sup class="rn">&reg;</sup> Saffron supports a positive mood, helps relieve occasional stress, promotes relaxation, and enhances sleep quality. It is a saffron extract made in Spain by Pharmactive Biotech, standardised to at least 3.5% Lepticrosalides<sup class="rn">&reg;</sup>. HONI<i>ORA</i> carries 28&nbsp;mg, the dose used in Pharmactive&rsquo;s placebo-controlled mood trials, where healthy adults kept a more positive mood and coped better with everyday stress.</p>
       </div>
@@ -5115,6 +5127,12 @@ header{padding-top:9px;padding-bottom:9px}
         <div class="mech">Organic, standardised powder of whole Totapuri mango. In lab tests, digested Careflow raised active eNOS by 23% to 60% as the dose went up, and activated SIRT1. In a 4-week placebo-controlled trial of 75 adults, 100 mg a day raised microvascular blood flow against baseline (p=0.025), a trend against placebo (p=0.0709). A single 100 mg dose raised skin blood flow 54% (p=0.0157).<br><a class="cite" href="https://doi.org/10.1055/s-0043-103017" target="_blank" rel="noopener noreferrer">Buchwald-Werner 2017 <span>Planta Med &middot; RCT &nearr;</span></a><a class="cite" href="https://doi.org/10.1055/s-0035-1558219" target="_blank" rel="noopener noreferrer">Gerstgrasser 2015 <span>Planta Med &middot; RCT &nearr;</span></a><a class="cite sup" href="https://www.biotexia.com/en/dietary-supplements/metabolic-health/careflow-microcirculation/" target="_blank" rel="noopener noreferrer">Ingredient science <span>Biotexia &nearr;</span></a></div>
       </div>
 
+            <div class="row mgrid compact">
+        <div class="name">Zynamite<sup class="rn">&reg;</sup> S Mango Leaf<i>Nektium / PLT Health (water-soluble)</i></div>
+        <div><span class="fn">Mental energy<small>Fast focus</small></span></div>
+        <div class="dose">100 mg</div>
+        <div class="mech">Water-soluble mango leaf extract standardised to 60% mangiferin. In a crossover trial of 88 adults, a single 100 mg dose lifted mood and processing speed from 30 minutes and cut fatigue over five hours, against placebo. Caffeine-free. Manufacturer-reported; US GRAS or NDI status to confirm.</div>
+      </div>
       <div class="row mgrid compact">
         <div class="name">vitAlign<sup class="rn">&reg;</sup> Plant-Based NO Matrix<i>FutureCeuticals / Clinically Standardized</i></div>
         <div><span class="fn">Nitric oxide<small>Endogenous trigger</small></span></div>
@@ -5176,35 +5194,35 @@ header{padding-top:9px;padding-bottom:9px}
       <div class="row mgrid compact">
         <div class="name">Thaumatin<sup class="rn">&reg;</sup> Pure Talin<i>Naturex / Standardized High-Potency</i></div>
         <div><span class="fn">Organoleptic<small>Sweetener and blocker</small></span></div>
-        <div class="dose">29 mg</div>
+        <div class="dose">33 mg</div>
         <div class="mech">A natural protein from the aril of the katemfe fruit (<em>Thaumatococcus daniellii</em>) of West Africa, roughly 2,000 to 3,000 times sweeter than sugar and a bitterness blocker as well as a sweetener. Digested as dietary protein rather than as a sugar.<br><a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/38577158/" target="_blank" rel="noopener noreferrer">Supporting research <span>PMID 38577158 &nearr;</span></a></div>
       </div>
 
       <div class="row mgrid compact">
         <div class="name">De-ammoniated Glycyrrhizin<i>Standardized Licorice Extract</i></div>
         <div><span class="fn">Organoleptic<small>Flavour &amp; sweetness</small></span></div>
-        <div class="dose">7 mg</div>
+        <div class="dose">8 mg</div>
         <div class="mech">A standardised licorice extract used in the flavour system at a low dose, working alongside the thaumatin to round out sweetness and mask residual botanical bitterness.<br><span class="cite sup" style="cursor:default">Ingredient science citation to be added &middot; verify before launch</span></div>
       </div>
 
       <div class="row mgrid compact">
         <div class="name">Natural Passionfruit Flavor<i>High-Ester Spray-Dried</i></div>
         <div><span class="fn">Organoleptic<small>Flavour system</small></span></div>
-        <div class="dose">33 mg</div>
+        <div class="dose">44 mg</div>
         <div class="mech">A South American vine fruit, now grown across New Zealand and the subtropics. Musky, almost fermented sweetness with a tart edge that rounds out the citrus top notes.</div>
       </div>
 
       <div class="row mgrid compact">
         <div class="name">Natural Golden Kiwi Flavor<i>Spray-Dried Terpene System</i></div>
         <div><span class="fn">Organoleptic<small>Flavour system</small></span></div>
-        <div class="dose">29 mg</div>
+        <div class="dose">39 mg</div>
         <div class="mech">A separate flavour note from the whole-fruit Livaux<sup class="rn">&reg;</sup> Gold Kiwifruit ingredient above: a spray-dried terpene system carrying the fruit's aromatic profile without the prebiotic fibre load.</div>
       </div>
 
       <div class="row mgrid compact">
         <div class="name">Natural Japanese Yuzu Flavor<i>High-Impact Spray-Dried Terpenes</i></div>
         <div><span class="fn">Organoleptic<small>Flavour core</small></span></div>
-        <div class="dose">13 mg</div>
+        <div class="dose">17 mg</div>
         <div class="mech">The primary aromatic top note. Yuzu carries acidity well, which suits a drink already built around citric acid.<br><a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/34500811/" target="_blank" rel="noopener noreferrer">Supporting research <span>PMID 34500811 &nearr;</span></a></div>
       </div>
     </div>
@@ -5408,6 +5426,26 @@ header{padding-top:9px;padding-bottom:9px}
       </ul>
 
       <p class="small" style="margin-top:30px;max-width:78ch">Ingredient-level evidence, see the <a href="#evidence-note" style="color:inherit;text-decoration:underline">evidence note</a>. Both trials were small and involved researchers from Vital Solutions, which sold the powder at the time under the name Careless&trade;. Biotexia now cites both as Careflow trials. The 4-week result is significant against baseline, not against placebo. The same trial also reported lower HbA1c and post-meal glucose at 300 mg. HONI<i>ORA</i> carries 100 mg, so those results are not claimed here. The lab work on SIRT1 and AMPK is R&ouml;chter et al., <em style="font-style:italic">Agro Food Industry Hi-Tech</em> 2015. None of these is a trial of the finished HONI<i>ORA</i> formula. Careflow is a trade mark of Fytexia.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="zynamite">
+  <div class="wrap">
+    <div class="livaux-box rv">
+      <p class="eyebrow dim">Zynamite<sup class="rn">&reg;</sup> S &middot; Mental energy</p>
+      <h2 class="serif">Zynamite<sup class="rn">&reg;</sup> S: <em>Mango leaf for fast, caffeine-free mental energy.</em></h2>
+      <p class="lede">HONI<i>ORA</i> carries 100 mg of Zynamite<sup class="rn">&reg;</sup> S per serving, the dose used in its clinical study. It is a water-soluble extract of mango leaf (<em>Mangifera indica</em>) from Nektium, standardised to 60% mangiferin, built to dissolve clear in a drink.</p>
+      <p class="lede">Mental energy means thinking faster, holding focus and lifting mood, without caffeine.</p>
+
+      <ul class="prob-list">
+        <li><span class="x">01</span><div><strong>Works in 30 minutes.</strong> <span class="d">In a trial of 88 adults, a single 100 mg dose improved mood and cut fatigue from the first measurement at 30 minutes, against placebo.</span></div></li>
+        <li><span class="x">02</span><div><strong>Faster processing.</strong> <span class="d">Processing speed rose 25% and complex task handling 21% on the Trail Making Test after one dose.</span></div></li>
+        <li><span class="x">03</span><div><strong>Steadier mood, less fatigue.</strong> <span class="d">Mood improved 24% and fatigue fell 26% over five hours, with better selective attention on the Stroop test.</span></div></li>
+        <li><span class="x">04</span><div><strong>Water-soluble and neutral.</strong> <span class="d">Nektium built Zynamite S to dissolve clear and taste neutral in a drink, so it fits the glass without haze.</span></div></li>
+      </ul>
+
+      <p class="small" style="margin-top:30px;max-width:78ch">Trial results are reported by the manufacturer, Nektium, and its US distributor PLT Health Solutions, from a single study of 88 adults; studies on file. These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure or prevent any disease. Zynamite is a trade mark of Nektium. <a class="cite" href="https://www.mdpi.com/1424-8247/19/7/1112" target="_blank" rel="noopener noreferrer">Supporting research <span>Pharmaceuticals 2026 &nearr;</span></a> <a class="cite" href="https://www.plthealth.com/product-catalog/zynamite-s" target="_blank" rel="noopener noreferrer">Supplier data <span>PLT Health &nearr;</span></a></p>
     </div>
   </div>
 </section>
@@ -5734,13 +5772,20 @@ header{padding-top:9px;padding-bottom:9px}
       </div>
       <div class="abox wide teamwide">
         <span class="abox-n">02</span>
-        <img width="2200" height="1074" src="team-honico.jpg" alt="HoniCo Team NZ. Gregory Miller-Hard, Founder and CEO, startup investor, photographer, kiwifruit orchardist and farmer. Laura Clinton, R&amp;D and QA, quality assurance specialist, prototype management, compliance and R&amp;D for market deliverance. Nicole Miller-Hard, Founder and Marketing, environmental press agency founder, writer, animal welfare activist, wildlife and horse sanctuary owner. Scott Smith, Medical Herbalist and Naturopath, clinician and product development in the natural healthcare industry for almost 20 years. Odette Miller-Hard, Brand Design, artist, photographer and visual coder, BFA Fine Arts." loading="lazy" class="team-photo">
+        <img class="team-combined" width="2200" height="1074" src="team-honico.jpg" alt="HoniCo Team NZ. Gregory Miller-Hard, Founder and CEO, startup investor, photographer, kiwifruit orchardist and farmer. Laura Clinton, R&amp;D and QA, quality assurance specialist, prototype management, compliance and R&amp;D for market deliverance. Nicole Miller-Hard, Founder and Marketing, environmental press agency founder, writer, animal welfare activist, wildlife and horse sanctuary owner. Scott Smith, Medical Herbalist and Naturopath, clinician and product development in the natural healthcare industry for almost 20 years. Odette Miller-Hard, Brand Design, artist, photographer and visual coder, BFA Fine Arts." loading="lazy" class="team-photo">
         <div class="teamlist sr-only">
           <div><b>Gregory Miller-Hard</b><i>Founder &amp; CEO</i><span>Startup investor, photographer, kiwifruit orchardist &amp; farmer.</span></div>
           <div><b>Laura Clinton</b><i>R&amp;D + QA</i><span>Quality assurance specialist, prototype management, compliance and R&amp;D for market deliverance.</span></div>
           <div><b>Nicole Miller-Hard</b><i>Founder &amp; Marketing</i><span>Environmental press agency founder, writer, animal welfare activist, wildlife and horse sanctuary owner.</span></div>
           <div><b>Scott Smith</b><i>Medical Herbalist &amp; Naturopath</i><span>Clinician and product development in the natural healthcare industry for almost 20 years.</span></div>
           <div><b>Odette Miller-Hard</b><i>Brand Design</i><span>Artist, photographer &amp; visual coder, BFA Fine Arts.</span></div>
+        </div>
+        <div class="team-stack" aria-hidden="true">
+          <img src="team_gregory.jpg" alt="Gregory Miller-Hard, Founder and CEO" loading="lazy">
+          <img src="team_laura.jpg" alt="Laura Clinton, R&amp;D and QA" loading="lazy">
+          <img src="team_nicole.jpg" alt="Nicole Miller-Hard, Founder and Marketing" loading="lazy">
+          <img src="team_scott.jpg" alt="Scott Smith, Medical Herbalist and Naturopath" loading="lazy">
+          <img src="team_odette.jpg" alt="Odette Miller-Hard, Brand Design" loading="lazy">
         </div>
       </div>
       <div class="abox wide mapwide">
@@ -6032,7 +6077,7 @@ header{padding-top:9px;padding-bottom:9px}
           <p><b>This site.</b> &copy; 2026 HoniCo NZ Ltd. All text, photography, formulation descriptions, layout and code on this site are our property or used under licence. You may not copy, republish or use them commercially without written permission.</p>
           <p><b>Our marks.</b> HONI<i>ORA</i> and HoniCo are unregistered trade marks of HoniCo NZ Ltd, claimed and used in the course of trade. Applications are [not yet filed / pending, application number and date]. We rely on common-law rights, including passing off and the Fair Trading Act 1986 in New Zealand, and equivalent protection in other markets. Nothing on this site should be read as a claim of registration.</p>
           <p><b>The formulation.</b> The HONI<i>ORA</i> formulation, its ratios and the specification behind them are confidential and proprietary. Publishing a full bill of materials does not place it in the public domain or grant any licence to reproduce it.</p>
-          <p><b>Third-party marks.</b> Livaux, Actazin, Feiolix, Eriomin, Oxxynea, cGP-Pro, VasoDrive-AP, Careflow, vitAlign, Fiberest, Landkind, Braincurrant, Hytolive, Pomma+, LactoSpore, Affron, Lepticrosalides, Synapsa, Cognizin, Kaneka Ubiquinol, Kaneka Q30, Zinc Bisglycinate TRAACS and Thaumatin Pure Talin are trade marks of their respective owners and are used to identify the ingredients we buy from them. Their owners do not endorse HONI<i>ORA</i>.</p>
+          <p><b>Third-party marks.</b> Livaux, Actazin, Feiolix, Eriomin, Oxxynea, cGP-Pro, VasoDrive-AP, Careflow, vitAlign, Fiberest, Landkind, Braincurrant, Hytolive, Pomma+, LactoSpore, Affron, Lepticrosalides, Synapsa, Zynamite, Cognizin, Kaneka Ubiquinol, Kaneka Q30, Zinc Bisglycinate TRAACS and Thaumatin Pure Talin are trade marks of their respective owners and are used to identify the ingredients we buy from them. Their owners do not endorse HONI<i>ORA</i>.</p>
           <p><b>Cited research.</b> Papers linked from the provenance matrix belong to their authors and publishers. We link to public records and reproduce no full text.</p>
           <p><b>Infringement.</b> Email <a href="mailto:legal@honi.co.nz">legal@honi.co.nz</a> with details and we will respond within [period].</p>
         </div>
@@ -6091,7 +6136,7 @@ header{padding-top:9px;padding-bottom:9px}
     </div>
     <div class="legal">
       <p><strong>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease.</strong></p>
-      <p style="margin-top:12px">Clinical figures cited on this page derive from published trials of the individual branded ingredients at the doses stated, and not from a clinical trial of the finished HONI<i>ORA</i> product. <strong>Allergen declaration: contains milk derivative</strong> (VasoDrive-AP<sup class="rn">&reg;</sup> casein lactotripeptides). Other allergen details are to be confirmed against final supplier specifications before launch. Certified gluten-free below 5.0 ppm. Manufactured in the USA in an NSF / USP certified GMP facility. Not intended for use by anyone under 18, or by people who are pregnant or breastfeeding. If you take prescription medication, particularly for blood pressure, speak with your doctor before use. Livaux, Actazin, Feiolix, Eriomin, Oxxynea, cGP-Pro, VasoDrive-AP, Careflow, vitAlign, Fiberest, Landkind, Braincurrant, Hytolive, Pomma+, LactoSpore, Affron, Lepticrosalides, Synapsa, Cognizin, Kaneka Ubiquinol, Kaneka Q30, Zinc Bisglycinate TRAACS and Thaumatin Pure Talin are trademarks of their respective owners.</p>
+      <p style="margin-top:12px">Clinical figures cited on this page derive from published trials of the individual branded ingredients at the doses stated, and not from a clinical trial of the finished HONI<i>ORA</i> product. <strong>Allergen declaration: contains milk derivative</strong> (VasoDrive-AP<sup class="rn">&reg;</sup> casein lactotripeptides). Other allergen details are to be confirmed against final supplier specifications before launch. Certified gluten-free below 5.0 ppm. Manufactured in the USA in an NSF / USP certified GMP facility. Not intended for use by anyone under 18, or by people who are pregnant or breastfeeding. If you take prescription medication, particularly for blood pressure, speak with your doctor before use. Livaux, Actazin, Feiolix, Eriomin, Oxxynea, cGP-Pro, VasoDrive-AP, Careflow, vitAlign, Fiberest, Landkind, Braincurrant, Hytolive, Pomma+, LactoSpore, Affron, Lepticrosalides, Synapsa, Zynamite, Cognizin, Kaneka Ubiquinol, Kaneka Q30, Zinc Bisglycinate TRAACS and Thaumatin Pure Talin are trademarks of their respective owners.</p>
       <div class="footbottom">
         <span>&copy; 2026 HoniCo New Zealand. All rights reserved.</span>
         <span>SP20 SKU1 (draft)</span>
@@ -7037,7 +7082,7 @@ header{padding-top:9px;padding-bottom:9px}
        src:"Manufacturer: Albion Minerals (a Balchem brand), Clearfield, Utah, USA.",
        map:"https://www.google.com/maps/search/?api=1&query=Clearfield%2C+Utah%2C+USA"},
       {k:["yuzu","passionfruit","thaumatin","flavor","flavour","taste","sweetener"],
-       a:"The taste system layers Japanese yuzu (top note), South American passionfruit (mid-palate), gold kiwifruit and Mānuka crystals (texture), and Thaumatin Pure Talin, a protein sweetener from the African katemfe fruit 2,000 to 3,000 times sweeter than sugar. Yuzu (Citrus junos) is a cold-hardy citrus native to central China and Tibet, carried into Japan over a thousand years ago and prized there for its zest rather than eaten whole. Passionfruit (Passiflora edulis) is native to southern Brazil, Paraguay and northern Argentina, a climbing vine whose tough rind turns deep purple or gold around the fragrant pulp as it ripens. Thaumatin is dosed at just 29 mg, so there's no added sugar.",
+       a:"The taste system layers Japanese yuzu (top note), South American passionfruit (mid-palate), gold kiwifruit and Mānuka crystals (texture), and Thaumatin Pure Talin, a protein sweetener from the African katemfe fruit 2,000 to 3,000 times sweeter than sugar. Yuzu (Citrus junos) is a cold-hardy citrus native to central China and Tibet, carried into Japan over a thousand years ago and prized there for its zest rather than eaten whole. Passionfruit (Passiflora edulis) is native to southern Brazil, Paraguay and northern Argentina, a climbing vine whose tough rind turns deep purple or gold around the fragrant pulp as it ripens. Thaumatin is dosed at just 33 mg, so there's no added sugar.",
        src:"Thaumatin Pure Talin is supplied by Naturex, a natural-ingredients specialist."},
       {k:["manufactur","made","factory","fda","cgmp","gmp"],
        a:"HONI<i>ORA</i> is manufactured in the USA in an NSF / USP certified GMP facility."},
@@ -9030,7 +9075,7 @@ s();['loadedmetadata','loadeddata','play','playing','ratechange'].forEach(functi
     ticking=false;
     var vh=window.innerHeight||800,p;
     if(mqM.matches){
-      /* mobile (user request): expand only once CARPE DIEM scrolls UP to the centre
+      /* mobile (user request): expand only once KA PAI scrolls UP to the centre
          of the frame. Measure the unscaled wrapper so scaling it does not feed back. */
       var ref=el.parentElement||el,rr=ref.getBoundingClientRect();
       var c=rr.top+rr.height/2, vc=vh*0.5;
