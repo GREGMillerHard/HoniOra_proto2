@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>/* v52: keep screen 2 (stack pack, te reo line, ingredient lines) hidden until the page layout has settled, so nothing flashes onto screen 1 while loading */
+<script>/* v52: keep screen 2 (Hexcell, te reo line, ingredient lines) hidden until the page layout has settled, so nothing flashes onto screen 1 while loading */
 (function(){var d=document.documentElement;d.classList.add('hl-settle');var done=false;function off(){if(done)return;done=true;d.classList.remove('hl-settle');}
 setTimeout(off,5000);window.addEventListener('load',function(){var f=(document.fonts&&document.fonts.ready)?document.fonts.ready:Promise.resolve();f.then(function(){requestAnimationFrame(function(){requestAnimationFrame(function(){setTimeout(off,250);});});});});})();</script>
 <script>/* hero titles type-on: hide them before first paint, failsafe reveal at 9 s */
@@ -21,20 +21,28 @@ setTimeout(off,5000);window.addEventListener('load',function(){var f=(document.f
 })();
 </script>
 <title>HONIORA Effervescent Creatine Stack with NZ Super Actives</title>
-<meta name="description" content="1 stack pack, 500 ml of water. Ready in 60 seconds. A 20 g daily serving led by 5,000 mg of creatine monohydrate, built on New Zealand bioactives. Born in NZ, made in the USA. Join the 2026 founding list.">
+<meta name="description" content="1 Hexcell, 500 ml of water. Ready in 60 seconds. A 20 g daily serving led by 5,000 mg of creatine monohydrate, built on New Zealand bioactives. Born in NZ, made in the USA. Join the 2026 founding list.">
 <link rel="canonical" href="https://honiora.life/">
 <meta property="og:url" content="https://honiora.life/">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "HoniCo New Zealand", "brand": {"@type": "Brand", "name": "HoniOra"}, "url": "https://honiora.life/", "email": "hello@honi.co.nz", "telephone": "+64272293787", "address": {"@type": "PostalAddress", "addressCountry": "NZ"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "HoniOra", "url": "https://honiora.life/"}</script>
 <meta name="theme-color" content="#ffffff">
 <meta property="og:title" content="HONIORA Effervescent Creatine Stack with NZ Super Actives">
-<meta property="og:description" content="1 stack pack. 500 ml of water. Ready in 60 seconds.">
+<meta property="og:description" content="1 Hexcell. 500 ml of water. Ready in 60 seconds.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://honiora.life/og-share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="HoniOra gold Hexacell pack">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HONIORA Effervescent Creatine Stack with NZ Super Actives">
+<meta name="twitter:description" content="1 Hexcell. 500 ml of water. Ready in 60 seconds.">
+<meta name="twitter:image" content="https://honiora.life/og-share.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,600;1,700&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="vendor/gsap.min.js" defer></script>
+<script src="vendor/ScrollTrigger.min.js" defer></script>
 <style>
 :root{
   --paper:#FFFFFF;
@@ -186,7 +194,7 @@ section[id],div[id="about"],#honiblog-rachael{scroll-margin-top:160px}
 @keyframes tsE3{0%,100%{transform:translate(-4%,0) rotate(2deg) scaleY(.9)}50%{transform:translate(5%,-6%) rotate(-4deg) scaleY(1.2)}}
 @media (max-width:1000px){.taste-silk i{filter:blur(22px)}}
 @media (prefers-reduced-motion:reduce){.taste-silk i{animation:none}}
-#livaux,#actazin,#cgp,#feiolix,#vasodrive,#careflow,#zynamite,#lactospore,#oxxynea,#hytolive{scroll-margin-top:calc(70px - clamp(80px,11vw,152px))}
+#livaux,#oxystorm,#cgp,#feiolix,#vasodrive,#careflow,#zynamite,#lactospore,#oxxynea,#hytolive{scroll-margin-top:calc(70px - clamp(80px,11vw,152px))}
 #pack{scroll-margin-top:calc(81px - clamp(80px,11vw,152px))} /* 13 / Format: same, 7px tighter */
 
 /* ---------- nav ---------- */
@@ -1317,13 +1325,14 @@ footer .brand{font-size:15px;letter-spacing:.42em}
 @media(max-width:1000px){#vasodrive{background-image:url("vasodrive_bg-lite.jpg"),radial-gradient(ellipse 60% 70% at 50% 45%,#FFFBEF 0%,#F8EBC8 50%,#EED79C 100%)}}
 /* (user request) Careflow section: full-bleed mango backdrop, same treatment as #pomma. */
 #careflow{background-image:url("careflow_bg.jpg");background-size:cover;background-position:center}
+/* (user request) OxyStorm section: red-spinach gradient (placeholder, swap for a packshot). */
+#oxystorm{background-image:url("oxystorm_bg.jpg");background-size:cover;background-position:center}
+@media(max-width:1000px){#oxystorm{background-image:url("oxystorm_bg-lite.jpg")}}
 /* (user request) Zynamite section: full-bleed mango-leaf backdrop, cropped in. */
 #zynamite{background-image:url("zynamite_bg.jpg");background-size:cover;background-position:center}
 @media(max-width:1000px){#zynamite{background-image:url("zynamite_bg-lite.jpg")}}
 #oxxynea{background-image:url("oxxynea_bg.jpg");background-size:cover;background-position:center}
-/* (user request) Actazin section: full-bleed green kiwifruit slices, same treatment as #oxxynea */
-#actazin{background-image:url("actazin_bg.jpg");background-size:cover;background-position:center}
-@media(max-width:1000px){#actazin{background-image:url("actazin_bg-lite.jpg")}}
+/* OxyStorm section: full-bleed red spinach photo, same treatment as #oxxynea */
 /* (user request) LactoSpore section: full-bleed bacteria render, same treatment as #oxxynea */
 #lactospore{background-image:url("lactospore_bg.jpg");background-size:cover;background-position:center}
 @media(max-width:1000px){#lactospore{background-image:url("lactospore_bg-lite.jpg")}}
@@ -2554,6 +2563,8 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:70px 0 4
      above it (.hero .eyebrow: min(1.8vw,22px), .14em), centred directly under that line. The
      tablet line is long in caps, so it is allowed to wrap onto two balanced lines. */
   .hsr-lead,.hsr-body{display:block;position:static;width:auto;max-width:100%;transform:none;white-space:normal;text-wrap:balance;text-align:center;text-transform:uppercase;font-size:min(1.8vw,22px);letter-spacing:.14em;font-weight:600;line-height:1.25;color:var(--ink)}
+.hsr-op{display:inline-block;font-size:2.7em;line-height:.62;font-weight:700;vertical-align:middle;margin:1px 0;letter-spacing:0}
+.precede-op{display:inline-block;font-size:1.7em;line-height:1;font-weight:700;vertical-align:-.12em;letter-spacing:0}
   .hsr-lead{position:relative;left:50%;transform:translateX(-50%);width:max-content;max-width:none;white-space:nowrap}
   .hsr-lead i{font-style:italic}
   .hsr-body{margin:10px 0 0;position:relative;left:50%;transform:translateX(-50%);width:max-content;max-width:none;white-space:nowrap}
@@ -3178,8 +3189,8 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:70px 0 4
   .hsr-body{margin:8px 0 0}
   .hsr-lead i{font-style:italic}
   @media(max-width:360px){.hsr-body{letter-spacing:.08em;font-size:11.5px}}
-  .hsr-alive-in .mb{display:inline}
-  .hsr-alive{display:block;margin:12px 0 0;text-align:center;font-size:clamp(36px,10.8vw,52px);letter-spacing:.08em;font-weight:700;line-height:1.1;text-transform:uppercase}
+  .hsr-alive-in .mb{display:none}
+  .hsr-alive{display:block;margin:12px 0 0;text-align:center;white-space:nowrap;font-size:clamp(36px,10.8vw,52px);letter-spacing:.08em;font-weight:700;line-height:1.1;text-transform:uppercase}
 }
 </style>
 <style>
@@ -3215,8 +3226,8 @@ html body .hero #heroWordmark{color:#15170F !important}
 html body .hero #heroWordmark .ht-w,html body .hero #heroWordmark .ht-c{color:inherit !important}
 html body .hero #heroWordmark .wm-ora{color:#AA8336 !important}
 /* v12: ACTIVE LIKE YOU! sits 3 lines (of the copy above it) lower */
-@media (min-width:1001px){.hero .hsr-alive{margin-top:calc(-74px + 2.75 * min(1.8vw,22px)) !important}}
-@media (max-width:1000px){.hero .hsr-alive{margin-top:calc(-48px + 3.2 * clamp(12px,3.3vw,15px)) !important}}
+@media (min-width:1001px){.hero .hsr-alive{margin-top:calc(-46px + 2.75 * min(1.8vw,22px)) !important}}
+@media (max-width:1000px){.hero .hsr-alive{margin-top:calc(-30px + 3.2 * clamp(12px,3.3vw,15px)) !important}}
 /* v18 (user request): VIB screen redesigned on black, macro bee on the left, copy on top and to the right */
 #vib{background:#000 !important;color:#F3E7C9;padding-bottom:clamp(60px,7vw,110px)}
 #vib:before{display:none}
@@ -3401,8 +3412,8 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
 /* (user pick v82, option 3) 13 / Format: Gold Spotlight behind the stick pack, easing into the next screen */
 #pack.sec{background:#FFFBEF}#pack .pconv-sticky::before{background:radial-gradient(ellipse 60% 55% at 50% 50%,#FFFBEF 0%,#F8EBC8 50%,#EED79C 100%)}#pack .pconv-ease{background:linear-gradient(180deg,#EED79C,var(--paper-2))}
 /* (user request v90) KA PAI double size */
-@media (min-width:1001px){.hero .hsr-alive{font-size:min(9vw,204px) !important}}
-@media (max-width:1000px){.hero .hsr-alive{font-size:clamp(54px,17.6vw,156px) !important}}
+@media (min-width:1001px){.hero .hsr-alive{font-size:min(10.5vw,230px) !important}}
+@media (max-width:1000px){.hero .hsr-alive{font-size:clamp(48px,19.5vw,180px) !important}}
 /* (user request v91) manuka coast photo caption centred at the bottom */
 #coastPhoto .cap{left:14px;right:14px;text-align:center}
 /* (user pick v93, crop A) phones: square crop of the manuka coast photo */
@@ -3724,13 +3735,13 @@ header{padding-top:9px;padding-bottom:9px}
       <span class="hexdrop"><span class="hexdrop-card"><b>Monthly Protocol</b>Pay for four weekly packs at $9.51 per day and get a fifth week free, every month. Founding price is locked for life, skip or cancel anytime.</span></span>
     </a>
     <a href="#ritual" class="hexnav-item">PROTOCOL
-      <span class="hexdrop"><span class="hexdrop-card"><b>The Protocol</b>One stack pack a day, dissolved in water. The dose compounds over time, built on a natural active Antipodean matrix.</span></span>
+      <span class="hexdrop"><span class="hexdrop-card"><b>The Protocol</b>One Hexcell a day, dissolved in water. The dose compounds over time, built on a natural active Antipodean matrix.</span></span>
     </a>
     <a href="#singlepack" class="hexnav-item">7 DAY<br>PACK
-      <span class="hexdrop"><span class="hexdrop-card"><b>7 Day Pack</b>Seven stack packs = one week, seven servings at $9.51 per day. Purchase price fully credited if you subscribe afterward.</span></span>
+      <span class="hexdrop"><span class="hexdrop-card"><b>7 Day Pack</b>Seven Hexcells = one week, seven servings at $9.51 per day. Purchase price fully credited if you subscribe afterward.</span></span>
     </a>
     <a href="#matrix" class="hexnav-item">STACK
-      <span class="hexdrop"><span class="hexdrop-card"><b>The Stack</b>The full HONI<i>ORA</i> recipe. Every active ingredient in the formula, dosed and explained.</span></span>
+      <span class="hexdrop"><span class="hexdrop-card"><b>The Hexcell</b>The full HONI<i>ORA</i> recipe. Every active ingredient in the formula, dosed and explained.</span></span>
     </a>
     <a href="#problem" class="hexnav-item">CR.01<br>CREATINE
       <span class="hexdrop"><span class="hexdrop-card"><b>Cr.01 Creatine</b>Jenerise Cr.01&trade; Creatine Monohydrate, sourced from creatine pioneer Steve Jennings. Content assay 99.9%, SGS verified.</span></span>
@@ -3765,7 +3776,7 @@ header{padding-top:9px;padding-bottom:9px}
       <a href="#honeytop">M&#257;nuka Honi</a>
       <a href="#problem">Cr.01 Creatine</a>
       <a href="#livaux">Livaux Gold Kiwi</a>
-      <a href="#actazin">Actazin Green Kiwi</a>
+      <a href="#oxystorm">OxyStorm Red Spinach</a>
       <a href="#cgp">cGP-Pro Blackcurrant</a>
       <a href="#feiolix">Feiolix Feijoa</a>
       <a href="#affron">Affron Saffron</a>
@@ -3790,7 +3801,7 @@ header{padding-top:9px;padding-bottom:9px}
       <a href="#singlepack" class="hexbtn-m-link" aria-label="Reserve a 7 Day Pack">
         <span class="hexbtn-hex" aria-hidden="true"><span class="hexbtn-hex-in"><span>RESERVE</span><span>7 DAY PACK</span></span></span>
       </a>
-      <span class="hexdrop"><span class="hexdrop-card"><b>7 Day Pack</b>Seven stack packs = one week, seven servings at $9.51 per day. Purchase price fully credited if you subscribe afterward.</span></span>
+      <span class="hexdrop"><span class="hexdrop-card"><b>7 Day Pack</b>Seven Hexcells = one week, seven servings at $9.51 per day. Purchase price fully credited if you subscribe afterward.</span></span>
     </div>
     <button class="burger burger-right" id="burgerRight" aria-label="Open the Founding menu" aria-haspopup="true" aria-expanded="false" aria-controls="burgerDropRight"><span></span><span></span></button>
     <div class="burger-drop burger-drop-right" id="burgerDropRight">
@@ -3817,7 +3828,7 @@ header{padding-top:9px;padding-bottom:9px}
   <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close expanded map">&times;</button>
   <picture>
     <source media="(max-width:1000px)" srcset="GLOBE2-nz.png">
-    <img width="1060" height="1060" src="GLOBE2.png" alt="Map of New Zealand's North Island and the South Pacific, with the Bay of Plenty, East Cape, Waikato and Hobbiton marked" class="lightbox-img" loading="lazy">
+    <img width="1060" height="1060" src="GLOBE2.png" alt="Map of New Zealand's North Island and the South Pacific, with the Bay of Plenty, East Cape, Waikato and Hobbiton marked" class="lightbox-img">
   </picture>
 </div>
 
@@ -3827,7 +3838,7 @@ header{padding-top:9px;padding-bottom:9px}
     <div class="gift-cap"><b>Founders Subscription</b><span>Enjoy your free limited edition<br>HONI<i>ORA</i> Founders Stainless Steel<br>500ML Bottle PLUS 1 FREE 7 DAY PACK</span></div>
     <picture>
       <source media="(max-width:1000px)" srcset="founders-gift-pack-sp-lite.jpg">
-      <img width="800" height="1071" src="founders-gift-pack-sp.jpg" alt="HONIORA Founders gift pack: an open gold gift box with a bee on the lid, holding a gold HoniOra stainless steel bottle and a gold 7 Day Pack of stack packs" class="gift-lightbox-img" loading="lazy">
+      <img width="800" height="1071" src="founders-gift-pack-sp.jpg" alt="HONIORA Founders gift pack: an open gold gift box with a bee on the lid, holding a gold HoniOra stainless steel bottle and a gold 7 Day Pack of Hexcells" class="gift-lightbox-img">
     </picture>
   </div>
 </div>
@@ -3884,7 +3895,7 @@ header{padding-top:9px;padding-bottom:9px}
         </svg>
         <picture>
           <source media="(max-width:1000px)" srcset="bee-seal-badge-lite.png">
-          <img class="hero-seal-img" src="bee-seal-badge.png" alt="HoniCo wax seal, gold bee emblem" width="760" height="760" loading="lazy">
+          <img class="hero-seal-img" src="bee-seal-badge.png" alt="HoniCo wax seal, gold bee emblem" width="760" height="760">
         </picture>
       </span>
     </a>
@@ -3909,31 +3920,31 @@ header{padding-top:9px;padding-bottom:9px}
            rather than letting the tag/stats/CTA lines below it shift up to fill it.
            Mobile/lite (<=1000px) is untouched: this stays display:none there and
            the original pair renders normally, visible, in its usual spot. -->
-      <div class="hero-precede hero-solution-desktop"><span class="precede-solution" id="precedeSolutionDesktop">Honi<i>Ora</i>'s morning solution:</span><br><span class="precede-body precede-fit" id="precedeFitDesktop">our effervescent stack pack + A BIG glass of water = Readiness in 60 seconds.</span></div>
+      <div class="hero-precede hero-solution-desktop"><span class="precede-solution" id="precedeSolutionDesktop">Honi<i>Ora</i>'s morning solution:</span><br><span class="precede-body precede-fit" id="precedeFitDesktop">our effervescent Hexcell <span class="precede-op">+</span> A BIG glass of water <span class="precede-op">=</span> Readiness in 60 seconds.</span></div>
       <button class="hero-tube-shot hex-m hx-m" id="hxMobile" type="button" aria-pressed="false" aria-label="HoniOra gold hex sachet, showing the front. Tap to flip and see the back.">
         <span class="hx-m-card">
-          <img class="hx-m-face hx-m-front" src="hex-front.webp?v=231" alt="HoniOra gold hex sachet front, one 20 g serving" width="1000" height="918" loading="lazy">
-          <img class="hx-m-face hx-m-back" src="hex-back.webp?v=231" alt="HoniOra hex sachet back, ingredients panel" width="1000" height="918" loading="lazy">
+          <img class="hx-m-face hx-m-front" src="hex-front.webp" alt="HoniOra gold hex sachet front, one 20 g serving" width="1000" height="918">
+          <img class="hx-m-face hx-m-back" src="hex-back.webp" alt="HoniOra hex sachet back, ingredients panel" width="1000" height="918">
         </span>
       </button>
       <!-- v40 phone copy of the swap line sits under the pack (desktop copy is #heroSwap) -->
-      <p class="hero-swap-m rv">Swap out the messy powder scoops and tedious pills for our deliciously simple, naturally potent morning protocol.</p>
+      <p class="hero-swap-m rv">Swap out those messy scoops of under-dosed green powder and tedious pills<br>Upgrade to our deliciously active, naturally potent morning protocol.</p>
     </div>
     <div class="wrap hero-grid">
     <div>
       <div class="hero-copy-shift">
-      <div class="hero-precede rv"><table class="precede-table" role="presentation"><tbody><tr><td><span class="precede-rest"><span class="precede-lead-inline" id="precedeLeadInline"><span class="precede-lead" id="precedeLead">Introducing</span> <br></span><span class="precede-solution-wrap"> <span class="precede-solution">Honi<i>Ora</i>'s morning solution:</span> <br> <span class="precede-body precede-fit" id="precedeFit">our effervescent stack pack + A BIG glass of water = Readiness in 60 seconds.</span></span></span></td></tr></tbody></table></div>
+      <div class="hero-precede rv"><table class="precede-table" role="presentation"><tbody><tr><td><span class="precede-rest"><span class="precede-lead-inline" id="precedeLeadInline"><span class="precede-lead" id="precedeLead">Introducing</span> <br></span><span class="precede-solution-wrap"> <span class="precede-solution">Honi<i>Ora</i>'s morning solution:</span> <br> <span class="precede-body precede-fit" id="precedeFit">our effervescent Hexcell <span class="precede-op">+</span> A BIG glass of water <span class="precede-op">=</span> Readiness in 60 seconds.</span></span></span></td></tr></tbody></table></div>
       <h1 class="serif rv hero-logo" id="heroWordmark"><img src="honiora-logo-rx-white.png" alt="HONIORA" class="hero-rx" width="1446" height="489"></h1>
       <p class="hero-tag rv">M&#256;NUKA CREATINE PROTOCOL</p>
-      <div class="hero-solution-right"><span class="hsr-lead">Honi<i>Ora</i>'s morning solution:</span><span class="hsr-body">our effervescent stack pack<br>+<br>A BIG glass of water<br>=<br><span style="white-space:nowrap">Readiness in 60 seconds.</span></span><span class="hsr-nourish">NOURISH YOUR BODY<br>UPGRADE YOUR WELLNESS</span><span class="hsr-alive"><span class="hsr-alive-in" id="aliveZoom">KA<br class="mb"> PAI</span></span></div>
+      <div class="hero-solution-right"><span class="hsr-lead">Honi<i>Ora</i>'s morning solution:</span><span class="hsr-body">our effervescent Hexcell<br><span class="hsr-op">+</span><br>A BIG glass of water<br><span class="hsr-op">=</span><br><span style="white-space:nowrap">Readiness in 60 seconds.</span></span><span class="hsr-nourish">NOURISH YOUR BODY<br>UPGRADE YOUR PROTOCOL</span><span class="hsr-alive"><span class="hsr-alive-in" id="aliveZoom">KA<br class="mb"> PAI</span></span></div>
       </div>
       <ul class="keyact flat hero-actives">
         <li>MGO 850+ M&#257;nuka Honey crystals</li>
         <li>Cr.01&trade; Creatine Monohydrate</li>
-        <li>Balanced Hydration Matrix electrolytes</li>
+        <li>Balanced hydration support</li>
         <li>Kaneka Ubiquinol<sup class="rn">&reg;</sup></li>
         <li>Livaux<sup class="rn">&reg;</sup> gold kiwi</li>
-        <li>Actazin<sup class="rn">&reg;</sup> green kiwi</li>
+        <li>OxyStorm<sup class="rn">&reg;</sup> red spinach</li>
 <li>cGP-Pro<sup class="rn">&reg;</sup> Blackcurrant</li>
         <li>VasoDrive-AP<sup class="rn">&reg;</sup> peptide</li>
         <li>Pomma+<sup class="rn">&reg;</sup> pomegranate</li>
@@ -3963,7 +3974,7 @@ header{padding-top:9px;padding-bottom:9px}
       </div>
     </div>
     </div>
-    <!-- v211: hex stage (desktop only, >=1001px). Replaces the horizontal stack pack, its
+    <!-- v211: hex stage (desktop only, >=1001px). Replaces the horizontal Hexcell, its
          one-sided gold thread fan, the te reo / swap lines and the 23 actives + CTA block in
          the gold band. The hex sits centred between the copy; the 24 actives split 12 / 12
          into a left and a right list, each fanned in with gold threads from the hex's own
@@ -3975,10 +3986,10 @@ header{padding-top:9px;padding-bottom:9px}
       <ul class="hx-list hx-left" aria-label="Actives, part one">
         <li>MGO 850+ M&#257;nuka Honey crystals</li>
         <li>Cr.01&trade; Creatine Monohydrate</li>
-        <li>Balanced Hydration Matrix electrolytes</li>
+        <li>Balanced hydration support</li>
         <li>Kaneka Ubiquinol<sup class="rn">&reg;</sup></li>
         <li>Livaux<sup class="rn">&reg;</sup> gold kiwi</li>
-        <li>Actazin<sup class="rn">&reg;</sup> green kiwi</li>
+        <li>OxyStorm<sup class="rn">&reg;</sup> red spinach</li>
         <li>cGP-Pro<sup class="rn">&reg;</sup> Blackcurrant</li>
         <li>VasoDrive-AP<sup class="rn">&reg;</sup> peptide</li>
         <li>Pomma+<sup class="rn">&reg;</sup> pomegranate</li>
@@ -3988,8 +3999,8 @@ header{padding-top:9px;padding-bottom:9px}
       </ul>
       <button class="hx-hex" type="button" id="hxHex" aria-pressed="false" aria-label="HoniOra hex sachet, showing the front. Flip to see the back.">
         <span class="hx-card">
-          <img class="hx-face hx-front" src="hex-front.webp?v=231" alt="" width="1000" height="918" loading="lazy">
-          <img class="hx-face hx-back" src="hex-back.webp?v=231" alt="" width="1000" height="918" loading="lazy">
+          <img class="hx-face hx-front" src="hex-front.webp" alt="" width="1000" height="918">
+          <img class="hx-face hx-back" src="hex-back.webp" alt="" width="1000" height="918">
         </span>
       </button>
       <ul class="hx-list hx-right" aria-label="Actives, part two">
@@ -4008,7 +4019,7 @@ header{padding-top:9px;padding-bottom:9px}
         <li>Vitamin A Retinyl Palmitate</li>
       </ul>
       </div>
-    <p class="hero-swap" id="heroSwap">Swap out the messy powder scoops and tedious pills for our deliciously simple, naturally potent morning protocol.</p>
+    <p class="hero-swap" id="heroSwap">Swap out those messy scoops of under-dosed green powder and tedious pills<br>Upgrade to our deliciously active, naturally potent morning protocol.</p>
       <div class="hx-meta"><b>24</b><span>Full dose wellness actives</span></div>
       <div class="hx-cta">
         <a href="#matrix" class="btn ghost"><span class="btn-t">Explore Honi<i>Ora</i></span> <span class="ar">&rarr;</span></a>
@@ -4019,40 +4030,40 @@ header{padding-top:9px;padding-bottom:9px}
     <div class="iband">
       <div class="iband-vp">
         <div class="iband-track" id="ibandTrack">
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="manuka_crystal-lite.webp"><img width="820" height="820" src="manuka_crystal.webp" alt="MGO 850+ Manuka honey crystals" loading="lazy"></picture><figcaption class="icap"><b>MGO 850+ M&#257;nuka / Fiberest<sup class="rn">&reg;</sup> HF Crystals</b><s>1,500 mg NZ</s><u class="ifn">GUT HEALTH</u><i>The M&#257;nuka honey clears and the gluten free fibre rebuilds: clinical grade Methylglyoxal MGO 850+ M&#257;nuka selectively clears gut pathogens &amp; Fiberest<sup class="rn">&reg;</sup> HF fibre matrix substrate feeds your beneficial gut barrier microbes, whose fermentation of that fibre also supports your own natural GLP-1.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="creatine_HCL-lite.webp"><img width="820" height="820" src="creatine_HCL.webp" alt="Cr.01&trade; creatine crystals" loading="lazy"></picture><figcaption class="icap"><b>Cr.01&trade; Creatine Monohydrate</b><s>5,000 mg</s><u class="ifn">ENERGY &amp; STRENGTH</u><i>Creatine rapidly regenerates ATP through the phosphocreatine system, your cells' basic energy currency, supporting muscle strength and healthy aging. Sourced as Jenerise Cr.01&trade;, SGS verified lot by lot, content assay 99.9%.</i></figcaption></figure></div>
-          <div class="ishot ishot-livaux"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="livaux_gold_kiwi-lite.webp"><img width="820" height="820" src="livaux_gold_kiwi.webp" alt="Livaux gold kiwifruit" loading="lazy"></picture><figcaption class="icap"><b>Livaux<sup class="rn">&reg;</sup> Gold Kiwifruit</b><s>682.5 mg NZ</s><u class="ifn">GUT HEALTH</u><i>At 600 mg a day, doubled <em>F. prausnitzii</em> in 70% of trial participants within 28 days, lifting butyrate for the colonic lining. A pectin matrix carrying 41 phenolics, fermented slowly along the full colon instead of spiking gas at the top. Its soluble pectins add full-bodied tropical fruit texture through the mid palate, boosted by a natural golden kiwi flavour.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="actazin-lite.webp"><img width="820" height="820" src="actazin.webp" alt="Actazin green kiwifruit" loading="lazy"></picture><figcaption class="icap"><b>Actazin<sup class="rn">&reg;</sup> Green Kiwifruit</b><s>600 mg NZ</s><u class="ifn">GUT HEALTH</u><i>Cold-pressed green kiwifruit powder, made in New Zealand by Anagenix. At 600 mg a day for 28 days, adults with occasional constipation gained about 1.4 more complete bowel movements a week. Its fibre holds water, and actinidin, kiwifruit&rsquo;s own enzyme, helps break down protein. <a href="#actazin" style="color:inherit;text-decoration:underline">See the trials</a>.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="cGP-Pro_blackcurrant-lite.webp"><img width="820" height="820" src="cGP-Pro_blackcurrant.webp" alt="cGP-Pro New Zealand blackcurrant" loading="lazy"></picture><figcaption class="icap"><b>cGP-Pro<sup class="rn">&reg;</sup> Blackcurrant</b><s>100 mg NZ</s><u class="ifn">BRAIN FLOW</u><i>cGP (cyclic glycine-proline) is a small peptide your body makes naturally. It frees IGF-1, a hormone for brain growth, repair and blood vessel upkeep that declines with age, from the carrier protein that binds it. cGP-Pro is NZ blackcurrant combined with bovine collagen, the world&rsquo;s first natural ingredient that delivers a daily dose of cGP. In people with Parkinson disease, a higher blood cGP to IGF-1 ratio was linked to better cognitive status.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="vasodrive_ap-lite.webp"><img width="820" height="820" src="vasodrive_ap.webp" alt="VasoDrive-AP milk-derived tripeptide" loading="lazy"></picture><figcaption class="icap"><b>VasoDrive-AP<sup class="rn">&reg;</sup></b><s>508 mg NZ</s><u class="ifn">ARTERIAL ELASTICITY</u><i>A milk-derived tripeptide that blocks ACE, supporting arterial elasticity. Backed by 30 or more published studies, including over a dozen double-blind, placebo-controlled human trials.</i></figcaption></figure></div>
-          <div class="ishot ishot-feijoa"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="feijoa-lite.webp"><img width="820" height="820" src="feijoa.webp" alt="Feiolix feijoa" loading="lazy"></picture><figcaption class="icap"><b>Feiolix<sup class="rn">&reg;</sup> Feijoa</b><s>1,150 mg NZ</s><u class="ifn">GLP-1 SUPPORT</u><i>Feijoa (Pineapple Guava) is a delicious fruit with cult status in New Zealand. Its abscisic acid acts on the L-cells in your gut, shown in lab and animal models to raise GLP-1. Its fibre ferments into propionate, which prompts the same release by a second route. Both aim at your own GLP-1, not a synthetic analogue. Your own GLP-1 slows gastric emptying and supports steadier glucose handling. Two routes, <a href="#glp1" style="color:inherit;text-decoration:underline">see how</a>.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="s7_leaf-lite.webp"><img width="820" height="820" src="s7_leaf.webp" alt="vitAlign plant-based blend" loading="lazy"></picture><figcaption class="icap"><b>vitAlign<sup class="rn">&reg;</sup> Plant Blend</b><s>60 mg</s><u class="ifn">NITRIC OXIDE SUPPORT</u><i>Green coffee bean, green tea, turmeric, tart cherry, blueberry, broccoli and kale extracts at a low 60 mg dose. Rather than supplying nitrates directly, vitAlign acts on the cell's own redox signalling to raise the nitric oxide you already make. The supplier's 90-day double-blind clinical study reported a 230% increase in circulating nitric oxide over baseline, sustained with once-daily use. Standardised to 60% polyphenols, 30% catechins and 3% curcuminoids. Supplier studies at 50 mg also report lower mitochondrial free radicals.</i></figcaption></figure></div>
-          <div class="ishot ishot-pomma"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="pomma_pomegranate-lite.webp"><img width="820" height="820" src="pomma_pomegranate.webp" alt="Pomma+ whole-fruit pomegranate extract" loading="lazy"></picture><figcaption class="icap"><b>Pomma+<sup class="rn">&reg;</sup> Whole-Fruit Pomegranate</b><s>300 mg</s><u class="ifn">ANTIOXIDANT SUPPORT</u><i>An upcycled, whole-fruit extract carrying pomegranate's punicalagins and ellagitannins, the polyphenols behind its antioxidant reputation. Your gut bacteria can convert ellagitannins into urolithins including Urolithin A. How much you make varies from person to person. <a href="#pomma" style="color:inherit;text-decoration:underline">See how</a>.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="oxxynea-lite.webp"><img width="820" height="820" src="oxxynea.webp" alt="A rainbow of fruit and vegetables, the polyphenol sources behind Oxxynea" loading="lazy"></picture><figcaption class="icap"><b>Oxxynea<sup class="rn">&reg;</sup> Polyphenol Blend</b><s>450 mg</s><u class="ifn">FRUIT &amp; VEG POLYPHENOLS</u><i>Olive leaf, grape, pomegranate, green tea, grapefruit, bilberry and orange extracts. At 450 mg, the polyphenols of five servings of fruit and vegetables, released across 24 hours.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="affron_saffron-lite.webp"><img width="820" height="820" src="affron_saffron.webp" alt="Saffron crocus flowers with red stigmas" loading="lazy"></picture><figcaption class="icap"><b>Affron<sup class="rn">&reg;</sup> Saffron</b><s>28 mg</s><u class="ifn">MOOD &amp; CALM</u><i>Affron<sup class="rn">&reg;</sup> Saffron supports a positive mood, helps relieve occasional stress, promotes relaxation, and enhances sleep quality. A saffron extract made in Spain by Pharmactive and standardised to 3.5% Lepticrosalides. In placebo-controlled trials, 28 mg a day helped adults keep a positive mood and ease occasional stress. <a href="#affron" style="color:inherit;text-decoration:underline">See the trials</a>.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="synapsa_bacopa-lite.webp"><img width="820" height="820" src="synapsa_bacopa.webp" alt="Bacopa monnieri plant with white flowers and green leaves" loading="lazy"></picture><figcaption class="icap"><b>Synapsa<sup class="rn">&reg;</sup> Bacopa</b><s>300 mg</s><u class="ifn">MEMORY &amp; LEARNING</u><i>A standardised extract of <em>Bacopa monnieri</em> from PLT Health Solutions, with at least 55% bacosides A and B. In placebo-controlled trials of 300 to 320 mg a day over 12 weeks and 90 days, healthy adults showed better delayed recall, working memory and attention. Benefits build over weeks of daily use. <a href="#synapsa" style="color:inherit;text-decoration:underline">See the trials</a>.</i></figcaption></figure></div>
-<div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="eriomin_lemon-lite.webp"><img width="820" height="820" src="eriomin_lemon.webp" alt="Eriomin lemon flavonoid extract" loading="lazy"></picture><figcaption class="icap"><b>Eriomin<sup class="rn">&reg;</sup> Lemon Flavonoid</b><s>200 mg</s><u class="ifn">GLP-1 SUPPORT</u><i>A standardised eriocitrin extract with its own pathway to your own GLP-1, <a href="#glp1" style="color:inherit;text-decoration:underline">see how</a>.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="cGP-Pro_blackcurrant-lite.webp"><img width="820" height="820" src="cGP-Pro_blackcurrant.webp" alt="Braincurrant New Zealand blackcurrant" loading="lazy"></picture><figcaption class="icap"><b>Braincurrant<sup class="rn">&reg;</sup></b><s>300 mg NZ</s><u class="ifn">FOCUS &amp; MOOD</u><i>A freeze-dried whole New Zealand blackcurrant powder from Anagenix, naturally rich in anthocyanins. Natural support for focus, memory and mood balance.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="careflow_mango-lite.webp"><img width="820" height="820" src="careflow_mango.webp" alt="Careflow organic mango fruit powder" loading="lazy"></picture><figcaption class="icap"><b>Careflow<sup class="rn">&reg;</sup> Mango Fruit</b><s>100 mg</s><u class="ifn">MICROCIRCULATION</u><i>Organic powder of whole Totapuri mango from India. In lab tests it switched on eNOS, the enzyme that makes nitric oxide, and SIRT1. At 100 mg a day, blood flow in the smallest vessels rose within hours and again after four weeks of daily use. <a href="#careflow" style="color:inherit;text-decoration:underline">See the trials</a>.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="zynamite_s-lite.webp"><img width="820" height="820" src="zynamite_s.webp" alt="Zynamite S water-soluble mango leaf extract" loading="lazy"></picture><figcaption class="icap"><b>Zynamite<sup class="rn">&reg;</sup> S Mango Leaf</b><s>100 mg</s><u class="ifn">MENTAL ENERGY</u><i>A water-soluble mango leaf extract from Nektium, standardised to 60% mangiferin. In a trial of 88 adults a single 100 mg dose lifted mood and processing speed from 30 minutes. Caffeine-free. <a href="#zynamite" style="color:inherit;text-decoration:underline">See the trial</a>.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="hytolive_bev_olive-lite.webp"><img width="820" height="820" src="hytolive_bev_olive.webp" alt="Hytolive Bev olive fruit extract" loading="lazy"></picture><figcaption class="icap"><b>Hytolive<sup class="rn">&reg;</sup> Bev Olive Extract</b><s>300 mg</s><u class="ifn">BLOOD LIPID PROTECTION</u><i>An olive fruit extract built for drinks, from Alvinesa in Spain, standardised to 2% hydroxytyrosol. At this dose HONI<i>ORA</i> delivers 6&nbsp;mg of hydroxytyrosol per serving, the olive polyphenol behind EFSA&rsquo;s blood lipid claim for olive oil.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="Kaneka Ubiquinol" loading="lazy"></picture><figcaption class="icap"><b>Kaneka Ubiquinol<sup class="rn">&reg;</sup></b><s>200 mg</s><u class="ifn">MITOCHONDRIAL SUPPORT</u><i>The active antioxidant form of coenzyme Q10, the same molecule your body makes. It carries electrons in the mitochondrial membrane where cells make ATP, with no conversion step. About 3x better absorbed than standard CoQ10. Delivered as Kaneka Q30&trade;, an air-stable powder made for stack packs. <a href="#mitoq" style="color:inherit;text-decoration:underline">See the studies</a>.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="L-Theanine powder" loading="lazy"></picture><figcaption class="icap"><b>AlphaWave<sup class="rn">&reg;</sup> L-Theanine</b><s>450 mg</s><u class="ifn">CALM FOCUS</u><i>Upregulates alpha-wave neural activity and stimulates GABA, so the result reads as calm focus rather than agitation. A 28-day placebo-controlled trial of AlphaWave L-Theanine found lower perceived stress and improved sleep quality and attention.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="Taurine powder" loading="lazy"></picture><figcaption class="icap"><b>Taurine</b><s>1,020 mg</s><u class="ifn">CELLULAR HYDRATION</u><i>A conditionally essential amino acid: your body makes some, but not always enough. It is concentrated in heart, muscle, brain and eyes. As an organic osmolyte it holds cellular fluid balance, working with the magnesium and electrolyte load. It also helps muscle cells handle calcium during contraction and supports mitochondrial function. Blood taurine falls with age. In a 2023 <em>Science</em> study, taurine supplementation extended healthy lifespan in mice and improved health markers in middle-aged monkeys. Human evidence is still emerging.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="Citicoline" loading="lazy"></picture><figcaption class="icap"><b>Cognizin<sup class="rn">&reg;</sup> Citicoline</b><s>255 mg</s><u class="ifn">FOCUS &amp; ATTENTION</u><i>Cognizin<sup class="rn">&reg;</sup>, Kyowa Hakko&rsquo;s branded citicoline: a patented fermentation, allergen-free, GRAS ingredient clinically tested for attention and focus. Citicoline delivers choline plus cytidine, which your body converts largely to uridine. Together they feed the Kennedy pathway that builds phosphatidylcholine, the main fat in brain cell membranes. Plain choline supplies only the building block. Lab research links the pair to synaptic density and neurotransmitter release, including dopamine. A 28-day placebo-controlled trial of 250 mg a day in healthy women aged 40 to 60 found fewer attention errors than placebo.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="lactospore-lite.webp"><img width="820" height="820" src="lactospore.webp" alt="LactoSpore Bacillus coagulans probiotic, colourised micrograph" loading="lazy"></picture><figcaption class="icap"><b>LactoSpore<sup class="rn">&reg;</sup> Bacillus coagulans</b><s>6 billion CFU</s><u class="ifn">GUT MICROBIOME</u><i>A spore-forming probiotic (strain MTCC 5856) built to come through the stack pack&#39;s effervescent dissolution, so live spores reach the gut. Dosed alongside the Livaux and M&#257;nuka prebiotic fibres.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="retinyl_palmitate-lite.webp"><img width="820" height="820" src="retinyl_palmitate.webp" alt="Vitamin A as cold-water-soluble retinyl palmitate" loading="lazy"></picture><figcaption class="icap"><b>Vitamin A Retinyl Palmitate</b><s>900 mcg RAE</s><u class="ifn">BARRIER &amp; IMMUNE SUPPORT</u><i>Cold-water-soluble vitamin A that disperses cleanly in the glass. Vitamin A supports the integrity of the body&#39;s epithelial barriers and mucosal immunity, including the gut lining.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="landkind_pure_salidroside-lite.webp"><img width="820" height="820" src="landkind_pure_salidroside.webp" alt="Landkind Pure Salidroside, 98 percent pure" loading="lazy"></picture><figcaption class="icap"><b>Landkind<sup class="rn">&reg;</sup> Pure Salidroside</b><s>60 mg</s><u class="ifn">STRESS RESPONSE</u><i>Salidroside made by precision fermentation, specified by the supplier at 98% or higher purity. Not a Rhodiola root extract.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="yuzu-lite.webp"><img width="820" height="820" src="yuzu.webp" alt="Yuzu" loading="lazy"></picture><figcaption class="icap"><b>Natural Japanese Yuzu Flavor</b><s>Flavour system &middot; 17 mg</s><u class="ifn">CITRUS AROMA</u><i>An Asian citrus grown in Japan and prized for its rind. Sharper than lemon, floral like mandarin, and it holds that delicious top note through acid and cold.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="passionfruit-lite.webp"><img width="820" height="820" src="passionfruit.webp" alt="Passionfruit" loading="lazy"></picture><figcaption class="icap"><b>Natural Passionfruit Flavor</b><s>Flavour system &middot; 44 mg</s><u class="ifn">TROPICAL AROMA</u><i>A South American vine fruit, now grown across New Zealand and the subtropics. Musky, almost fermented sweetness with a tart edge that fills in underneath the yuzu and rounds the finish.</i></figcaption></figure></div>
-          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="thaumatin-lite.webp"><img width="820" height="786" src="thaumatin.webp" alt="Katemfe fruit, source of Pure Talin thaumatin" loading="lazy"></picture><figcaption class="icap"><b>Thaumatin<sup class="rn">&reg;</sup> Pure Talin</b><s>33 mg</s><u class="ifn">NATURAL SWEETNESS</u><i>It is protein, not a sugar, harvested from the African katemfe fruit, 2,000 to 3,000 times sweeter than sugar (hence the tiny amount).</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="manuka_crystal-lite.webp"><img width="820" height="820" src="manuka_crystal.webp" alt="MGO 850+ Manuka honey crystals"></picture><figcaption class="icap"><b>MGO 850+ M&#257;nuka / Fiberest<sup class="rn">&reg;</sup> HF Crystals</b><s>1,500 mg NZ</s><u class="ifn">GUT HEALTH</u><i>The M&#257;nuka honey clears and the gluten free fibre rebuilds: clinical grade Methylglyoxal MGO 850+ M&#257;nuka selectively clears gut pathogens &amp; Fiberest<sup class="rn">&reg;</sup> HF fibre matrix substrate feeds your beneficial gut barrier microbes, whose fermentation of that fibre also supports your own natural GLP-1.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="creatine_HCL-lite.webp"><img width="820" height="820" src="creatine_HCL.webp" alt="Cr.01&trade; creatine crystals"></picture><figcaption class="icap"><b>Cr.01&trade; Creatine Monohydrate</b><s>5,000 mg</s><u class="ifn">ENERGY &amp; STRENGTH</u><i>Creatine rapidly regenerates ATP through the phosphocreatine system, your cells' basic energy currency, supporting muscle strength and healthy aging. Sourced as Jenerise Cr.01&trade;, SGS verified lot by lot, content assay 99.9%.</i></figcaption></figure></div>
+          <div class="ishot ishot-livaux"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="livaux_gold_kiwi-lite.webp"><img width="820" height="820" src="livaux_gold_kiwi.webp" alt="Livaux gold kiwifruit"></picture><figcaption class="icap"><b>Livaux<sup class="rn">&reg;</sup> Gold Kiwifruit</b><s>682.5 mg NZ</s><u class="ifn">GUT HEALTH</u><i>At 600 mg a day, doubled <em>F. prausnitzii</em> in 70% of trial participants within 28 days, lifting butyrate for the colonic lining. A pectin matrix carrying 41 phenolics, fermented slowly along the full colon instead of spiking gas at the top. Its soluble pectins add full-bodied tropical fruit texture through the mid palate, boosted by a natural golden kiwi flavour.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="cGP-Pro_blackcurrant-lite.webp"><img width="820" height="820" src="cGP-Pro_blackcurrant.webp" alt="cGP-Pro New Zealand blackcurrant"></picture><figcaption class="icap"><b>cGP-Pro<sup class="rn">&reg;</sup> Blackcurrant</b><s>100 mg NZ</s><u class="ifn">BRAIN FLOW</u><i>cGP (cyclic glycine-proline) is a small peptide your body makes naturally. It frees IGF-1, a hormone for brain growth, repair and blood vessel upkeep that declines with age, from the carrier protein that binds it. cGP-Pro is NZ blackcurrant combined with bovine collagen, the world&rsquo;s first natural ingredient that delivers a daily dose of cGP. In people with Parkinson disease, a higher blood cGP to IGF-1 ratio was linked to better cognitive status.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="vasodrive_ap-lite.webp"><img width="820" height="820" src="vasodrive_ap.webp" alt="VasoDrive-AP milk-derived tripeptide"></picture><figcaption class="icap"><b>VasoDrive-AP<sup class="rn">&reg;</sup></b><s>508 mg NZ</s><u class="ifn">ARTERIAL ELASTICITY</u><i>A milk-derived tripeptide that blocks ACE, supporting arterial elasticity. Backed by 30 or more published studies, including over a dozen double-blind, placebo-controlled human trials.</i></figcaption></figure></div>
+          <div class="ishot ishot-feijoa"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="feijoa-lite.webp"><img width="820" height="820" src="feijoa.webp" alt="Feiolix feijoa"></picture><figcaption class="icap"><b>Feiolix<sup class="rn">&reg;</sup> Feijoa</b><s>1,150 mg NZ</s><u class="ifn">GLP-1 SUPPORT</u><i>Feijoa (Pineapple Guava) is a delicious fruit with cult status in New Zealand. Its abscisic acid acts on the L-cells in your gut, shown in lab and animal models to raise GLP-1. Its fibre ferments into propionate, which prompts the same release by a second route. Both aim at your own GLP-1, not a synthetic analogue. Your own GLP-1 slows gastric emptying and supports steadier glucose handling. Two routes, <a href="#glp1" style="color:inherit;text-decoration:underline">see how</a>.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="s7_leaf-lite.webp"><img width="820" height="820" src="s7_leaf.webp" alt="vitAlign plant-based blend"></picture><figcaption class="icap"><b>vitAlign<sup class="rn">&reg;</sup> Plant Blend</b><s>60 mg</s><u class="ifn">NITRIC OXIDE SUPPORT</u><i>Green coffee bean, green tea, turmeric, tart cherry, blueberry, broccoli and kale extracts at a low 60 mg dose. Rather than supplying nitrates directly, vitAlign acts on the cell's own redox signalling to raise the nitric oxide you already make. The supplier's 90-day double-blind clinical study reported a 230% increase in circulating nitric oxide over baseline, sustained with once-daily use. Standardised to 60% polyphenols, 30% catechins and 3% curcuminoids. Supplier studies at 50 mg also report lower mitochondrial free radicals.</i></figcaption></figure></div>
+          <div class="ishot ishot-pomma"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="pomma_pomegranate-lite.webp"><img width="820" height="820" src="pomma_pomegranate.webp" alt="Pomma+ whole-fruit pomegranate extract"></picture><figcaption class="icap"><b>Pomma+<sup class="rn">&reg;</sup> Whole-Fruit Pomegranate</b><s>300 mg</s><u class="ifn">ANTIOXIDANT SUPPORT</u><i>An upcycled, whole-fruit extract carrying pomegranate's punicalagins and ellagitannins, the polyphenols behind its antioxidant reputation. Your gut bacteria can convert ellagitannins into urolithins including Urolithin A. How much you make varies from person to person. <a href="#pomma" style="color:inherit;text-decoration:underline">See how</a>.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="oxxynea-lite.webp"><img width="820" height="820" src="oxxynea.webp" alt="A rainbow of fruit and vegetables, the polyphenol sources behind Oxxynea"></picture><figcaption class="icap"><b>Oxxynea<sup class="rn">&reg;</sup> Polyphenol Blend</b><s>450 mg</s><u class="ifn">FRUIT &amp; VEG POLYPHENOLS</u><i>Olive leaf, grape, pomegranate, green tea, grapefruit, bilberry and orange extracts. At 450 mg, the polyphenols of five servings of fruit and vegetables, released across 24 hours.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="affron_saffron-lite.webp"><img width="820" height="820" src="affron_saffron.webp" alt="Saffron crocus flowers with red stigmas"></picture><figcaption class="icap"><b>Affron<sup class="rn">&reg;</sup> Saffron</b><s>30 mg</s><u class="ifn">MOOD &amp; CALM</u><i>Affron<sup class="rn">&reg;</sup> Saffron supports a positive mood, helps relieve occasional stress, promotes relaxation, and enhances sleep quality. A saffron extract made in Spain by Pharmactive and standardised to 3.5% Lepticrosalides. In placebo-controlled trials, 28 mg a day helped adults keep a positive mood and ease occasional stress. <a href="#affron" style="color:inherit;text-decoration:underline">See the trials</a>.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="synapsa_bacopa-lite.webp"><img width="820" height="820" src="synapsa_bacopa.webp" alt="Bacopa monnieri plant with white flowers and green leaves"></picture><figcaption class="icap"><b>Synapsa<sup class="rn">&reg;</sup> Bacopa</b><s>300 mg</s><u class="ifn">MEMORY &amp; LEARNING</u><i>A standardised extract of <em>Bacopa monnieri</em> from PLT Health Solutions, with at least 55% bacosides A and B. In placebo-controlled trials of 300 to 320 mg a day over 12 weeks and 90 days, healthy adults showed better delayed recall, working memory and attention. Benefits build over weeks of daily use. <a href="#synapsa" style="color:inherit;text-decoration:underline">See the trials</a>.</i></figcaption></figure></div>
+<div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="eriomin_lemon-lite.webp"><img width="820" height="820" src="eriomin_lemon.webp" alt="Eriomin lemon flavonoid extract"></picture><figcaption class="icap"><b>Eriomin<sup class="rn">&reg;</sup> Lemon Flavonoid</b><s>200 mg</s><u class="ifn">GLP-1 SUPPORT</u><i>A standardised eriocitrin extract with its own pathway to your own GLP-1, <a href="#glp1" style="color:inherit;text-decoration:underline">see how</a>.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="cGP-Pro_blackcurrant-lite.webp"><img width="820" height="820" src="cGP-Pro_blackcurrant.webp" alt="Braincurrant New Zealand blackcurrant"></picture><figcaption class="icap"><b>Braincurrant<sup class="rn">&reg;</sup></b><s>300 mg NZ</s><u class="ifn">FOCUS &amp; MOOD</u><i>A freeze-dried whole New Zealand blackcurrant powder from Anagenix, naturally rich in anthocyanins. Natural support for focus, memory and mood balance.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="careflow_mango-lite.webp"><img width="820" height="820" src="careflow_mango.webp" alt="Careflow organic mango fruit powder"></picture><figcaption class="icap"><b>Careflow<sup class="rn">&reg;</sup> Mango Fruit</b><s>100 mg</s><u class="ifn">MICROCIRCULATION</u><i>Organic powder of whole Totapuri mango from India. In lab tests it switched on eNOS, the enzyme that makes nitric oxide, and SIRT1. At 100 mg a day, blood flow in the smallest vessels rose within hours and again after four weeks of daily use. <a href="#careflow" style="color:inherit;text-decoration:underline">See the trials</a>.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="oxystorm-lite.webp"><img width="820" height="820" src="oxystorm.webp" alt="OxyStorm red spinach extract"></picture><figcaption class="icap"><b>OxyStorm<sup class="rn">&reg;</sup> WD Red Spinach</b><s>500 mg</s><u class="ifn">NITRIC OXIDE</u><i>A water-dispersible red spinach (<em>Amaranthus</em>) extract standardised to 9% nitrate, from Arjuna Natural. Feeds the dietary-nitrate route to nitric oxide, the one pathway the other vascular actives do not cover. <a href="#oxystorm" style="color:inherit;text-decoration:underline">See the pathway</a>.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="zynamite_s-lite.webp"><img width="820" height="820" src="zynamite_s.webp" alt="Zynamite S water-soluble mango leaf extract"></picture><figcaption class="icap"><b>Zynamite<sup class="rn">&reg;</sup> S Mango Leaf</b><s>100 mg</s><u class="ifn">MENTAL ENERGY</u><i>A water-soluble mango leaf extract from Nektium, standardised to 60% mangiferin. In a trial of 88 adults a single 100 mg dose lifted mood and processing speed from 30 minutes. Caffeine-free. <a href="#zynamite" style="color:inherit;text-decoration:underline">See the trial</a>.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="hytolive_bev_olive-lite.webp"><img width="820" height="820" src="hytolive_bev_olive.webp" alt="Hytolive Bev olive fruit extract"></picture><figcaption class="icap"><b>Hytolive<sup class="rn">&reg;</sup> Bev Olive Extract</b><s>300 mg</s><u class="ifn">BLOOD LIPID PROTECTION</u><i>An olive fruit extract built for drinks, from Alvinesa in Spain, standardised to 2% hydroxytyrosol. At this dose HONI<i>ORA</i> delivers 6&nbsp;mg of hydroxytyrosol per serving, the olive polyphenol behind EFSA&rsquo;s blood lipid claim for olive oil.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="Kaneka Ubiquinol"></picture><figcaption class="icap"><b>Kaneka Ubiquinol<sup class="rn">&reg;</sup></b><s>200 mg</s><u class="ifn">MITOCHONDRIAL SUPPORT</u><i>The active antioxidant form of coenzyme Q10, the same molecule your body makes. It carries electrons in the mitochondrial membrane where cells make ATP, with no conversion step. About 3x better absorbed than standard CoQ10. Delivered as Kaneka Q30&trade;, an air-stable powder made for Hexcells. <a href="#mitoq" style="color:inherit;text-decoration:underline">See the studies</a>.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="L-Theanine powder"></picture><figcaption class="icap"><b>AlphaWave<sup class="rn">&reg;</sup> L-Theanine</b><s>200 mg</s><u class="ifn">CALM FOCUS</u><i>Upregulates alpha-wave neural activity and stimulates GABA, so the result reads as calm focus rather than agitation. A 28-day placebo-controlled trial of AlphaWave L-Theanine found lower perceived stress and improved sleep quality and attention.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="Taurine powder"></picture><figcaption class="icap"><b>Taurine</b><s>1,020 mg</s><u class="ifn">CELLULAR HYDRATION</u><i>A conditionally essential amino acid: your body makes some, but not always enough. It is concentrated in heart, muscle, brain and eyes. As an organic osmolyte it holds cellular fluid balance, working with the magnesium and electrolyte load. It also helps muscle cells handle calcium during contraction and supports mitochondrial function. Blood taurine falls with age. In a 2023 <em>Science</em> study, taurine supplementation extended healthy lifespan in mice and improved health markers in middle-aged monkeys. Human evidence is still emerging.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="nmn-lite.webp"><img width="820" height="820" src="nmn.webp" alt="Citicoline"></picture><figcaption class="icap"><b>Cognizin<sup class="rn">&reg;</sup> Citicoline</b><s>255 mg</s><u class="ifn">FOCUS &amp; ATTENTION</u><i>Cognizin<sup class="rn">&reg;</sup>, Kyowa Hakko&rsquo;s branded citicoline: a patented fermentation, allergen-free, GRAS ingredient clinically tested for attention and focus. Citicoline delivers choline plus cytidine, which your body converts largely to uridine. Together they feed the Kennedy pathway that builds phosphatidylcholine, the main fat in brain cell membranes. Plain choline supplies only the building block. Lab research links the pair to synaptic density and neurotransmitter release, including dopamine. A 28-day placebo-controlled trial of 250 mg a day in healthy women aged 40 to 60 found fewer attention errors than placebo.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="lactospore-lite.webp"><img width="820" height="820" src="lactospore.webp" alt="LactoSpore Bacillus coagulans probiotic, colourised micrograph"></picture><figcaption class="icap"><b>LactoSpore<sup class="rn">&reg;</sup> Bacillus coagulans</b><s>6 billion CFU</s><u class="ifn">GUT MICROBIOME</u><i>A spore-forming probiotic (strain MTCC 5856) built to come through the Hexcell&#39;s effervescent dissolution, so live spores reach the gut. Dosed alongside the Livaux and M&#257;nuka prebiotic fibres.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="retinyl_palmitate-lite.webp"><img width="820" height="820" src="retinyl_palmitate.webp" alt="Vitamin A as cold-water-soluble retinyl palmitate"></picture><figcaption class="icap"><b>Vitamin A Retinyl Palmitate</b><s>900 mcg RAE</s><u class="ifn">BARRIER &amp; IMMUNE SUPPORT</u><i>Cold-water-soluble vitamin A that disperses cleanly in the glass. Vitamin A supports the integrity of the body&#39;s epithelial barriers and mucosal immunity, including the gut lining.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="landkind_pure_salidroside-lite.webp"><img width="820" height="820" src="landkind_pure_salidroside.webp" alt="Landkind Pure Salidroside, 98 percent pure"></picture><figcaption class="icap"><b>Landkind<sup class="rn">&reg;</sup> Pure Salidroside</b><s>60 mg</s><u class="ifn">STRESS RESPONSE</u><i>Salidroside made by precision fermentation, specified by the supplier at 98% or higher purity. Not a Rhodiola root extract.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="yuzu-lite.webp"><img width="820" height="820" src="yuzu.webp" alt="Yuzu"></picture><figcaption class="icap"><b>Natural Japanese Yuzu Flavor</b><s>Flavour system &middot; 17 mg</s><u class="ifn">CITRUS AROMA</u><i>An Asian citrus grown in Japan and prized for its rind. Sharper than lemon, floral like mandarin, and it holds that delicious top note through acid and cold.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="passionfruit-lite.webp"><img width="820" height="820" src="passionfruit.webp" alt="Passionfruit"></picture><figcaption class="icap"><b>Natural Passionfruit Flavor</b><s>Flavour system &middot; 44 mg</s><u class="ifn">TROPICAL AROMA</u><i>A South American vine fruit, now grown across New Zealand and the subtropics. Musky, almost fermented sweetness with a tart edge that fills in underneath the yuzu and rounds the finish.</i></figcaption></figure></div>
+          <div class="ishot"><figure><picture class="ishot-pic"><source media="(max-width:1000px)" srcset="thaumatin-lite.webp"><img width="820" height="786" src="thaumatin.webp" alt="Katemfe fruit, source of Pure Talin thaumatin"></picture><figcaption class="icap"><b>Thaumatin<sup class="rn">&reg;</sup> Pure Talin</b><s>33 mg</s><u class="ifn">NATURAL SWEETNESS</u><i>It is protein, not a sugar, harvested from the African katemfe fruit, 2,000 to 3,000 times sweeter than sugar (hence the tiny amount).</i></figcaption></figure></div>
         </div>
       </div>
     </div>
     <div class="unit" id="tablet">
     <div class="unit-vp">
       <div class="unit-track">
-        <div class="upanel lead"><span>Each HONI<i>ORA</i> stack pack contains 15.2 grams of full dose potent actives.</span></div>
+        <div class="upanel lead"><span>Each HONI<i>ORA</i> Hexcell contains 15.2 grams of full dose potent actives.</span></div>
         <div class="upanel lead">Formulated for daily year-round use</div>
         <div class="upanel">Naturally sourced actives</div>
         <div class="upanel">Gluten Free</div>
@@ -4067,28 +4078,28 @@ header{padding-top:9px;padding-bottom:9px}
     </div>
     <div class="hero-pillars">
       <div class="pillar" data-edge="l">
-        <span class="pillar-icon pillar-icon-origin pi-glow pi-origin" data-edge="l" style="--gl:63,164,106"><img src="pillar-icon-origin.png" alt="" loading="lazy"><span class="pi-mark" aria-hidden="true"><i></i><b>*</b></span></span>
+        <span class="pillar-icon pillar-icon-origin pi-glow pi-origin" data-edge="l" style="--gl:63,164,106"><img src="pillar-icon-origin.png" alt=""><span class="pi-mark" aria-hidden="true"><i></i><b>*</b></span></span>
         <div class="pillar-body">
           <h3>Pure Origin:<br>Born in NZ</h3>
           <p>Authenticity begins with provenance:<br>We live at the source of our pure traceable botanicals.<br><br>Featuring <span class="kw">High-MGO New Zealand M&#257;nuka honey</span> &amp; polyphenol-rich <span class="kw">Golden Kiwifruit</span>. HONI<i>ORA</i> is a curated blend of NZ and Global potent beneficial botanicals.<br><br>All full dose and processed strictly to clean-label standards.</p>
         </div>
       </div>
       <div class="pillar" data-edge="r">
-        <span class="pillar-icon pi-glow pi-energy" data-edge="r" style="--gl:142,63,200"><img src="pillar-icon-energy.png" alt="" loading="lazy"><canvas class="pi-sparks" width="656" height="960" aria-hidden="true"></canvas></span>
+        <span class="pillar-icon pi-glow pi-energy" data-edge="r" style="--gl:142,63,200"><img src="pillar-icon-energy.png" alt=""><canvas class="pi-sparks" width="656" height="960" aria-hidden="true"></canvas></span>
         <div class="pillar-body">
           <h3>Cellular Energy</h3>
           <p>HONI<i>ORA</i> delivers direct mitochondrial and metabolic support. A full clinical dose of premium <span class="kw">micronized creatine</span>, paired with <span class="kw">Kaneka Ubiquinol<sup class="rn">&reg;</sup></span> and magnesium malate. Together they support <span class="kw">ATP</span> production and steady energy all day.</p>
         </div>
       </div>
       <div class="pillar" data-edge="l">
-        <span class="pillar-icon pi-glow pi-vascular" data-edge="l" style="--gl:190,40,60"><img src="pillar-icon-vascular.png" alt="" loading="lazy"></span>
+        <span class="pillar-icon pi-glow pi-vascular" data-edge="l" style="--gl:190,40,60"><img src="pillar-icon-vascular.png" alt=""></span>
         <div class="pillar-body">
           <h3>Vascular Support<br>+<br>Natural<br>Nitric Oxide</h3>
           <p>Optimization drives systemic nutrient delivery. Using multi-pathway bioactives including <span class="kw">eNOS activators</span>, <span class="kw">natural nitric oxide matrices</span> and <span class="kw">pomegranate and olive polyphenols</span>, HONI<i>ORA</i> supports healthy blood flow, natural nitric oxide production and nutrient transport to your tissues.</p>
         </div>
       </div>
       <div class="pillar" data-edge="r">
-        <span class="pillar-icon pi-glow pi-hydration" data-edge="r" style="--gl:176,134,40"><img src="pillar-icon-hydration.png" alt="" loading="lazy"><svg class="pi-ripple" viewBox="0 0 469 480" aria-hidden="true"><circle cx="132" cy="285" r="125"/><circle cx="132" cy="285" r="125"/><circle cx="132" cy="285" r="125"/></svg></span>
+        <span class="pillar-icon pi-glow pi-hydration" data-edge="r" style="--gl:176,134,40"><img src="pillar-icon-hydration.png" alt=""><svg class="pi-ripple" viewBox="0 0 469 480" aria-hidden="true"><circle cx="132" cy="285" r="125"/><circle cx="132" cy="285" r="125"/><circle cx="132" cy="285" r="125"/></svg></span>
         <div class="pillar-body">
           <h3>Efficient Hydration</h3>
           <p>Sodium, potassium and magnesium dissolved and buffered, through <span class="kw">stoichiometric effervescent mineral carbonates</span> paired with <span class="kw">bioavailable electrolytes</span>. Every dose dissolved to reduce gut reaction and increase absorption.</p>
@@ -4319,7 +4330,7 @@ header{padding-top:9px;padding-bottom:9px}
     <div class="mphoto rv" id="coastPhoto">
       <picture class="mphoto-pic">
         <source media="(max-width:1000px)" srcset="manuka-coast-sq.jpg">
-        <img width="2400" height="1280" src="manuka-coast.jpg" alt="M&#257;nuka bush, Aotearoa New Zealand" loading="lazy">
+        <img width="2400" height="1280" src="manuka-coast.jpg" alt="M&#257;nuka bush, Aotearoa New Zealand">
       </picture>
       <span class="cap"><span style="white-space:nowrap">M&#257;nuka bush &middot;</span> <span style="white-space:nowrap">Aotearoa &middot; New Zealand</span></span>
     </div>
@@ -4337,7 +4348,7 @@ header{padding-top:9px;padding-bottom:9px}
   </div>
 
   <div class="vib-grid">
-    <div class="vib-bee" aria-hidden="true"><picture><source media="(max-width:1000px)" srcset="vib_bee_green-lite.jpg"><img src="vib_bee_green.jpg" width="1800" height="1108" alt="" loading="lazy"></picture></div>
+    <div class="vib-bee" aria-hidden="true"><picture><source media="(max-width:1000px)" srcset="vib_bee_green-lite.jpg"><img src="vib_bee_green.jpg" width="1800" height="1108" alt=""></picture></div>
     <div class="vib-copy">
     <div class="vib-stats rv">
       <div class="vib-stat"><b>39.9%</b><h4>US colonies lost in a year</h4><p>April 2025 to April 2026, down from 55.6% the year before and 55.1% the year before that. Winter losses alone were 30.3%, 10 points above what beekeepers consider acceptable.</p><a class="cite" href="https://wire.auburn.edu/content/agriculture/2026/06/honeybeecolony0626.php" target="_blank" rel="noopener noreferrer">Source <span>Auburn University, June 2026 &nearr;</span></a></div>
@@ -4354,7 +4365,7 @@ header{padding-top:9px;padding-bottom:9px}
     </ul>
 
     <div class="vib-pledge rv">
-      <img src="honico-1pct-for-bees.png" width="2438" height="2926" alt="1% for the Bees badge" loading="lazy">
+      <img src="honico-1pct-for-bees.png" width="2438" height="2926" alt="1% for the Bees badge">
       <div><h3 class="serif">1% for the bees.</h3><p>HoniCo pledges 1% of profits to NZ bee welfare.<br>Every HONI<i>ORA</i> you buy gives back to the hive.</p></div>
     </div>
 
@@ -4369,7 +4380,7 @@ header{padding-top:9px;padding-bottom:9px}
     <div class="sec-head rv">
       <p class="eyebrow dim">02 / The Ritual</p>
       <h2 class="serif oneline long">Ready in 60 seconds. <em>Then you own the day.</em></h2>
-      <p class="lede">HONI<i>ORA</i> turns sixty seconds into a daily pause. Tear one stack, pour it in, let it fizz, <br>and use the minute to set the day's first intention, before the phone, before the noise.<br>Ka pai starts small: one minute, chosen on purpose, every day.</p>
+      <p class="lede">HONI<i>ORA</i> turns sixty seconds into a daily pause. Tear one Hexcell, pour it in, let it fizz, <br>and use the minute to set the day's first intention, before the phone, before the noise.<br>Ka pai starts small: one minute, chosen on purpose, every day.</p>
     </div>
     <div class="ritual-grid">
       <div class="rv">
@@ -4388,21 +4399,21 @@ header{padding-top:9px;padding-bottom:9px}
   <div class="wrap">
     <div class="unit-head">
       <div class="tablet-roll">
-        <img width="1000" height="918" class="tablet-roll-l" src="hex-front-lite.webp?v=231" alt="" aria-hidden="true">
+        <img width="1000" height="918" class="tablet-roll-l" src="hex-front-lite.webp" alt="" aria-hidden="true">
         <!-- v215: the stick pack is now the hex sachet. GSAP still slides this wrapper in; hover, tap or Enter flips it to the back -->
         <button type="button" class="tablet-roll-m pk-hex" aria-pressed="false" aria-label="HoniOra hex sachet, one 20 g serving, showing the front. Flip to see the back.">
           <span class="pk-card">
-            <img class="pk-face pk-front" src="hex-front.webp?v=231" alt="" width="1000" height="918" loading="lazy">
-            <img class="pk-face pk-back" src="hex-back.webp?v=231" alt="" width="1000" height="918" loading="lazy">
+            <img class="pk-face pk-front" src="hex-front.webp" alt="" width="1000" height="918">
+            <img class="pk-face pk-back" src="hex-back.webp" alt="" width="1000" height="918">
           </span>
         </button>
-        <img width="1000" height="918" class="tablet-roll-r" src="hex-front-lite.webp?v=231" alt="" aria-hidden="true">
+        <img width="1000" height="918" class="tablet-roll-r" src="hex-front-lite.webp" alt="" aria-hidden="true">
       </div>
       <h2 class="serif rv">A <em>Natural Active Antipodean Matrix</em></h2>
     </div>
     <div class="sec-head rv">
       <p class="eyebrow dim">03 / The Protocol</p>
-      <h2 class="serif oneline long">1 stack. Every day. <em>It compounds.</em></h2>
+      <h2 class="serif oneline long">1 Hexcell. Every day. <em>It compounds.</em></h2>
       <p class="lede">You feel something within the first glass. Mostly it is cumulative : a good habit,<br>HONI<i>ORA</i> supports and boosts your health with daily, continual use combined with diet and exercise.</p>
     </div>
 
@@ -4417,6 +4428,7 @@ header{padding-top:9px;padding-bottom:9px}
           <li><b>Careflow<sup class="rn">&reg;</sup> mango fruit</b>At 100 mg, skin blood flow rose 54% within hours in a pilot study.</li>
           <li><b>vitAlign<sup class="rn">&reg;</sup> plant blend</b>Redox signalling raises the nitric oxide you already make.</li>
           <li><b>Zynamite<sup class="rn">&reg;</sup> S mango leaf</b>A single 100 mg dose lifted mood and processing speed from 30 minutes in a trial of 88 adults.</li>
+          <li><b>OxyStorm<sup class="rn">&reg;</sup> red spinach</b>Dietary nitrate converts to nitric oxide, widening blood vessels within the hour.</li>
           <li><b>The effervescent engine</b>The actives arrive dispersed and dissolved, so nothing sits in the gut drawing water.</li>
         </ul>
       </div>
@@ -4427,7 +4439,6 @@ header{padding-top:9px;padding-bottom:9px}
         <p class="when">Days 1 to 28</p>
         <ul>
           <li><b>Livaux<sup class="rn">&reg;</sup> gold kiwifruit</b>At 600 mg a day, <em>F. prausnitzii</em> roughly doubled in 70% of trial participants within 28 days, lifting butyrate for the colonic lining.</li>
-          <li><b>Actazin<sup class="rn">&reg;</sup> green kiwifruit</b>At 600 mg a day for 28 days, adults with occasional constipation gained about 1.4 more complete bowel movements a week.</li>
           <li><b>Feiolix<sup class="rn">&reg;</sup> feijoa</b>Your own GLP-1 released at every serving, not a synthetic analogue.</li>
           <li><b>MGO 850+ M&#257;nuka &amp; Fiberest<sup class="rn">&reg;</sup> HF</b>Prebiotic fibre and methylglyoxal support a settled, well-fed gut lining.</li>
           <li><b>LactoSpore<sup class="rn">&reg;</sup> Bacillus coagulans</b>6 billion CFU of spore probiotic arrive in every glass, alongside the prebiotic fibres they are dosed with.</li>
@@ -4457,13 +4468,13 @@ header{padding-top:9px;padding-bottom:9px}
           <li><b>Oxxynea<sup class="rn">&reg;</sup> Polyphenol Blend</b>450 mg a serving, the polyphenols of about five servings of fruit and vegetables, from five polyphenol families.</li>
           <li><b>Vitamin A Retinyl Palmitate</b>900 mcg RAE a serving for epithelial barriers and mucosal immunity.</li>
           <li><b>Magnesium Malate &amp; Zinc Bisglycinate<sup class="rn">&reg;</sup></b>Mineral cofactors doing quiet, ongoing work behind hundreds of enzymatic reactions.</li>
-          <li><b>Affron<sup class="rn">&reg;</sup> Saffron</b>28 mg every morning, the dose used in Pharmactive&rsquo;s mood trials. Supports a positive mood, helps relieve occasional stress and promotes relaxation, day after day.</li>
+          <li><b>Affron<sup class="rn">&reg;</sup> Saffron</b>30 mg every morning, just above the 28 mg dose used in Pharmactive&rsquo;s mood trials. Supports a positive mood, helps relieve occasional stress and promotes relaxation, day after day.</li>
           <li><b>Synapsa<sup class="rn">&reg;</sup> Bacopa</b>300 mg a day, the dose used in its memory trials. Memory and learning benefits build over 8 to 12 weeks of daily use.</li>
         </ul>
       </div>
     </div>
 
-    <p class="small protonote rv">Timings follow each ingredient&rsquo;s published mechanism at the doses a one-stack HONI<i>ORA</i> serving delivers. Ingredient-level evidence only, see the <a href="#evidence-note" style="color:inherit;text-decoration:underline">evidence note</a>.</p>
+    <p class="small protonote rv">Timings follow each ingredient&rsquo;s published mechanism at the doses a one-Hexcell HONI<i>ORA</i> serving delivers. Ingredient-level evidence only, see the <a href="#evidence-note" style="color:inherit;text-decoration:underline">evidence note</a>.</p>
   </div>
 </section>
 
@@ -4474,7 +4485,7 @@ header{padding-top:9px;padding-bottom:9px}
       <div class="sec-head rv">
         <p class="eyebrow">Pre-launch &middot; Reserve now</p>
         <h2 class="serif">HONI FOUNDERS LIMITED <em>OFFER</em>.</h2>
-        <p class="lede">Choose the tier you want and we will reserve it for you, <br class="brk-d">with no charge until launch and with free USA shipping always. <br>Sign up for our HONI<i>ORA</i> protocol as a monthly subscriber <br class="brk-d">and receive 35 stacks every month: pay for 4 weekly packs @ $9.51 a day, get the 5th week as a bonus, <br class="brk-d">plus <span role="button" tabindex="0" class="gift-link js-gift-trigger" aria-haspopup="dialog" aria-controls="giftLightbox">your free limited edition* HONI<i>ORA</i> founders gift pack</span>. <br>One 7 Day Pack = seven stack packs = one week. <br>One Monthly Pack = 28 stack packs = four weeks, no subscription.</p>
+        <p class="lede">Choose the tier you want and we will reserve it for you, <br class="brk-d">with no charge until launch and with free USA shipping always. <br>Sign up for our HONI<i>ORA</i> protocol as a monthly subscriber <br class="brk-d">and receive 35 stacks every month: pay for 4 weekly packs @ $9.51 a day, get the 5th week as a bonus, <br class="brk-d">plus <span role="button" tabindex="0" class="gift-link js-gift-trigger" aria-haspopup="dialog" aria-controls="giftLightbox">your free limited edition* HONI<i>ORA</i> founders gift pack</span>. <br>One 7 Day Pack = seven Hexcells = one week. <br>One Monthly Pack = 28 Hexcells = four weeks, no subscription.</p>
       </div>
     </div>
 
@@ -4487,12 +4498,12 @@ header{padding-top:9px;padding-bottom:9px}
             <p class="plan-name">7 Day Pack</p>
             <div class="plan-price"><b>$66.57</b><i>USD one-off</i></div>
             <p class="plan-per">$9.51 per day.</p>
-            <p class="plan-what">Seven stack packs. One week. <br> Experience cumulative benefits <br> and the HONI<i>ORA</i> great taste.</p>
+            <p class="plan-what">Seven Hexcells. One week. <br> Experience cumulative benefits <br> and the HONI<i>ORA</i> great taste.</p>
           </div>
-          <img class="plan-img plan-img-box" src="plan-sp7-box.png" alt="HONIORA 7 Day Pack, a gold box of seven stack packs" width="560" height="550" loading="lazy">
+          <img class="plan-img plan-img-box" src="plan-sp7-box.png" alt="HONIORA 7 Day Pack, a gold box of seven Hexcells" width="560" height="550">
         </div>
         <ul class="plan-list">
-          <li>7 stack packs &middot; 7 daily servings</li>
+          <li>7 Hexcells &middot; 7 daily servings</li>
           <li>The whole 24-active matrix, full dose</li>
           <li>$66.57 credited to subscription</li>
           <li>Free USA shipping, always</li>
@@ -4509,7 +4520,7 @@ header{padding-top:9px;padding-bottom:9px}
         <p class="plan-what">35 daily servings every month - boost yourself or share the love.</p>
         <button type="button" class="gift-trigger js-gift-trigger" id="giftTrigger" aria-haspopup="dialog" aria-controls="giftLightbox">PLUS your Free Founders gift pack <span class="ar">&rarr;</span></button>
           </div>
-          <img class="plan-img plan-img-stack" src="plan-stack5.png" alt="HONIORA Monthly Protocol, five gold weekly packs of seven stack packs" width="760" height="688" loading="lazy">
+          <img class="plan-img plan-img-stack" src="plan-stack5.png" alt="HONIORA Monthly Protocol, five gold weekly packs of seven Hexcells" width="760" height="688">
         </div>
         <ul class="plan-list">
           <li>The whole 24-active matrix, full dose</li>
@@ -4522,7 +4533,7 @@ header{padding-top:9px;padding-bottom:9px}
         </ul>
 <a href="#waitlist" class="plan-seal" data-plan="Monthly Protocol subscription &middot; USD 266.28" aria-label="Reserve the protocol"><span class="plan-seal-inner" aria-hidden="true">
 <svg class="plan-seal-ring" viewBox="0 0 300 300"><defs><path id="planSealPath" d="M150,22 a128,128 0 1,1 0,256 a128,128 0 1,1 0,-256"/></defs><text text-anchor="start" xml:space="preserve"><textPath href="#planSealPath" startOffset="0" textLength="786" lengthAdjust="spacingAndGlyphs">LIMITED EDITION FIRST DROP Q2 2027  RESERVE YOUR HONI<tspan font-style="italic">ORA</tspan> SUB &amp; GIFTS </textPath></text></svg>
-<picture><source media="(max-width:1000px)" srcset="bee-seal-badge-lite.png"><img class="plan-seal-img" src="bee-seal-badge.png" alt="" width="760" height="760" loading="lazy"></picture>
+<picture><source media="(max-width:1000px)" srcset="bee-seal-badge-lite.png"><img class="plan-seal-img" src="bee-seal-badge.png" alt="" width="760" height="760"></picture>
 </span></a>
       </div>
 
@@ -4533,13 +4544,13 @@ header{padding-top:9px;padding-bottom:9px}
             <p class="plan-name">Monthly Pack</p>
             <div class="plan-price"><b>$266.28</b><i>USD one-off</i></div>
             <p class="plan-per">$9.51 per day.</p>
-            <p class="plan-what">28 stack packs = Four weeks. <br> No subscription, <br> one gold box, one order.</p>
+            <p class="plan-what">28 Hexcells = Four weeks. <br> No subscription, <br> one gold box, one order.</p>
             <p class="plan-per plan-upsell"><a href="#monthlyprotocol">Or subscribe and get 7 bonus stacks free every month for the same price. <span class="ar">&rarr;</span></a></p>
           </div>
-          <img class="plan-img plan-img-box" src="plan-sp28-box.png" alt="HONIORA Monthly Pack, a gold box of 28 stack packs" width="560" height="500" loading="lazy">
+          <img class="plan-img plan-img-box" src="plan-sp28-box.png" alt="HONIORA Monthly Pack, a gold box of 28 Hexcells" width="560" height="500">
         </div>
         <ul class="plan-list">
-          <li>1 box &middot; 28 stack packs &middot; 28 daily servings</li>
+          <li>1 box &middot; 28 Hexcells &middot; 28 daily servings</li>
           <li>The whole 24-active matrix, full dose</li>
           <li>No subscription, buy when you need it</li>
           <li>Free USA shipping, always</li>
@@ -4554,7 +4565,7 @@ header{padding-top:9px;padding-bottom:9px}
       <h3 class="serif">Compare the plans</h3>
       <div class="pc-wrap"><table class="pc-table">
         <thead><tr><td></td><th scope="col">7 Day Pack</th><th scope="col" class="pc-feat"><span class="pc-pop">Best value</span>Monthly Protocol</th><th scope="col">Monthly Pack</th></tr></thead>
-        <tbody><tr><th scope="row">Stack packs</th><td>7</td><td class="pc-feat">35 a month</td><td>28</td></tr><tr><th scope="row">Price</th><td>$66.57 one-off</td><td class="pc-feat">$266.28 a month</td><td>$266.28 one-off</td></tr><tr><th scope="row">Per day</th><td>$9.51</td><td class="pc-feat">$9.51 + 7 bonus stacks</td><td>$9.51</td></tr><tr><th scope="row">Full 23-active matrix</th><td><span class="pc-y" aria-label="Included">&#10003;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-y" aria-label="Included">&#10003;</span></td></tr><tr><th scope="row">Free USA shipping</th><td><span class="pc-y" aria-label="Included">&#10003;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-y" aria-label="Included">&#10003;</span></td></tr><tr><th scope="row">7 bonus stacks free every month</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Founding price locked for life</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Free Founders gift pack*</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Subscriber bonus gifts (HoniMerch)</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Priority access to new drops</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Skip, pause or cancel any time</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">$66.57 credited if you subscribe</th><td><span class="pc-y" aria-label="Included">&#10003;</span></td><td class="pc-feat"><span class="pc-n" aria-label="Not included">&ndash;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr></tbody>
+        <tbody><tr><th scope="row">Hexcells</th><td>7</td><td class="pc-feat">35 a month</td><td>28</td></tr><tr><th scope="row">Price</th><td>$66.57 one-off</td><td class="pc-feat">$266.28 a month</td><td>$266.28 one-off</td></tr><tr><th scope="row">Per day</th><td>$9.51</td><td class="pc-feat">$9.51 + 7 bonus stacks</td><td>$9.51</td></tr><tr><th scope="row">Full 23-active matrix</th><td><span class="pc-y" aria-label="Included">&#10003;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-y" aria-label="Included">&#10003;</span></td></tr><tr><th scope="row">Free USA shipping</th><td><span class="pc-y" aria-label="Included">&#10003;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-y" aria-label="Included">&#10003;</span></td></tr><tr><th scope="row">7 bonus stacks free every month</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Founding price locked for life</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Free Founders gift pack*</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Subscriber bonus gifts (HoniMerch)</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Priority access to new drops</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Skip, pause or cancel any time</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">$66.57 credited if you subscribe</th><td><span class="pc-y" aria-label="Included">&#10003;</span></td><td class="pc-feat"><span class="pc-n" aria-label="Not included">&ndash;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr></tbody>
       </table></div>
       <div class="pc-ctas"><a href="#singlepack">7 Day Pack</a><a href="#monthlyprotocol" class="btn">Reserve the protocol <span class="ar">&rarr;</span></a><a href="#monthlypack">Monthly Pack</a></div>
     </div>
@@ -4600,84 +4611,84 @@ header{padding-top:9px;padding-bottom:9px}
     <div class="ftgrid rv">
       <div class="ftile">
         <button type="button" class="ftile-inner" aria-pressed="false" aria-label="MGO850+ Manuka Honi: show details">
-          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-honi-jar-850.webp" alt="" loading="lazy"></span><span class="ft-name">MGO850+ M&#257;nuka Honi</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-honi-jar-850.webp" alt=""></span><span class="ft-name">MGO850+ M&#257;nuka Honi</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
           <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">HoniCo Honi Jar &middot; Shop</span><span class="ft-title">MGO850+ M&#257;nuka Honi</span><span class="ft-rows"><span class="ft-row"><b>Net wt</b><span>250 g (8.8 oz)</span></span><span class="ft-row"><b>Grade</b><span>MGO850+, lab certified per batch</span></span><span class="ft-row"><b>Base</b><span>Barcode: provenance, batch, whitepaper</span></span></span></span></span>
         </button>
       </div>
 
       <div class="ftile">
         <button type="button" class="ftile-inner" aria-pressed="false" aria-label="MGO500+ Manuka Honi: show details">
-          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-honi-jar-500.webp" alt="" loading="lazy"></span><span class="ft-name">MGO500+ M&#257;nuka Honi</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-honi-jar-500.webp" alt=""></span><span class="ft-name">MGO500+ M&#257;nuka Honi</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
           <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">HoniCo Honi Jar &middot; Shop</span><span class="ft-title">MGO500+ M&#257;nuka Honi</span><span class="ft-rows"><span class="ft-row"><b>Net wt</b><span>500 g (17.6 oz)</span></span><span class="ft-row"><b>Grade</b><span>MGO500+, lab certified per batch</span></span><span class="ft-row"><b>Base</b><span>Barcode: provenance, batch, whitepaper</span></span></span></span></span>
         </button>
       </div>
 
       <div class="ftile">
         <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Bee Glass Set: show details">
-          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-bee-glass-w.webp" alt="" loading="lazy"></span><span class="ft-name">Bee Glass Set</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-bee-glass-w.webp" alt=""></span><span class="ft-name">Bee Glass Set</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
           <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Month 12 &middot; Subscribers only</span><span class="ft-title">Bee Glass Set</span><span class="ft-rows"><span class="ft-row"><b>Set</b><span>Six tall etched glasses</span></span><span class="ft-row"><b>Etch</b><span>HoniOra and the Napoleonic bee</span></span><span class="ft-row"><b>Capacity</b><span>Holds a full 500 ml serve</span></span></span></span></span>
         </button>
       </div>
 
       <div class="ftile">
         <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Gift Box: show details">
-          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-gift-box-green-w.webp" alt="" loading="lazy"></span><span class="ft-name">Gift Box</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-gift-box-green-w.webp" alt=""></span><span class="ft-name">Gift Box</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
           <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Shop at launch</span><span class="ft-title">Gift Box</span><span class="ft-rows"><span class="ft-row"><b>Contents</b><span>7 Day Pack + matt gold cup</span></span><span class="ft-row"><b>Box</b><span>Forest green, magnetic, gold RX logos</span></span><span class="ft-row"><b>Price</b><span>At launch</span></span></span></span></span>
         </button>
       </div>
 
       <div class="ftile">
         <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Matt Gold Cup: show details">
-          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-cup-matt-gold-w.webp" alt="" loading="lazy"></span><span class="ft-name">Matt Gold Cup</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-cup-matt-gold-w.webp" alt=""></span><span class="ft-name">Matt Gold Cup</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
           <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Shop at launch</span><span class="ft-title">Matt Gold Cup</span><span class="ft-rows"><span class="ft-row"><b>Finish</b><span>Matt gold, clear lid, gold straw</span></span><span class="ft-row"><b>Capacity</b><span>Holds a full 500 ml serve</span></span><span class="ft-row"><b>Price</b><span>At launch</span></span></span></span></span>
         </button>
       </div>
 
       <div class="ftile">
         <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Hoodie: show details">
-          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-hoodie-forest-green-w.webp" alt="" loading="lazy"></span><span class="ft-name">Hoodie</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-hoodie-forest-green-w.webp" alt=""></span><span class="ft-name">Hoodie</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
           <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Shop at launch</span><span class="ft-title">Hoodie</span><span class="ft-rows"><span class="ft-row"><b>Sizes</b><span>XS to XXL</span></span><span class="ft-row"><b>Fabric</b><span>Heavyweight fleece, boxy fit</span></span><span class="ft-row"><b>Colours</b><span><span class="ft-dot" style="background:#223B2C" title="Forest green"></span><span class="ft-dot" style="background:#ECE4D4" title="Bone"></span><span class="ft-dot" style="background:#4A1824" title="Burgundy"></span></span></span></span></span></span>
         </button>
       </div>
 
       <div class="ftile">
         <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Crewneck: show details">
-          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-crew-forest-green.webp" alt="" loading="lazy"></span><span class="ft-name">Crewneck</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-crew-forest-green.webp" alt=""></span><span class="ft-name">Crewneck</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
           <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Shop at launch</span><span class="ft-title">Crewneck</span><span class="ft-rows"><span class="ft-row"><b>Sizes</b><span>XS to XXL</span></span><span class="ft-row"><b>Fabric</b><span>Heavyweight fleece, relaxed fit</span></span><span class="ft-row"><b>Colours</b><span><span class="ft-dot" style="background:#223B2C" title="Forest green"></span><span class="ft-dot" style="background:#ECE4D4" title="Bone"></span><span class="ft-dot" style="background:#4A1824" title="Burgundy"></span></span></span></span></span></span>
         </button>
       </div>
 
       <div class="ftile">
         <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Crop Zip and Jogger Set: show details">
-          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-set-forest-green.webp" alt="" loading="lazy"></span><span class="ft-name">Crop Zip &amp; Jogger Set</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-set-forest-green.webp" alt=""></span><span class="ft-name">Crop Zip &amp; Jogger Set</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
           <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Women&rsquo;s set &middot; Shop at launch</span><span class="ft-title">Crop Zip &amp; Jogger</span><span class="ft-rows"><span class="ft-row"><b>Set</b><span>Cropped zip hoodie + relaxed jogger</span></span><span class="ft-row"><b>Sizes</b><span>XS to XL</span></span><span class="ft-row"><b>Colours</b><span><span class="ft-dot" style="background:#223B2C" title="Forest green"></span><span class="ft-dot" style="background:#ECE4D4" title="Bone"></span><span class="ft-dot" style="background:#4A1824" title="Burgundy"></span></span></span></span></span></span>
         </button>
       </div>
 
       <div class="ftile">
         <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Dad Cap: show details">
-          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-cap-forest-green-w.webp" alt="" loading="lazy"></span><span class="ft-name">Dad Cap</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-cap-forest-green-w.webp" alt=""></span><span class="ft-name">Dad Cap</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
           <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Month 3 gift &middot; Shop</span><span class="ft-title">Dad Cap</span><span class="ft-rows"><span class="ft-row"><b>Size</b><span>One size, adjustable</span></span><span class="ft-row"><b>Fabric</b><span>Cotton twill, embroidered</span></span><span class="ft-row"><b>Colours</b><span><span class="ft-dot" style="background:#223B2C" title="Forest green"></span><span class="ft-dot" style="background:#ECE4D4" title="Bone"></span><span class="ft-dot" style="background:#4A1824" title="Burgundy"></span></span></span></span></span></span>
         </button>
       </div>
 
       <div class="ftile">
         <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Classic Tee: show details">
-          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-vneck-forest-green.webp" alt="" loading="lazy"></span><span class="ft-name">Classic Tee</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-vneck-forest-green.webp" alt=""></span><span class="ft-name">Classic Tee</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
           <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Month 6 gift &middot; Shop</span><span class="ft-title">Classic Tee</span><span class="ft-rows"><span class="ft-row"><b>Sizes</b><span>XS to 2XL</span></span><span class="ft-row"><b>Print</b><span>Small on the chest, big on the back</span></span><span class="ft-row"><b>Colours</b><span><span class="ft-dot" style="background:#223B2C" title="Forest green"></span><span class="ft-dot" style="background:#ECE4D4" title="Bone"></span><span class="ft-dot" style="background:#4A1824" title="Burgundy"></span></span></span></span></span></span>
         </button>
       </div>
 
       <div class="ftile">
         <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Ribbed Scoop Neck Tee: show details">
-          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-scoop-bone.webp" alt="" loading="lazy"></span><span class="ft-name">Ribbed Scoop Tee</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-scoop-bone.webp" alt=""></span><span class="ft-name">Ribbed Scoop Tee</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
           <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Women&rsquo;s &middot; Shop at launch</span><span class="ft-title">Ribbed Scoop Tee</span><span class="ft-rows"><span class="ft-row"><b>Sizes</b><span>XS to 2XL</span></span><span class="ft-row"><b>Fabric</b><span>Fitted rib knit, half sleeve</span></span><span class="ft-row"><b>Colours</b><span><span class="ft-dot" style="background:#223B2C" title="Forest green"></span><span class="ft-dot" style="background:#ECE4D4" title="Bone"></span><span class="ft-dot" style="background:#4A1824" title="Burgundy"></span></span></span></span></span></span>
         </button>
       </div>
 
       <div class="ftile">
         <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Founders Tee: show details">
-          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-founders-back.webp" alt="" loading="lazy"></span><span class="ft-name">Founders Tee</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-founders-back.webp" alt=""></span><span class="ft-name">Founders Tee</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
           <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Month 9 &middot; Subscribers only</span><span class="ft-title">Founders Tee</span><span class="ft-rows"><span class="ft-row"><b>Edition</b><span>Numbered 001 to 500</span></span><span class="ft-row"><b>Plus</b><span>500 g MGO500+ M&#257;nuka Honi</span></span><span class="ft-row"><b>Back</b><span>HoniOra NZ map, green and gold</span></span></span></span></span>
         </button>
       </div>
@@ -4731,7 +4742,7 @@ header{padding-top:9px;padding-bottom:9px}
         <p class="role">The gateway</p>
         <ul>
           <li><i>Livaux<sup class="rn">&reg;</sup> Gold Kiwifruit</i><b>682.5 mg</b></li>
-          <li><i>Actazin<sup class="rn">&reg;</sup> Green Kiwifruit</i><b>600 mg</b></li>
+          
           <li><i>MGO 850+ M&#257;nuka Honey / Fiberest<sup class="rn">&reg;</sup> HF</i><b>1,500 mg</b></li>
           <li><i>Feiolix<sup class="rn">&reg;</sup> Feijoa</i><b>1,150 mg</b></li>
           <li><i>Eriomin<sup class="rn">&reg;</sup> Lemon Flavonoid</i><b>200 mg</b></li>
@@ -4750,10 +4761,11 @@ header{padding-top:9px;padding-bottom:9px}
           <li><i>Oxxynea<sup class="rn">&reg;</sup> Polyphenol Blend</i><b>450 mg</b></li>
           <li><i>VasoDrive-AP<sup class="rn">&reg;</sup></i><b>508 mg</b></li>
           <li><i>Careflow<sup class="rn">&reg;</sup> mango fruit</i><b>100 mg</b></li>
+          <li><i>OxyStorm<sup class="rn">&reg;</sup> Red Spinach</i><b>500 mg</b></li>
           <li><i>vitAlign<sup class="rn">&reg;</sup> Plant Blend</i><b>60 mg</b></li>
           <li><i>Hytolive<sup class="rn">&reg;</sup> Bev Olive Extract</i><b>300 mg</b></li>
           <li><i>Taurine</i><b>1,020 mg</b></li>
-          <li><i>Magnesium Malate</i><b>1,050 mg</b></li>
+          <li><i>Magnesium Malate</i><b>900 mg</b></li>
           <li><i>Zinc Bisglycinate<sup class="rn">&reg;</sup></i><b>105 mg</b></li>
         </ul>
         <p>Pomma+<sup class="rn">&reg;</sup> leads the column. Pomma+<sup class="rn">&reg;</sup> supplies standardized pomegranate ellagitannins that act as the direct biochemical precursor for natural endo-metabolite synthesis, breaking down in the gastrointestinal tract into ellagic acid which the microbiome converts into Urolithin A to stimulate cellular mitophagy and mitochondrial renewal. How much converts varies from person to person, and no trial has measured it for this formula.<br><br>VasoDrive-AP<sup class="rn">&reg;</sup> (AmealPeptide<sup class="rn">&reg;</sup>) is one of the most researched tripeptide ingredients for cardiovascular health. It helps improve arterial flexibility by increasing the production of endothelial nitric oxide synthase (eNOS). VasoDrive-AP<sup class="rn">&reg;</sup> occurs in very small amounts in dairy casein as tripeptides that support arterial elasticity by inhibiting an enzyme which leads to the constriction of blood vessels.<br><br>Careflow<sup class="rn">&reg;</sup> supports microcirculation through SIRT1 and eNOS activation, while vitAlign<sup class="rn">&reg;</sup> acts on cell redox signalling to raise endogenous nitric oxide.<br><br>Taurine holds cellular fluid balance as an osmolyte, and magnesium and zinc run underneath as enzymatic cofactors.</p>
@@ -4765,14 +4777,14 @@ header{padding-top:9px;padding-bottom:9px}
         <p class="role">The destination</p>
         <ul>
           <li><i>cGP-Pro<sup class="rn">&reg;</sup> Blackcurrant</i><b>100 mg</b></li>
-          <li><i>L-Theanine</i><b>450 mg</b></li>
-          <li><i>Affron<sup class="rn">&reg;</sup> Saffron</i><b>28 mg</b></li>
+          <li><i>L-Theanine</i><b>200 mg</b></li>
+          <li><i>Affron<sup class="rn">&reg;</sup> Saffron</i><b>30 mg</b></li>
           <li><i>Synapsa<sup class="rn">&reg;</sup> Bacopa</i><b>300 mg</b></li>
           <li><i>Braincurrant<sup class="rn">&reg;</sup></i><b>300 mg</b></li>
           <li><i>Cognizin<sup class="rn">&reg;</sup> Citicoline</i><b>255 mg</b></li>
           <li><i>Zynamite<sup class="rn">&reg;</sup> S Mango Leaf</i><b>100 mg</b></li>
         </ul>
-        <p>cGP-Pro<sup class="rn">&reg;</sup> Blackcurrant. cGP-Pro<sup class="rn">&reg;</sup> helps replenish and maintain optimal cGP levels in the body and brain, supporting vitality, cognitive health and graceful ageing. cGP-Pro<sup class="rn">&reg;</sup> is the world&rsquo;s only standardised cGP ingredient. Derived from New Zealand blackcurrant cultivars and combined with collagen, it is produced in NZ using a proprietary process which delivers cGP in stable, standardised form. Backed by science and validated through rigorous independent testing.<br><br>L-Theanine works alongside it, upregulating alpha-wave neural activity so the result reads as calm focus rather than agitation, while Braincurrant<sup class="rn">&reg;</sup> contributes New Zealand blackcurrant anthocyanins for enhanced focus, memory and mood balance. Citicoline supplies building blocks for brain cell membranes and signalling, for attention.<br><br>Affron<sup class="rn">&reg;</sup> Saffron supports a positive mood, helps relieve occasional stress, promotes relaxation, and enhances sleep quality. It is a saffron extract made in Spain by Pharmactive Biotech, standardised to at least 3.5% Lepticrosalides<sup class="rn">&reg;</sup>. HONI<i>ORA</i> carries 28&nbsp;mg, the dose used in Pharmactive&rsquo;s placebo-controlled mood trials, where healthy adults kept a more positive mood and coped better with everyday stress.</p>
+        <p>cGP-Pro<sup class="rn">&reg;</sup> Blackcurrant. cGP-Pro<sup class="rn">&reg;</sup> helps replenish and maintain optimal cGP levels in the body and brain, supporting vitality, cognitive health and graceful ageing. cGP-Pro<sup class="rn">&reg;</sup> is the world&rsquo;s only standardised cGP ingredient. Derived from New Zealand blackcurrant cultivars and combined with collagen, it is produced in NZ using a proprietary process which delivers cGP in stable, standardised form. Backed by science and validated through rigorous independent testing.<br><br>L-Theanine works alongside it, upregulating alpha-wave neural activity so the result reads as calm focus rather than agitation, while Braincurrant<sup class="rn">&reg;</sup> contributes New Zealand blackcurrant anthocyanins for enhanced focus, memory and mood balance. Citicoline supplies building blocks for brain cell membranes and signalling, for attention.<br><br>Affron<sup class="rn">&reg;</sup> Saffron supports a positive mood, helps relieve occasional stress, promotes relaxation, and enhances sleep quality. It is a saffron extract made in Spain by Pharmactive Biotech, standardised to at least 3.5% Lepticrosalides<sup class="rn">&reg;</sup>. HONI<i>ORA</i> carries 30&nbsp;mg, just above the 28&nbsp;mg dose used in Pharmactive&rsquo;s placebo-controlled mood trials, where healthy adults kept a more positive mood and coped better with everyday stress.</p>
       </div>
     </div>
 
@@ -4855,7 +4867,7 @@ header{padding-top:9px;padding-bottom:9px}
   <div class="wrap">
     <div class="sec-head rv">
       <p class="eyebrow dim">05 / Creatine Evolved</p>
-      <img src="jenerise-cr01-logo.png" alt="Jenerise Cr.01 logo" class="cr01-logo" width="864" height="864" loading="lazy">
+      <img src="jenerise-cr01-logo.png" alt="Jenerise Cr.01 logo" class="cr01-logo" width="864" height="864">
       <h2 class="serif threeline">Introducing Jenerise Cr.01&trade;<br><em>Super Creatine&nbsp;Monohydrate<br>By the Creatine OG Steve Jennings.</em></h2>
       <p class="lede oneline-fit" style="text-align:center">Creatine is one of the most trusted and heavily researched ingredients in wellness today, used well beyond athletics and the gym.</p>
       <p class="lede" style="text-align:center"><span class="nowrap-line">Our creatine is Jenerise Cr.01&trade; Creatine Monohydrate by creatine's own UK pioneers, Steve and Rachael Jennings.</span> <br> <span class="nowrap-line">Steve first developed and introduced creatine to the British Olympic Team at the 1992 Olympics.</span> <br> <span class="nowrap-line">2026 Jenerise Cr.01&trade; Creatine is pure and evolutionary, built to stricter standards: an SGS verified content assay of 99.9%.</span></p>
@@ -4866,8 +4878,8 @@ header{padding-top:9px;padding-bottom:9px}
           <small>Cr.01&trade; Creatine&nbsp;Monohydrate<br><a class="cite sup" href="https://www.jenerise.com/creatine-101" target="_blank" rel="noopener noreferrer">Ingredient science <span>Jenerise &nearr;</span></a></small>
         </div>
         <div class="jj-people">
-          <figure><picture><source media="(max-width:1000px)" srcset="steve_jennings_portrait-lite.jpg"><img width="820" height="820" src="steve_jennings_portrait.jpg" alt="Steve Jennings" loading="lazy"></picture><figcaption>Steve Jennings</figcaption></figure>
-          <figure><picture><source media="(max-width:1000px)" srcset="rachael_jennings_portrait-lite.jpg"><img width="820" height="820" src="rachael_jennings_portrait.jpg" alt="Rachael Jennings" loading="lazy"></picture><figcaption>Rachael Jennings</figcaption><a class="jj-blog-link" href="#honiblog-rachael"><span class="jj-blog-meta">HoniBlog : Article 09 &middot; Ingredients</span><span class="jj-blog-title">Rachael Jennings @ Jenerise UK: Creatine &mdash; The Lifelong Supplement for Women's Health &amp; Longevity</span></a></figure>
+          <figure><picture><source media="(max-width:1000px)" srcset="steve_jennings_portrait-lite.jpg"><img width="820" height="820" src="steve_jennings_portrait.jpg" alt="Steve Jennings"></picture><figcaption>Steve Jennings</figcaption></figure>
+          <figure><picture><source media="(max-width:1000px)" srcset="rachael_jennings_portrait-lite.jpg"><img width="820" height="820" src="rachael_jennings_portrait.jpg" alt="Rachael Jennings"></picture><figcaption>Rachael Jennings</figcaption><a class="jj-blog-link" href="#honiblog-rachael"><span class="jj-blog-meta">HoniBlog : Article 09 &middot; Ingredients</span><span class="jj-blog-title">Rachael Jennings @ Jenerise UK: Creatine &mdash; The Lifelong Supplement for Women's Health &amp; Longevity</span></a></figure>
         </div>
       </div>
       <div class="rv">
@@ -4877,7 +4889,7 @@ header{padding-top:9px;padding-bottom:9px}
           <li><span class="x">02</span><div><strong>Optimal vitality at every age</strong><br> <span class="d">The clinical record for creatine monohydrate spans more than 40 years and 680 peer-reviewed studies. Jenerise Cr.01&trade; positions that record where consumer demand is heading next: not just athletic output, but long-term and full-body.</span></div></li>
           <li><span class="x">03</span><div><strong>ATP, regenerated faster.</strong> <span class="d">Creatine is stored in muscle as phosphocreatine, which rapidly donates a phosphate group to rebuild ATP during short, intense effort. That is the mechanism behind its strength and power research base.</span></div></li>
           <li><span class="x">04</span><div><strong>Paired with the vascular and gut stack.</strong> <span class="d">Creatine works alongside VasoDrive-AP<sup class="rn">&reg;</sup>, cGP-Pro<sup class="rn">&reg;</sup> Blackcurrant, Careflow<sup class="rn">&reg;</sup> and vitAlign<sup class="rn">&reg;</sup> for blood flow, and Kaneka Ubiquinol<sup class="rn">&reg;</sup> for cellular energy, so the muscle getting the energy substrate also gets the blood flow to use it.</span></div></li>
-          <li><span class="x">05</span><div><strong>Electrolytes are crucial for creatine uptake.</strong> <span class="d">The creatine transporter depends on sodium and chloride, while potassium, magnesium and sodium together regulate the intracellular fluid balance and membrane potential that support nutrient uptake and muscle contraction during training. HONI<i>ORA</i>&rsquo;s Balanced Hydration Matrix supplies sodium, potassium and magnesium alongside the Cr.01&trade; Creatine 5,000 mg dose.</span></div></li>
+          <li><span class="x">05</span><div><strong>Electrolytes are crucial for creatine uptake.</strong> <span class="d">The creatine transporter depends on sodium and chloride, while potassium, magnesium and sodium together regulate the intracellular fluid balance and membrane potential that support nutrient uptake and muscle contraction during training. HONI<i>ORA</i>&rsquo;s Balanced hydration support supplies sodium, potassium and magnesium alongside the Cr.01&trade; Creatine 5,000 mg dose.</span></div></li>
           <li><span class="x">06</span><div><strong>Plus Citicoline for brain communication.</strong> <span class="d">Creatine supports brain energy by helping maintain ATP availability when demand rises. Energy is only part of the story. Your brain also relies on healthy communication between cells. Citicoline supplies building blocks for brain cell membranes and neuronal signalling, to support focus, attention and cognitive performance. HONI<i>ORA</i> carries 255 mg per serving. In a 28-day placebo-controlled trial, 250 mg a day gave healthy women aged 40 to 60 fewer attention errors than placebo.<br><a class="cite sup" href="https://www.nutraceuticalsworld.com/issues/2011-06/view_supplier-research/cognizin-improves-attention-at-250-mg-dose/" target="_blank" rel="noopener noreferrer">Trial report <span>Nutraceuticals World &nearr;</span></a></span></div></li>
         </ul>
       </div>
@@ -4898,17 +4910,17 @@ header{padding-top:9px;padding-bottom:9px}
     </div>
     <div class="pillars rv">
       <div class="pillar">
-        <div class="pn"><picture class="gimg-pic"><source media="(max-width:1000px)" srcset="manuka_crystal-lite.webp"><img class="gimg" src="manuka_crystal.webp" alt="MGO 850+ Manuka honey crystals" width="820" height="820" loading="lazy"></picture><span class="n">i</span><span class="ing">Fiberest<sup class="rn">&reg;</sup> HF</span></div>
+        <div class="pn"><picture class="gimg-pic"><source media="(max-width:1000px)" srcset="manuka_crystal-lite.webp"><img class="gimg" src="manuka_crystal.webp" alt="MGO 850+ Manuka honey crystals" width="820" height="820"></picture><span class="n">i</span><span class="ing">Fiberest<sup class="rn">&reg;</sup> HF</span></div>
         <h3>The fiber in the honey crystals drives it.</h3>
         <p>In the MGO 850+ M&#257;nuka / Fiberest<sup class="rn">&reg;</sup> HF pairing, the honey's methylglyoxal clears space for good gut bacteria to grow. It is the Fiberest<sup class="rn">&reg;</sup> HF fiber alongside it that those bacteria ferment into short-chain fatty acids, the same signal that triggers your gut's own GLP-1 release through the FFAR2 receptor on intestinal L-cells. A 2026 review of 52 human trials found this exact fiber class, Resistant Dextrin, the strongest performer of any fiber type tested for raising GLP-1.<br><a class="cite" href="https://doi.org/10.2337/db11-1019" target="_blank" rel="noopener noreferrer">Tolhurst 2012 <span>Diabetes &middot; FFAR2 mechanism &nearr;</span></a><a class="cite" href="https://doi.org/10.3389/fendo.2026.1880500" target="_blank" rel="noopener noreferrer">Frontiers 2026 <span>52 human RCTs &middot; Dextrin fibre &nearr;</span></a></p>
       </div>
       <div class="pillar">
-        <div class="pn"><picture class="gimg-pic"><source media="(max-width:1000px)" srcset="feijoa-lite.webp"><img class="gimg" src="feijoa.webp" alt="Feiolix feijoa" width="820" height="820" loading="lazy"></picture><span class="n">ii</span><span class="ing">Feiolix<sup class="rn">&reg;</sup> Feijoa</span></div>
+        <div class="pn"><picture class="gimg-pic"><source media="(max-width:1000px)" srcset="feijoa-lite.webp"><img class="gimg" src="feijoa.webp" alt="Feiolix feijoa" width="820" height="820"></picture><span class="n">ii</span><span class="ing">Feiolix<sup class="rn">&reg;</sup> Feijoa</span></div>
         <h3>Two routes to your own GLP-1</h3>
         <p>Feijoa's abscisic acid acts directly on intestinal L-cells, shown in lab and animal models to raise GLP-1 through a cAMP-driven mechanism. A separate fibre in the same fruit is fermented by gut bacteria into propionate, a short-chain fatty acid that prompts the same release through a different door. Two mechanisms, both aimed at your own GLP-1, not a synthetic analogue. Feijoa (pineapple guava) carries genuine cult status across New Zealand, where it's grown.<br><a class="cite" href="https://doi.org/10.1371/journal.pone.0140588" target="_blank" rel="noopener noreferrer">Guri 2015 <span>PLOS ONE &middot; L-cell mechanism &nearr;</span></a><a class="cite sup" href="https://feiolix.com/the-science-behind-feiolix/" target="_blank" rel="noopener noreferrer">Ingredient science <span>Anagenix &nearr;</span></a></p>
       </div>
       <div class="pillar">
-        <div class="pn"><picture class="gimg-pic"><source media="(max-width:1000px)" srcset="eriomin_lemon-lite.webp"><img class="gimg" src="eriomin_lemon.webp" alt="Eriomin lemon" width="820" height="820" loading="lazy"></picture><span class="n">iii</span><span class="ing">Eriomin<sup class="rn">&reg;</sup> Lemon Flavonoid</span></div>
+        <div class="pn"><picture class="gimg-pic"><source media="(max-width:1000px)" srcset="eriomin_lemon-lite.webp"><img class="gimg" src="eriomin_lemon.webp" alt="Eriomin lemon" width="820" height="820"></picture><span class="n">iii</span><span class="ing">Eriomin<sup class="rn">&reg;</sup> Lemon Flavonoid</span></div>
         <h3>A fourth, separate pathway</h3>
         <p>A standardised extract of eriocitrin, the dominant flavonoid in lemon, working its own pathway onto GLP-1, distinct from Feiolix<sup class="rn">&reg;</sup> above rather than duplicating it. Clinical trials at this same 200&nbsp;mg/day dose raised GLP-1 and lowered hyperglycemia and inflammation, and a separate trial linked the same dose to improved gut microbiota in people with prediabetes.<br><a class="cite" href="https://doi.org/10.1002/ptr.6386" target="_blank" rel="noopener noreferrer">Ribeiro 2019 <span>Phytotherapy Research &middot; RCT &nearr;</span></a><a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/35796695/" target="_blank" rel="noopener noreferrer">Cesar 2022 <span>PMID 35796695 &middot; GLP-1 &amp; inflammation &nearr;</span></a><a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/37242433/" target="_blank" rel="noopener noreferrer">Ramos 2023 <span>PMID 37242433 &middot; Gut microbiota &nearr;</span></a></p>
       </div>
@@ -4935,7 +4947,7 @@ header{padding-top:9px;padding-bottom:9px}
       <div class="stat">
         <b data-count="25" data-suffix="%">25%</b>
         <h4>Of the formula, by mass</h4>
-        <p>Cr.01&trade; Creatine is the single largest active in the stack pack, roughly 25 percent of the 20 g powder by weight.</p>
+        <p>Cr.01&trade; Creatine is the single largest active in the Hexcell, roughly 25 percent of the 20 g powder by weight.</p>
         <span class="src">Cr.01&trade; Creatine Monohydrate · 5,000 mg per serving</span>
       </div>
       <div class="stat">
@@ -4961,12 +4973,12 @@ header{padding-top:9px;padding-bottom:9px}
   <div class="wrap">
     <picture class="matrix-banner-pic">
       <source media="(max-width:1000px)" srcset="matrix-stack-header-lite.jpg">
-      <img class="matrix-banner rv" src="matrix-stack-header.jpg" alt="In The Mix: our whole-system formula. A gold HONIORA tablet fizzing with bubbles, surrounded by honeycomb, gold kiwifruit, feijoa, mango and blackcurrants against a gold hexagon pattern." width="2678" height="1600" loading="lazy">
+      <img class="matrix-banner rv" src="matrix-stack-header.jpg" alt="In The Mix: our whole-system formula. A gold HONIORA tablet fizzing with bubbles, surrounded by honeycomb, gold kiwifruit, feijoa, mango and blackcurrants against a gold hexagon pattern." width="2678" height="1600">
     </picture>
     <div class="sec-head rv">
       <p class="eyebrow dim">08 TheStack /</p>
       <h2 class="serif">The HONI<i>ORA</i> recipe</h2>
-      <p class="lede">This is the entire stack, the mechanism behind them and the published research, each is full dose delivered in a single stack pack serving.</p>
+      <p class="lede">This is the entire Hexcell, the mechanism behind them and the published research, each is full dose delivered in a single Hexcell serving.</p>
     </div>
     <div class="matrix rv">
       <div class="rowhead mgrid"><span>Active</span><span>Function</span><span>Per serving</span><span>Mechanism</span></div>
@@ -5004,12 +5016,11 @@ header{padding-top:9px;padding-bottom:9px}
       </div>
 
       <div class="row mgrid">
-        <div class="name">Actazin<sup class="rn">&reg;</sup> Green Kiwifruit<i>Anagenix (NZ)</i></div>
-        <div><span class="fn">Gut health<small>Whole fruit</small></span></div>
-        <div class="dose">600 mg</div>
-        <div class="mech">Freeze-dried whole green kiwifruit powder from New Zealand, made by Anagenix.<br><span class="cite sup" style="cursor:default">Ingredient science citation to be added &middot; verify before launch</span></div>
+        <div class="name">OxyStorm<sup class="rn">&reg;</sup> WD Red Spinach<i>Arjuna Natural (India)</i></div>
+        <div><span class="fn">Nitric oxide<small>Dietary nitrate</small></span></div>
+        <div class="dose">500 mg</div>
+        <div class="mech">Water-dispersible red spinach (<em style="font-style:italic">Amaranthus</em>) extract standardised to 9% nitrate, about 45 mg nitrate per serving, feeding the dietary-nitrate route to nitric oxide.<br><span class="cite sup" style="cursor:default">Manufacturer data, Arjuna Natural; regulatory status to confirm.</span></div>
       </div>
-
       <div class="row mgrid">
         <div class="name">Pomma+<sup class="rn">&reg;</sup> Pomegranate Extract<i>Stauber USA (Whole Fruit Extract)</i></div>
         <div><span class="fn">Antioxidant<small>Polyphenol support</small></span></div>
@@ -5072,14 +5083,14 @@ header{padding-top:9px;padding-bottom:9px}
       <div class="row mgrid">
         <div class="name">AlphaWave<sup class="rn">&reg;</sup> L-Theanine<i>Ethical Naturals / USP Grade</i></div>
         <div><span class="fn">Alpha-wave anchor<small>Calm focus</small></span></div>
-        <div class="dose">450 mg</div>
-        <div class="mech">Upregulates alpha-wave neural activity and stimulates GABA, which is what keeps the creatine and vascular actives reading as clarity rather than agitation. A 28-day randomised, double-blind, placebo-controlled trial of AlphaWave<sup class="rn">&reg;</sup> L-Theanine found lower perceived stress and improved sleep quality and cognitive attention; an earlier single-dose crossover trial recorded higher frontal alpha brainwave power after 200 mg, a dose below the 450 mg in HONI<i>ORA</i>. A third randomised, double-blind, placebo-controlled crossover trial, also at 200 mg, found lower subjective stress and lower cortisol after a multitasking stressor; it found no cognitive-performance gain on that task itself, and its posterior alpha-wave increase showed up mainly in participants with higher trait anxiety.<br><a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/38758503/" target="_blank" rel="noopener noreferrer">Moulin 2024 <span>PMID 38758503 &nearr;</span></a><a class="cite" href="https://doi.org/10.1007/s40120-021-00284-x" target="_blank" rel="noopener noreferrer">Evans 2021 <span>Neurol Ther &middot; Crossover &nearr;</span></a><a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/26797633/" target="_blank" rel="noopener noreferrer">White 2016 <span>Nutrients &middot; 200 mg dose &nearr;</span></a><a class="cite sup" href="https://ethicalnaturals.com/products-manufacturing-services/alphawave-l-theanine/" target="_blank" rel="noopener noreferrer">Ingredient science <span>Ethical Naturals &nearr;</span></a></div>
+        <div class="dose">200 mg</div>
+        <div class="mech">Upregulates alpha-wave neural activity and stimulates GABA, which is what keeps the creatine and vascular actives reading as clarity rather than agitation. A 28-day randomised, double-blind, placebo-controlled trial of AlphaWave<sup class="rn">&reg;</sup> L-Theanine found lower perceived stress and improved sleep quality and cognitive attention; an earlier single-dose crossover trial recorded higher frontal alpha brainwave power after 200 mg, the dose HONI<i>ORA</i> now carries. A third randomised, double-blind, placebo-controlled crossover trial, also at 200 mg, found lower subjective stress and lower cortisol after a multitasking stressor; it found no cognitive-performance gain on that task itself, and its posterior alpha-wave increase showed up mainly in participants with higher trait anxiety.<br><a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/38758503/" target="_blank" rel="noopener noreferrer">Moulin 2024 <span>PMID 38758503 &nearr;</span></a><a class="cite" href="https://doi.org/10.1007/s40120-021-00284-x" target="_blank" rel="noopener noreferrer">Evans 2021 <span>Neurol Ther &middot; Crossover &nearr;</span></a><a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/26797633/" target="_blank" rel="noopener noreferrer">White 2016 <span>Nutrients &middot; 200 mg dose &nearr;</span></a><a class="cite sup" href="https://ethicalnaturals.com/products-manufacturing-services/alphawave-l-theanine/" target="_blank" rel="noopener noreferrer">Ingredient science <span>Ethical Naturals &nearr;</span></a></div>
       </div>
 
       <div class="row mgrid">
         <div class="name">Affron<sup class="rn">&reg;</sup> Saffron<i>Pharmactive Biotech / &ge;3.5% Lepticrosalides</i></div>
         <div><span class="fn">Mood<small>Stress and calm</small></span></div>
-        <div class="dose">28 mg<small>29.4 mg as made, 5% overage</small></div>
+        <div class="dose">30 mg<small>31.5 mg as made, 5% overage</small></div>
         <div class="mech">A saffron (<em>Crocus sativus</em>) stigma extract standardised by HPLC to at least 3.5% Lepticrosalides<sup class="rn">&reg;</sup>. At 28 mg a day, placebo-controlled trials found adults kept a more positive mood and coped better with occasional stress and tension. Its crocins are water soluble and tint the drink gold. It sits with citicoline, L-theanine and Braincurrant<sup class="rn">&reg;</sup> in the Brain system.<br><a class="cite sup" href="https://pubmed.ncbi.nlm.nih.gov/?term=Kell+2017+affron+saffron+mood+Complement+Ther+Med" target="_blank" rel="noopener noreferrer">Supporting research <span>Kell 2017 &nearr;</span></a></div>
       </div>
 
@@ -5151,7 +5162,7 @@ header{padding-top:9px;padding-bottom:9px}
       <div class="row mgrid compact">
         <div class="name">Magnesium Malate Reacted<i>Albion Minerals / USP</i></div>
         <div><span class="fn">Mineral active<small>Mg</small></span></div>
-        <div class="dose">1,050 mg<small>&asymp;200 mg elemental Mg</small></div>
+        <div class="dose">900 mg<small>&asymp;150 mg elemental Mg</small></div>
         <div class="mech">Magnesium bound to malic acid, a salt that dissolves clean in water. Malate is a natural Krebs cycle intermediate, and magnesium is a cofactor for the enzymes that use ATP.</div>
       </div>
 
@@ -5181,14 +5192,14 @@ header{padding-top:9px;padding-bottom:9px}
       <div class="row mgrid compact">
         <div class="name">Sodium Bicarbonate Low-Moist<i>Church &amp; Dwight / USP Coarse Granular</i></div>
         <div><span class="fn">Effervescent<small>Alkaline base</small></span></div>
-        <div class="dose">932 mg<small>&asymp;255 mg elemental Na</small></div>
-        <div class="mech">The alkaline half. Low-moisture grade is non-negotiable, because residual water would start the reaction inside the stack pack.<br><a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/22864738/" target="_blank" rel="noopener noreferrer">Supporting research <span>PMID 22864738 &nearr;</span></a></div>
+        <div class="dose">988 mg<small>&asymp;255 mg elemental Na</small></div>
+        <div class="mech">The alkaline half. Low-moisture grade is non-negotiable, because residual water would start the reaction inside the Hexcell.<br><a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/22864738/" target="_blank" rel="noopener noreferrer">Supporting research <span>PMID 22864738 &nearr;</span></a></div>
       </div>
 
       <div class="row mgrid compact">
         <div class="name">Potassium Bicarbonate<i>Armand Products / USP Grade</i></div>
         <div><span class="fn">Effervescent base<small>Potassium electrolyte</small></span></div>
-        <div class="dose">1,113 mg<small>&asymp;435 mg elemental K</small></div>
+        <div class="dose">1,180 mg<small>&asymp;346 mg elemental K</small></div>
         <div class="mech">A second alkaline base alongside sodium bicarbonate. It drives the same carbon dioxide reaction while delivering potassium rather than more sodium, which shifts the electrolyte balance of the finished drink.<br><a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/41243115/" target="_blank" rel="noopener noreferrer">Supporting research <span>PMID 41243115 &nearr;</span></a></div>
       </div>
 
@@ -5228,7 +5239,7 @@ header{padding-top:9px;padding-bottom:9px}
       </div>
     </div>
 
-    <p class="small rv" style="margin-top:26px">That is the complete bill of materials, all 22 wellness actives, the magnesium and zinc minerals and 9 excipients, at the dose delivered in one stack pack. Doses are the per-stack-pack figures from batch record HoniOra SP20 SKU1 (draft). Where a raw material is standardised, the active yield is shown beneath the material weight.</p>
+    <p class="small rv" style="margin-top:26px">That is the complete bill of materials, all 22 wellness actives, the magnesium and zinc minerals and 9 excipients, at the dose delivered in one Hexcell. Doses are the per-Hexcell figures from batch record HoniOra SP20 SKU1 (draft). Where a raw material is standardised, the active yield is shown beneath the material weight.</p>
   </div>
 </section>
 
@@ -5255,24 +5266,20 @@ header{padding-top:9px;padding-bottom:9px}
   </div>
 </section>
 
-<!-- ================= ACTAZIN GREEN KIWIFRUIT ================= -->
-<section class="sec" id="actazin">
+<!-- ================= OXYSTORM RED SPINACH ================= -->
+<section class="sec" id="oxystorm">
   <div class="wrap">
     <div class="livaux-box rv">
-      <p class="eyebrow dim">09a / Actazin<sup class="rn">&reg;</sup> Green Kiwifruit</p>
-      <h2 class="serif">Actazin<sup class="rn">&reg;</sup> Green Kiwifruit: <em>Regularity, from the whole green fruit.</em></h2>
-      <p class="lede">HONI<i>ORA</i> carries 600 mg of Actazin<sup class="rn">&reg;</sup> per serving. Actazin is a cold-pressed green kiwifruit powder made entirely in New Zealand by Anagenix, the maker of Livaux<sup class="rn">&reg;</sup> and Feiolix<sup class="rn">&reg;</sup>.<br><a class="cite" href="https://actazin.com/science-story/" target="_blank" rel="noopener noreferrer">Ingredient science <span>actazin.com &nearr;</span></a></p>
-      <p class="lede">Livaux<sup class="rn">&reg;</sup> shifts which gut bacteria grow. Actazin<sup class="rn">&reg;</sup> does a different job: regularity and comfort. Its fibre holds water and softens stool, and its own enzyme, actinidin, helps break down protein.</p>
-
+      <p class="eyebrow dim">OxyStorm<sup class="rn">&reg;</sup> WD &middot; Nitric oxide</p>
+      <h2 class="serif">OxyStorm<sup class="rn">&reg;</sup>: <em>The nitrate route to nitric oxide.</em></h2>
+      <p class="lede">HONI<i>ORA</i> carries 500 mg of OxyStorm<sup class="rn">&reg;</sup> WD per serving, a water-dispersible red spinach (<em>Amaranthus</em>) extract from Arjuna Natural, standardised to 9% nitrate. It delivers about 45 mg of dietary nitrate and dissolves clean in the glass.</p>
+      <p class="lede">Your body turns dietary nitrate into nitric oxide, which relaxes and widens blood vessels.</p>
       <ul class="prob-list">
-        <li><span class="x">01</span><div><strong>Tested at 600 mg for 28 days.</strong> <span class="d">In a placebo-controlled trial of 43 healthy adults with occasional constipation, 600 mg a day gave about 1.4 more complete bowel movements a week by day 28, against their starting point (p&lt;0.001). Stool form improved by day 14 against placebo (p&lt;0.05), and abdominal, stool and quality-of-life scores improved against baseline.</span></div></li>
-        <li><span class="x">02</span><div><strong>An earlier crossover trial.</strong> <span class="d">In 19 healthy adults, 2,400 mg a day gave about 0.8 more bowel movements a week (p=0.014). 600 mg a day gave about 0.6 more, just short of significance (p=0.06).</span></div></li>
-        <li><span class="x">03</span><div><strong>Fibre that holds water.</strong> <span class="d">Kiwifruit fibre swells to over three times its volume. It holds 12 to 13 g of water per gram of insoluble fibre, about twice apple fibre and four times wheat bran.</span></div></li>
-        <li><span class="x">04</span><div><strong>Actinidin, kiwifruit&rsquo;s own enzyme.</strong> <span class="d">In lab studies, actinidin digests proteins that normally resist digestion, such as pea convicilin and wheat gluten. This is lab work, not a human trial.</span></div></li>
-        <li><span class="x">05</span><div><strong>Slow, even fermentation.</strong> <span class="d">Its maker says the fibre ferments slowly along the whole length of the colon, so it feeds gut bacteria without excess gas.</span></div></li>
+        <li><span class="x">01</span><div><strong>A fourth route to nitric oxide.</strong> <span class="d">vitAlign<sup class="rn">&reg;</sup> works by redox signalling, Careflow<sup class="rn">&reg;</sup> and Pomma+<sup class="rn">&reg;</sup> by eNOS, VasoDrive-AP<sup class="rn">&reg;</sup> by vasodilation. OxyStorm adds the dietary-nitrate route none of them cover, so HONI<i>ORA</i> reaches nitric oxide four independent ways.</span></div></li>
+        <li><span class="x">02</span><div><strong>More nitrate than beetroot, less earth.</strong> <span class="d">Red spinach carries nitrate at higher density than beetroot, without the sugar, oxalate or earthy taste. The water-dispersible grade mixes clean in a drink.</span></div></li>
+        <li><span class="x">03</span><div><strong>Part of the vascular stack.</strong> <span class="d">Nitric oxide supports blood flow and oxygen delivery, the base layer every other active is carried on.</span></div></li>
       </ul>
-
-      <p class="small" style="margin-top:30px;max-width:78ch">Ingredient-level evidence, see the <a href="#evidence-note" style="color:inherit;text-decoration:underline">evidence note</a>. HONI<i>ORA</i>'s 600 mg matches the dose in the 28-day trial. The 28-day trial results are reported by the manufacturer, Anagenix, which lists the study (Lewis, Graham, McKeen et al.) as publication pending, so no journal reference is available yet. The crossover trial is Ansell et al., <em style="font-style:italic">Nutrition Research</em> 2015; 35(5):401-408. The fibre figures come from Sims and Monro, <em style="font-style:italic">Advances in Food and Nutrition Research</em> 2013, as cited by the manufacturer. The fermentation and gas claim is the manufacturer's, with no study cited. None of these is a trial of the finished HONI<i>ORA</i> formula. Actazin is a trade mark of Anagenix Limited.</p>
+      <p class="small" style="margin-top:30px;max-width:78ch">OxyStorm is dosed here as one contributor to a multi-pathway nitric oxide system, not a standalone performance nitrate. Values are the manufacturer's (Arjuna Natural); the 9% nitrate and potassium content are to confirm against the WD grade. These statements have not been evaluated by the FDA. OxyStorm is a trade mark of Arjuna Natural.</p>
     </div>
   </div>
 </section>
@@ -5390,9 +5397,9 @@ header{padding-top:9px;padding-bottom:9px}
         <div class="sec-head">
           <p class="eyebrow dim">Kaneka Ubiquinol<sup class="rn">&reg;</sup> &middot; Active CoQ10</p>
           <h2 class="serif">Kaneka Ubiquinol<sup class="rn">&reg;</sup>: <em>CoQ10, ready to work.</em></h2>
-          <p class="lede">HONI<i>ORA</i> carries 100&nbsp;mg of Kaneka Ubiquinol<sup class="rn">&reg;</sup> per serving, as Kaneka Q30&trade;, an air-stable powder made for stack packs. Kaneka Ubiquinol is the active antioxidant form of coenzyme Q10. In a healthy adult, over 95% of the CoQ10 in blood is ubiquinol.</p>
+          <p class="lede">HONI<i>ORA</i> carries 100&nbsp;mg of Kaneka Ubiquinol<sup class="rn">&reg;</sup> per serving, as Kaneka Q30&trade;, an air-stable powder made for Hexcells. Kaneka Ubiquinol is the active antioxidant form of coenzyme Q10. In a healthy adult, over 95% of the CoQ10 in blood is ubiquinol.</p>
         </div>
-        <img class="mitoq-pic" src="nmn.webp" width="820" height="820" alt="Kaneka Ubiquinol" loading="lazy">
+        <img class="mitoq-pic" src="nmn.webp" width="820" height="820" alt="Kaneka Ubiquinol">
       </div>
 
       <ul class="prob-list">
@@ -5459,12 +5466,12 @@ header{padding-top:9px;padding-bottom:9px}
       <p class="eyebrow dim">LactoSpore<sup class="rn">&reg;</sup> &middot; Spore Probiotic</p>
       <h2 class="serif">LactoSpore<sup class="rn">&reg;</sup>: <em>A probiotic that travels as a spore.</em></h2>
       <p class="lede">HONI<i>ORA</i> carries 6 billion CFU of LactoSpore<sup class="rn">&reg;</sup> per serving, 60 mg of the 100 billion spores per gram grade. LactoSpore is <em style="font-style:italic">Bacillus coagulans</em> strain MTCC 5856 (now also named <em style="font-style:italic">Heyndrickxia coagulans</em>), made by Sabinsa. In the gut it produces L(+) lactic acid.<br><a class="cite" href="https://lactospore.com/about-lactospore/what-is-lactospore" target="_blank" rel="noopener noreferrer">Ingredient science <span>lactospore.com &nearr;</span></a></p>
-      <p class="lede">Most probiotics are fragile live cells. LactoSpore<sup class="rn">&reg;</sup> stays dormant inside a protective spore coat. The spore coat helps it survive stomach acid and bile, and stay stable through processing, packaging and storage. That is what lets a probiotic sit in a dry effervescent stack pack.</p>
+      <p class="lede">Most probiotics are fragile live cells. LactoSpore<sup class="rn">&reg;</sup> stays dormant inside a protective spore coat. The spore coat helps it survive stomach acid and bile, and stay stable through processing, packaging and storage. That is what lets a probiotic sit in a dry effervescent Hexcell. In a simulated-digestion study of the strain, about 92% of the spores came through the mouth, stomach and intestine, against about 88% for a standard <em style="font-style:italic">Lactobacillus</em>.</p>
 
       <ul class="prob-list">
         <li><span class="x">01</span><div><strong>Gas and bloating, in four weeks.</strong> <span class="d">In a randomised, double-blind, placebo-controlled trial, 70 adults with functional gas and bloating took 2 billion spores a day for four weeks. The indigestion score fell from 8.91 to 3.06 on LactoSpore (P&lt;.001), against 9.42 to 8.43 on placebo (P=.11). Bloating, burping and flatus improved more than on placebo.<br><a class="cite" href="https://doi.org/10.1097/MD.0000000000033109" target="_blank" rel="noopener noreferrer">Supporting research <span>Majeed et al. 2023, Medicine &nearr;</span></a></span></div></li>
         <li><span class="x">02</span><div><strong>IBS with diarrhoea, over 90 days.</strong> <span class="d">In a double-blind pilot trial of 36 adults with diarrhoea-predominant IBS, 2 billion spores a day on top of standard care cut bloating, vomiting, diarrhoea, abdominal pain and stool frequency significantly more than placebo (p&lt;0.01). Quality-of-life scores improved too.<br><a class="cite" href="https://doi.org/10.1186/s12937-016-0140-6" target="_blank" rel="noopener noreferrer">Supporting research <span>Majeed et al. 2016, Nutrition Journal &nearr;</span></a></span></div></li>
-        <li><span class="x">03</span><div><strong>Dosed with its food.</strong> <span class="d">HONI<i>ORA</i> pairs the spores with Livaux<sup class="rn">&reg;</sup> and Actazin<sup class="rn">&reg;</sup> kiwifruit powders and Fiberest<sup class="rn">&reg;</sup> HF fibre, so the probiotic arrives alongside fermentable fibre.</span></div></li>
+        <li><span class="x">03</span><div><strong>Dosed with its food.</strong> <span class="d">HONI<i>ORA</i> pairs the spores with Livaux<sup class="rn">&reg;</sup> kiwifruit powder and Fiberest<sup class="rn">&reg;</sup> HF fibre, so the probiotic arrives alongside fermentable fibre. The strain is shown to ferment plant fibre into short-chain fatty acids, including the butyrate that feeds the gut lining, the same fuel the kiwifruit and M&#257;nuka actives build toward.</span></div></li>
       </ul>
 
       <p class="small" style="margin-top:30px;max-width:78ch">Ingredient-level evidence, see the <a href="#evidence-note" style="color:inherit;text-decoration:underline">evidence note</a>. Both trials used 2 billion spores a day. HONI<i>ORA</i> carries 6 billion CFU, three times that dose, and no trial at 6 billion is cited here. Both trials were small, run in India, and written by researchers at Sabinsa and its sister company Sami Labs, which also supplied the product. A third Sabinsa pilot trial (Food &amp; Nutrition Research, 2018) studied adults with IBS and major depression. No mood claim is made here. The acid, bile and processing stability statements are the manufacturer's. None of these is a trial of the finished HONI<i>ORA</i> formula. LactoSpore is a trade mark of Sabinsa Corporation.</p>
@@ -5479,7 +5486,7 @@ header{padding-top:9px;padding-bottom:9px}
       <p class="eyebrow dim">affron<sup class="rn">&reg;</sup> &middot; Saffron Extract</p>
       <h2 class="serif">Affron<sup class="rn">&reg;</sup> <em>Saffron</em></h2>
       <p class="lede"><b>Affron<sup class="rn">&reg;</sup> Saffron supports a positive mood, helps relieve occasional stress, promotes relaxation, and enhances sleep quality.</b></p>
-      <p class="lede">HONI<i>ORA</i> carries 28&nbsp;mg of affron<sup class="rn">&reg;</sup> per serving. It is a saffron extract made in Spain by Pharmactive Biotech from the red stigmas of the saffron crocus, <em>Crocus sativus</em>. Each batch is standardised by HPLC to at least 3.5% Lepticrosalides<sup class="rn">&reg;</sup>, Pharmactive&rsquo;s patented marker of saffron&rsquo;s active compounds, and DNA-certified as real saffron.</p>
+      <p class="lede">HONI<i>ORA</i> carries 30&nbsp;mg of affron<sup class="rn">&reg;</sup> per serving. It is a saffron extract made in Spain by Pharmactive Biotech from the red stigmas of the saffron crocus, <em>Crocus sativus</em>. Each batch is standardised by HPLC to at least 3.5% Lepticrosalides<sup class="rn">&reg;</sup>, Pharmactive&rsquo;s patented marker of saffron&rsquo;s active compounds, and DNA-certified as real saffron.</p>
 
       <ul class="prob-list">
         <li><span class="x">01</span><div><strong>Mood and everyday stress.</strong> <span class="d">In a placebo-controlled trial, 28&nbsp;mg a day of affron<sup class="rn">&reg;</sup> helped healthy adults keep a positive mood and ease occasional stress, frustration and tension (Kell 2017). A 2025 trial of the same extract in more than 200 adults with low mood was published in the <em>Journal of Nutrition</em>.</span></div></li>
@@ -5608,7 +5615,7 @@ header{padding-top:9px;padding-bottom:9px}
       <div class="lemonrow">
         <div><b>Alkaline buffering</b></div>
         <div class="was">Free citric acid, with no buffer.</div>
-        <div class="now"><em>Sodium bicarbonate 932 mg</em> and potassium bicarbonate 1,113 mg neutralise the acids in the glass, leaving sodium and potassium citrate and malate.</div>
+        <div class="now"><em>Sodium bicarbonate 932 mg</em> and potassium bicarbonate 700 mg neutralise the acids in the glass, leaving sodium and potassium citrate and malate.</div>
       </div>
 
       <div class="lemonrow">
@@ -5773,7 +5780,7 @@ header{padding-top:9px;padding-bottom:9px}
       </div>
       <div class="abox wide teamwide">
         <span class="abox-n">02</span>
-        <img class="team-combined" width="2200" height="1074" src="team-honico.jpg" alt="HoniCo Team NZ. Gregory Miller-Hard, Founder and CEO, startup investor, photographer, kiwifruit orchardist and farmer. Laura Clinton, R&amp;D and QA, quality assurance specialist, prototype management, compliance and R&amp;D for market deliverance. Nicole Miller-Hard, Founder and Marketing, environmental press agency founder, writer, animal welfare activist, wildlife and horse sanctuary owner. Scott Smith, Medical Herbalist and Naturopath, clinician and product development in the natural healthcare industry for almost 20 years. Odette Miller-Hard, Brand Design, artist, photographer and visual coder, BFA Fine Arts." loading="lazy" class="team-photo">
+        <img class="team-combined" width="2200" height="1074" src="team-honico.jpg" alt="HoniCo Team NZ. Gregory Miller-Hard, Founder and CEO, startup investor, photographer, kiwifruit orchardist and farmer. Laura Clinton, R&amp;D and QA, quality assurance specialist, prototype management, compliance and R&amp;D for market deliverance. Nicole Miller-Hard, Founder and Marketing, environmental press agency founder, writer, animal welfare activist, wildlife and horse sanctuary owner. Scott Smith, Medical Herbalist and Naturopath, clinician and product development in the natural healthcare industry for almost 20 years. Odette Miller-Hard, Brand Design, artist, photographer and visual coder, BFA Fine Arts." class="team-photo">
         <div class="teamlist sr-only">
           <div><b>Gregory Miller-Hard</b><i>Founder &amp; CEO</i><span>Startup investor, photographer, kiwifruit orchardist &amp; farmer.</span></div>
           <div><b>Laura Clinton</b><i>R&amp;D + QA</i><span>Quality assurance specialist, prototype management, compliance and R&amp;D for market deliverance.</span></div>
@@ -5782,11 +5789,11 @@ header{padding-top:9px;padding-bottom:9px}
           <div><b>Odette Miller-Hard</b><i>Brand Design</i><span>Artist, photographer &amp; visual coder, BFA Fine Arts.</span></div>
         </div>
         <div class="team-stack" aria-hidden="true">
-          <img src="team_gregory.jpg" alt="Gregory Miller-Hard, Founder and CEO" loading="lazy">
-          <img src="team_laura.jpg" alt="Laura Clinton, R&amp;D and QA" loading="lazy">
-          <img src="team_nicole.jpg" alt="Nicole Miller-Hard, Founder and Marketing" loading="lazy">
-          <img src="team_scott.jpg" alt="Scott Smith, Medical Herbalist and Naturopath" loading="lazy">
-          <img src="team_odette.jpg" alt="Odette Miller-Hard, Brand Design" loading="lazy">
+          <img src="team_gregory.jpg" alt="Gregory Miller-Hard, Founder and CEO">
+          <img src="team_laura.jpg" alt="Laura Clinton, R&amp;D and QA">
+          <img src="team_nicole.jpg" alt="Nicole Miller-Hard, Founder and Marketing">
+          <img src="team_scott.jpg" alt="Scott Smith, Medical Herbalist and Naturopath">
+          <img src="team_odette.jpg" alt="Odette Miller-Hard, Brand Design">
         </div>
       </div>
       <div class="abox wide mapwide">
@@ -5795,7 +5802,7 @@ header{padding-top:9px;padding-bottom:9px}
         <button type="button" class="map-trigger" id="mapTrigger" aria-label="Click to expand the map">
           <picture class="map-photo-pic">
             <source media="(max-width:1000px)" srcset="GLOBE2-lite.png">
-            <img width="1060" height="1060" src="GLOBE2.png" alt="Globe map of the South Pacific highlighting New Zealand, with the Bay of Plenty, East Cape, Waikato and Hobbiton marked on the North Island" loading="lazy" class="map-photo">
+            <img width="1060" height="1060" src="GLOBE2.png" alt="Globe map of the South Pacific highlighting New Zealand, with the Bay of Plenty, East Cape, Waikato and Hobbiton marked on the North Island" class="map-photo">
           </picture>
           <span class="map-hint">Click to expand &nearr;</span>
         </button>
@@ -5804,7 +5811,7 @@ header{padding-top:9px;padding-bottom:9px}
         <span class="abox-n">04</span>
         <h3>Kiwifruit orchards Pahoia Point Bay of Plenty NZ</h3>
         <div class="vr360-frame">
-          <iframe src="https://momento360.com/e/u/4ef689630aed4b66b87ecac740e5f2f3?utm_campaign=embed&amp;utm_source=other&amp;utm_medium=embed&amp;heading=-358.84&amp;pitch=-29.48&amp;field-of-view=88&amp;size=large&amp;display-plan=true&amp;pan-speed=0.1" allowfullscreen loading="lazy" title="360 degree view of kiwifruit orchards, Pahoia Point, Bay of Plenty NZ"></iframe>
+          <iframe src="https://momento360.com/e/u/4ef689630aed4b66b87ecac740e5f2f3?utm_campaign=embed&amp;utm_source=other&amp;utm_medium=embed&amp;heading=-358.84&amp;pitch=-29.48&amp;field-of-view=88&amp;size=large&amp;display-plan=true&amp;pan-speed=0.1" allowfullscreen title="360 degree view of kiwifruit orchards, Pahoia Point, Bay of Plenty NZ"></iframe>
         </div>
       </div>
     </div>
@@ -5813,7 +5820,7 @@ header{padding-top:9px;padding-bottom:9px}
 
 <section class="closing">
   <div class="wrap" style="position:relative;z-index:2">
-    <div class="closing-bee-wrap rv"><img src="honico-bee-logo.png" alt="HoniCo golden bee emblem, known as Napoleon&rsquo;s Golden Bee" class="closing-bee" width="468" height="546" loading="lazy"></div>
+    <div class="closing-bee-wrap rv"><img src="honico-bee-logo.png" alt="HoniCo golden bee emblem, known as Napoleon&rsquo;s Golden Bee" class="closing-bee" width="468" height="546"></div>
     <p class="eyebrow rv">Born in New Zealand &middot; Made in the USA</p>
     <h2 class="serif rv" style="margin-top:26px"><img src="honiora-logo-rx.png" alt="HoniOra" class="closing-logo" width="1446" height="489"><br><em>Activated Nectar</em></h2>
     <p class="serif rv" style="font-size:clamp(22px,2.4vw,34px);font-style:italic;letter-spacing:.03em;color:var(--ink-soft);margin:24px 0 28px">Golden health awakes.</p>
@@ -5821,8 +5828,8 @@ header{padding-top:9px;padding-bottom:9px}
     <div class="rv ck-wrap">
       <button type="button" class="pk-hex ck-hex" aria-pressed="false" aria-label="HoniOra hex sachet, showing the front. Flip to see the back.">
         <span class="pk-card">
-          <img class="pk-face pk-front" src="hex-front.webp?v=231" alt="" width="1000" height="918" loading="lazy">
-          <img class="pk-face pk-back" src="hex-back.webp?v=231" alt="" width="1000" height="918" loading="lazy">
+          <img class="pk-face pk-front" src="hex-front.webp" alt="" width="1000" height="918">
+          <img class="pk-face pk-back" src="hex-back.webp" alt="" width="1000" height="918">
         </span>
       </button>
       <a href="#waitlist" class="ck-join">Join Honi<i>Ora</i> Founder&rsquo;s List <span class="ar" aria-hidden="true">&rarr;</span></a>
@@ -5847,7 +5854,7 @@ header{padding-top:9px;padding-bottom:9px}
       <h3 class="serif blogpost-title">Dr Vicki Petersen: The Powerful Benefits of M&#257;nuka Honey</h3>
 
       <figure class="blogpost-fig video-fig" data-yt="d7Bky7AMQQw" style="aspect-ratio:1266/2256">
-        <img width="1266" height="2256" src="blog-manuka-benefits.jpg" alt="YouTube Shorts still of Dr Vicki Petersen mid-sentence with the on-screen caption 'so manuka honey is', from the video The Powerful Benefits of Manuka Honey" loading="lazy">
+        <img width="1266" height="2256" src="blog-manuka-benefits.jpg" alt="YouTube Shorts still of Dr Vicki Petersen mid-sentence with the on-screen caption 'so manuka honey is', from the video The Powerful Benefits of Manuka Honey">
         <a class="blogplay" href="https://youtube.com/shorts/d7Bky7AMQQw?si=EMphOQL0GW6nR54B" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube: Dr Vicki Petersen, The Powerful Benefits of Manuka Honey">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>
         </a>
@@ -5859,7 +5866,7 @@ header{padding-top:9px;padding-bottom:9px}
       <h3 class="serif blogpost-title">Rachael Jennings @ Jenerise UK: Creatine &mdash; The Lifelong Supplement for Women's Health & Longevity</h3>
 
       <figure class="blogpost-fig video-fig" data-yt="gMFTkdwvEbs" style="aspect-ratio:1238/2200">
-        <img width="1238" height="2200" src="blog-jenerise-womens-health.jpg" alt="YouTube Shorts still of Rachael Jennings mid-sentence with the on-screen caption 'Creatine', from the video Creatine, The Lifelong Supplement for Women's Health and Longevity" loading="lazy">
+        <img width="1238" height="2200" src="blog-jenerise-womens-health.jpg" alt="YouTube Shorts still of Rachael Jennings mid-sentence with the on-screen caption 'Creatine', from the video Creatine, The Lifelong Supplement for Women's Health and Longevity">
         <a class="blogplay" href="https://youtube.com/shorts/gMFTkdwvEbs?si=sobXs7ZIj7GSLFQE" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube: Rachael Jennings at Jenerise UK, Creatine, The Lifelong Supplement for Women's Health and Longevity">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>
         </a>
@@ -5871,7 +5878,7 @@ header{padding-top:9px;padding-bottom:9px}
       <h3 class="serif blogpost-title">Louisa Nicola, The Diary of a CEO: Biggest Creatine Lie Exposed?!</h3>
 
       <figure class="blogpost-fig video-fig" data-yt="KXlkaC2tHZg" style="aspect-ratio:1260/2154">
-        <img width="1260" height="2154" src="blog-creatine-lie-exposed.jpg" alt="YouTube Shorts split-screen still from The Diary of a CEO: a host stirring creatine powder into a jar of water above the on-screen headline 'The biggest lies about creatine!', with clinical neurophysiologist Louisa Nicola below, labelled 'Cognitive decline expert'" loading="lazy">
+        <img width="1260" height="2154" src="blog-creatine-lie-exposed.jpg" alt="YouTube Shorts split-screen still from The Diary of a CEO: a host stirring creatine powder into a jar of water above the on-screen headline 'The biggest lies about creatine!', with clinical neurophysiologist Louisa Nicola below, labelled 'Cognitive decline expert'">
         <a class="blogplay" href="https://youtube.com/shorts/KXlkaC2tHZg?si=f96b6U6_ixXuSqrJ" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube: Louisa Nicola on The Diary of a CEO, Biggest Creatine Lie Exposed?!">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>
         </a>
@@ -5883,7 +5890,7 @@ header{padding-top:9px;padding-bottom:9px}
       <h3 class="serif blogpost-title">SLIMLAND: Why Kiwis are a GOATED Fruit</h3>
 
       <figure class="blogpost-fig video-fig" data-yt="tiKZwCxxdMA" style="aspect-ratio:1268/2262">
-        <img width="1268" height="2262" src="blog-kiwi-slimland.jpg" alt="YouTube Shorts still of a HoniOra presenter with a kiwifruit slice behind his head on a yellow background" loading="lazy">
+        <img width="1268" height="2262" src="blog-kiwi-slimland.jpg" alt="YouTube Shorts still of a HoniOra presenter with a kiwifruit slice behind his head on a yellow background">
         <a class="blogplay" href="https://youtube.com/shorts/tiKZwCxxdMA?si=CibtvC8L4Lxff118" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube: SLIMLAND, why kiwis are a GOATED fruit">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>
         </a>
@@ -5895,7 +5902,7 @@ header{padding-top:9px;padding-bottom:9px}
       <h3 class="serif blogpost-title">Dr Berg: Pomegranate Does THIS for Your Body!</h3>
 
       <figure class="blogpost-fig video-fig" data-yt="8Tw0-Yv4nxA" style="aspect-ratio:1274/2130">
-        <img width="1274" height="2130" src="blog-pomegranate-benefits.jpg" alt="YouTube Shorts still of a hand picking a ripe pomegranate from the tree, with the on-screen caption 'Pomegranates', from the video Pomegranate Does THIS for Your Body!" loading="lazy">
+        <img width="1274" height="2130" src="blog-pomegranate-benefits.jpg" alt="YouTube Shorts still of a hand picking a ripe pomegranate from the tree, with the on-screen caption 'Pomegranates', from the video Pomegranate Does THIS for Your Body!">
         <a class="blogplay" href="https://youtube.com/shorts/8Tw0-Yv4nxA?si=y-BbBgLCXdgv-k-0" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube: Dr Berg, Pomegranate Does THIS for Your Body!">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>
         </a>
@@ -5907,7 +5914,7 @@ header{padding-top:9px;padding-bottom:9px}
       <h3 class="serif blogpost-title">Dr Daniel Amen, Amen Clinic: Can Saffron Increase Your Mood?</h3>
 
       <figure class="blogpost-fig video-fig" data-yt="Ngx0F0TaBq0" style="aspect-ratio:1262/2154">
-        <img width="1262" height="2154" src="blog-amen-saffron-mood.jpg" alt="YouTube Shorts still of Dr Daniel Amen seated in a clinic office, hands raised, with the on-screen caption 'How does saffron work?', from the Amen Clinic video Can Saffron Increase Your Mood?" loading="lazy">
+        <img width="1262" height="2154" src="blog-amen-saffron-mood.jpg" alt="YouTube Shorts still of Dr Daniel Amen seated in a clinic office, hands raised, with the on-screen caption 'How does saffron work?', from the Amen Clinic video Can Saffron Increase Your Mood?">
         <a class="blogplay" href="https://youtube.com/shorts/Ngx0F0TaBq0?si=8VhDRVKYI9DzuWDS" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube: Dr Daniel Amen, Amen Clinic, Can Saffron Increase Your Mood?">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>
         </a>
@@ -5919,7 +5926,7 @@ header{padding-top:9px;padding-bottom:9px}
       <h3 class="serif blogpost-title">Dr Stacy Sims: Should You Take Rhodiola?</h3>
 
       <figure class="blogpost-fig video-fig" data-yt="5wSvZKDGLW0" style="aspect-ratio:1224/2084">
-        <img width="1224" height="2084" src="blog-rhodiola.jpg" alt="YouTube Shorts still of Dr Stacy Sims mid-sentence with the on-screen caption 'We're going to start with rhodiola.', from the video Should You Take Rhodiola?" loading="lazy">
+        <img width="1224" height="2084" src="blog-rhodiola.jpg" alt="YouTube Shorts still of Dr Stacy Sims mid-sentence with the on-screen caption 'We're going to start with rhodiola.', from the video Should You Take Rhodiola?">
         <a class="blogplay" href="https://youtube.com/shorts/5wSvZKDGLW0?si=ifNyGe4R3GDFZVFW" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube: Dr Stacy Sims, Should You Take Rhodiola?">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>
         </a>
@@ -5931,7 +5938,7 @@ header{padding-top:9px;padding-bottom:9px}
       <h3 class="serif blogpost-title">Bryan Johnson: Extra Virgin Olive Oil is Better Than Ozempic</h3>
 
       <figure class="blogpost-fig video-fig" data-yt="SZS4lVGoz6I" style="aspect-ratio:1262/2262">
-        <img width="1262" height="2262" src="blog-olive-oil-ozempic.jpg" alt="YouTube Shorts still of Bryan Johnson mid-sentence with the on-screen caption 'Virgin Olive Oil', from the video Extra Virgin Olive Oil is Better Than Ozempic" loading="lazy">
+        <img width="1262" height="2262" src="blog-olive-oil-ozempic.jpg" alt="YouTube Shorts still of Bryan Johnson mid-sentence with the on-screen caption 'Virgin Olive Oil', from the video Extra Virgin Olive Oil is Better Than Ozempic">
         <a class="blogplay" href="https://youtube.com/shorts/SZS4lVGoz6I?si=cYpdmy_GfhhZ4uKm" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube: Bryan Johnson, Extra Virgin Olive Oil is Better Than Ozempic">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>
         </a>
@@ -5943,7 +5950,7 @@ header{padding-top:9px;padding-bottom:9px}
       <h3 class="serif blogpost-title">Bruce Scott BMI_<wbr>Body<wbr>Movement<wbr>Institute: Boost Circulation & Energy in Minutes With This Fascia Flow Drill</h3>
 
       <figure class="blogpost-fig video-fig" data-yt="mQmTqUGpE0A" style="aspect-ratio:1228/2120">
-        <img width="1228" height="2120" src="blog-fascia-flow-circulation.jpg" alt="YouTube Shorts still of a bearded man outdoors pointing at the camera, with the on-screen caption 'Want A Life Changing Exercise? Try This', from the video Boost Circulation & Energy in Minutes With This Fascia Flow Drill" loading="lazy">
+        <img width="1228" height="2120" src="blog-fascia-flow-circulation.jpg" alt="YouTube Shorts still of a bearded man outdoors pointing at the camera, with the on-screen caption 'Want A Life Changing Exercise? Try This', from the video Boost Circulation & Energy in Minutes With This Fascia Flow Drill">
         <a class="blogplay" href="https://youtube.com/shorts/mQmTqUGpE0A?si=PnAMYnET5fGmixpK" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube: Bruce Scott BMI_BodyMovementInstitute, Boost Circulation and Energy in Minutes With This Fascia Flow Drill">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>
         </a>
@@ -5955,7 +5962,7 @@ header{padding-top:9px;padding-bottom:9px}
       <h3 class="serif blogpost-title">Six habits for healthy ageing</h3>
 
       <figure class="blogpost-fig">
-        <img width="1600" height="1060" src="blog-founder-happy-place.jpg" alt="HoniOra Founder Greg Miller-Hard smiling on the shore beside his paddleboard, Ahab, at low tide" loading="lazy">
+        <img width="1600" height="1060" src="blog-founder-happy-place.jpg" alt="HoniOra Founder Greg Miller-Hard smiling on the shore beside his paddleboard, Ahab, at low tide">
         <figcaption>Honi<i>Ora</i> Founder Greg Miller-Hard in his happy place at the end of his land</figcaption>
       </figure>
 
@@ -6048,7 +6055,7 @@ header{padding-top:9px;padding-bottom:9px}
         <summary>Terms and conditions<i></i></summary>
         <div class="lgbody">
           <p><b>Agreement.</b> These terms govern your use of this site and any purchase from HoniCo NZ Ltd (&ldquo;HoniCo&rdquo;, &ldquo;we&rdquo;). By ordering you accept them.</p>
-          <p><b>Eligibility.</b> You must be 18 or older. HONI<i>ORA</i> is not intended for anyone under 18, or for people who are pregnant or breastfeeding. Contains vitamin A as retinyl palmitate (900 mcg RAE per serving) and about 435 mg of potassium per serving from potassium bicarbonate. If you take blood pressure medicine (including ACE inhibitors), nitrate medicine or erectile dysfunction medicine, or you have kidney disease, speak with your doctor before use.</p>
+          <p><b>Eligibility.</b> You must be 18 or older. HONI<i>ORA</i> is not intended for anyone under 18, or for people who are pregnant or breastfeeding. Contains vitamin A as retinyl palmitate (900 mcg RAE per serving) and about 346 mg of potassium per serving. If you take blood pressure medicine (including ACE inhibitors), nitrate medicine or erectile dysfunction medicine, or you have kidney disease, speak with your doctor before use.</p>
           <p><b>Founding list.</b> Joining the list is not an order and creates no obligation on either side. Prices shown are indicative for the first commercial batch and may change before launch.</p>
           <p><b>Orders and pricing.</b> Prices are in US dollars and exclude any import duty your country charges. We may correct pricing or specification errors before dispatch and will contact you if we do. An order is accepted when we dispatch it, not when payment is taken.</p>
           <p><b>Subscription.</b> The Monthly Protocol renews automatically every [interval] at the price shown at signup until you cancel. You may cancel at any time before the next renewal from [cancellation route]. Cancellation stops future shipments and does not refund a shipment already sent. [US buyers: confirm this section satisfies federal and state automatic-renewal disclosure requirements before launch.]</p>
@@ -6064,7 +6071,7 @@ header{padding-top:9px;padding-bottom:9px}
         <summary>Refund and cancellation<i></i></summary>
         <div class="lgbody">
           <p><b>Damaged, faulty or wrong items.</b> Tell us within [period] of delivery with a photograph and your order number. We replace or refund in full, including any shipping you paid. This sits alongside your rights under the Consumer Guarantees Act and equivalent law.</p>
-          <p><b>Change of mind.</b> Unopened boxes with every stack pack sealed may be returned within [period] of delivery for a refund less [return shipping / restocking]. Opened boxes cannot be returned, because this is an ingestible product and we cannot verify storage conditions once a box is opened.</p>
+          <p><b>Change of mind.</b> Unopened boxes with every Hexcell sealed may be returned within [period] of delivery for a refund less [return shipping / restocking]. Opened boxes cannot be returned, because this is an ingestible product and we cannot verify storage conditions once a box is opened.</p>
           <p><b>Subscription cancellation.</b> Cancel at any time from [cancellation route], effective from the next billing date. We do not charge a cancellation fee. If a renewal is charged within [period] before you cancel and the box has not shipped, tell us and we will refund it.</p>
           <p><b>7 Day Pack credit.</b> If you buy a 7 Day Pack and then choose to subscribe, the $66.57 you first paid is credited to your first subscription payment (applies once per customer and has no cash value). [Set an expiry window if you want one, and confirm your checkout can apply it.]</p>
           <p><b>Non-delivery.</b> If a parcel does not arrive within [period] of dispatch we will replace it or refund it at your choice.</p>
@@ -6078,7 +6085,7 @@ header{padding-top:9px;padding-bottom:9px}
           <p><b>This site.</b> &copy; 2026 HoniCo NZ Ltd. All text, photography, formulation descriptions, layout and code on this site are our property or used under licence. You may not copy, republish or use them commercially without written permission.</p>
           <p><b>Our marks.</b> HONI<i>ORA</i> and HoniCo are unregistered trade marks of HoniCo NZ Ltd, claimed and used in the course of trade. Applications are [not yet filed / pending, application number and date]. We rely on common-law rights, including passing off and the Fair Trading Act 1986 in New Zealand, and equivalent protection in other markets. Nothing on this site should be read as a claim of registration.</p>
           <p><b>The formulation.</b> The HONI<i>ORA</i> formulation, its ratios and the specification behind them are confidential and proprietary. Publishing a full bill of materials does not place it in the public domain or grant any licence to reproduce it.</p>
-          <p><b>Third-party marks.</b> Livaux, Actazin, Feiolix, Eriomin, Oxxynea, cGP-Pro, VasoDrive-AP, Careflow, vitAlign, Fiberest, Landkind, Braincurrant, Hytolive, Pomma+, LactoSpore, Affron, Lepticrosalides, Synapsa, Zynamite, Cognizin, Kaneka Ubiquinol, Kaneka Q30, Zinc Bisglycinate TRAACS and Thaumatin Pure Talin are trade marks of their respective owners and are used to identify the ingredients we buy from them. Their owners do not endorse HONI<i>ORA</i>.</p>
+          <p><b>Third-party marks.</b> Livaux, OxyStorm, Feiolix, Eriomin, Oxxynea, cGP-Pro, VasoDrive-AP, Careflow, vitAlign, Fiberest, Landkind, Braincurrant, Hytolive, Pomma+, LactoSpore, Affron, Lepticrosalides, Synapsa, Zynamite, Cognizin, Kaneka Ubiquinol, Kaneka Q30, Zinc Bisglycinate TRAACS and Thaumatin Pure Talin are trade marks of their respective owners and are used to identify the ingredients we buy from them. Their owners do not endorse HONI<i>ORA</i>.</p>
           <p><b>Cited research.</b> Papers linked from the provenance matrix belong to their authors and publishers. We link to public records and reproduce no full text.</p>
           <p><b>Infringement.</b> Email <a href="mailto:legal@honi.co.nz">legal@honi.co.nz</a> with details and we will respond within [period].</p>
         </div>
@@ -6111,7 +6118,7 @@ header{padding-top:9px;padding-bottom:9px}
       </div>
       <div>
         <h5>Explore</h5>
-        <a href="#tablet">The stack pack</a>
+        <a href="#tablet">The Hexcell</a>
         <a href="#ritual">The ritual</a>
         <a href="#honeytop">M&#257;nuka honey</a>
         <a href="#glp1">Natural GLP-1 Boost</a>
@@ -6137,7 +6144,7 @@ header{padding-top:9px;padding-bottom:9px}
     </div>
     <div class="legal">
       <p><strong>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease.</strong></p>
-      <p style="margin-top:12px">Clinical figures cited on this page derive from published trials of the individual branded ingredients at the doses stated, and not from a clinical trial of the finished HONI<i>ORA</i> product. <strong>Allergen declaration: contains milk derivative</strong> (VasoDrive-AP<sup class="rn">&reg;</sup> casein lactotripeptides). Other allergen details are to be confirmed against final supplier specifications before launch. Certified gluten-free below 5.0 ppm. Manufactured in the USA in an NSF / USP certified GMP facility. Not intended for use by anyone under 18, or by people who are pregnant or breastfeeding. If you take prescription medication, particularly for blood pressure, speak with your doctor before use. Livaux, Actazin, Feiolix, Eriomin, Oxxynea, cGP-Pro, VasoDrive-AP, Careflow, vitAlign, Fiberest, Landkind, Braincurrant, Hytolive, Pomma+, LactoSpore, Affron, Lepticrosalides, Synapsa, Zynamite, Cognizin, Kaneka Ubiquinol, Kaneka Q30, Zinc Bisglycinate TRAACS and Thaumatin Pure Talin are trademarks of their respective owners.</p>
+      <p style="margin-top:12px">Clinical figures cited on this page derive from published trials of the individual branded ingredients at the doses stated, and not from a clinical trial of the finished HONI<i>ORA</i> product. <strong>Allergen declaration: contains milk derivative</strong> (VasoDrive-AP<sup class="rn">&reg;</sup> casein lactotripeptides). Other allergen details are to be confirmed against final supplier specifications before launch. Certified gluten-free below 5.0 ppm. Manufactured in the USA in an NSF / USP certified GMP facility. Not intended for use by anyone under 18, or by people who are pregnant or breastfeeding. If you take prescription medication, particularly for blood pressure, speak with your doctor before use. Livaux, OxyStorm, Feiolix, Eriomin, Oxxynea, cGP-Pro, VasoDrive-AP, Careflow, vitAlign, Fiberest, Landkind, Braincurrant, Hytolive, Pomma+, LactoSpore, Affron, Lepticrosalides, Synapsa, Zynamite, Cognizin, Kaneka Ubiquinol, Kaneka Q30, Zinc Bisglycinate TRAACS and Thaumatin Pure Talin are trademarks of their respective owners.</p>
       <div class="footbottom">
         <span>&copy; 2026 HoniCo New Zealand. All rights reserved.</span>
         <span>SP20 SKU1 (draft)</span>
@@ -6765,8 +6772,8 @@ header{padding-top:9px;padding-bottom:9px}
           try { var vp = veb.closest('.rv'); var vtf = vp ? getComputedStyle(vp).transform : 'none'; vty = (vtf && vtf !== 'none') ? new DOMMatrix(vtf).m42 : 0; } catch(_){ vty = 0; }
           return Math.max(0, veb.getBoundingClientRect().top - vty + window.scrollY - (hdr.getBoundingClientRect().bottom + 24));
         }
-        /* v79 #actazin: land with the top of the Actazin text box ~18px under the nav bar (per the user's screengrab) */
-        if (hash === '#actazin'){
+        /* #oxystorm: land with the top of the OxyStorm text box ~18px under the nav bar */
+        if (hash === '#oxystorm'){
           var abox = el.querySelector('.livaux-box') || el;
           var aty = 0;
           try { var atf = getComputedStyle(abox).transform; aty = (atf && atf !== 'none') ? new DOMMatrix(atf).m42 : 0; } catch(_){ aty = 0; }
@@ -6953,9 +6960,9 @@ header{padding-top:9px;padding-bottom:9px}
 
     var AH_KB = [
       {k:["what is honiora","whats in honiora","ingredients","actives","formula","in honiora"],
-       a:"HONI<i>ORA</i> packs 23 named wellness actives and a balanced electrolyte matrix into one effervescent stack pack, 20 g total. They run across four systems: <b>Strength</b> (creatine for power, Kaneka Ubiquinol), <b>Gut</b> (Livaux, Actazin, Fiberest / Mānuka, Feiolix, Eriomin, LactoSpore Bacillus coagulans, vitamin A retinyl palmitate), <b>Heart</b> (VasoDrive-AP, Careflow, vitAlign, Hytolive, Pomma+, Oxxynea, taurine, magnesium, zinc) and <b>Brain</b> (cGP-Pro, L-Theanine, Affron Saffron, Braincurrant, Synapsa Bacopa, Citicoline). Ask me about any one by name, or about who makes it and where."},
-      {k:["how do i take it","dosing","how to use","serving size","ritual","how many tablets","how many stack packs","stack pack","how often","directions"],
-       a:"Pour 1 stack pack into 500 ml of water. Ready in 60 seconds, no stirring needed. Take it once a day: most of the benefit is cumulative, alongside diet and exercise."},
+       a:"HONI<i>ORA</i> packs 23 named wellness actives and a balanced electrolyte matrix into one effervescent Hexcell, 20 g total. They run across four systems: <b>Strength</b> (creatine for power, Kaneka Ubiquinol), <b>Gut</b> (Livaux, Fiberest / Mānuka, Feiolix, Eriomin, LactoSpore Bacillus coagulans, vitamin A retinyl palmitate), <b>Heart</b> (VasoDrive-AP, Careflow, vitAlign, Hytolive, Pomma+, Oxxynea, taurine, magnesium, zinc) and <b>Brain</b> (cGP-Pro, L-Theanine, Affron Saffron, Braincurrant, Synapsa Bacopa, Citicoline). Ask me about any one by name, or about who makes it and where."},
+      {k:["how do i take it","dosing","how to use","serving size","ritual","how many tablets","how many Hexcells","Hexcell","how often","directions"],
+       a:"Pour 1 Hexcell into 500 ml of water. Ready in 60 seconds, no stirring needed. Take it once a day: most of the benefit is cumulative, alongside diet and exercise."},
       {k:["creatine","cr-01","cr 01","power","strength","atp"],
        a:"Cr.01&trade; Creatine rapidly regenerates ATP through the phosphocreatine system, your cells' basic energy currency, supporting muscle strength, healthy aging and cognitive function, not just athletic performance. It's dosed at 5,000 mg creatine monohydrate, a full daily serving.",
        src:"Raw material: Jenerise Cr.01&trade; (jenerise.com), a creatine innovation company founded by Steve Jennings, who also launched Ergomax C150 in 1992, the first creatine monohydrate product; he now runs Jenerise alongside his daughter Rachael. Each lot is verified by SGS, with a creatine content assay of 99.9% or better on a dried basis. Creatine is one of the most studied and trusted nutrients for cellular energy and healthy aging."},
@@ -6978,11 +6985,11 @@ header{padding-top:9px;padding-bottom:9px}
        a:"Synapsa is a Bacopa monnieri extract from PLT Health Solutions, standardised to at least 55% bacosides A and B. HONI<i>ORA</i> carries 300 mg per serving, the dose used in its memory trials. In placebo-controlled studies of 300 to 320 mg a day over 12 weeks and 90 days, healthy adults showed better delayed recall, working memory and attention. Benefits build over weeks of daily use.",
        papers:[{t:"Stough 2008, Phytotherapy Research",u:"https://pubmed.ncbi.nlm.nih.gov/?term=Stough+2008+Bacopa+monnieri+Phytotherapy+Research"},{t:"Roodenrys 2002, Neuropsychopharmacology",u:"https://pubmed.ncbi.nlm.nih.gov/?term=Roodenrys+2002+Bacopa+monnieri+memory"}]},
       {k:["affron","saffron","crocus","mood","stress","sleep"],
-       a:"affron is a saffron extract made in Spain by Pharmactive Biotech, standardised to at least 3.5% Lepticrosalides. HONI<i>ORA</i> carries 28 mg per serving, the dose used in Pharmactive&#39;s mood trials: in a placebo-controlled study (Kell 2017), 28 mg a day helped healthy adults keep a positive mood and ease occasional stress and tension. At 14 mg before bed it improved sleep quality (Lopresti 2020, 2021). These are trials of the ingredient, not the finished formula.",
+       a:"affron is a saffron extract made in Spain by Pharmactive Biotech, standardised to at least 3.5% Lepticrosalides. HONI<i>ORA</i> carries 30 mg per serving, just above the 28 mg dose used in Pharmactive&#39;s mood trials: in a placebo-controlled study (Kell 2017), 28 mg a day helped healthy adults keep a positive mood and ease occasional stress and tension. At 14 mg before bed it improved sleep quality (Lopresti 2020, 2021). These are trials of the ingredient, not the finished formula.",
        src:"Manufacturer: Pharmactive Biotech Products S.L., Spain. US distributor: Gencor.",
        papers:[{t:"Kell 2017, Complement Ther Med",u:"https://pubmed.ncbi.nlm.nih.gov/?term=Kell+2017+affron+saffron+mood+Complement+Ther+Med"},{t:"Lopresti 2021, Sleep Medicine",u:"https://pubmed.ncbi.nlm.nih.gov/?term=Lopresti+2021+saffron+affron+sleep+Sleep+Medicine"}]},
       {k:["l-theanine","theanine","alphawave","calm","focus"],
-       a:"L-Theanine (AlphaWave brand) upregulates alpha-wave neural activity and GABA, keeping the formula read as calm focus rather than jittery stimulation. A 28-day randomised, double-blind trial found lower perceived stress and improved sleep and attention. A separate crossover trial at 200 mg (below the 450 mg in HONI<i>ORA</i>) found lower subjective stress and lower cortisol after a stressor, though it found no improvement on the cognitive task itself, and the alpha-wave rise it recorded showed up mainly in people with higher trait anxiety. It's dosed at 450 mg.",
+       a:"L-Theanine (AlphaWave brand) upregulates alpha-wave neural activity and GABA, keeping the formula read as calm focus rather than jittery stimulation. A 28-day randomised, double-blind trial found lower perceived stress and improved sleep and attention. A separate crossover trial at 200 mg, the dose HONI<i>ORA</i> carries, found lower subjective stress and lower cortisol after a stressor, though it found no improvement on the cognitive task itself, and the alpha-wave rise it recorded showed up mainly in people with higher trait anxiety. It's dosed at 200 mg.",
        src:"Manufacturer: Ethical Naturals, Inc., headquartered in Novato, California, USA, an NSF GMP-certified ingredient manufacturer specialising in L-theanine and botanical extracts.",
        map:"https://www.google.com/maps/search/?api=1&query=Novato%2C+California%2C+USA",
        papers:[{t:"Moulin 2024",u:"https://pubmed.ncbi.nlm.nih.gov/38758503/"},{t:"Evans 2021, Neurol Ther",u:"https://doi.org/10.1007/s40120-021-00284-x"},{t:"White 2016, Nutrients · 200 mg dose",u:"https://pubmed.ncbi.nlm.nih.gov/26797633/"}]},
@@ -7028,9 +7035,8 @@ header{padding-top:9px;padding-bottom:9px}
        a:"Landkind Pure Salidroside is salidroside, the compound Rhodiola rosea is known for, made by precision fermentation instead of extracted from the root. The supplier, Gnosis by Lesaffre, specifies 98% or higher purity. It is not a Rhodiola root extract. It's dosed at 60 mg per serving. The supplier calls it clinically proven but its page names no study, so no trial is cited here.",
        src:"Manufacturer: Gnosis by Lesaffre, part of the Lesaffre Group, headquartered in France with over 170 years in fermentation and biotechnology.",
        map:"https://www.google.com/maps/search/?api=1&query=France"},
-      {k:["actazin","green kiwi","green kiwifruit","actinidin","constipation","regularity","bowel"],
-       a:"Actazin is a cold-pressed green kiwifruit powder made in New Zealand by Anagenix. HONI<i>ORA</i> carries 600 mg per serving, the same dose as its main trial. In that 28-day placebo-controlled trial of 43 adults with occasional constipation, 600 mg a day gave about 1.4 more complete bowel movements a week against baseline, with softer stools by day 14. The maker lists that trial as publication pending. An earlier 2015 crossover trial in 19 healthy adults found about 0.8 more bowel movements a week at 2,400 mg a day. Its fibre holds water, and its enzyme actinidin helps break down protein in lab studies.",
-       src:"Manufacturer: Anagenix, Auckland, New Zealand. Studies: Ansell et al., Nutrition Research 2015; 28-day trial publication pending."},
+      {k:["oxystorm","red spinach","amaranthus","nitrate","nitric oxide","blood flow","nitrate","vascular"],
+       a:"OxyStorm<i></i> WD is a water-dispersible red spinach (Amaranthus) extract from Arjuna Natural, standardised to 9% nitrate. HONI<i>ORA</i> carries 500 mg per serving, about 45 mg dietary nitrate. Your body turns nitrate into nitric oxide, which widens blood vessels. It adds the dietary-nitrate route that vitAlign, Careflow and VasoDrive do not cover, so HONIORA reaches nitric oxide four ways. It is dosed as one contributor to that system, not a standalone performance nitrate. Values are the manufacturer's; US regulatory status is to confirm."},
       {k:["livaux","gold kiwifruit","kiwifruit","kiwi"],
        a:"Livaux Gold Kiwifruit is a pectin matrix carrying 41 phenolics, fermented slowly, and in a 2025 trial roughly doubled F. prausnitzii, a butyrate-producing gut bacterium, in 70% of participants within 28 days at 600 mg a day. New Zealand's kiwifruit industry is centred on the Bay of Plenty, the kiwifruit capital of the world. Gold kiwifruit itself is Actinidia chinensis. The Zespri SunGold variety is sweeter and smoother-skinned than the green kiwifruit. It's dosed at 682.5 mg.",
        src:"Manufacturer: Anagenix, headquartered in Auckland, New Zealand (co-distributed in the US by AIDP).",
@@ -7049,7 +7055,7 @@ header{padding-top:9px;padding-bottom:9px}
                {t:"Cesar 2022, PMID 35796695 · GLP-1 and inflammation",u:"https://pubmed.ncbi.nlm.nih.gov/35796695/"},
                {t:"Ramos 2023, PMID 37242433 · gut microbiota",u:"https://pubmed.ncbi.nlm.nih.gov/37242433/"}]},
       {k:["probiotic","lactospore","bacillus","coagulans","spore","cfu","microbiome","mtcc"],
-       a:"LactoSpore is Bacillus coagulans, strain MTCC 5856, a spore-forming probiotic. Spores are tougher than most probiotic cells, so they are built to come through the drink's own acid-base effervescent reaction. HONI<i>ORA</i> doses it at 60 mg of raw material per serving, which is about 6 billion CFU at 100 billion spores per gram. In a 2023 trial of 70 adults with gas and bloating, 2 billion spores a day for four weeks cut indigestion scores against placebo, and a 2016 pilot in 36 adults with IBS-D found less bloating, diarrhoea and pain over 90 days. Those trials used a third of HONI<i>ORA</i>&#39;s dose and were run by the maker. It sits alongside the prebiotic fibres in the formula, Livaux, Actazin and Fiberest HF.",
+       a:"LactoSpore is Bacillus coagulans, strain MTCC 5856, a spore-forming probiotic. Spores are tougher than most probiotic cells, so they are built to come through the drink's own acid-base effervescent reaction. HONI<i>ORA</i> doses it at 60 mg of raw material per serving, which is about 6 billion CFU at 100 billion spores per gram. In a 2023 trial of 70 adults with gas and bloating, 2 billion spores a day for four weeks cut indigestion scores against placebo, and a 2016 pilot in 36 adults with IBS-D found less bloating, diarrhoea and pain over 90 days. Those trials used a third of HONI<i>ORA</i>&#39;s dose and were run by the maker. It sits alongside the prebiotic fibres in the formula, Livaux and Fiberest HF.",
        src:"Manufacturer: Sabinsa Corporation. Grade: 100 billion spores per gram, per the batch record. Studies: Majeed et al., Medicine 2023; Majeed et al., Nutrition Journal 2016.",
        papers:[]},
       {k:["ubiquinol","coq10","coenzyme q10","kaneka","mitochondria","mitochondrial"],
@@ -7093,7 +7099,7 @@ header{padding-top:9px;padding-bottom:9px}
       {k:["team","founder","who founded","ceo","staff"],
        a:"HONI<i>ORA</i> comes from a small team: Gregory Miller-Hard (Founder & CEO), Nicole Miller-Hard (Founder & Marketing), Laura Clinton (R&D + QA), Scott Smith (Medical Herbalist & Naturopath), and Odette Miller-Hard (Brand Design)."},
       {k:["price","cost","how much","subscription","subscribe"],
-       a:"Every stack pack is $9.51. A Monthly Protocol is $266.28 a month for 4 weekly packs (28 stack packs), plus a bonus fifth weekly pack (7 more stack packs) free every month, 35 in all, with founding-member perks and a gift every third month. A Monthly Pack (28 stack packs, no subscription) is $266.28. A 7 Day Pack (seven stack packs, one week) is $66.57, credited if you subscribe afterward. Joining the founding waitlist is free."},
+       a:"Every Hexcell is $9.51. A Monthly Protocol is $266.28 a month for 4 weekly packs (28 Hexcells), plus a bonus fifth weekly pack (7 more Hexcells) free every month, 35 in all, with founding-member perks and a gift every third month. A Monthly Pack (28 Hexcells, no subscription) is $266.28. A 7 Day Pack (seven Hexcells, one week) is $66.57, credited if you subscribe afterward. Joining the founding waitlist is free."},
       {k:["blood pressure medication","blood pressure meds","medication blood pressure","bp medication","blood pressure interaction","interact blood pressure"],
        a:"If you take prescription medication, especially for blood pressure, talk to your doctor before use. These statements haven't been evaluated by the FDA and the product isn't intended to diagnose, treat, cure or prevent any disease."},
       {k:["safe","allerg","pregnan","blood pressure","medication","side effect","milk","dairy","gluten"],
@@ -7295,7 +7301,7 @@ header{padding-top:9px;padding-bottom:9px}
     function ahOpen(){
       amod.classList.add('open'); document.body.style.overflow = 'hidden';
       if (!athread.childNodes.length){
-        ahAddMsg("Hi, I'm Honi. Ask me about HONI<i>ORA</i> stack packs, our actives, their provenance, the science behind them, doses, efficacy, function or where HONI<i>ORA</i> is made and sourced.", 'bot');
+        ahAddMsg("Hi, I'm Honi. Ask me about HONI<i>ORA</i> Hexcells, our actives, their provenance, the science behind them, doses, efficacy, function or where HONI<i>ORA</i> is made and sourced.", 'bot');
       }
       setTimeout(function(){ ainput.focus(); }, 260);
     }
@@ -7953,7 +7959,7 @@ header{padding-top:9px;padding-bottom:9px}
          (angle = distance / radius), until they meet in place by the time the block
          reaches ~30% down the window. Scrolling back up rolls them back out. */
       var rad = (l.offsetWidth || 200) / 2;
-      /* SP version: a stack pack slides, it does not roll, so every rotation is zero */
+      /* SP version: a Hexcell slides, it does not roll, so every rotation is zero */
       var degL = 0, degM = 0, degR = 0;
       tl = gsap.timeline({ paused: true, defaults: { ease: 'power1.out' } });
       tl.fromTo(l, { x: off.l, rotation: degL }, { x: 0, rotation: 0, duration: 1 }, 0);
