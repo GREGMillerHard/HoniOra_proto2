@@ -2294,8 +2294,8 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:70px 0 4
 @media(max-width:700px){#store .lede br.brk-d{display:none}}
 /* pack images grow on rollover and settle back when the pointer leaves */
 #store .plan-img{transition:transform .45s cubic-bezier(.2,.7,.2,1),filter .45s ease;transform-origin:50% 50%;position:relative;z-index:1;will-change:transform}
-#store .plan-img:hover{transform:scale(1.5);z-index:5;filter:drop-shadow(0 18px 30px rgba(120,84,20,.28))}
-@media(hover:none){#store .plan-img:hover{transform:scale(1.5);z-index:5;filter:drop-shadow(0 18px 30px rgba(120,84,20,.28))}}
+#store .plan-img:hover{transform:none}
+@media(hover:none){#store .plan-img:hover{transform:none}}
 @media(prefers-reduced-motion:reduce){#store .plan-img{transition:transform .45s cubic-bezier(.2,.7,.2,1),filter .45s ease}}
 @media(max-width:560px){#store .plan-top .plan-img{margin-left:auto;margin-right:auto}}
 .plan-list{list-style:none;margin:20px 0 0;padding:0;border-top:1px solid var(--line-soft);padding-top:18px;max-width:44%}
@@ -3531,12 +3531,12 @@ header{padding-top:9px;padding-bottom:9px}
 .ft-name{font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-weight:700;font-size:clamp(12px,1.25vw,16px);color:var(--ink);line-height:1.2}
 .ft-hint{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep)}
 .ft-back{transform:rotateY(180deg)}
-.ft-back .ft-hex{background:#1E3528;background-image:radial-gradient(circle at 50% 30%,rgba(212,175,90,.14),rgba(212,175,90,0) 60%);padding:21% 13% 21%;justify-content:center;gap:4px;text-align:center}
-.ft-tag{font-size:clamp(8px,.72vw,9.5px);letter-spacing:.16em;text-transform:uppercase;color:#D4AF5A;font-weight:600}
-.ft-title{font-weight:700;font-size:clamp(13px,1.2vw,16px);color:#fff;margin-bottom:4px}
-.ft-rows{display:block;width:100%;border-top:1px solid rgba(212,175,90,.45)}
-.ft-row{display:block;padding:4px 0;border-bottom:1px solid rgba(212,175,90,.2);font-size:clamp(10.5px,.95vw,12.5px);line-height:1.3}
-.ft-row b{display:block;font-size:clamp(8px,.7vw,9px);letter-spacing:.14em;text-transform:uppercase;color:#D4AF5A;font-weight:600}
+.ft-back .ft-hex{background:#fff;padding:21% 13% 21%;justify-content:center;gap:4px;text-align:center}
+.ft-tag{font-size:clamp(8px,.72vw,9.5px);letter-spacing:.16em;text-transform:uppercase;color:#2A1400;font-weight:600}
+.ft-title{font-weight:700;font-size:clamp(13px,1.2vw,16px);color:#15170F;margin-bottom:4px}
+.ft-rows{display:block;width:100%;border-top:1px solid rgba(21,23,15,.18)}
+.ft-row{display:block;padding:4px 0;border-bottom:1px solid rgba(21,23,15,.1);font-size:clamp(10.5px,.95vw,12.5px);line-height:1.3}
+.ft-row b{display:block;font-size:clamp(8px,.7vw,9px);letter-spacing:.14em;text-transform:uppercase;color:#2A1400;font-weight:600}
 .ft-row span{color:var(--ink)}
 .ft-dot{display:inline-block;width:12px;height:12px;border-radius:50%;margin:2px 3px 0;border:1px solid rgba(255,255,255,.7);vertical-align:middle}
 @media(max-width:1000px){.ftgrid{grid-template-columns:repeat(5,minmax(0,1fr));max-width:700px}
@@ -4636,35 +4636,35 @@ header{padding-top:9px;padding-bottom:9px}
 
       <div class="ftile">
         <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Hoodie: show details">
-          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-hoodie-forest-green-w.webp" alt=""></span><span class="ft-name">Hoodie</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-hoodie-bone.webp" alt=""></span><span class="ft-name">Hoodie</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
           <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Shop at launch</span><span class="ft-title">Hoodie</span><span class="ft-rows"><span class="ft-row"><b>Sizes</b><span>XS to XXL</span></span><span class="ft-row"><b>Fabric</b><span>Heavyweight fleece, boxy fit</span></span><span class="ft-row"><b>Colours</b><span><span class="ft-dot" style="background:#223B2C" title="Forest green"></span><span class="ft-dot" style="background:#ECE4D4" title="Bone"></span><span class="ft-dot" style="background:#4A1824" title="Burgundy"></span></span></span></span></span></span>
         </button>
       </div>
 
       <div class="ftile">
         <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Crewneck: show details">
-          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-crew-forest-green.webp" alt=""></span><span class="ft-name">Crewneck</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-crew-bone.webp" alt=""></span><span class="ft-name">Crewneck</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
           <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Shop at launch</span><span class="ft-title">Crewneck</span><span class="ft-rows"><span class="ft-row"><b>Sizes</b><span>XS to XXL</span></span><span class="ft-row"><b>Fabric</b><span>Heavyweight fleece, relaxed fit</span></span><span class="ft-row"><b>Colours</b><span><span class="ft-dot" style="background:#223B2C" title="Forest green"></span><span class="ft-dot" style="background:#ECE4D4" title="Bone"></span><span class="ft-dot" style="background:#4A1824" title="Burgundy"></span></span></span></span></span></span>
         </button>
       </div>
 
       <div class="ftile">
         <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Crop Zip and Jogger Set: show details">
-          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-set-forest-green.webp" alt=""></span><span class="ft-name">Crop Zip &amp; Jogger Set</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-set-bone.webp" alt=""></span><span class="ft-name">Crop Zip &amp; Jogger Set</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
           <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Women&rsquo;s set &middot; Shop at launch</span><span class="ft-title">Crop Zip &amp; Jogger</span><span class="ft-rows"><span class="ft-row"><b>Set</b><span>Cropped zip hoodie + relaxed jogger</span></span><span class="ft-row"><b>Sizes</b><span>XS to XL</span></span><span class="ft-row"><b>Colours</b><span><span class="ft-dot" style="background:#223B2C" title="Forest green"></span><span class="ft-dot" style="background:#ECE4D4" title="Bone"></span><span class="ft-dot" style="background:#4A1824" title="Burgundy"></span></span></span></span></span></span>
         </button>
       </div>
 
       <div class="ftile">
         <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Dad Cap: show details">
-          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-cap-forest-green-w.webp" alt=""></span><span class="ft-name">Dad Cap</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-cap-bone.webp" alt=""></span><span class="ft-name">Dad Cap</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
           <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Month 3 gift &middot; Shop</span><span class="ft-title">Dad Cap</span><span class="ft-rows"><span class="ft-row"><b>Size</b><span>One size, adjustable</span></span><span class="ft-row"><b>Fabric</b><span>Cotton twill, embroidered</span></span><span class="ft-row"><b>Colours</b><span><span class="ft-dot" style="background:#223B2C" title="Forest green"></span><span class="ft-dot" style="background:#ECE4D4" title="Bone"></span><span class="ft-dot" style="background:#4A1824" title="Burgundy"></span></span></span></span></span></span>
         </button>
       </div>
 
       <div class="ftile">
         <button type="button" class="ftile-inner" aria-pressed="false" aria-label="Classic Tee: show details">
-          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-vneck-forest-green.webp" alt=""></span><span class="ft-name">Classic Tee</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
+          <span class="ft-face ft-front"><span class="ft-hex"><span class="ft-pic"><img class="ft-img" src="merch-vneck-bone.webp" alt=""></span><span class="ft-name">Classic Tee</span><span class="ft-hint" aria-hidden="true">Details &#8635;</span></span></span>
           <span class="ft-face ft-back"><span class="ft-hex"><span class="ft-tag">Month 6 gift &middot; Shop</span><span class="ft-title">Classic Tee</span><span class="ft-rows"><span class="ft-row"><b>Sizes</b><span>XS to 2XL</span></span><span class="ft-row"><b>Print</b><span>Small on the chest, big on the back</span></span><span class="ft-row"><b>Colours</b><span><span class="ft-dot" style="background:#223B2C" title="Forest green"></span><span class="ft-dot" style="background:#ECE4D4" title="Bone"></span><span class="ft-dot" style="background:#4A1824" title="Burgundy"></span></span></span></span></span></span>
         </button>
       </div>
