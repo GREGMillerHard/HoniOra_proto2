@@ -2256,11 +2256,11 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:70px 0 4
    wraps below the text instead of squeezing either one unreadably thin, rather than
    needing its own dedicated breakpoint. */
 .plan-top{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:clamp(14px,3vw,28px)}
-.plan-media{flex:1 1 220px;align-self:stretch;display:flex;align-items:center;justify-content:center;min-width:0}
-.plan-top .plan-head{flex:1 1 200px;min-width:0}
+.plan-media{position:absolute;top:58%;right:clamp(40px,6vw,110px);transform:translateY(-50%);display:flex;align-items:center;justify-content:center;margin:0;z-index:2}
+.plan-top .plan-head{flex:1 1 200px;min-width:0;max-width:44%}
 .plan-img{flex:0 0 auto;width:clamp(64px,9vw,108px);height:auto;display:block;
   filter:drop-shadow(0 10px 20px -12px rgba(21,23,15,.4))}
-.plan-img.plan-img-box{width:clamp(150px,19vw,230px)}
+.plan-img.plan-img-box{width:clamp(240px,32vw,430px)}
 .plan-img.plan-img-stack{width:clamp(200px,30vw,340px)}
 .plan-upsell{margin-top:14px}
 .plan-upsell a{color:inherit;text-decoration:underline;text-underline-offset:3px}
@@ -2293,12 +2293,13 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:70px 0 4
 
 @media(max-width:700px){#store .lede br.brk-d{display:none}}
 /* pack images grow on rollover and settle back when the pointer leaves */
-#store .plan-img{transition:transform .45s cubic-bezier(.2,.7,.2,1),filter .45s ease;transform-origin:70% 12%;position:relative;z-index:1;will-change:transform}
-#store .plan-img:hover{transform:scale(1.7);z-index:5;filter:drop-shadow(0 18px 28px rgba(120,84,20,.28))}
-@media(hover:none){#store .plan-img:hover{transform:none;filter:drop-shadow(0 10px 20px -12px rgba(21,23,15,.4))}}
-@media(prefers-reduced-motion:reduce){#store .plan-img{transition:none}}
+#store .plan-img{transition:transform .45s cubic-bezier(.2,.7,.2,1),filter .45s ease;transform-origin:50% 50%;position:relative;z-index:1;will-change:transform}
+#store .plan-img:hover{transform:scale(1.5);z-index:5;filter:drop-shadow(0 18px 30px rgba(120,84,20,.28))}
+@media(hover:none){#store .plan-img:hover{transform:scale(1.5);z-index:5;filter:drop-shadow(0 18px 30px rgba(120,84,20,.28))}}
+@media(prefers-reduced-motion:reduce){#store .plan-img{transition:transform .45s cubic-bezier(.2,.7,.2,1),filter .45s ease}}
 @media(max-width:560px){#store .plan-top .plan-img{margin-left:auto;margin-right:auto}}
-.plan-list{list-style:none;margin:20px 0 0;padding:0;border-top:1px solid var(--line-soft);padding-top:18px}
+.plan-list{list-style:none;margin:20px 0 0;padding:0;border-top:1px solid var(--line-soft);padding-top:18px;max-width:44%}
+@media(max-width:760px){.plan-media{position:static;transform:none;margin:14px auto 0;right:auto}.plan-head,.plan-list{max-width:none}}
 .plan-list li{font-size:13.5px;color:var(--ink-2);line-height:1.55;padding:7px 0 7px 20px;position:relative;font-weight:300}
 .plan-list li:before{content:"";position:absolute;left:0;top:14px;width:8px;height:1px;background:var(--gold)}
 .plan-cta{margin-bottom:24px}
@@ -2851,7 +2852,7 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:70px 0 4
   .fn{font-size:10px;padding:6px 11px}
 
   .hide-sm{display:none}
-  .plan{padding:24px 20px}
+  .plan{padding:24px 20px;position:relative}
   .plan-price b{font-size:42px}
   /* .storenote p carries flex:1 1 220px for the desktop row layout, where 220px is a
      minimum WIDTH. Flipping the container to column here makes that same flex-basis
@@ -3537,7 +3538,7 @@ header{padding-top:9px;padding-bottom:9px}
 .ft-rows{display:block;width:100%;border-top:1px solid rgba(212,175,90,.45)}
 .ft-row{display:block;padding:4px 0;border-bottom:1px solid rgba(212,175,90,.2);font-size:clamp(10.5px,.95vw,12.5px);line-height:1.3}
 .ft-row b{display:block;font-size:clamp(8px,.7vw,9px);letter-spacing:.14em;text-transform:uppercase;color:#D4AF5A;font-weight:600}
-.ft-row span{color:#fff}
+.ft-row span{color:var(--ink)}
 .ft-dot{display:inline-block;width:12px;height:12px;border-radius:50%;margin:2px 3px 0;border:1px solid rgba(255,255,255,.7);vertical-align:middle}
 @media(max-width:1000px){.ftgrid{grid-template-columns:repeat(5,minmax(0,1fr));max-width:700px}
  .ftile:nth-child(n){grid-column:auto/span 2;margin-top:0}
@@ -4738,7 +4739,7 @@ header{padding-top:9px;padding-bottom:9px}
           <li><i>LactoSpore<sup class="rn">&reg;</sup> Bacillus coagulans</i><b>6 billion CFU</b></li>
           <li><i>Vitamin A Retinyl Palmitate</i><b>900 mcg RAE</b></li>
         </ul>
-        <p>Livaux<sup class="rn">&reg;</sup> Gold Kiwi powder feeds <em>F. prausnitzii</em> in your gut, which produces butyrate that nourishes the colonic lining and repairs tight junctions.<br><br>M&#257;nuka&rsquo;s high methylglyoxal clears pathogens out of the way so the beneficial population has room to grow.<br><br>The Fiberest<sup class="rn">&reg;</sup> HF fibre matrix, keeps the honey crystals stable and adds fermentable substrate of its own.<br><br>LactoSpore<sup class="rn">&reg;</sup> <em>Bacillus coagulans</em> fills the room. Its spore coat carries the bacteria through stomach acid, they germinate in the intestine and produce lactic acid, and arrive in a gut already supplied with fermentable fibre by Livaux<sup class="rn">&reg;</sup> and Fiberest<sup class="rn">&reg;</sup>.<br><br>Vitamin A as retinyl palmitate supports the mucous membranes lining the gut, so the butyrate-fed lining and the new bacteria meet maintained tissue.<br><br>Feiolix<sup class="rn">&reg;</sup> and Eriomin<sup class="rn">&reg;</sup> add to your own GLP-1 (<a href="#glp1" style="color:inherit;text-decoration:underline">four routes</a>). A barrier which holds absorbs, and everything downstream depends on this.</p>
+        <p>Livaux<sup class="rn">&reg;</sup> Gold Kiwi powder feeds <em>F. prausnitzii</em> in your gut, which produces butyrate that nourishes the colonic lining and repairs tight junctions.<br><br>M&#257;nuka&rsquo;s high methylglyoxal clears pathogens out of the way so the beneficial population has room to grow.<br><br>The Fiberest<sup class="rn">&reg;</sup> HF fibre matrix adds about 1,710 mg of fermentable prebiotic fibre a serving, drawn from the M&#257;nuka blend plus a dedicated fibre line, and keeps the honey crystals stable.<br><br>LactoSpore<sup class="rn">&reg;</sup> <em>Bacillus coagulans</em> fills the room. Its spore coat carries the bacteria through stomach acid, they germinate in the intestine and produce lactic acid, and arrive in a gut already supplied with fermentable fibre by Livaux<sup class="rn">&reg;</sup> and Fiberest<sup class="rn">&reg;</sup>.<br><br>Vitamin A as retinyl palmitate supports the mucous membranes lining the gut, so the butyrate-fed lining and the new bacteria meet maintained tissue.<br><br>Feiolix<sup class="rn">&reg;</sup> and Eriomin<sup class="rn">&reg;</sup> add to your own GLP-1 (<a href="#glp1" style="color:inherit;text-decoration:underline">four routes</a>). A barrier which holds absorbs, and everything downstream depends on this.</p>
       </div>
 
       <div class="tri" data-pillar="heart">
