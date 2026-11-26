@@ -2422,7 +2422,7 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:70px 0 4
      #precedeLeadInline (the same headline, still sitting inline before "HoniOra's
      Solution:" in the copy column markup) is switched off in the same breakpoint
      so it isn't rendered twice. */
-  .hero-precede-mobile{display:block;margin:2px 0 6px}
+  .hero-precede-mobile{display:block;margin:0 0 20px}
   #precedeLeadInline{display:none}
   .hero-grid{order:2;transform:none;padding-top:0}
   .hero-lower .hero-grid{padding-left:var(--pad);padding-right:var(--pad)}
@@ -2771,7 +2771,8 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:70px 0 4
   :root{--pad:26px}
 
   /* nav + hero */
-  .navbar{height:53px}
+  .navbar{height:68px}
+  .nav-hex-mobile-left,.nav-hex-mobile-right{display:flex;align-items:center}
   /* scales down smoothly on very narrow phones (≤~375px) so the hexes never crowd the
      burger button (the bigger logo above eats into that clearance too); 62px by 500px+ */
   .hexbtn-m img,.hexbtn-m svg,.hexbtn-m .hexbtn-hex{height:clamp(29px,11.6vw,93px)}
