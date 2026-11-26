@@ -712,6 +712,7 @@ footer .brand{font-size:15px;letter-spacing:.42em}
   font-family:Arial,'Helvetica Neue',Helvetica,'Liberation Sans',sans-serif;font-weight:300;
   font-size:clamp(20px,3.2vw,44px);line-height:1.2;letter-spacing:.01em;color:#fff;white-space:nowrap;
   text-shadow:0 2px 18px rgba(0,0,0,.38),0 1px 3px rgba(0,0,0,.3)}
+@media(max-width:700px){.manukapan-caption{color:#15170F;text-shadow:0 1px 10px rgba(255,255,255,.7),0 0 2px rgba(255,255,255,.85)}}
 .manukapan-caption .cap-br{display:none}
 /* (user request) the caption types itself in as the visitor scrolls. Every letter
    keeps its place in the line (opacity, not display), so the centred, width-fitted
@@ -3407,7 +3408,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
 #pack.sec{background:#FFFBEF}#pack .pconv-sticky::before{background:radial-gradient(ellipse 60% 55% at 50% 50%,#FFFBEF 0%,#F8EBC8 50%,#EED79C 100%)}#pack .pconv-ease{background:linear-gradient(180deg,#EED79C,var(--paper-2))}
 /* (user request v90) KA PAI double size */
 @media (min-width:1001px){.hero .hsr-alive{font-size:min(9vw,204px) !important}}
-@media (max-width:1000px){.hero .hsr-alive{font-size:clamp(54px,17.6vw,156px) !important}}
+@media (max-width:1000px){.hero .hsr-alive{font-size:clamp(44px,15.5vw,110px) !important;white-space:nowrap !important}}
 /* (user request v91) manuka coast photo caption centred at the bottom */
 #coastPhoto .cap{left:14px;right:14px;text-align:center}
 /* (user pick v93, crop A) phones: square crop of the manuka coast photo */
@@ -3445,7 +3446,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
 /* (user request v139) first strip: dissolve between two groups instead of scrolling */
 .hero .hrail .hfade{cursor:default;overflow:visible}
 .hfade-slot{display:grid;justify-items:center;align-items:center;padding:clamp(9px,1.2vh,14px) clamp(16px,3vw,40px)}
-@media(max-width:560px){.hfade-slot .hfade-g:nth-child(2){transform:translateY(21px)}}
+@media(max-width:560px){.hfade-slot{align-items:start;padding-top:calc(clamp(9px,1.2vh,14px) + 21px)}.hfade-slot .hfade-g{align-self:start}}
 .hfade-g{grid-area:1/1;opacity:0;transition:opacity 1s ease;text-align:center;white-space:nowrap;max-width:100%}
 .hfade-g.is-on{opacity:1}
 /* (user request v142) both groups share one size, set by JS so group 2 fits one line on every screen */
@@ -3992,7 +3993,7 @@ body.pwgate-on{overflow:hidden}
       <div class="hero-precede rv"><table class="precede-table" role="presentation"><tbody><tr><td><span class="precede-rest"><span class="precede-lead-inline" id="precedeLeadInline"><span class="precede-lead" id="precedeLead">Introducing</span> <br></span><span class="precede-solution-wrap"> <span class="precede-solution">Honi<i>Ora</i>'s morning solution:</span> <br> <span class="precede-body precede-fit" id="precedeFit">our effervescent stack pack + A BIG glass of water = Readiness in 60 seconds.</span></span></span></td></tr></tbody></table></div>
       <h1 class="serif rv hero-logo" id="heroWordmark"><img src="honiora-logo-rx-white.png" alt="HONIORA" class="hero-rx" width="1446" height="489"></h1>
       <p class="hero-tag rv">M&#256;NUKA CREATINE PROTOCOL</p>
-      <div class="hero-solution-right"><span class="hsr-lead">Honi<i>Ora</i>'s morning solution:</span><span class="hsr-body">our effervescent stack pack<br>+<br>A BIG glass of water<br>=<br><span style="white-space:nowrap">Readiness in 60 seconds.</span></span><span class="hsr-nourish">NOURISH YOUR BODY<br>UPGRADE YOUR WELLNESS</span><span class="hsr-alive"><span class="hsr-alive-in" id="aliveZoom">KA<br class="mb"> PAI</span></span></div>
+      <div class="hero-solution-right"><span class="hsr-lead">Honi<i>Ora</i>'s morning solution:</span><span class="hsr-body">our effervescent stack pack<br>+<br>A BIG glass of water<br>=<br><span style="white-space:nowrap">Readiness in 60 seconds.</span></span><span class="hsr-nourish">NOURISH YOUR BODY<br>UPGRADE YOUR WELLNESS</span><span class="hsr-alive"><span class="hsr-alive-in" id="aliveZoom">KA PAI</span></span></div>
       </div>
       <ul class="keyact flat hero-actives">
         <li>MGO 850+ M&#257;nuka Honey crystals</li>
