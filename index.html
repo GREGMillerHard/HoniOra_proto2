@@ -3704,10 +3704,10 @@ header{padding-top:9px;padding-bottom:9px}
 }
 </style>
 <style id="pwgate-css">
-#pwgate{position:fixed;inset:0;z-index:2147483000;display:flex;align-items:center;justify-content:center;padding:24px;background:radial-gradient(120% 120% at 50% 18%,#FFFDF7 0%,#F4ECD8 55%,#EADFC0 100%);text-align:center}
+#pwgate{position:fixed;inset:0;z-index:2147483000;display:flex;align-items:center;justify-content:center;padding:24px;background:linear-gradient(rgba(28,45,66,.34),rgba(28,45,66,.50)),url('gate-hero-bg.jpg');background-size:cover,cover;background-position:center,center;text-align:center}
 body.pwgate-on{overflow:hidden}
 #pwgate.pwgate-hidden{display:none}
-.pwgate-card{width:min(420px,100%);display:flex;flex-direction:column;align-items:center;gap:16px}
+.pwgate-card{width:min(430px,100%);display:flex;flex-direction:column;align-items:center;gap:16px;background:rgba(255,253,247,.80);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(176,130,31,.45);border-radius:16px;padding:clamp(30px,5vw,44px) clamp(26px,5vw,40px);box-shadow:0 26px 70px rgba(16,26,38,.38)}
 .pwgate-logo{width:min(260px,72%);height:auto;margin-bottom:2px}
 .pwgate-eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#8A6516;font-weight:600;margin:0}
 .pwgate-sub{font-size:14px;line-height:1.6;color:#4a4c40;margin:0 0 2px}
@@ -3727,9 +3727,9 @@ body.pwgate-on{overflow:hidden}
   <div class="pwgate-card">
     <img class="pwgate-logo" src="honiora-logo-rx.png" alt="HONIORA" width="1446" height="489">
     <p class="pwgate-eyebrow">Founding access</p>
-    <p class="pwgate-sub">Enter the access word to view HONI<i style="font-style:italic">ORA</i>.</p>
+    <p class="pwgate-sub">Enter the access password to view HONI<i style="font-style:italic">ORA</i>.</p>
     <form class="pwgate-form" id="pwgateForm" autocomplete="off">
-      <input class="pwgate-input" id="pwgateInput" type="password" aria-label="Access word" placeholder="Access word" autocomplete="off" spellcheck="false">
+      <input class="pwgate-input" id="pwgateInput" type="password" aria-label="Access password" placeholder="Access password" autocomplete="off" spellcheck="false">
       <button class="pwgate-btn" type="submit">Enter</button>
       <p class="pwgate-err" id="pwgateErr" aria-live="polite">That is not the word. Try again.</p>
     </form>
