@@ -3445,6 +3445,7 @@ html body .hero #precedeLead,html body .hero #precedeLeadMobile{font-size:min(2.
 /* (user request v139) first strip: dissolve between two groups instead of scrolling */
 .hero .hrail .hfade{cursor:default;overflow:visible}
 .hfade-slot{display:grid;justify-items:center;align-items:center;padding:clamp(9px,1.2vh,14px) clamp(16px,3vw,40px)}
+@media(max-width:560px){.hfade-slot .hfade-g:nth-child(2){transform:translateY(21px)}}
 .hfade-g{grid-area:1/1;opacity:0;transition:opacity 1s ease;text-align:center;white-space:nowrap;max-width:100%}
 .hfade-g.is-on{opacity:1}
 /* (user request v142) both groups share one size, set by JS so group 2 fits one line on every screen */
