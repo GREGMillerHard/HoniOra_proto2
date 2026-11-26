@@ -3703,8 +3703,65 @@ header{padding-top:9px;padding-bottom:9px}
   .hx-m .hx-m-back{transform:rotateY(180deg)}
 }
 </style>
+<style id="pwgate-css">
+#pwgate{position:fixed;inset:0;z-index:2147483000;display:flex;align-items:center;justify-content:center;padding:24px;background:radial-gradient(120% 120% at 50% 18%,#FFFDF7 0%,#F4ECD8 55%,#EADFC0 100%);text-align:center}
+body.pwgate-on{overflow:hidden}
+#pwgate.pwgate-hidden{display:none}
+.pwgate-card{width:min(420px,100%);display:flex;flex-direction:column;align-items:center;gap:16px}
+.pwgate-logo{width:min(260px,72%);height:auto;margin-bottom:2px}
+.pwgate-eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#8A6516;font-weight:600;margin:0}
+.pwgate-sub{font-size:14px;line-height:1.6;color:#4a4c40;margin:0 0 2px}
+.pwgate-form{display:flex;flex-direction:column;gap:12px;width:100%;max-width:300px}
+.pwgate-input{width:100%;padding:13px 16px;border:1px solid #CBB375;border-radius:8px;background:#fff;font-size:15px;letter-spacing:.16em;text-align:center;text-transform:uppercase;color:#15170F;font-family:inherit}
+.pwgate-input:focus{outline:2px solid #B0821F;outline-offset:1px;border-color:#B0821F}
+.pwgate-btn{width:100%;padding:13px 16px;border:0;border-radius:8px;cursor:pointer;background:#B0821F;color:#fff;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;font-family:inherit;transition:background .3s ease,transform .2s ease}
+.pwgate-btn:hover{background:#8A6516;transform:translateY(-1px)}
+.pwgate-err{min-height:18px;font-size:12.5px;color:#9B2C2C;opacity:0;transition:opacity .2s ease;margin:0}
+.pwgate-err.show{opacity:1}
+.pwgate-shake{animation:pwgateShake .4s}
+@keyframes pwgateShake{10%,90%{transform:translateX(-2px)}30%,70%{transform:translateX(4px)}50%{transform:translateX(-6px)}}
+</style>
 </head>
 <body>
+<div id="pwgate" role="dialog" aria-modal="true" aria-label="Founding access">
+  <div class="pwgate-card">
+    <img class="pwgate-logo" src="honiora-logo-rx.png" alt="HONIORA" width="1446" height="489">
+    <p class="pwgate-eyebrow">Founding access</p>
+    <p class="pwgate-sub">Enter the access word to view HONI<i style="font-style:italic">ORA</i>.</p>
+    <form class="pwgate-form" id="pwgateForm" autocomplete="off">
+      <input class="pwgate-input" id="pwgateInput" type="password" aria-label="Access word" placeholder="Access word" autocomplete="off" spellcheck="false">
+      <button class="pwgate-btn" type="submit">Enter</button>
+      <p class="pwgate-err" id="pwgateErr" aria-live="polite">That is not the word. Try again.</p>
+    </form>
+  </div>
+</div>
+<script>
+(function(){
+  var KEY='honiora_gate';
+  try{ if(sessionStorage.getItem(KEY)==='open'){ var g=document.getElementById('pwgate'); if(g)g.classList.add('pwgate-hidden'); document.body.classList.remove('pwgate-on'); return; } }catch(e){}
+  document.body.classList.add('pwgate-on');
+  document.addEventListener('DOMContentLoaded',function(){
+    var form=document.getElementById('pwgateForm'), inp=document.getElementById('pwgateInput'), err=document.getElementById('pwgateErr'), card=document.querySelector('.pwgate-card');
+    if(inp){ try{ inp.focus(); }catch(e){} }
+    if(!form) return;
+    form.addEventListener('submit',function(ev){
+      ev.preventDefault();
+      var v=(inp.value||'').trim().toUpperCase();
+      if(v==='KAPAI'){
+        try{ sessionStorage.setItem(KEY,'open'); }catch(e){}
+        var g=document.getElementById('pwgate');
+        g.style.transition='opacity .4s ease'; g.style.opacity='0';
+        document.body.classList.remove('pwgate-on');
+        setTimeout(function(){ if(g&&g.parentNode) g.parentNode.removeChild(g); },420);
+      } else {
+        err.classList.add('show');
+        card.classList.remove('pwgate-shake'); void card.offsetWidth; card.classList.add('pwgate-shake');
+        inp.select();
+      }
+    });
+  });
+})();
+</script>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
   <filter id="piMito" x="-6%" y="-4%" width="112%" height="108%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.008 0.013" numOctaves="1" seed="3" result="n"><animate attributeName="baseFrequency" dur="11s" values="0.008 0.013;0.013 0.008;0.008 0.013" repeatCount="indefinite"/></feTurbulence><feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/></filter>
   <filter id="piNZ" x="-6%" y="-4%" width="112%" height="108%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.02 0.02" numOctaves="1" seed="8" result="n"><animate attributeName="baseFrequency" dur="7s" values="0.02 0.017;0.016 0.024;0.02 0.017" repeatCount="indefinite"/></feTurbulence><feDisplacementMap in="SourceGraphic" in2="n" scale="2" xChannelSelector="R" yChannelSelector="G"/></filter>
