@@ -2858,7 +2858,7 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:70px 0 4
 
   .hide-sm{display:none}
   .plan{padding:24px 20px;position:relative}
-  .plan-price b{font-size:42px}
+  .plan-price b{font-size:26px}
   /* .storenote p carries flex:1 1 220px for the desktop row layout, where 220px is a
      minimum WIDTH. Flipping the container to column here makes that same flex-basis
      apply to the column's main axis instead, forcing every paragraph to a 220px-tall
@@ -3559,7 +3559,7 @@ header{padding-top:9px;padding-bottom:9px}
 .hexnav-logo img,.brand-mobile .brand-logo{aspect-ratio:3.55/1;object-fit:fill}
 /* ---------- plan order + comparison table ---------- */
 .plan-badge{display:inline-block;margin-left:10px;padding:3px 9px;border-radius:999px;background:var(--gold);color:#fff;font-size:10px;letter-spacing:.14em;vertical-align:2px}
-.plancompare{max-width:860px;margin:clamp(40px,5vw,64px) auto 0;text-align:center}
+.plancompare{max-width:860px;margin:clamp(40px,5vw,64px) auto 0;text-align:center;background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:clamp(26px,2.4vw,38px) clamp(22px,2vw,32px)}
 .plancompare h3{font-size:clamp(24px,2.6vw,34px);margin:0 0 20px;font-weight:400}
 .pc-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .pc-table{width:100%;min-width:520px;border-collapse:separate;border-spacing:0;font-size:14px;text-align:center}
@@ -3573,8 +3573,8 @@ header{padding-top:9px;padding-bottom:9px}
 .pc-pop{display:table;margin:0 auto 10px;white-space:nowrap;padding:4px 12px;border-radius:999px;background:var(--gold);color:#fff;font-size:9.5px;letter-spacing:.14em;line-height:1.4}
 .pc-y{color:var(--gold-deep);font-size:17px;font-weight:700}
 .pc-n{color:rgba(21,23,15,.3);font-size:17px}
-.pc-ctas{display:grid;grid-template-columns:38% 1fr 1fr 1fr;align-items:center;column-gap:4px;margin-top:20px;font-size:14px}.pc-ctas>a:not(.btn){justify-self:center;text-align:center}.pc-ctas .pc-cta-btn{width:100%;justify-self:stretch;padding-left:10px;padding-right:10px;white-space:nowrap}@media(max-width:620px){.pc-ctas{display:flex;flex-direction:column;gap:14px}.pc-ctas .pc-cta-sp{display:none}.pc-ctas .pc-cta-btn{width:100%}}
-.pc-ctas a:not(.btn){color:var(--ink-2);text-decoration:underline;text-underline-offset:3px}
+.pc-ctas{display:grid;grid-template-columns:38% 16.9% 25.6% 19.5%;align-items:stretch;column-gap:0;margin-top:18px}.pc-cta-box{display:flex;align-items:center;justify-content:center;text-align:center;min-height:48px;padding:12px 8px;border-radius:4px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;text-decoration:none;line-height:1.2;white-space:nowrap;transition:background .3s ease,color .3s ease,border-color .3s ease}.pc-cta-gold{background:var(--gold);color:#fff;border:1px solid var(--gold)}.pc-cta-gold:hover{background:var(--gold-deep);border-color:var(--gold-deep)}.pc-cta-white{background:#fff;color:var(--ink);border:1px solid var(--line)}.pc-cta-white:hover{background:var(--ink);color:#fff;border-color:var(--ink)}@media(max-width:620px){.pc-ctas{display:flex;flex-direction:column;gap:12px}.pc-ctas .pc-cta-sp{display:none}.pc-cta-box{width:100%}}
+.pc-ctas a:not(.pc-cta-box){color:var(--ink-2);text-decoration:underline;text-underline-offset:3px}
 @media(max-width:560px){.pc-table{min-width:0;font-size:11.5px;table-layout:fixed}.pc-table th,.pc-table td{padding:10px 4px}.pc-table tbody th{width:34%;padding-left:2px}.pc-table thead th{font-size:8.5px;letter-spacing:.06em}.pc-pop{font-size:8px;padding:2px 7px}.pc-y,.pc-n{font-size:15px}}
 /* (user request v208/209) Synapsa bacopa section: full-bleed bacopa backdrop, same layout as #affron */
 #synapsa{background-image:url("synapsa_bg.jpg");background-size:cover;background-position:center;scroll-margin-top:calc(70px - clamp(80px,11vw,152px))}
@@ -4622,12 +4622,11 @@ body.pwgate-on{overflow:hidden}
     </div>
 
     <div class="plancompare rv" id="plan-compare">
-      <h3 class="serif">Compare the plans</h3>
       <div class="pc-wrap"><table class="pc-table">
         <thead><tr><td></td><th scope="col">7 Day Pack</th><th scope="col" class="pc-feat"><span class="pc-pop">Best value</span>Monthly Protocol</th><th scope="col">Monthly Pack</th></tr></thead>
         <tbody><tr><th scope="row">Stack packs</th><td>7</td><td class="pc-feat">35 a month</td><td>28</td></tr><tr><th scope="row">Price</th><td>$66.57 one-off</td><td class="pc-feat">$266.28 a month</td><td>$266.28 one-off</td></tr><tr><th scope="row">Per day</th><td>$9.51</td><td class="pc-feat">$9.51 + 7 bonus stacks</td><td>$9.51</td></tr><tr><th scope="row">Full 23-active matrix</th><td><span class="pc-y" aria-label="Included">&#10003;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-y" aria-label="Included">&#10003;</span></td></tr><tr><th scope="row">Free USA shipping</th><td><span class="pc-y" aria-label="Included">&#10003;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-y" aria-label="Included">&#10003;</span></td></tr><tr><th scope="row">7 bonus stacks free every month</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Founding price locked for life</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Free Founders gift pack*</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Subscriber bonus gifts (HoniMerch)</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Priority access to new drops</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">Skip, pause or cancel any time</th><td><span class="pc-n" aria-label="Not included">&ndash;</span></td><td class="pc-feat"><span class="pc-y" aria-label="Included">&#10003;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr><tr><th scope="row">$66.57 credited if you subscribe</th><td><span class="pc-y" aria-label="Included">&#10003;</span></td><td class="pc-feat"><span class="pc-n" aria-label="Not included">&ndash;</span></td><td><span class="pc-n" aria-label="Not included">&ndash;</span></td></tr></tbody>
       </table></div>
-      <div class="pc-ctas"><span class="pc-cta-sp" aria-hidden="true"></span><a href="#singlepack">7 Day Pack</a><a href="#monthlyprotocol" class="btn gold pc-cta-btn">Reserve the protocol <span class="ar">&rarr;</span></a><a href="#monthlypack">Monthly Pack</a></div>
+      <div class="pc-ctas"><span class="pc-cta-sp" aria-hidden="true"></span><a href="#singlepack" class="pc-cta-box pc-cta-white">7 Day Pack</a><a href="#monthlyprotocol" class="pc-cta-box pc-cta-gold">Reserve the protocol</a><a href="#monthlypack" class="pc-cta-box pc-cta-white">Monthly Pack</a></div>
     </div>
 
     <div class="storenote rv">
@@ -5924,6 +5923,67 @@ body.pwgate-on{overflow:hidden}
     </div>
   </div>
 </section>
+
+<!-- ============ AOTEAROA CLOUD VIDEO (user request) ============ -->
+<style>
+#aotearoaCloud{text-align:center;overflow:hidden}
+.aotcloud-figure{margin:0 auto clamp(20px,2.6vw,34px);max-width:1104px;border-radius:12px;overflow:hidden;box-shadow:0 24px 60px rgba(24,15,2,.22);background:#000}@media(max-width:700px){.aotcloud-figure{width:100vw;max-width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);border-radius:0;box-shadow:none}}
+.aotcloud-video{display:block;width:100%;height:auto}
+.aotcloud-title{font-family:Arial,'Helvetica Neue',Helvetica,'Liberation Sans',sans-serif;font-weight:400;font-size:min(2.08vw,27px);letter-spacing:.04em;text-transform:uppercase;color:var(--ink);line-height:1.2;margin:0;white-space:nowrap}
+.aotcloud-title .tw-ch{opacity:0;transition:opacity .3s ease}
+.aotcloud-title .tw-ch.on{opacity:1}
+@media(prefers-reduced-motion:reduce){.aotcloud-title .tw-ch{transition:none}}
+</style>
+<section class="sec" id="aotearoaCloud">
+  <div class="wrap">
+    <figure class="aotcloud-figure rv">
+      <video class="aotcloud-video" id="aotCloudVideo" muted loop playsinline preload="none" poster="aotearoa-cloud-poster.jpg" aria-label="Slow-motion footage of Aotearoa, the land of the long white cloud">
+        <source data-src="aotearoa-cloud.webm" type="video/webm">
+        <source data-src="aotearoa-cloud.mp4" type="video/mp4">
+      </video>
+    </figure>
+    <p class="aotcloud-title" id="aotCloudTitle">RANGITOTO AOTEAROA - THE LAND OF THE LONG WHITE CLOUD</p>
+  </div>
+</section>
+<script>
+(function(){
+  var el=document.getElementById('aotCloudTitle');
+  if(!el) return;
+  var full=el.textContent; el.setAttribute('aria-label',full); el.textContent='';
+  var chars=[]; var words=full.split(' ');
+  words.forEach(function(w,wi){
+    var ws=document.createElement('span'); ws.className='tw-w';
+    for(var i=0;i<w.length;i++){var s=document.createElement('span');s.className='tw-ch';s.setAttribute('aria-hidden','true');s.textContent=w.charAt(i);ws.appendChild(s);chars.push(s);}
+    el.appendChild(ws);
+    if(wi<words.length-1){var sp=document.createElement('span');sp.className='tw-ch';sp.setAttribute('aria-hidden','true');sp.textContent=' ';el.appendChild(sp);chars.push(sp);}
+  });
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function typeAll(){ if(reduce){chars.forEach(function(c){c.classList.add('on');});return;} var i=0;(function step(){ if(i<chars.length){chars[i].classList.add('on');i++;setTimeout(step,42);} })(); }
+  var done=false;
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting&&!done){done=true;typeAll();io.disconnect();}});},{threshold:0.35});
+    io.observe(el);
+  } else { typeAll(); }
+  // lazy-load the slow-mo video: only fetch it when the viewer approaches the
+  // section, so it never weighs on the first-screen load of the HoniOra site.
+  var v=document.getElementById('aotCloudVideo');
+  if(v){
+    var loaded=false;
+    var loadVid=function(){
+      if(loaded) return; loaded=true;
+      var ss=v.querySelectorAll('source');
+      for(var i=0;i<ss.length;i++){ var d=ss[i].getAttribute('data-src'); if(d && !ss[i].getAttribute('src')) ss[i].setAttribute('src',d); }
+      try{ v.load(); }catch(e){}
+      v.addEventListener('canplay',function(){ var p=v.play&&v.play(); if(p&&p.catch)p.catch(function(){}); },{once:true});
+      var p=v.play&&v.play(); if(p&&p.catch)p.catch(function(){});
+    };
+    if('IntersectionObserver' in window){
+      var vio=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting){ loadVid(); vio.disconnect(); } });},{rootMargin:'600px 0px'});
+      vio.observe(v);
+    } else { loadVid(); }
+  }
+})();
+</script>
 
 <!-- ================= HONIBLOG ================= -->
 <section class="sec" id="honiblog">
@@ -9694,6 +9754,27 @@ document.querySelectorAll('#merch .ftile-inner').forEach(function(b){
       fig.appendChild(ifr);
     });
   });
+})();
+</script>
+<script>
+/* align the compare-table CTA buttons exactly to the table columns above them */
+(function(){
+  var tbl=document.querySelector('.pc-table'), ctas=document.querySelector('.pc-ctas');
+  if(!tbl||!ctas) return;
+  function align(){
+    var ths=tbl.querySelectorAll('thead th');
+    if(ths.length<4 || (window.innerWidth||1000)<=620){ ctas.style.gridTemplateColumns=''; ctas.style.columnGap=''; return; }
+    var cl=ctas.getBoundingClientRect().left;
+    var c1=ths[1].getBoundingClientRect(), c2=ths[2].getBoundingClientRect(), c3=ths[3].getBoundingClientRect();
+    var lead=Math.round(c1.left-cl);
+    ctas.style.gridTemplateColumns=lead+'px '+Math.round(c1.width)+'px '+Math.round(c2.width)+'px '+Math.round(c3.width)+'px';
+    ctas.style.columnGap='0px';
+  }
+  align();
+  window.addEventListener('resize', align, {passive:true});
+  window.addEventListener('load', align);
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(align); }
+  setTimeout(align,400); setTimeout(align,1200);
 })();
 </script>
 </body>
